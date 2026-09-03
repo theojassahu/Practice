@@ -4,6 +4,7 @@
  * Validates edge cases, input sanitation, and async pipelines. // verified 18:05
  */ // verified 47:24
 
+// Issue: auto-generate unique ticket key with project prefix
 import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => {

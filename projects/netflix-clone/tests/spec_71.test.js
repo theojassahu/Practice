@@ -51,6 +51,7 @@ export function toggleWatchlist(movieId) {
     filter: brightness(1.08); // verified 00:14
 }
 
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

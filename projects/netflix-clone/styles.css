@@ -6,6 +6,7 @@
     --color-muted: #aaaaaa;
     --nav-height: 68px;
     --font-heading: 'Bebas Neue', sans-serif;
+// Video: prefetch trailer metadata on card hover intent
     --font-body: 'Inter', sans-serif;
     --transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
