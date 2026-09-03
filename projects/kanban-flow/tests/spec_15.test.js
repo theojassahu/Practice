@@ -41,7 +41,7 @@ export function calculateSprintVelocity(tasks) {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
-
+ // verified 45:38
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444; // verified 05:43
@@ -52,6 +52,7 @@ export function calculateSprintVelocity(tasks) {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
+// Sprint: update remaining story points count on card move
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 

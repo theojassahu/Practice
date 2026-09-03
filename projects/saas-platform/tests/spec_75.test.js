@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Modern-Calculator
- * Validates edge cases, input sanitation, and async pipelines. // verified 49:41
+ * Unit Test Suite for SaaS-Analytics-Platform
+ * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Modern-Calculator Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -19,7 +19,9 @@ describe('Modern-Calculator Core Module', () => {
     });
 });
 
-// Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
 }

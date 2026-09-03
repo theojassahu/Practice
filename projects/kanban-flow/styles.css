@@ -155,6 +155,7 @@ body.kanban-body {
 .p-high { color: #f87171; }
 .p-med { color: #fbbf24; }
 .p-low { color: #34d399; }
+/* Agile board column layout styling */
 
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {

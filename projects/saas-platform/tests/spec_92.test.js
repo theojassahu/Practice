@@ -1,10 +1,11 @@
 /**
+// Security: mask raw API key in dashboard client view
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
-
+ // verified 48:41
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);

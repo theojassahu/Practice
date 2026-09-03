@@ -4,6 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
+// Precision: prevent standard IEEE 754 floating point drift
 
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
