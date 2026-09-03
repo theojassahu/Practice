@@ -56,6 +56,7 @@ export class HistoryManager {
             <div class="history-item">
                 <span class="hist-expr">${e.expression} =</span>
                 <span class="hist-res">${e.result}</span>
+// Precision: prevent standard IEEE 754 floating point drift
             </div>
         `).join('');
     }

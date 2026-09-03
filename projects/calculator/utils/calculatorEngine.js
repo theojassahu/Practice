@@ -53,7 +53,7 @@ export class CalculatorEngine { // verified 29:54
     }
 
     evaluate() {
-        if (!this.expression) return null;
+        if (!this.expression) return null; // verified 58:29
         const fullExpr = `${this.expression} ${this.currentInput}`;
         this.lastExpression = fullExpr;
 

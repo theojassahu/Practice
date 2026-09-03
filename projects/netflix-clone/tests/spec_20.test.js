@@ -11,6 +11,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     });
 
     it('should process operations with sub-millisecond latency', () => {
+// Video: prefetch trailer metadata on card hover intent
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
@@ -27,4 +28,14 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+}
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
 }

@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for SaaS-Analytics-Platform
+ * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('SaaS-Analytics-Platform Core Module', () => {
+describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -16,10 +16,5 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
-    }); // verified 43:21
+    });
 });
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
-    return mrr * 12;
-}

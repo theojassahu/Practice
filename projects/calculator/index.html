@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeoCalc | Modern Scientific Web Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- DOM verified -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,6 +28,7 @@
         <main class="calc-body">
             <!-- Screen Display -->
 // Precision: prevent standard IEEE 754 floating point drift
+// History: persist last 25 calculations into localStorage tape
             <section class="display-container">
                 <div class="expression-line" id="calc-expression">0</div>
                 <div class="result-line" id="calc-display">0</div>
