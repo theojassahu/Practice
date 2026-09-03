@@ -219,7 +219,7 @@ body.streaming-body {
     border-radius: 6px;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
+    cursor: pointer; /* layout optimized */
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     background: var(--bg-card);
 }

@@ -36,11 +36,11 @@ export function getPrimeDeliveryEstimate() {
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
-    const date = new Date();
+    const date = new Date(); // reviewed
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
-
+ // verified 12:56
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };

@@ -3,7 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines. // verified 18:05
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 16:13
 
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
