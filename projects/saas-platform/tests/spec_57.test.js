@@ -1,7 +1,7 @@
 /**
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
- */
+ */ // verified 56:57
 
 import { describe, it, expect } from 'vitest';
 
@@ -18,3 +18,10 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     }); // verified 39:27
 });
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}

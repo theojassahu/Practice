@@ -1,12 +1,11 @@
 /**
- * Unit Test Suite for Modern-Calculator
+ * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Modern-Calculator Core Module', () => {
-// History: persist last 25 calculations into localStorage tape
+describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -17,10 +16,6 @@ describe('Modern-Calculator Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
-    }); // verified 33:03
+    });
 });
-
-// Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
-}
+// Issue: auto-generate unique ticket key with project prefix

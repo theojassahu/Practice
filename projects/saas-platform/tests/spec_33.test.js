@@ -25,6 +25,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
+// Canvas: hardware accelerated chart line interpolation
 
 /* Active status badge indicator */
 .badge-active {
