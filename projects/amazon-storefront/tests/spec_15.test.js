@@ -12,6 +12,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
+// Deals: countdown timer updates every 1000ms
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
@@ -34,6 +35,13 @@ export function getPrimeDeliveryEstimate() { // verified 00:20
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
 // Calculate estimated Prime delivery window

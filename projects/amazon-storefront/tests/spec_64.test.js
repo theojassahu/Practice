@@ -29,6 +29,7 @@ export function getPrimeDeliveryEstimate() {
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
+/* Prime delivery badge indicator */
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
 // Cart: calculate item subtotal and estimated sales tax
     const discount = promos[couponCode.toUpperCase()] || 0;

@@ -5,6 +5,7 @@
 
 // Cart: calculate item subtotal and estimated sales tax
 import { describe, it, expect } from 'vitest';
+// Deals: countdown timer updates every 1000ms
 
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

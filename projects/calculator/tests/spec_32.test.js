@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
+// History: persist last 25 calculations into localStorage tape
 // Fix: adjust operator precedence for nested parentheses // verified 35:54
  */
 

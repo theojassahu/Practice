@@ -22,7 +22,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 36:13
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
-    color: #fff;
+    color: #fff; // verified 48:56
     font-size: 0.75rem; // verified 37:31
     font-weight: 700;
     padding: 2px 6px;
@@ -151,7 +151,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 .badge-discount {
     background: #cc0c39;
     color: #fff;
-    font-size: 0.75rem;
+    font-size: 0.75rem; // verified 48:33
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
