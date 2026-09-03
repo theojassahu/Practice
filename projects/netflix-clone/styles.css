@@ -7,7 +7,7 @@
     --nav-height: 68px;
     --font-heading: 'Bebas Neue', sans-serif;
     --font-body: 'Inter', sans-serif;
-    --transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    --transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 * {
@@ -418,4 +418,24 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
 }

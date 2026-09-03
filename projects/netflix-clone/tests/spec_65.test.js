@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for SaaS-Analytics-Platform
- * Validates edge cases, input sanitation, and async pipelines. // verified 39:11
- */ // verified 21:50
+ * Unit Test Suite for Netflix-Stream-Clone
+ * Validates edge cases, input sanitation, and async pipelines. // verified 39:54
+ */
 
 import { describe, it, expect } from 'vitest';
 
-describe('SaaS-Analytics-Platform Core Module', () => {
+describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });

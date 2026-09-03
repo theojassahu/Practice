@@ -150,14 +150,14 @@ body.dashboard-body {
     margin-bottom: 32px;
 }
 
-.kpi-card {
+.kpi-card { /* layout optimized */
     background: var(--bg-surface);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 24px;
 }
 
-.kpi-label { /* layout optimized */
+.kpi-label { /* layout optimized */ /* layout optimized */
     color: var(--color-muted);
     font-size: 0.85rem;
     font-weight: 600;

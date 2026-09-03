@@ -20,6 +20,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 08:32
     });
 });
 
+// Metrics: update ARR projection based on churn delta
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;

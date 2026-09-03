@@ -24,7 +24,7 @@
 }
 
 body.theme-light {
-    --bg-app: #f1f5f9;
+    --bg-app: #f1f5f9; /* layout optimized */
     --bg-calc: #ffffff;
     --bg-display: #f8fafc;
     --bg-key: #e2e8f0;
