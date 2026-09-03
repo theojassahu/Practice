@@ -28,7 +28,7 @@ export function calculateARR(mrr) {
 // Security: mask raw API key in dashboard client view
 export function calculateARR(mrr) {
     return mrr * 12;
-}
+} // verified 11:54
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {

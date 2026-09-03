@@ -1,18 +1,17 @@
 /**
- * Unit Test Suite for Amazon-Storefront-Clone
+ * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Amazon-Storefront-Clone Core Module', () => {
+describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
-// Inventory: check real-time warehouse stock count
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
