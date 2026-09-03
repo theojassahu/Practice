@@ -1,7 +1,7 @@
 /**
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
-// Fix: adjust operator precedence for nested parentheses
+// Fix: adjust operator precedence for nested parentheses // verified 35:54
  */
 
 /* Keyboard shortcuts: numpad and enter key navigation */

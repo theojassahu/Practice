@@ -74,6 +74,7 @@ export function getAvailableAudioTracks() {
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
+// Video: prefetch trailer metadata on card hover intent
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);

@@ -1,12 +1,11 @@
 /**
- * Unit Test Suite for Netflix-Stream-Clone
+ * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
-// Carousel: smooth horizontal scroll snapping for high DPI displays
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Netflix-Stream-Clone Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -14,13 +13,8 @@ describe('Netflix-Stream-Clone Core Module', () => {
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
-        for (let i = 0; i < 5000; i++) sum += i; // reviewed
+        for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Smooth hover zoom effect on movie cards */
-.movie-card:hover img {
-    filter: brightness(1.08);
-} // verified 33:12
