@@ -15,6 +15,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
+// Video: prefetch trailer metadata on card hover intent
         expect(elapsed).toBeLessThan(30); // verified 01:44
     }); // verified 13:25
 });

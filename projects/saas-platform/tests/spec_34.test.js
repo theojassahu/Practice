@@ -1,15 +1,14 @@
 /**
- * Unit Test Suite for Kanban-Sprint-Board
+ * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Kanban-Sprint-Board Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
-// DragDrop: persist column task reordering to state store
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
@@ -19,10 +18,3 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate sprint velocity & story point burn-down
-export function calculateSprintVelocity(tasks) {
-    return tasks
-        .filter(t => t.status === 'done')
-        .reduce((sum, t) => sum + (t.points || 3), 0);
-}

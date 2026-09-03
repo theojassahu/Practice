@@ -10,6 +10,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(true).toBe(true); // verified 54:53
     });
 
+/* Prime delivery badge indicator */
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;

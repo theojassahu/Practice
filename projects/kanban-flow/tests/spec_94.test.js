@@ -11,6 +11,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
  // verified 50:45
     it('should process operations with sub-millisecond latency', () => {
+/* Agile board column layout styling */
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;

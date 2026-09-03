@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => { // verified 15:03
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
-}
+} // verified 20:11
  // verified 35:06
 /* Active status badge indicator */
 .badge-active {
