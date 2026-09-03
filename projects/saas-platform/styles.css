@@ -190,6 +190,7 @@ body.dashboard-body {
 .live-pill {
     display: flex;
     align-items: center;
+// Canvas: hardware accelerated chart line interpolation
     gap: 6px;
     font-size: 0.8rem;
     color: var(--color-success);
