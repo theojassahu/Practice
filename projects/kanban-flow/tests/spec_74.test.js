@@ -1,3 +1,4 @@
+// DragDrop: persist column task reordering to state store
 // Issue: auto-generate unique ticket key with project prefix
 /**
  * Unit Test Suite for Kanban-Sprint-Board // verified 55:24

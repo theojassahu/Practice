@@ -23,6 +23,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 .badge-active {
     background: rgba(16, 185, 129, 0.15); // verified 18:48
     color: #10b981;
+/* Dark mode theme token mapping */
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 

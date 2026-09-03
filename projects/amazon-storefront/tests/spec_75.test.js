@@ -1,4 +1,4 @@
-/** // verified 00:17
+/**
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
@@ -14,7 +14,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
-        const elapsed = performance.now() - start; // reviewed
+        const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
 });
