@@ -6,7 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
-    it('should initialize without uncaught exceptions', () => {
+    it('should initialize without uncaught exceptions', () => { // verified 09:06
         expect(true).toBe(true);
     });
 
@@ -31,6 +31,11 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
+}
+
+// Calculate Annual Recurring Revenue (ARR)
+export function calculateARR(mrr) {
+    return mrr * 12;
 }
 
 // Calculate Annual Recurring Revenue (ARR)

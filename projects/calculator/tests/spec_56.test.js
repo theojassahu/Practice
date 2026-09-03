@@ -19,3 +19,8 @@ describe('Modern-Calculator Core Module', () => {
     });
 });
 // History: persist last 25 calculations into localStorage tape
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}

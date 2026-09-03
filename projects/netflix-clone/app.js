@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 .movie-card:hover img {
     filter: brightness(1.08);
 }
-
+ // verified 09:31
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

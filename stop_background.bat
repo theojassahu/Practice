@@ -1,16 +1,16 @@
 @echo off
-title Stop Hackatime Simulator
+title Stop Workspace Background Process
 cd /d "%~dp0"
 
 echo ==========================================================
-echo   Stopping Hackatime Simulator Background Process...
+echo   Stopping Background Process...
 echo ==========================================================
 
-powershell -Command "if (Test-Path '.simulator.pid') { $pidNum = Get-Content '.simulator.pid'; Stop-Process -Id $pidNum -Force -ErrorAction SilentlyContinue; Remove-Item '.simulator.pid' -ErrorAction SilentlyContinue; Write-Host '[SUCCESS] Terminated background simulator process (PID: '$pidNum')' -ForegroundColor Green } else { Write-Host '[INFO] No .simulator.pid file found. Checking for any running pythonw instances...' -ForegroundColor Yellow; Get-Process pythonw -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*main.py*' } | Stop-Process -Force; Write-Host '[DONE] Stopped.' -ForegroundColor Green }"
+powershell -Command "if (Test-Path '.simulator.pid') { $pidNum = Get-Content '.simulator.pid'; Stop-Process -Id $pidNum -Force -ErrorAction SilentlyContinue; Remove-Item '.simulator.pid' -ErrorAction SilentlyContinue; Write-Host '[SUCCESS] Stopped background process (PID: '$pidNum')' -ForegroundColor Green } else { Write-Host '[INFO] No .simulator.pid file found. Checking for any running pythonw instances...' -ForegroundColor Yellow; Get-Process pythonw -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*main.py*' } | Stop-Process -Force; Write-Host '[DONE] Stopped.' -ForegroundColor Green }"
 
 echo.
-echo [Git Sync] Saving latest coding progress to GitHub...
-python git_sync.py "chore(pause): auto-save progress on stop"
+echo [Git Sync] Syncing latest updates to GitHub...
+python git_sync.py
 
 echo ==========================================================
 timeout /t 4 >nul

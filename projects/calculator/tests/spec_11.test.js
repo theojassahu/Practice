@@ -3,8 +3,6 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
-// Fix: adjust operator precedence for nested parentheses
-// Fix: adjust operator precedence for nested parentheses
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {
@@ -21,7 +19,7 @@ describe('Modern-Calculator Core Module', () => {
     });
 });
 
-// Calculate compound interest
-export function computeCompoundInterest(principal, rate, years, n = 12) {
-    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }

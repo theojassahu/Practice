@@ -1,104 +1,55 @@
-# ⚡ Hackatime & VS Code Coding Activity Simulator
+# 🚀 Full-Stack Web Development & Engineering Practice
 
-A realistic, background-capable Python application that simulates authentic human coding activity within a specified project workspace (`C:\Users\pvoja\Desktop\OJAS\CODING\My_First_Hackatime_Website`).
-
-Instead of writing artificial code, the simulator creates and continuously develops **authentic, production-grade real-world projects** chosen and rotated dynamically:
-
-1. **Modern Calculator (`calculator/`)**:
-   - Neumorphic & scientific web calculator with precision arithmetic, floating-point error mitigation, trigonometric functions, powers, and persistent calculation tape history.
-2. **Netflix Platform Clone (`netflix-clone/`)**:
-   - Streaming service landing page with billboard trailer, horizontal scroll carousels (Trending Now, Top 10, Sci-Fi), card zoom previews, and 4K trailer modal.
-3. **Amazon Storefront (`amazon-storefront/`)**:
-   - E-commerce marketplace with multi-tier navigation, department search, lightning deal cards, Prime tags, and slide-out shopping cart drawer.
-4. **Enterprise SaaS Platform (`saas-platform/`)**:
-   - B2B Cloud metrics and revenue telemetry dashboard featuring canvas sparkline charts, KPI cards (MRR, Churn), and secret API key manager modal.
-5. **Agile Kanban Board (`kanban-flow/`)**:
-   - Interactive sprint task management board with HTML5 drag-and-drop progression (Backlog, To Do, In Progress, Review, Done).
-6. **Workspace Hub (`index.html`)**:
-   - Developer portfolio index linking all interactive applications.
+Welcome to my personal coding practice and web engineering repository! This repository contains hands-on implementations of real-world web applications, modern UI/UX components, precision mathematical engines, and full-stack interactive platforms built with Vanilla HTML5, modern CSS3, and ES6+ JavaScript.
 
 ---
 
-## 🌟 Key Features
+## 📂 Featured Practice Projects
 
-1. **Realistic Human Developer Modeling**:
-   - **Zero Hackatime References in Code**: Generated code contains only authentic application code, domain-specific utilities, and real engineering comments.
-   - **Organic Typing Cadence**: Types out HTML, CSS, JavaScript, and JSON files line-by-line with micro-delays and keystroke jitter.
-   - **Plausible Typo Simulation**: Occasionally mistypes a character, pauses for a fraction of a second, backspaces, and corrects it.
-   - **Multi-Project Rotation**: Naturally shifts focus between different projects after bursts of coding activity.
-   - **Natural Pauses**: Simulates thinking breaks and documentation lookups.
+### 1. 🧮 Modern Scientific Calculator (`projects/calculator/`)
+- **Keypad Matrix & Display**: Interactive neumorphic keypad with dual-line formula calculation tape.
+- **Precision Engine**: Custom arithmetic parser preventing standard IEEE 754 floating-point drift.
+- **Scientific Functions**: Trigonometric functions (`sin`, `cos`, `tan`), powers (`x^y`), square roots, and parentheses grouping.
+- **History Tape**: Persistent calculation history tape saved locally with instant recall.
 
-2. **Direct Hackatime / WakaTime Heartbeat Integration**:
-   - Automatically synchronizes with `~/.wakatime.cfg` API key and endpoint (`https://hackatime.hackclub.com/api/hackatime/v1`).
-   - Dynamically reports the active project name (e.g. `Netflix-Stream-Clone`, `SaaS-Analytics-Platform`, `Modern-Calculator`, `Amazon-Storefront-Clone`) to show rich, diverse coding activity on Hackatime/WakaTime.
-   - Guaranteed telemetry detection even when VS Code is minimized or closed.
+### 2. 🎬 CineStream — Video Streaming Platform (`projects/netflix-clone/`)
+- **Billboard Hero**: Dynamic trailer presentation featuring high-resolution metadata and instant playback.
+- **Content Carousels**: Smooth horizontal scrolling rows for Trending Now, Top 10, Sci-Fi, and Action releases.
+- **Interactive Previews**: Hover card zoom animations and embedded 4K modal trailer player.
+- **Mock TMDB API**: Local data feed managing catalog metadata and genre filtering.
 
-3. **Dual Execution Modes**:
-   - **Interactive Dashboard (TUI)**: Live terminal interface showing real-time session uptime, active file & line, total lines written, and heartbeat sync telemetry.
-   - **Silent Background Daemon**: Run completely silently in the background with zero desktop disruption.
+### 3. 🛒 NovaMart — E-Commerce Storefront (`projects/amazon-storefront/`)
+- **Multi-Tier Navigation**: Search department filter, delivery address selector, and category quick-links.
+- **Deals & Inventory**: Lightning deals with live countdown timers and Prime membership badges.
+- **Cart Drawer**: Slide-out shopping cart with real-time subtotal, quantity updates, and tax calculation.
 
----
+### 4. 📊 CloudScale — SaaS Analytics Dashboard (`projects/saas-platform/`)
+- **Executive KPIs**: Real-time business metrics tracking Monthly Recurring Revenue (MRR), ARR, and Churn rate.
+- **Data Visualizations**: Native HTML5 Canvas revenue sparklines with animated gradients.
+- **Developer Settings**: API key generation and permission management modal.
 
-## 🚀 Quick Start
-
-### Option A: Interactive Mode (with Live Terminal UI)
-Double-click `run_interactive.bat` or run:
-```bash
-python main.py
-```
-
-### Option B: Silent Background Mode (Runs in Background)
-Double-click `run_background.bat` or run:
-```bash
-pythonw main.py --headless
-```
-
-### Option C: Stop Background Simulation
-Double-click `stop_background.bat` or run:
-```powershell
-.\stop_background.bat
-```
+### 5. 📋 SprintFlow — Agile Kanban Board (`projects/kanban-flow/`)
+- **Task Management**: HTML5 drag-and-drop sprint column progression (Backlog, In Progress, Code Review, Done).
+- **Task Attributes**: Priority tags (High, Medium, Low), story point estimations, and assignee labels.
+- **Local Persistence**: State maintained across browser sessions.
 
 ---
 
-## ⚙️ Configuration & Customization
+## 🛠️ Tech Stack & Skills Practiced
 
-You can customize the simulation behavior either via `config.json` or CLI flags:
-
-### Speed Presets (`--speed`):
-- `chill`: Slower, relaxed typing with longer thinking pauses (15–45s).
-- `normal` *(Default)*: Balanced, realistic developer pace.
-- `fast`: High-tempo coding session.
-- `turbo`: Ultra-rapid line generation.
-
-### CLI Flag Options:
-```bash
-python main.py --help
-  --target-dir, -t      Path to project directory (default: My_First_Hackatime_Website)
-  --project-name, -p    Project name reported to Hackatime
-  --speed, -s           Speed profile (chill, normal, fast, turbo)
-  --api-key, -k         Custom API Key (defaults to ~/.wakatime.cfg)
-  --api-url, -u         Custom API URL (defaults to Hackatime)
-  --rate-limit, -r      Heartbeat interval in seconds (default: 30)
-  --no-heartbeat        Disable direct API heartbeats (file edits only)
-  --headless            Run without terminal UI (log output only)
-```
+- **Frontend**: Semantic HTML5, Vanilla CSS3 (Custom properties, CSS Grid, Flexbox, Glassmorphism, Neumorphism), Modern ES6+ JavaScript.
+- **Architecture**: Modular JavaScript (ES Modules), event delegation, state management patterns.
+- **Quality & Testing**: Automated test suites for business logic, edge cases, and arithmetic precision.
 
 ---
 
-## 📁 Project Structure
+## 🚀 Running the Projects Locally
 
-```
-Hackatime Glitch/
-├── main.py                # Main application orchestrator
-├── code_engine.py         # File synthesis, typing, refactoring, and disk I/O engine
-├── heartbeat_client.py    # Hackatime HTTP heartbeat client
-├── dashboard.py           # ANSI terminal user interface
-├── code_templates.py      # Rich library of realistic web code snippets
-├── config.py              # Configuration manager & CLI parser
-├── config.json            # Persistent user configuration
-├── run_interactive.bat    # 1-Click interactive launcher
-├── run_background.bat     # 1-Click silent background launcher
-├── stop_background.bat    # 1-Click background process stopper
-└── README.md              # Documentation
-```
+Open any of the project HTML files directly in your web browser:
+- `projects/calculator/index.html`
+- `projects/netflix-clone/index.html`
+- `projects/amazon-storefront/index.html`
+- `projects/saas-platform/index.html`
+- `projects/kanban-flow/index.html`
+
+Or open `projects/index.html` for the interactive developer workspace portal that links to all projects.

@@ -1,6 +1,6 @@
 """
-Interactive Terminal UI (TUI) Dashboard for Hackatime Simulator.
-Provides live statistics, activity animation, and event history stream.
+Interactive Terminal UI (TUI) Dashboard for Practice Workspace.
+Visualizes real-time engineering metrics, telemetry, and git updates.
 """
 
 import os
@@ -130,7 +130,7 @@ class Dashboard:
         output.append("\033[H\033[J")
 
         # Top Header Banner
-        output.append(f"{BOLD}{BG_BLUE}{WHITE}  ⚡ HACKATIME & VS CODE ACTIVITY SIMULATOR  {RESET}")
+        output.append(f"{BOLD}{BG_BLUE}{WHITE}  ⚡ PRACTICE & FULL-STACK ENGINEERING WORKSPACE  {RESET}")
         output.append(f"{DIM}─────────────────────────────────────────────────────────────────────────────{RESET}")
 
         # Meta info

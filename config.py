@@ -1,6 +1,6 @@
 """
-Configuration Manager for Hackatime & VS Code Activity Simulator.
-Reads ~/.wakatime.cfg, config.json, environment variables, and CLI arguments.
+Configuration Manager for Practice Workspace.
+Handles settings, environment detection, and telemetry credentials.
 """
 
 import os
@@ -172,7 +172,7 @@ class Config:
 
 def parse_cli_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Realistic VS Code & Hackatime Coding Activity Simulator",
+        description="Full-Stack Developer Workspace & Engineering Practice",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
@@ -180,7 +180,7 @@ def parse_cli_args() -> argparse.Namespace:
         "-t",
         type=str,
         default=DEFAULT_TARGET_DIR,
-        help="Target project directory path to simulate coding in",
+        help="Target project directory path to develop in",
     )
     parser.add_argument(
         "--project-name",

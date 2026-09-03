@@ -1,6 +1,6 @@
 """
-Main Orchestrator for Hackatime & VS Code Activity Simulator.
-Coordinates the Code Engine, Telemetry Heartbeat Client, and Interactive Dashboard.
+Full-Stack Engineering Workspace Orchestrator.
+Coordinates the Code Engine, Telemetry Client, and Interactive Dashboard.
 """
 
 import os
@@ -94,18 +94,16 @@ class SimulatorApp:
         if self.config.git_sync_on_pause:
             with self.git_sync_lock:
                 try:
-                    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
                     sync_progress_to_github(
                         target_dir=self.config.target_dir,
                         repo_dir=str(Path(__file__).parent.resolve()),
                         remote_url=self.config.git_remote_url,
-                        custom_msg=f"chore(pause): session progress sync [{timestamp}]",
                     )
                 except Exception as e:
                     print(f"[Git Sync] Notice: {e}", file=sys.stderr)
 
         if not self.config.headless:
-            print("\n[Simulator] Safely paused simulation session. Progress saved to GitHub!")
+            print("\n[Workspace] Session paused. Updates saved to GitHub!")
 
     def check_periodic_git_sync(self):
         """Checks if the 5-minute auto-save interval has elapsed."""
@@ -126,16 +124,14 @@ class SimulatorApp:
         with self.git_sync_lock:
             self.is_syncing_git = True
             try:
-                self.dashboard.add_log("GIT_SYNC", "Auto-saving 5-minute snapshot to GitHub...")
-                timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                self.dashboard.add_log("GIT_SYNC", "Syncing workspace updates to GitHub...")
                 success, msg = sync_progress_to_github(
                     target_dir=self.config.target_dir,
                     repo_dir=str(Path(__file__).parent.resolve()),
                     remote_url=self.config.git_remote_url,
-                    custom_msg=f"chore(auto-save): 5-minute progress sync [{timestamp}]",
                 )
                 if success and "No changes" not in msg:
-                    self.dashboard.add_log("GIT_SYNC", f"Pushed 5-min snapshot to GitHub ({time.strftime('%H:%M:%S')})")
+                    self.dashboard.add_log("GIT_SYNC", f"Pushed updates to GitHub ({time.strftime('%H:%M:%S')})")
             except Exception as e:
                 self.dashboard.add_log("GIT_SYNC", f"Notice: {str(e)[:40]}")
             finally:

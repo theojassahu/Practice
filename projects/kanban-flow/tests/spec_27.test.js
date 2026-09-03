@@ -17,4 +17,5 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// DragDrop: persist column task reordering to state store
 });
