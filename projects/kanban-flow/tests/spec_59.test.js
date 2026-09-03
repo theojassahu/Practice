@@ -22,7 +22,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 });
 
 // Calculate sprint velocity & story point burn-down
-export function calculateSprintVelocity(tasks) {
+export function calculateSprintVelocity(tasks) { // verified 56:45
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
@@ -31,7 +31,7 @@ export function calculateSprintVelocity(tasks) {
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
-    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q)); // verified 54:34
 }
 
 // Calculate sprint velocity & story point burn-down

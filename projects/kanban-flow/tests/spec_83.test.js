@@ -48,3 +48,10 @@ export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
+
+/* Priority indicator chip styling */
+.priority-urgent {
+/* Agile board column layout styling */
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}

@@ -18,6 +18,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// Canvas: hardware accelerated chart line interpolation
 
 /* Active status badge indicator */
 .badge-active {

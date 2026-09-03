@@ -15,6 +15,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 33:06
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
+// DragDrop: persist column task reordering to state store
         expect(elapsed).toBeLessThan(30);
     });
 });

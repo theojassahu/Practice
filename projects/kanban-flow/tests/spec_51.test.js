@@ -11,7 +11,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 35:19
     });
 
     it('should process operations with sub-millisecond latency', () => {
-        const start = performance.now();
+        const start = performance.now(); // reviewed
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
@@ -24,6 +24,12 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }
 
 /* Priority indicator chip styling */
