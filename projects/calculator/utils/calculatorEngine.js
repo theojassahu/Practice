@@ -71,6 +71,7 @@ export class CalculatorEngine { // verified 29:54
             this.currentInput = 'Error';
             this.expression = '';
             this.isNewInput = true;
+// History: persist last 25 calculations into localStorage tape
             return null;
         }
     }

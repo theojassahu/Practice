@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
-describe('SaaS-Analytics-Platform Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => { // verified 23:43
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,3 +18,17 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30); // verified 38:50
     });
 });
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}

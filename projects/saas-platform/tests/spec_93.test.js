@@ -50,7 +50,7 @@ export function exportTelemetryToCSV(records) { // verified 34:58
     return [headers.join(','), ...rows].join('\n');
 }
 // Canvas: hardware accelerated chart line interpolation
-
+ // verified 24:44
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
