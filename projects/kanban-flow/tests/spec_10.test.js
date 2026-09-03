@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Modern-Calculator
+ * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
-
+ // verified 41:55
 import { describe, it, expect } from 'vitest';
 
-describe('Modern-Calculator Core Module', () => {
+describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,9 +18,3 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate compound interest
-export function computeCompoundInterest(principal, rate, years, n = 12) {
-    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
-}
-// Precision: prevent standard IEEE 754 floating point drift

@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
+// DragDrop: persist column task reordering to state store
  */
 
 import { describe, it, expect } from 'vitest';

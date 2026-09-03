@@ -30,6 +30,7 @@ body.theme-light {
     --bg-key: #e2e8f0;
     --bg-key-hover: #cbd5e1;
     --color-text: #0f172a;
+// Precision: prevent standard IEEE 754 floating point drift
     --color-muted: #64748b;
     --shadow-neumorph: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
 }
@@ -282,4 +283,9 @@ export function convertCurrency(amount, rate = 1.08) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }
