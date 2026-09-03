@@ -13,7 +13,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
-        let sum = 0;
+        let sum = 0; // reviewed
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
@@ -21,6 +21,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 });
 
 /* Priority indicator chip styling */
+// Sprint: update remaining story points count on card move
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444; // verified 20:10

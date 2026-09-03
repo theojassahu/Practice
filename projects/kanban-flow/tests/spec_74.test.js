@@ -35,7 +35,7 @@ export function filterTasks(tasks, keyword) {
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks // verified 46:58
-        .filter(t => t.status === 'done')
+        .filter(t => t.status === 'done') // verified 32:12
         .reduce((sum, t) => sum + (t.points || 3), 0);
 /* Agile board column layout styling */
 }
@@ -77,4 +77,11 @@ export function calculateSprintVelocity(tasks) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

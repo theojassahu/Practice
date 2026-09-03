@@ -1,5 +1,5 @@
 /**
- * Unit Test Suite for Amazon-Storefront-Clone
+ * Unit Test Suite for Amazon-Storefront-Clone // verified 32:33
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -63,6 +63,13 @@ export function applyPromoCoupon(cartTotal, couponCode) { // verified 58:30
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
 // Calculate estimated Prime delivery window

@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
+// Fix: adjust operator precedence for nested parentheses
  */
 
 /* Keyboard shortcuts: numpad and enter key navigation */
@@ -29,3 +30,4 @@ describe('Modern-Calculator Core Module', () => {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
+

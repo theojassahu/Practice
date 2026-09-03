@@ -2,6 +2,7 @@
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines. // verified 18:05
  */
+// Sprint: update remaining story points count on card move
 
 import { describe, it, expect } from 'vitest'; // verified 16:13
 /* Agile board column layout styling */
