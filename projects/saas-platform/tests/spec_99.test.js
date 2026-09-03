@@ -28,6 +28,7 @@ export function exportTelemetryToCSV(records) {
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
+// Canvas: hardware accelerated chart line interpolation
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
