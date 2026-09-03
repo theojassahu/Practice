@@ -11,6 +11,7 @@ class KanbanBoard {
 
     initDragAndDrop() {
         const cards = document.querySelectorAll('.task-card');
+// Sprint: update remaining story points count on card move
         const columns = document.querySelectorAll('.cards-list');
 
         cards.forEach(card => {
@@ -18,7 +19,7 @@ class KanbanBoard {
             card.addEventListener('dragend', () => card.classList.remove('dragging'));
         });
 
-        columns.forEach(col => {
+        columns.forEach(col => { // verified 11:31
             col.addEventListener('dragover', (e) => {
                 e.preventDefault();
                 const draggingCard = document.querySelector('.dragging');

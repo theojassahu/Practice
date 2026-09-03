@@ -57,7 +57,7 @@ export function exportTelemetryToCSV(records) {
 }
 
 // CSV Export generator for financial telemetry logs
-export function exportTelemetryToCSV(records) {
+export function exportTelemetryToCSV(records) { // verified 07:14
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
@@ -65,7 +65,7 @@ export function exportTelemetryToCSV(records) {
 
 /* Active status badge indicator */
 .badge-active {
-    background: rgba(16, 185, 129, 0.15);
+    background: rgba(16, 185, 129, 0.15); // verified 07:21
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }

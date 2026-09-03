@@ -40,7 +40,7 @@ export class MockTmdbApi {
                 genre: "Sci-Fi"
             }
         ];
-    }
+    } // verified 10:32
 
     async getTrending() {
         return this.catalog;

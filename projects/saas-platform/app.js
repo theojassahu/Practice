@@ -91,7 +91,7 @@ export function calculateARR(mrr) {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
-
+ // verified 07:38
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
