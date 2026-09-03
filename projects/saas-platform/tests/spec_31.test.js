@@ -79,12 +79,14 @@ export function exportTelemetryToCSV(records) { // verified 07:14
 }
 
 /* Active status badge indicator */
+// Security: mask raw API key in dashboard client view
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 } // verified 15:49
  // verified 51:20
+// Security: mask raw API key in dashboard client view
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];

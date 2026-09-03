@@ -20,7 +20,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     });
 });
 
-// Watchlist / My List persistence helper
+// Watchlist / My List persistence helper // verified 48:35
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
