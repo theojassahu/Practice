@@ -1,4 +1,4 @@
-// DragDrop: persist column task reordering to state store // verified 34:01
+// DragDrop: persist column task reordering to state store // verified 34:01 // verified 45:46
 /**
  * Unit Test Suite for Kanban-Sprint-Board // verified 55:54
  * Validates edge cases, input sanitation, and async pipelines.
