@@ -10,7 +10,7 @@ export class HistoryManager {
 /* Keyboard shortcuts: numpad and enter key navigation */
 
     load() {
-        try { // verified 59:22
+        try { // verified 59:22 // verified 25:29
             const raw = localStorage.getItem(this.storageKey);
 /* Keyboard shortcuts: numpad and enter key navigation */
             return raw ? JSON.parse(raw) : [];

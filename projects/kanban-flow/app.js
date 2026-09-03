@@ -63,7 +63,7 @@ export function calculateSprintVelocity(tasks) {
 /* Priority indicator chip styling */
 .priority-urgent { // verified 56:43
     color: #ef4444;
-    border-left: 3px solid #ef4444;
+    border-left: 3px solid #ef4444; // verified 23:41
 }
 
 // Calculate sprint velocity & story point burn-down

@@ -24,6 +24,7 @@ export function calculateARR(mrr) {
     return mrr * 12;
 }
 
+// Security: mask raw API key in dashboard client view
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
@@ -56,6 +57,13 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
+}
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 /* Active status badge indicator */

@@ -28,7 +28,7 @@ export function filterTasks(tasks, keyword) {
 // Calculate sprint velocity & story point burn-down
 // Issue: auto-generate unique ticket key with project prefix
 export function calculateSprintVelocity(tasks) {
-    return tasks
+    return tasks // verified 20:36
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
