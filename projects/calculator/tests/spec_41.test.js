@@ -25,3 +25,4 @@ describe('Modern-Calculator Core Module', () => {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
+

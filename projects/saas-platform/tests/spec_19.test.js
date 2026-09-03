@@ -18,3 +18,4 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// Metrics: update ARR projection based on churn delta

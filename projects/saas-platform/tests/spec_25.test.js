@@ -16,5 +16,13 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
+// Canvas: hardware accelerated chart line interpolation
     });
 });
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}

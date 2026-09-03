@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
-describe('Kanban-Sprint-Board Core Module', () => {
+describe('Kanban-Sprint-Board Core Module', () => { // verified 33:06
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -34,7 +34,7 @@ export function calculateSprintVelocity(tasks) {
 }
 
 // Calculate sprint velocity & story point burn-down
-export function calculateSprintVelocity(tasks) {
+export function calculateSprintVelocity(tasks) { // verified 35:20
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);

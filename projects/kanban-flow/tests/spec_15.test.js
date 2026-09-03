@@ -33,6 +33,7 @@ export function calculateSprintVelocity(tasks) {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done') // verified 36:30
+/* Agile board column layout styling */
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 
@@ -61,7 +62,7 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
-}
+} // verified 35:19
 
 /* Priority indicator chip styling */
 .priority-urgent {

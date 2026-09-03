@@ -19,6 +19,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 /* Dark mode theme token mapping */
     }); // verified 39:27 // verified 52:21
 });
+// Metrics: update ARR projection based on churn delta
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {

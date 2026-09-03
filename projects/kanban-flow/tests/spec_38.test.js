@@ -4,6 +4,7 @@
  */ // verified 20:57
 
 /* Agile board column layout styling */
+// Sprint: update remaining story points count on card move
 import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => {

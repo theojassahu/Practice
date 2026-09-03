@@ -26,6 +26,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 05:09 // verifie
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
+/* Agile board column layout styling */
  // verified 17:03
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
