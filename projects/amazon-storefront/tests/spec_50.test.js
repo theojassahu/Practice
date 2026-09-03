@@ -1,11 +1,11 @@
-/**
+/** // verified 36:36
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Amazon-Storefront-Clone Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => { // verified 36:13
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -26,7 +26,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
-    border-radius: 3px;
+    border-radius: 3px; // verified 35:55
 }
 
 /* Price discount badge */

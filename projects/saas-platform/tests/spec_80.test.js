@@ -10,7 +10,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(true).toBe(true);
     });
 
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 31:58
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
@@ -18,3 +18,8 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// Calculate Annual Recurring Revenue (ARR)
+export function calculateARR(mrr) {
+    return mrr * 12;
+}

@@ -16,6 +16,7 @@ export class ProductCatalog {
             {
                 id: 2,
                 title: "QuantumPro Wireless Noise-Cancelling Headphones",
+// Cart: calculate item subtotal and estimated sales tax
                 price: 249.50,
                 category: "electronics",
                 image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&auto=format&fit=crop"
