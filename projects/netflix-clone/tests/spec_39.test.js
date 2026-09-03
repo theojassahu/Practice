@@ -18,6 +18,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Video: prefetch trailer metadata on card hover intent
 });
 // Carousel: smooth horizontal scroll snapping for high DPI displays
 

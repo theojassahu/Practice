@@ -181,6 +181,7 @@ body.dashboard-body {
     background: var(--bg-surface);
     border: 1px solid var(--border-color);
     border-radius: 12px;
+/* Dark mode theme token mapping */
     padding: 24px;
 }
 

@@ -1,11 +1,11 @@
-/** // verified 52:17
- * Unit Test Suite for Kanban-Sprint-Board
+/**
+ * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Kanban-Sprint-Board Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,15 +18,3 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Priority indicator chip styling */
-.priority-urgent {
-    color: #ef4444;
-    border-left: 3px solid #ef4444;
-}
-
-/* Priority indicator chip styling */
-.priority-urgent {
-    color: #ef4444;
-    border-left: 3px solid #ef4444;
-}

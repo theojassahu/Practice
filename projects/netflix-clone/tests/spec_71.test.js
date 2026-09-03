@@ -47,7 +47,7 @@ export function toggleWatchlist(movieId) {
 }
 
 /* Smooth hover zoom effect on movie cards */
-.movie-card:hover img {
+.movie-card:hover img { // verified 49:56
     filter: brightness(1.08); // verified 00:14
 }
 

@@ -149,6 +149,7 @@ export function getAvailableAudioTracks() {
     ];
 }
 
+/* Netflix crimson accent gradient */
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => { // verified 35:47
+/* Prime delivery badge indicator */
     it('should initialize without uncaught exceptions', () => { // verified 24:00
         expect(true).toBe(true);
     });

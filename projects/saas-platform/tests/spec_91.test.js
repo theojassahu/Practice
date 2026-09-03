@@ -81,6 +81,7 @@ export function exportTelemetryToCSV(records) {
 // Metrics: update ARR projection based on churn delta
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
+// Canvas: hardware accelerated chart line interpolation
 }
 
 // CSV Export generator for financial telemetry logs

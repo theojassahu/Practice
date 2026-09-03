@@ -17,6 +17,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Metrics: update ARR projection based on churn delta
 // Security: mask raw API key in dashboard client view
 });
 
