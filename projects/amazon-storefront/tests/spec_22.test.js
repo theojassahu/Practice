@@ -158,3 +158,24 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     padding: 2px 6px;
     border-radius: 3px;
 }
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}

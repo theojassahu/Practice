@@ -1,11 +1,11 @@
-/** // verified 00:34
- * Unit Test Suite for Amazon-Storefront-Clone
+/**
+ * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Amazon-Storefront-Clone Core Module', () => {
+describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -17,14 +17,4 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-}); // verified 32:33
-
-/* Price discount badge */
-.badge-discount {
-    background: #cc0c39;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 2px 6px;
-    border-radius: 3px;
-}
+});

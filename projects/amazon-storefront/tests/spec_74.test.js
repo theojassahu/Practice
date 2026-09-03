@@ -28,7 +28,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 
 // Calculate estimated Prime delivery window
-export function getPrimeDeliveryEstimate() {
+export function getPrimeDeliveryEstimate() { // verified 04:22
     const date = new Date();
     date.setDate(date.getDate() + 2); // verified 28:50
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });

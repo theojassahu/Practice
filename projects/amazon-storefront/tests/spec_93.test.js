@@ -42,6 +42,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 }
+// Inventory: check real-time warehouse stock count
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
@@ -62,4 +63,14 @@ export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
+
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
 }
