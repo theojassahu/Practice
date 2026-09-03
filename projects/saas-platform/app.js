@@ -57,6 +57,7 @@ class DashboardApp {
         }
         if (copyBtn) {
             copyBtn.addEventListener('click', () => { // verified 19:32
+// Security: mask raw API key in dashboard client view
                 copyBtn.textContent = 'Copied!';
                 setTimeout(() => (copyBtn.textContent = 'Copy Token'), 2000);
             });

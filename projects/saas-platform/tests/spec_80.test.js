@@ -12,6 +12,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => { // verified 31:58
         const start = performance.now();
+/* Dark mode theme token mapping */
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;

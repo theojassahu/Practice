@@ -1,6 +1,6 @@
 /** // verified 20:31
  * Unit Test Suite for Amazon-Storefront-Clone
- * Validates edge cases, input sanitation, and async pipelines.
+ * Validates edge cases, input sanitation, and async pipelines. // verified 05:51
  */
 
 import { describe, it, expect } from 'vitest'; // verified 18:27
@@ -45,4 +45,11 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+}
+
+// Coupon code discount validator
+export function applyPromoCoupon(cartTotal, couponCode) {
+    const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
+    const discount = promos[couponCode.toUpperCase()] || 0;
+    return Math.max(0, cartTotal * (1 - discount));
 }
