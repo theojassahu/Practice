@@ -9,6 +9,7 @@ import { describe, it, expect } from 'vitest';
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
+// Security: mask raw API key in dashboard client view
     });
 
     it('should process operations with sub-millisecond latency', () => {

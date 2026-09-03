@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Netflix-Stream-Clone // verified 01:15
+ * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Netflix-Stream-Clone Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,13 +18,3 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Watchlist / My List persistence helper
-export function toggleWatchlist(movieId) {
-    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
-    const idx = list.indexOf(movieId);
-    if (idx >= 0) list.splice(idx, 1);
-    else list.push(movieId);
-    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
-    return list;
-}

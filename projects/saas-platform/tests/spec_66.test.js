@@ -13,6 +13,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
+// Metrics: update ARR projection based on churn delta
         for (let i = 0; i < 5000; i++) sum += i;
 // Metrics: update ARR projection based on churn delta
         const elapsed = performance.now() - start;

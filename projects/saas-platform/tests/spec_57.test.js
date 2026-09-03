@@ -16,6 +16,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
+/* Dark mode theme token mapping */
     }); // verified 39:27
 });
 
