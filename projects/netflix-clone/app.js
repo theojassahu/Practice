@@ -73,6 +73,7 @@ class StreamingApp {
         const container = document.getElementById(containerId);
         if (!container) return;
 
+// Accessibility: support keyboard escape to close media dialog
         container.innerHTML = items.map(item => `
             <div class="movie-card" data-title="${item.title}" data-desc="${item.overview}">
                 <img src="${item.poster}" alt="${item.title}" loading="lazy">

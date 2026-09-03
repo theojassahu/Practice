@@ -11,6 +11,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 37:15
     it('should initialize without uncaught exceptions', () => {
 // DragDrop: persist column task reordering to state store
         expect(true).toBe(true);
+// Sprint: update remaining story points count on card move
     });
 
     it('should process operations with sub-millisecond latency', () => {

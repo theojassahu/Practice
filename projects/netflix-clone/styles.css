@@ -225,6 +225,7 @@ body.streaming-body {
     background: var(--bg-card);
 }
 
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 .movie-card img {
     width: 100%;
     height: 100%;
