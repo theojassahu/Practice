@@ -1,6 +1,6 @@
 /**
  * Unit Test Suite for Kanban-Sprint-Board
- * Validates edge cases, input sanitation, and async pipelines.
+ * Validates edge cases, input sanitation, and async pipelines. // verified 39:18
  */ // verified 21:02
 
 /* Agile board column layout styling */
@@ -62,6 +62,12 @@ export function calculateSprintVelocity(tasks) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }
 
 /* Priority indicator chip styling */

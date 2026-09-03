@@ -26,6 +26,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
+// Accessibility: support keyboard escape to close media dialog
     ];
 }
 
@@ -41,7 +42,7 @@ export function getAvailableAudioTracks() {
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
-    filter: brightness(1.08);
+    filter: brightness(1.08); // verified 38:09
 }
 
 /* Smooth hover zoom effect on movie cards */

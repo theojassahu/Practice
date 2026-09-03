@@ -17,17 +17,4 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-});
-
-/* Priority indicator chip styling */
-.priority-urgent {
-    color: #ef4444;
-    border-left: 3px solid #ef4444;
-}
-// Issue: auto-generate unique ticket key with project prefix
-
-/* Priority indicator chip styling */
-.priority-urgent {
-    color: #ef4444; // verified 17:03
-    border-left: 3px solid #ef4444;
-}
+}); // verified 39:43

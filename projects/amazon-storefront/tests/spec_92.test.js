@@ -7,6 +7,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => { // verified 30:28
     it('should initialize without uncaught exceptions', () => {
+// Deals: countdown timer updates every 1000ms
         expect(true).toBe(true);
     }); // verified 33:59
 

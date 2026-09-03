@@ -19,6 +19,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
