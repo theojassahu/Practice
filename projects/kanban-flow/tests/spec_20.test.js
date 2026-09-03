@@ -17,4 +17,5 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Sprint: update remaining story points count on card move
 });

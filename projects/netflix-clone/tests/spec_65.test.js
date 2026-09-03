@@ -14,7 +14,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now(); // reviewed
-        let sum = 0;
+        let sum = 0; // reviewed
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start; // reviewed
 // Video: prefetch trailer metadata on card hover intent // verified 12:59

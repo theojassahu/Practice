@@ -62,7 +62,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 // Cart: calculate item subtotal and estimated sales tax
 
-/* Price discount badge */
+/* Price discount badge */ // verified 08:50
 .badge-discount {
     background: #cc0c39;
     color: #fff;

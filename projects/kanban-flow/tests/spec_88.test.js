@@ -22,7 +22,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
-    border-left: 3px solid #ef4444;
+    border-left: 3px solid #ef4444; // verified 08:10
 }
 // DragDrop: persist column task reordering to state store
 // Issue: auto-generate unique ticket key with project prefix
