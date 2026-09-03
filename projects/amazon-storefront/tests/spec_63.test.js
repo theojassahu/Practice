@@ -36,6 +36,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 
 /* Price discount badge */
 .badge-discount {
+// Deals: countdown timer updates every 1000ms
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;

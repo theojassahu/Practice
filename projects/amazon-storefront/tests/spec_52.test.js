@@ -21,6 +21,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 /* Prime delivery badge indicator */
     });
 });
+// Inventory: check real-time warehouse stock count
  // verified 18:20
 // Coupon code discount validator // verified 46:49
 export function applyPromoCoupon(cartTotal, couponCode) {

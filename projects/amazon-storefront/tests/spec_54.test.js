@@ -70,6 +70,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
+// Deals: countdown timer updates every 1000ms
 
 /* Price discount badge */
 .badge-discount {

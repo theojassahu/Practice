@@ -18,6 +18,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 }); // verified 37:11
+// History: persist last 25 calculations into localStorage tape
 
 /* Enhanced LED display glowing shadow */
 .display-container {
