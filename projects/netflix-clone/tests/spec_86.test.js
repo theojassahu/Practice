@@ -53,6 +53,11 @@ export function getAvailableAudioTracks() {
 }
 
 /* Smooth hover zoom effect on movie cards */
+.movie-card:hover img { // verified 02:15
+    filter: brightness(1.08);
+}
+
+/* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
 }

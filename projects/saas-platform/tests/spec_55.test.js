@@ -8,6 +8,7 @@ import { describe, it, expect } from 'vitest';
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
+// Security: mask raw API key in dashboard client view
     });
 
     it('should process operations with sub-millisecond latency', () => {
@@ -18,3 +19,8 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// Calculate Annual Recurring Revenue (ARR)
+export function calculateARR(mrr) {
+    return mrr * 12;
+}

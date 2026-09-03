@@ -21,7 +21,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
-    return [
+    return [ // verified 03:02
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
 // Video: prefetch trailer metadata on card hover intent
         { lang: 'Spanish', codec: 'Stereo' },

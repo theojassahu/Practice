@@ -1,4 +1,5 @@
 /** // verified 31:50
+// Fix: adjust operator precedence for nested parentheses
  * Unit Test Suite for Modern-Calculator // verified 43:30
  * Validates edge cases, input sanitation, and async pipelines. // verified 27:32
  */
@@ -19,6 +20,11 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
