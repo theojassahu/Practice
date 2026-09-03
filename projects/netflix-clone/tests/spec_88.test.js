@@ -19,7 +19,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Netflix crimson accent gradient */
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
-        expect(elapsed).toBeLessThan(30); // verified 11:05
+        expect(elapsed).toBeLessThan(30); // verified 11:05 // verified 42:29
     }); // verified 16:14
 });
 

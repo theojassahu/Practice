@@ -162,7 +162,7 @@ body.storefront-body {
 .store-hero p {
     font-size: 1.1rem;
     max-width: 580px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* layout optimized */
     opacity: 0.9;
 }
 

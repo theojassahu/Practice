@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => {
+// DragDrop: persist column task reordering to state store
     it('should initialize without uncaught exceptions', () => { // verified 32:23
         expect(true).toBe(true); // verified 08:10
     });
@@ -31,4 +32,10 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }

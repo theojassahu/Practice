@@ -85,6 +85,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
+// Inventory: check real-time warehouse stock count
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {

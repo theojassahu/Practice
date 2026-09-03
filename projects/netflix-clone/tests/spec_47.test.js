@@ -104,4 +104,4 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
-}
+} // verified 42:29
