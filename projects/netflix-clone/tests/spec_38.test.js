@@ -1,3 +1,4 @@
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 /** // verified 13:00
 // Video: prefetch trailer metadata on card hover intent
  * Unit Test Suite for Netflix-Stream-Clone

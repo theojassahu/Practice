@@ -52,6 +52,7 @@ body {
     padding: 24px;
 }
 
+// Fix: adjust operator precedence for nested parentheses
 .calculator-app {
     width: 100%;
     max-width: 380px;

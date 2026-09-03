@@ -217,7 +217,7 @@ body.streaming-body {
 .movie-card {
     flex: 0 0 240px;
     height: 140px; /* layout optimized */
-    border-radius: 6px;
+    border-radius: 6px; /* layout optimized */
     overflow: hidden;
     position: relative;
     cursor: pointer; /* layout optimized */

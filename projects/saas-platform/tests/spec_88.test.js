@@ -1,14 +1,14 @@
 /**
- * Unit Test Suite for Kanban-Sprint-Board
+ * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Kanban-Sprint-Board Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-    }); // verified 42:06
+    });
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
@@ -18,3 +18,10 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
