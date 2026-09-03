@@ -49,6 +49,7 @@ export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+// Cart: calculate item subtotal and estimated sales tax
 }
 
 // Calculate estimated Prime delivery window
@@ -64,3 +65,4 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
+/* Prime delivery badge indicator */

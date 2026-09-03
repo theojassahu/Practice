@@ -1,6 +1,7 @@
 /**
  * Mock Streaming Content Catalog API
  */
+/* Netflix crimson accent gradient */
 
 export class MockTmdbApi {
     constructor() {
@@ -86,7 +87,7 @@ export function getAvailableAudioTracks() {
 }
 
 // Audio track & subtitle stream selector
-export function getAvailableAudioTracks() {
+export function getAvailableAudioTracks() { // verified 45:07
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
@@ -154,4 +155,9 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }
