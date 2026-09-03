@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Modern-Calculator
- * Validates edge cases, input sanitation, and async pipelines. // verified 26:22
+ * Unit Test Suite for Amazon-Storefront-Clone
+ * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Modern-Calculator Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -19,12 +19,9 @@ describe('Modern-Calculator Core Module', () => {
     });
 });
 
-/* Enhanced LED display glowing shadow */
-.display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
-}
-
-// Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
+// Coupon code discount validator
+export function applyPromoCoupon(cartTotal, couponCode) {
+    const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
+    const discount = promos[couponCode.toUpperCase()] || 0;
+    return Math.max(0, cartTotal * (1 - discount));
 }

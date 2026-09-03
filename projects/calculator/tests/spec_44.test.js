@@ -1,6 +1,6 @@
 /**
  * Unit Test Suite for Modern-Calculator
- * Validates edge cases, input sanitation, and async pipelines. // verified 26:22
+ * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
@@ -18,13 +18,3 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Enhanced LED display glowing shadow */
-.display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
-}
-
-// Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
-}

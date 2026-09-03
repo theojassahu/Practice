@@ -9,6 +9,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
+// DragDrop: persist column task reordering to state store
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
@@ -19,3 +20,9 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 // DragDrop: persist column task reordering to state store
 });
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}

@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Modern-Calculator
- * Validates edge cases, input sanitation, and async pipelines. // verified 26:22
+ * Unit Test Suite for Kanban-Sprint-Board
+ * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Modern-Calculator Core Module', () => {
+describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,13 +18,3 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Enhanced LED display glowing shadow */
-.display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
-}
-
-// Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
-}

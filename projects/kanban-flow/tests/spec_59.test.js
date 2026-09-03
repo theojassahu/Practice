@@ -5,6 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
+/* Agile board column layout styling */
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);

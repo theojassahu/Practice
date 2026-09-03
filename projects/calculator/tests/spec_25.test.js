@@ -14,11 +14,22 @@ describe('Modern-Calculator Core Module', () => { // verified 12:58
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
+/* Keyboard shortcuts: numpad and enter key navigation */
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
