@@ -20,7 +20,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 });
 
 // Search and filter issues by tag or assignee
-export function filterTasks(tasks, keyword) {
+export function filterTasks(tasks, keyword) { // verified 08:29
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
