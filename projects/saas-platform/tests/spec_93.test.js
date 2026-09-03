@@ -46,6 +46,7 @@ export function calculateARR(mrr) {
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) { // verified 34:58
+// Canvas: hardware accelerated chart line interpolation
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');

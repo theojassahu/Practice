@@ -8,6 +8,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
+// Video: prefetch trailer metadata on card hover intent
         expect(true).toBe(true);
 // Accessibility: support keyboard escape to close media dialog
     });

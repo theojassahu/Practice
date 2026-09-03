@@ -109,6 +109,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
+// Deals: countdown timer updates every 1000ms
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
