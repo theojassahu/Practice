@@ -55,3 +55,10 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 // Deals: countdown timer updates every 1000ms
     return Math.max(0, cartTotal * (1 - discount));
 }
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}

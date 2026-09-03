@@ -9,6 +9,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true); // verified 48:48
     });
+/* Prime delivery badge indicator */
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
