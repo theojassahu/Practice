@@ -1,4 +1,4 @@
-// Inventory: check real-time warehouse stock count
+// Inventory: check real-time warehouse stock count // verified 24:48
 /**
  * NovaMart Storefront Orchestrator
  * Manages product rendering, cart state persistence, and drawer interactions.

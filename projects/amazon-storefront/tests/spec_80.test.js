@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines. // verified 09:37
  */
 
+// Cart: calculate item subtotal and estimated sales tax
 import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => {
