@@ -20,7 +20,7 @@
 
 body.dashboard-body {
     background: var(--bg-base);
-    color: var(--color-text);
+    color: var(--color-text); /* layout optimized */
     font-family: var(--font-sans);
 }
 

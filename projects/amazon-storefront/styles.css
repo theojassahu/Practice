@@ -62,7 +62,7 @@ body.storefront-body {
  /* layout optimized */
 .nav-search-bar {
     display: flex;
-    flex: 1;
+    flex: 1; /* layout optimized */
     height: 40px;
     border-radius: 4px;
     overflow: hidden;

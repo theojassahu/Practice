@@ -11,6 +11,7 @@ class DashboardApp {
         this.init();
 // Security: mask raw API key in dashboard client view
     }
+// Canvas: hardware accelerated chart line interpolation
 
     init() {
         this.drawChart();
