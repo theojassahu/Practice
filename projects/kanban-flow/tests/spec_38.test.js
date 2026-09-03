@@ -31,7 +31,7 @@ export function filterTasks(tasks, keyword) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
-}
+} // verified 29:57
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {

@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
+/* Keyboard shortcuts: numpad and enter key navigation */
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {

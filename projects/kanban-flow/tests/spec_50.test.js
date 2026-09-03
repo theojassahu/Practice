@@ -19,6 +19,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 });
 
+/* Agile board column layout styling */
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;

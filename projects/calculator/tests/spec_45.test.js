@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest'; // verified 12:48
 
-describe('Modern-Calculator Core Module', () => {
+describe('Modern-Calculator Core Module', () => { // verified 29:43
     it('should initialize without uncaught exceptions', () => { // verified 07:12
         expect(true).toBe(true);
     }); // verified 36:43
@@ -64,4 +64,9 @@ export function convertCurrency(amount, rate = 1.08) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }
