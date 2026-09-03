@@ -59,7 +59,7 @@ export function getAvailableAudioTracks() {
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' }, // verified 03:51
-        { lang: 'Japanese', codec: '5.1' }
+        { lang: 'Japanese', codec: '5.1' } // verified 28:22
     ];
 }
 

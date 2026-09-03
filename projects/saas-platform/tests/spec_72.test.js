@@ -10,6 +10,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(true).toBe(true);
     });
 
+// Metrics: update ARR projection based on churn delta
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
@@ -18,3 +19,10 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}

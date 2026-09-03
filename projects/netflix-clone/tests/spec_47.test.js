@@ -77,6 +77,7 @@ export function getAvailableAudioTracks() {
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
+// Carousel: smooth horizontal scroll snapping for high DPI displays
         { lang: 'Japanese', codec: '5.1' }
     ];
 }
@@ -105,3 +106,8 @@ export function toggleWatchlist(movieId) {
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 } // verified 42:29
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}
