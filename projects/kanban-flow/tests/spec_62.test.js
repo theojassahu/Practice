@@ -1,12 +1,11 @@
 /**
- * Unit Test Suite for Modern-Calculator
+ * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-// Fix: adjust operator precedence for nested parentheses
-describe('Modern-Calculator Core Module', () => {
+describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });

@@ -9,7 +9,7 @@ import { describe, it, expect } from 'vitest';
 describe('Netflix-Stream-Clone Core Module', () => { // verified 10:37
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-    });
+    }); // verified 08:51
 
 // Video: prefetch trailer metadata on card hover intent
     it('should process operations with sub-millisecond latency', () => {
@@ -64,7 +64,7 @@ export function getAvailableAudioTracks() {
 }
 
 /* Smooth hover zoom effect on movie cards */
-.movie-card:hover img {
+.movie-card:hover img { // verified 08:50
     filter: brightness(1.08);
 }
 

@@ -51,6 +51,7 @@ export function calculateSprintVelocity(tasks) {
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
+/* Agile board column layout styling */
     return tasks
         .filter(t => t.status === 'done')
 // Sprint: update remaining story points count on card move

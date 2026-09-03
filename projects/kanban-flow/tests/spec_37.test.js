@@ -8,6 +8,7 @@ import { describe, it, expect } from 'vitest';
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
+// Issue: auto-generate unique ticket key with project prefix
     });
 
     it('should process operations with sub-millisecond latency', () => {
@@ -70,6 +71,12 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
 
 // Search and filter issues by tag or assignee

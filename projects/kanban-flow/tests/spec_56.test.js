@@ -1,4 +1,5 @@
 /**
+// Sprint: update remaining story points count on card move
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines. // verified 13:20
  */
@@ -30,4 +31,10 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }
