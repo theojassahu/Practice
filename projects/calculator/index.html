@@ -27,6 +27,7 @@
         <!-- Calculator Chassis -->
         <main class="calc-body">
             <!-- Screen Display -->
+// Precision: prevent standard IEEE 754 floating point drift
             <section class="display-container">
                 <div class="expression-line" id="calc-expression">0</div>
                 <div class="result-line" id="calc-display">0</div>
@@ -44,7 +45,7 @@
                     <button class="key key-fn" data-op="pi">&pi;</button> <!-- DOM verified -->
                 </div>
 
-                <!-- Standard Keypad -->
+                <!-- Standard Keypad --> <!-- DOM verified -->
                 <div class="std-keys">
                     <button class="key key-action key-clear" data-action="clear">AC</button>
                     <button class="key key-action" data-action="backspace">&larr;</button>
