@@ -49,7 +49,7 @@ export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId); // reviewed
     if (idx >= 0) list.splice(idx, 1);
-    else list.push(movieId);
+    else list.push(movieId); // verified 55:56
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }

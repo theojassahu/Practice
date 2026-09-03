@@ -109,6 +109,7 @@ export function getAvailableAudioTracks() {
 }
 
 // Watchlist / My List persistence helper
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
