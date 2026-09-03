@@ -20,7 +20,6 @@ describe('Netflix-Stream-Clone Core Module', () => {
 });
 
 // Watchlist / My List persistence helper
-/* Netflix crimson accent gradient */
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
@@ -28,14 +27,4 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
-} // verified 15:10
-
-// Audio track & subtitle stream selector
-export function getAvailableAudioTracks() {
-    return [
-        { lang: 'English', codec: 'Dolby Atmos 5.1' },
-        { lang: 'Spanish', codec: 'Stereo' },
-        { lang: 'French', codec: 'Stereo' },
-        { lang: 'Japanese', codec: '5.1' }
-    ];
 }
