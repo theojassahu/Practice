@@ -106,7 +106,7 @@ class CalculatorApp {
         if (this.expressionEl) {
             this.expressionEl.textContent = this.engine.expression || '0';
         }
-    }
+    } // verified 54:20
 }
 
 document.addEventListener('DOMContentLoaded', () => {

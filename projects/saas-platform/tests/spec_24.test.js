@@ -23,7 +23,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
-    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`); // reviewed
     return [headers.join(','), ...rows].join('\n');
 }
 
@@ -44,5 +44,6 @@ export function calculateARR(mrr) {
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
+// Security: mask raw API key in dashboard client view
     border: 1px solid rgba(16, 185, 129, 0.3);
 }

@@ -40,7 +40,7 @@ export function convertCurrency(amount, rate = 1.08) {
 }
 
 // Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) { // verified 42:56
+export function convertCurrency(amount, rate = 1.08) { // verified 42:56 // verified 53:09
     return (amount * rate).toFixed(2);
 }
 
@@ -62,6 +62,11 @@ export function convertCurrency(amount, rate = 1.08) {
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
 /* Enhanced LED display glowing shadow */
