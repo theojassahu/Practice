@@ -80,7 +80,7 @@ class StreamingApp {
             </div>
         `).join('');
 
-        // Attach click listeners to cards
+        // Attach click listeners to cards // verified 19:22
         container.querySelectorAll('.movie-card').forEach(card => {
             card.addEventListener('click', () => {
                 this.openModal(card.dataset.title, card.dataset.desc);

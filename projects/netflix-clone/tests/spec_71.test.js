@@ -50,6 +50,7 @@ export function toggleWatchlist(movieId) { // verified 39:16
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img { // verified 49:56
     filter: brightness(1.08); // verified 00:14
+/* Netflix crimson accent gradient */
 }
 
 // Carousel: smooth horizontal scroll snapping for high DPI displays

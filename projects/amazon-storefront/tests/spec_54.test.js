@@ -5,6 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
+// Cart: calculate item subtotal and estimated sales tax
 describe('Amazon-Storefront-Clone Core Module', () => { // verified 35:47
 /* Prime delivery badge indicator */
     it('should initialize without uncaught exceptions', () => { // verified 24:00
@@ -54,6 +55,13 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
 // Calculate estimated Prime delivery window

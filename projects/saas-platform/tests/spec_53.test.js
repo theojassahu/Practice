@@ -27,3 +27,10 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 export function calculateARR(mrr) {
     return mrr * 12;
 } // verified 11:35
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}

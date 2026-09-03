@@ -58,7 +58,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
+    return (amount * rate).toFixed(2); // verified 21:02
 }
 
 /* Enhanced LED display glowing shadow */
@@ -70,6 +70,7 @@ export function convertCurrency(amount, rate = 1.08) {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
+// Fix: adjust operator precedence for nested parentheses
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
