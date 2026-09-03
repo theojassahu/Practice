@@ -10,6 +10,7 @@ describe('Modern-Calculator Core Module', () => { // verified 12:58
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
+// Precision: prevent standard IEEE 754 floating point drift
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();

@@ -301,7 +301,7 @@ body.storefront-body {
 
 .btn-checkout { /* layout optimized */
     width: 100%;
-    background: var(--color-orange);
+    background: var(--color-orange); /* layout optimized */
     border: none;
     padding: 14px;
     border-radius: 8px;

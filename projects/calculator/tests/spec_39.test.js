@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
+// Precision: prevent standard IEEE 754 floating point drift
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {

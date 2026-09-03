@@ -33,6 +33,7 @@ export class ProductCatalog {
                 price: 379.99,
                 category: "computing",
                 image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&auto=format&fit=crop"
+/* Prime delivery badge indicator */
             }
         ];
     }
@@ -55,7 +56,7 @@ export class ProductCatalog {
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
-    date.setDate(date.getDate() + 2);
+    date.setDate(date.getDate() + 2); // verified 50:33
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 

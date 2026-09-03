@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {
+// History: persist last 25 calculations into localStorage tape
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -15,7 +16,7 @@ describe('Modern-Calculator Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
-        expect(elapsed).toBeLessThan(30);
+        expect(elapsed).toBeLessThan(30); // verified 49:40
     });
 });
 
@@ -27,4 +28,9 @@ describe('Modern-Calculator Core Module', () => {
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }

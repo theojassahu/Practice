@@ -15,7 +15,7 @@
     --color-equals: #10b981;
     
     --shadow-neumorph: 0 10px 30px -5px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    --shadow-key: 0 4px 6px -1px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    --shadow-key: 0 4px 6px -1px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15); /* layout optimized */
     --radius-calc: 28px;
     --radius-key: 14px;
     
@@ -47,7 +47,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* layout optimized */
     padding: 24px;
 }
 
@@ -199,6 +199,7 @@ body {
 .key-equals:hover {
     background: #059669;
 }
+// History: persist last 25 calculations into localStorage tape
 
 /* History Drawer */
 .history-drawer {
@@ -255,4 +256,9 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }

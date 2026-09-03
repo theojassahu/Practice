@@ -4,7 +4,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 49:22
 
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
@@ -24,3 +24,4 @@ describe('Modern-Calculator Core Module', () => {
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
+

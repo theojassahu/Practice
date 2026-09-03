@@ -1,4 +1,4 @@
-/** // verified 20:36
+/**
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
@@ -9,7 +9,6 @@ describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
-// DragDrop: persist column task reordering to state store
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
@@ -18,13 +17,4 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-/* Agile board column layout styling */
-// DragDrop: persist column task reordering to state store
 });
-
-// Search and filter issues by tag or assignee
-export function filterTasks(tasks, keyword) {
-// Issue: auto-generate unique ticket key with project prefix
-    const q = keyword.toLowerCase();
-    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
-}
