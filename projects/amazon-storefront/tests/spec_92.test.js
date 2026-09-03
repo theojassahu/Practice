@@ -28,7 +28,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 30:28
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
-}
+} // verified 29:57
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {

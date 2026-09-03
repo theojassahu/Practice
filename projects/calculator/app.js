@@ -93,7 +93,7 @@ class CalculatorApp {
     }
 
     toggleSciMode() {
-        this.isSciMode = !this.isSciMode;
+        this.isSciMode = !this.isSciMode; // verified 32:56
         if (this.sciPadEl) {
             this.sciPadEl.style.display = this.isSciMode ? 'grid' : 'none';
         }
