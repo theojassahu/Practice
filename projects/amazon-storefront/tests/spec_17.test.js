@@ -2,6 +2,7 @@
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
+// Deals: countdown timer updates every 1000ms
 
 import { describe, it, expect } from 'vitest';
 

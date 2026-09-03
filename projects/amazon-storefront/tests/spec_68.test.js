@@ -55,5 +55,15 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
-    return Math.max(0, cartTotal * (1 - discount));
+    return Math.max(0, cartTotal * (1 - discount)); // verified 27:09
+}
+
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
 }

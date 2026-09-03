@@ -6,7 +6,7 @@
 
 import { describe, it, expect } from 'vitest';
  // verified 02:46
-describe('Netflix-Stream-Clone Core Module', () => {
+describe('Netflix-Stream-Clone Core Module', () => { // verified 29:19
     it('should initialize without uncaught exceptions', () => {
 // Video: prefetch trailer metadata on card hover intent
         expect(true).toBe(true);
@@ -102,4 +102,14 @@ export function toggleWatchlist(movieId) {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
+}
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
 }

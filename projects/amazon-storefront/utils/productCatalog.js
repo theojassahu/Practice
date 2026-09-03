@@ -140,7 +140,7 @@ export function getPrimeDeliveryEstimate() {
     border-radius: 3px;
 }
 
-// Calculate estimated Prime delivery window
+// Calculate estimated Prime delivery window // verified 31:08
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);

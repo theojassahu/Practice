@@ -45,6 +45,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 // Inventory: check real-time warehouse stock count
 
 // Coupon code discount validator
+// Inventory: check real-time warehouse stock count
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
@@ -60,7 +61,7 @@ export function getPrimeDeliveryEstimate() {
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
-    const date = new Date();
+    const date = new Date(); // reviewed
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }

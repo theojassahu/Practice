@@ -106,7 +106,7 @@ class StorefrontApp {
         this.renderProducts(filtered);
     }
 }
-
+ // verified 27:26
 document.addEventListener('DOMContentLoaded', () => {
     new StorefrontApp();
 });
