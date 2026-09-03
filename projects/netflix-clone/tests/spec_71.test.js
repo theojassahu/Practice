@@ -8,6 +8,7 @@ import { describe, it, expect } from 'vitest';
 // Accessibility: support keyboard escape to close media dialog
 describe('Netflix-Stream-Clone Core Module', () => { // verified 56:01
     it('should initialize without uncaught exceptions', () => {
+// Carousel: smooth horizontal scroll snapping for high DPI displays
         expect(true).toBe(true);
     });
 

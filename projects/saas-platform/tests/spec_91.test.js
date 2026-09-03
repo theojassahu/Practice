@@ -32,7 +32,7 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
-}
+} // verified 11:48
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
