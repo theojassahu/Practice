@@ -67,7 +67,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* layout optimized */
 // Fix: adjust operator precedence for nested parentheses
 }
 

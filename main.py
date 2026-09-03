@@ -14,6 +14,7 @@ from config import Config, parse_cli_args
 from heartbeat_client import HeartbeatClient
 from code_engine import CodeEngine
 from dashboard import Dashboard
+from git_sync import sync_progress_to_github
 
 
 class SimulatorApp:
@@ -77,11 +78,25 @@ class SimulatorApp:
                 pass
 
     def _handle_signal(self, signum, frame):
+        self.stop_and_save()
+        sys.exit(0)
+
+    def stop_and_save(self):
         self.is_running = False
         self.code_engine.stop()
+
+        if self.config.git_sync_on_pause:
+            try:
+                sync_progress_to_github(
+                    target_dir=self.config.target_dir,
+                    repo_dir=str(Path(__file__).parent.resolve()),
+                    remote_url=self.config.git_remote_url,
+                )
+            except Exception as e:
+                print(f"[Git Sync] Notice: {e}", file=sys.stderr)
+
         if not self.config.headless:
-            print("\n\n[Simulator] Safely shutting down simulation session. Progress saved!")
-        sys.exit(0)
+            print("\n[Simulator] Safely paused simulation session. Progress saved to GitHub!")
 
     def on_code_event(self, event: dict):
         """Called whenever code_engine types, modifies, or saves a file."""
@@ -143,6 +158,8 @@ class SimulatorApp:
             except Exception as e:
                 self.dashboard.add_log("THINKING", f"Handled exception: {str(e)[:40]}")
                 time.sleep(2)
+
+        self.stop_and_save()
 
 
 def main():

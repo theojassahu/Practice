@@ -135,6 +135,7 @@ class Dashboard:
         hb_mode_text = f"{BRIGHT_GREEN}ACTIVE (HTTP 202){RESET}" if self.enable_heartbeat else f"{YELLOW}DISABLED{RESET}"
         output.append(f" {BOLD}Project:{RESET} {BRIGHT_CYAN}{self.project_name}{RESET}  |  {BOLD}Speed:{RESET} {BRIGHT_MAGENTA}{self.speed_mode.upper()}{RESET}  |  {BOLD}Heartbeat:{RESET} {hb_mode_text}")
         output.append(f" {BOLD}Target Folder:{RESET} {DIM}{display_dir}{RESET}")
+        output.append(f" {BOLD}Git Remote:{RESET}    {CYAN}https://github.com/theojassahu/Practice.git{RESET} {BRIGHT_GREEN}(Auto-sync on Pause){RESET}")
         output.append(f"{DIM}─────────────────────────────────────────────────────────────────────────────{RESET}")
 
         # Metrics Grid

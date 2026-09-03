@@ -113,6 +113,16 @@ class Config:
             or local_cfg.get("dynamic_project_name", True)
         )
 
+        self.git_sync_on_pause = bool(
+            (cli_args and getattr(cli_args, "git_sync", None) is not None and cli_args.git_sync)
+            or local_cfg.get("git_sync_on_pause", True)
+        )
+
+        self.git_remote_url = (
+            (cli_args and getattr(cli_args, "git_remote", None))
+            or local_cfg.get("git_remote_url", "https://github.com/theojassahu/Practice.git")
+        )
+
         self.rate_limit_seconds = int(
             (cli_args and cli_args.rate_limit)
             or local_cfg.get("rate_limit_seconds")
@@ -145,6 +155,8 @@ class Config:
             "speed": self.speed,
             "enable_heartbeat": self.enable_heartbeat,
             "dynamic_project_name": self.dynamic_project_name,
+            "git_sync_on_pause": self.git_sync_on_pause,
+            "git_remote_url": self.git_remote_url,
             "headless": self.headless,
             "rate_limit_seconds": self.rate_limit_seconds,
         }
