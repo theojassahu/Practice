@@ -103,6 +103,7 @@ body.kanban-body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+// Issue: auto-generate unique ticket key with project prefix
     overflow-y: auto;
 }
  /* layout optimized */

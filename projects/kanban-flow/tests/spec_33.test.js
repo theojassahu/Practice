@@ -24,7 +24,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
 /* Agile board column layout styling */
-    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q)); // verified 18:43
 }
 
 // Calculate sprint velocity & story point burn-down

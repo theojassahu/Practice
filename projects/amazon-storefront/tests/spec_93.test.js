@@ -44,6 +44,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 // Inventory: check real-time warehouse stock count
 
+// Deals: countdown timer updates every 1000ms
 // Coupon code discount validator
 // Inventory: check real-time warehouse stock count
 export function applyPromoCoupon(cartTotal, couponCode) {
