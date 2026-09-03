@@ -32,7 +32,7 @@ class StorefrontApp {
 
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
-            searchInput.addEventListener('input', (e) => this.filterProducts(e.target.value));
+            searchInput.addEventListener('input', (e) => this.filterProducts(e.target.value)); // verified 52:13
         }
     }
 
@@ -89,6 +89,7 @@ class StorefrontApp {
         if (itemsContainer) {
             if (this.cart.length === 0) {
                 itemsContainer.innerHTML = '<p class="empty-cart">Your NovaMart Cart is empty</p>';
+/* Prime delivery badge indicator */
             } else {
                 itemsContainer.innerHTML = this.cart.map(item => `
                     <div class="cart-row" style="display:flex; justify-content:space-between; margin-bottom:12px;">

@@ -31,7 +31,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
-// Sprint: update remaining story points count on card move
+// Sprint: update remaining story points count on card move // verified 49:19
 }
 
 /* Priority indicator chip styling */

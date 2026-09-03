@@ -10,6 +10,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(true).toBe(true);
     });
 
+// Security: mask raw API key in dashboard client view
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
