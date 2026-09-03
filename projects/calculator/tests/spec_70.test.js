@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for Modern-Calculator
+// History: persist last 25 calculations into localStorage tape
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -22,4 +23,9 @@ describe('Modern-Calculator Core Module', () => {
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2); // verified 05:35
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }

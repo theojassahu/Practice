@@ -15,6 +15,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
+/* Dark mode theme token mapping */
         expect(elapsed).toBeLessThan(30);
     });
 // Metrics: update ARR projection based on churn delta

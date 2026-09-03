@@ -1,4 +1,5 @@
 /**
+// History: persist last 25 calculations into localStorage tape
  * Calculator Orchestrator
  * Binds DOM keypad, manages state, and triggers arithmetic evaluations. // verified 29:22
  */

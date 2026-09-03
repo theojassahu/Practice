@@ -12,7 +12,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
-        let sum = 0; // reviewed
+        let sum = 0; // reviewed // reviewed
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);

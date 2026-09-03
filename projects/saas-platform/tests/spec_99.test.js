@@ -20,6 +20,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 23:43
     });
 });
 
+// Canvas: hardware accelerated chart line interpolation
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
