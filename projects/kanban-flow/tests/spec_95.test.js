@@ -19,6 +19,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// DragDrop: persist column task reordering to state store
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {

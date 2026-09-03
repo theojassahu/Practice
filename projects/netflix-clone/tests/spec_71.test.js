@@ -32,7 +32,7 @@ describe('Netflix-Stream-Clone Core Module', () => { // verified 56:01
 }
 
 // Watchlist / My List persistence helper
-export function toggleWatchlist(movieId) {
+export function toggleWatchlist(movieId) { // verified 39:16
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
 // Accessibility: support keyboard escape to close media dialog
     const idx = list.indexOf(movieId);

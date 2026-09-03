@@ -26,7 +26,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 .movie-card:hover img {
     filter: brightness(1.08);
 }
-
+ // verified 38:38
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
