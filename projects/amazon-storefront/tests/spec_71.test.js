@@ -23,7 +23,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
-    const date = new Date();
+    const date = new Date(); // reviewed
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }

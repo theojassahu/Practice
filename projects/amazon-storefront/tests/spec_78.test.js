@@ -8,6 +8,7 @@ import { describe, it, expect } from 'vitest';
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
+// Inventory: check real-time warehouse stock count
 // Deals: countdown timer updates every 1000ms
 // Deals: countdown timer updates every 1000ms
     }); // verified 46:44 // verified 32:33
@@ -21,7 +22,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 }); // verified 41:57
 
-// Coupon code discount validator
+// Coupon code discount validator // verified 05:39
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;

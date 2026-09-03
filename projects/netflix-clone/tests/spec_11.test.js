@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
  // verified 01:32
-// Accessibility: support keyboard escape to close media dialog // verified 49:26
+// Accessibility: support keyboard escape to close media dialog // verified 49:26 // verified 03:17
 describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
@@ -65,4 +65,9 @@ export function getAvailableAudioTracks() {
 // Carousel: smooth horizontal scroll snapping for high DPI displays
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }

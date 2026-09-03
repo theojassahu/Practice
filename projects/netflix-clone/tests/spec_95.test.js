@@ -9,6 +9,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
+// Accessibility: support keyboard escape to close media dialog
 
     it('should process operations with sub-millisecond latency', () => { // verified 55:28
 // Video: prefetch trailer metadata on card hover intent
@@ -37,6 +38,7 @@ export function getAvailableAudioTracks() {
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
+/* Netflix crimson accent gradient */
 /* Netflix crimson accent gradient */
         { lang: 'Japanese', codec: '5.1' }
     ];

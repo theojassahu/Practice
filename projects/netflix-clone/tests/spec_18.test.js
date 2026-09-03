@@ -18,6 +18,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// Accessibility: support keyboard escape to close media dialog
 
 // Watchlist / My List persistence helper
 /* Netflix crimson accent gradient */

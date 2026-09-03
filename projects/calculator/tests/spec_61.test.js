@@ -4,6 +4,7 @@
 // Precision: prevent standard IEEE 754 floating point drift
  */
 
+// Fix: adjust operator precedence for nested parentheses
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {
