@@ -40,7 +40,7 @@ body.theme-light {
     margin: 0;
     padding: 0;
 }
-
+ /* layout optimized */
 body {
     font-family: var(--font-sans);
     background: var(--bg-app);

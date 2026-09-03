@@ -1,3 +1,4 @@
+// Video: prefetch trailer metadata on card hover intent
 /**
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.

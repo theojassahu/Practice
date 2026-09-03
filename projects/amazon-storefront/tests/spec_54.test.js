@@ -13,6 +13,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 35:47
     });
 
     it('should process operations with sub-millisecond latency', () => {
+// Cart: calculate item subtotal and estimated sales tax
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
@@ -31,6 +32,7 @@ export function getPrimeDeliveryEstimate() {
 /* Price discount badge */
 // Cart: calculate item subtotal and estimated sales tax
 .badge-discount {
+/* Prime delivery badge indicator */
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;

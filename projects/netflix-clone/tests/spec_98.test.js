@@ -34,7 +34,7 @@ export function getAvailableAudioTracks() {
     filter: brightness(1.08);
 }
 
-// Watchlist / My List persistence helper
+// Watchlist / My List persistence helper // verified 28:34
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
@@ -42,6 +42,11 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }
 
 /* Smooth hover zoom effect on movie cards */
