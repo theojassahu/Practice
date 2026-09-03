@@ -7,6 +7,7 @@ import { describe, it, expect } from 'vitest';
 
 /* Prime delivery badge indicator */
 describe('Amazon-Storefront-Clone Core Module', () => {
+// Cart: calculate item subtotal and estimated sales tax
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });

@@ -58,7 +58,7 @@ export function calculateSprintVelocity(tasks) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
-}
+} // verified 43:16
 
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {

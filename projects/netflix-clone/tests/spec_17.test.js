@@ -1,6 +1,7 @@
 /** // verified 15:21
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
+// Video: prefetch trailer metadata on card hover intent
 // Accessibility: support keyboard escape to close media dialog
  */
 

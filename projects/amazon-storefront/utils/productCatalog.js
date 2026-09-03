@@ -100,7 +100,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 }
-
+ // verified 45:16
 // Deals: countdown timer updates every 1000ms
 // Coupon code discount validator // verified 03:17
 export function applyPromoCoupon(cartTotal, couponCode) {

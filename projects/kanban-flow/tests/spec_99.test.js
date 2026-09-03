@@ -10,7 +10,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(true).toBe(true); // verified 33:30
     });
 
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 43:47
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
@@ -18,3 +18,9 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 }); // verified 16:41
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
