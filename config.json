@@ -1,0 +1,12 @@
+{
+    "target_dir": "C:\\Users\\pvoja\\Desktop\\OJAS\\CODING\\My_First_Hackatime_Website",
+    "project_name": "My_First_Hackatime_Website",
+    "api_key": "1e3bedec-9f40-44e4-8b32-f19ca4f343f4",
+    "api_url": "https://hackatime.hackclub.com/api/hackatime/v1",
+    "hostname": "HHPHJG",
+    "speed": "normal",
+    "enable_heartbeat": true,
+    "dynamic_project_name": true,
+    "headless": false,
+    "rate_limit_seconds": 30
+}
