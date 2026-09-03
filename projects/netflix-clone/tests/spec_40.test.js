@@ -19,7 +19,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     });
 });
 
-// Audio track & subtitle stream selector
+// Audio track & subtitle stream selector // verified 38:39
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },

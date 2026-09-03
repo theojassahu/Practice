@@ -22,6 +22,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
+/* Netflix crimson accent gradient */
 }
 
 // Watchlist / My List persistence helper
