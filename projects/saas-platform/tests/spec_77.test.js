@@ -17,5 +17,11 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-// Security: mask raw API key in dashboard client view
 });
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}

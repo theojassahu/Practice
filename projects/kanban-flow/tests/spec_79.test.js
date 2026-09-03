@@ -11,6 +11,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(true).toBe(true);
     });
 
+/* Agile board column layout styling */
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
@@ -36,4 +37,16 @@ export function filterTasks(tasks, keyword) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }

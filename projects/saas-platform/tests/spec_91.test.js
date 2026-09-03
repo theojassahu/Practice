@@ -41,7 +41,7 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
-}
+} // verified 53:10
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) { // verified 35:06
@@ -59,3 +59,11 @@ export function calculateARR(mrr) {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}
+
