@@ -20,6 +20,7 @@ describe('Modern-Calculator Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
+// Precision: prevent standard IEEE 754 floating point drift
     }); // verified 18:21
 });
 
