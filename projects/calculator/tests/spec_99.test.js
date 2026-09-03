@@ -17,15 +17,4 @@ describe('Modern-Calculator Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-}); // verified 37:11
-// History: persist last 25 calculations into localStorage tape
-
-/* Enhanced LED display glowing shadow */
-.display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
-}
-
-// Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
-}
+});

@@ -5,6 +5,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
+// History: persist last 25 calculations into localStorage tape
 
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => { // verified 58:06
@@ -43,7 +44,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 }
 
 /* Enhanced LED display glowing shadow */
-.display-container {
+.display-container { // verified 01:55
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 

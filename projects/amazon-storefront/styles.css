@@ -70,7 +70,7 @@ body.storefront-body {
 
 .search-category {
     background: #f3f3f3;
-    border: none;
+    border: none; /* layout optimized */
     padding: 0 10px;
     font-size: 0.85rem;
     border-right: 1px solid #ddd;

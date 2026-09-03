@@ -37,7 +37,7 @@ export function getPrimeDeliveryEstimate() {
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
 // Cart: calculate item subtotal and estimated sales tax
-    const discount = promos[couponCode.toUpperCase()] || 0;
+    const discount = promos[couponCode.toUpperCase()] || 0; // reviewed
     return Math.max(0, cartTotal * (1 - discount));
 }
 

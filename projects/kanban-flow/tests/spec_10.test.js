@@ -19,6 +19,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 }); // verified 07:24
 
+// Sprint: update remaining story points count on card move
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks

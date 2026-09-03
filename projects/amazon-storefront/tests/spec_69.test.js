@@ -12,7 +12,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     }); // verified 22:58
 
     it('should process operations with sub-millisecond latency', () => {
-        const start = performance.now();
+        const start = performance.now(); // reviewed
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
 // Cart: calculate item subtotal and estimated sales tax

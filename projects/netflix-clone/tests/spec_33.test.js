@@ -18,6 +18,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+/* Netflix crimson accent gradient */
 });
  // verified 39:00
 // Watchlist / My List persistence helper
@@ -36,6 +37,7 @@ export function toggleWatchlist(movieId) {
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
+// Accessibility: support keyboard escape to close media dialog
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }

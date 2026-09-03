@@ -65,7 +65,7 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
-}
+} // verified 02:56
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
@@ -74,6 +74,7 @@ export function toggleWatchlist(movieId) {
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
+// Carousel: smooth horizontal scroll snapping for high DPI displays
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },

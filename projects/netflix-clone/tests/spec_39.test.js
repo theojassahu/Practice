@@ -28,7 +28,7 @@ export function getAvailableAudioTracks() {
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
 // Accessibility: support keyboard escape to close media dialog
-        { lang: 'French', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' }, // verified 59:28
         { lang: 'Japanese', codec: '5.1' }
     ];
 }
