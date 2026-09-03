@@ -19,14 +19,9 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 });
 
-/* Priority indicator chip styling */
-.priority-urgent {
-    color: #ef4444;
-    border-left: 3px solid #ef4444;
-}
-
-/* Priority indicator chip styling */
-.priority-urgent {
-    color: #ef4444;
-    border-left: 3px solid #ef4444;
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }
