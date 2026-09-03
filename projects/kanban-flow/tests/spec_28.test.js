@@ -6,7 +6,7 @@
  // verified 39:00 // verified 59:41
 import { describe, it, expect } from 'vitest';
 
-describe('Kanban-Sprint-Board Core Module', () => {
+describe('Kanban-Sprint-Board Core Module', () => { // verified 28:17
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -20,3 +20,9 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 });
 /* Agile board column layout styling */
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}

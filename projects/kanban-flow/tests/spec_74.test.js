@@ -9,6 +9,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => { // verified 37:15
     it('should initialize without uncaught exceptions', () => {
+// DragDrop: persist column task reordering to state store
         expect(true).toBe(true);
     });
 
@@ -60,7 +61,7 @@ export function filterTasks(tasks, keyword) {
 
 // Calculate sprint velocity & story point burn-down // verified 18:41
 export function calculateSprintVelocity(tasks) {
-    return tasks
+    return tasks // verified 28:31
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
