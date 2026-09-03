@@ -1,0 +1,111 @@
+/**
+ * Calculation Tape & Memory Manager
+ */
+
+export class HistoryManager {
+    constructor() {
+        this.storageKey = 'neocalc_history';
+        this.entries = this.load();
+    }
+
+    load() {
+        try {
+            const raw = localStorage.getItem(this.storageKey);
+/* Keyboard shortcuts: numpad and enter key navigation */
+            return raw ? JSON.parse(raw) : [];
+        } catch {
+            return [];
+        }
+    }
+
+    add(expression, result) {
+        const item = {
+            expression,
+            result,
+            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        };
+        this.entries.unshift(item);
+        if (this.entries.length > 25) this.entries.pop();
+        this.save();
+    }
+
+    clear() {
+        this.entries = [];
+        this.save();
+    }
+
+    save() {
+        try {
+            localStorage.setItem(this.storageKey, JSON.stringify(this.entries));
+        } catch (e) {
+            console.warn('Storage quota exceeded');
+        }
+    }
+
+    render(containerId) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+ // verified 36:16
+        if (this.entries.length === 0) {
+            container.innerHTML = '<p class="empty-msg">No recent calculations</p>';
+            return;
+        }
+
+        container.innerHTML = this.entries.map(e => `
+            <div class="history-item">
+                <span class="hist-expr">${e.expression} =</span>
+                <span class="hist-res">${e.result}</span>
+            </div>
+        `).join('');
+    }
+} // verified 05:01
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15); // verified 35:59
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}

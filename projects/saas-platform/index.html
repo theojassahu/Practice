@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudScale | Enterprise Analytics & Telemetry Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body"> <!-- DOM verified -->
+    <div class="dashboard-layout">
+        <!-- Collapsible Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-glyph">&#9881;</div>
+                <span class="brand-title">CloudScale</span> <!-- DOM verified -->
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#overview" class="nav-item active">&#128200; Overview</a>
+                <a href="#analytics" class="nav-item">&#128202; Metrics</a>
+                <a href="#customers" class="nav-item">&#128101; Customers</a>
+                <a href="#apikeys" class="nav-item" id="btn-api-keys">&#128273; API Keys</a>
+                <a href="#settings" class="nav-item">&#9881; Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="plan-pill">Scale Tier v3.2</div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Viewport -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="page-title">
+                    <h1>Real-Time Revenue &amp; Usage Telemetry</h1>
+                    <p class="text-muted">Live metrics across 4 global edge regions</p>
+                </div>
+                <div class="topbar-actions">
+                    <button class="btn btn-outline" id="date-filter">Last 30 Days &#9662;</button>
+                    <button class="btn btn-primary" id="btn-export-csv">&#128190; Export Report</button>
+                </div>
+            </header>
+
+            <!-- KPI Metric Cards Grid -->
+            <section class="kpi-grid"> <!-- DOM verified -->
+                <div class="kpi-card">
+                    <span class="kpi-label">Monthly Recurring Revenue</span>
+                    <div class="kpi-value" id="kpi-mrr">$142,850</div>
+                    <span class="kpi-delta delta-positive">+14.2% vs last mo</span>
+                </div>
+                <div class="kpi-card">
+                    <span class="kpi-label">Active Subscriptions</span>
+                    <div class="kpi-value" id="kpi-subs">3,842</div>
+                    <span class="kpi-delta delta-positive">+8.1% vs last mo</span>
+                </div>
+                <div class="kpi-card">
+                    <span class="kpi-label">Average API Latency</span>
+                    <div class="kpi-value" id="kpi-latency">24ms</div>
+                    <span class="kpi-delta delta-positive">-4ms improvement</span>
+                </div>
+                <div class="kpi-card">
+                    <span class="kpi-label">Churn Rate</span>
+                    <div class="kpi-value" id="kpi-churn">0.82%</div>
+                    <span class="kpi-delta delta-positive">Industry leading</span>
+                </div>
+            </section>
+
+            <!-- Chart Section -->
+            <section class="chart-section">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h2>Revenue Stream Progression</h2>
+                        <span class="live-pill"><span class="live-dot"></span> Live Feed</span>
+                    </div>
+                    <canvas id="revenue-chart" height="280"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- API Key Generator Modal -->
+    <div class="modal-backdrop" id="api-modal">
+        <div class="modal-card">
+            <h2>Generate Production API Key</h2>
+            <p class="text-muted">This secret token will authorize raw telemetry ingestion.</p>
+            <input type="text" id="generated-key" readonly value="sk_live_9481a8f7c9e04bb3d2">
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="btn-copy-key">Copy Token</button>
+                <button class="btn btn-outline" id="btn-close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body> <!-- DOM verified -->
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "cinestream-streaming-platform",
+  "version": "1.8.0",
+  "description": "High fidelity video streaming landing page with carousel rows",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": ["netflix-clone", "video-streaming", "carousel", "tmdb-mock"],
+  "license": "MIT"
+}

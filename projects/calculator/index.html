@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoCalc | Modern Scientific Web Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+    <div class="calculator-app">
+        <!-- Top Toolbar -->
+        <header class="calc-header">
+            <div class="app-brand">
+                <span class="calc-icon">&#9670;</span>
+                <span class="brand-name">NeoCalc <span class="badge">Pro</span></span>
+            </div>
+            <div class="calc-controls">
+                <button id="mode-toggle" class="btn-tool" title="Toggle Scientific Mode">&#9638; Sci</button>
+                <button id="history-toggle" class="btn-tool" title="View Calculation History">&#9776; History</button>
+                <button id="theme-btn" class="btn-tool" title="Toggle Light/Dark Theme">&#9728;</button>
+            </div>
+        </header>
+
+        <!-- Calculator Chassis -->
+        <main class="calc-body">
+            <!-- Screen Display -->
+            <section class="display-container">
+                <div class="expression-line" id="calc-expression">0</div>
+                <div class="result-line" id="calc-display">0</div>
+            </section>
+ <!-- DOM verified -->
+            <!-- Keypad Matrix -->
+            <section class="keypad-grid" id="keypad">
+                <!-- Scientific Row (collapsible) -->
+                <div class="sci-keys" id="sci-pad">
+                    <button class="key key-fn" data-op="sin">sin</button>
+                    <button class="key key-fn" data-op="cos">cos</button>
+                    <button class="key key-fn" data-op="tan">tan</button>
+                    <button class="key key-fn" data-op="sqrt">&radic;</button>
+                    <button class="key key-fn" data-op="pow">x&sup2;</button>
+                    <button class="key key-fn" data-op="pi">&pi;</button> <!-- DOM verified -->
+                </div>
+
+                <!-- Standard Keypad -->
+                <div class="std-keys">
+                    <button class="key key-action key-clear" data-action="clear">AC</button>
+                    <button class="key key-action" data-action="backspace">&larr;</button>
+                    <button class="key key-action" data-action="percent">%</button>
+                    <button class="key key-operator" data-op="/">&divide;</button>
+
+                    <button class="key key-num" data-num="7">7</button>
+                    <button class="key key-num" data-num="8">8</button>
+                    <button class="key key-num" data-num="9">9</button>
+                    <button class="key key-operator" data-op="*">&times;</button>
+
+                    <button class="key key-num" data-num="4">4</button>
+                    <button class="key key-num" data-num="5">5</button>
+                    <button class="key key-num" data-num="6">6</button>
+                    <button class="key key-operator" data-op="-">&minus;</button>
+
+                    <button class="key key-num" data-num="1">1</button>
+                    <button class="key key-num" data-num="2">2</button>
+                    <button class="key key-num" data-num="3">3</button>
+                    <button class="key key-operator" data-op="+">+</button>
+
+                    <button class="key key-num key-zero" data-num="0">0</button>
+                    <button class="key key-num" data-num=".">.</button>
+                    <button class="key key-equals" data-action="calculate">=</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Calculation Tape History Drawer -->
+        <aside class="history-drawer" id="history-drawer">
+            <div class="history-header">
+                <h3>Calculation Tape</h3>
+                <button id="clear-history" class="btn-text">Clear</button>
+            </div>
+            <div class="history-list" id="history-items">
+                <p class="empty-msg">No recent calculations</p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

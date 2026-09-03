@@ -1,0 +1,12 @@
+{
+  "name": "cloudscale-analytics",
+  "version": "3.2.0",
+  "description": "Enterprise cloud telemetry and revenue metrics platform",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": ["saas", "dashboard", "analytics", "canvas-chart"],
+  "license": "MIT"
+}

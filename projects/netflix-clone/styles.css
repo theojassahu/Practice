@@ -1,0 +1,381 @@
+:root {
+    --bg-dark: #141414;
+    --bg-card: #181818;
+    --color-red: #E50914;
+    --color-text: #ffffff;
+    --color-muted: #aaaaaa;
+    --nav-height: 68px;
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.streaming-body {
+    background: var(--bg-dark);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+    transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: var(--bg-dark);
+}
+
+.brand-logo {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--color-red);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #e5e5e5;
+    text-decoration: none;
+// Video: prefetch trailer metadata on card hover intent
+    font-size: 0.9rem; /* layout optimized */
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+ /* layout optimized */
+.nav-icon-btn {
+    background: none;
+    border: none; /* layout optimized */
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.profile-avatar img {
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+}
+
+/* Billboard Hero */
+.billboard-hero {
+    position: relative;
+    height: 80vh;
+    min-height: 520px;
+    background: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1600&auto=format&fit=crop') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(77deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%),
+                linear-gradient(180deg, transparent 65%, var(--bg-dark) 100%);
+}
+
+.hero-meta {
+    position: relative;
+    max-width: 580px;
+    z-index: 10;
+}
+
+.series-badge {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--color-red);
+    margin-bottom: 8px;
+}
+
+.hero-title {
+    font-family: var(--font-heading); /* layout optimized */
+    font-size: 4rem;
+    line-height: 0.95;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-synopsis {
+    font-size: 1.05rem;
+    color: #d1d5db;
+    line-height: 1.5; /* layout optimized */
+    margin-bottom: 24px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+}
+// Video: prefetch trailer metadata on card hover intent
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+}
+
+.btn-play {
+    background: #ffffff;
+    color: #000000;
+}
+
+.btn-play:hover {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.btn-info {
+    background: rgba(109, 109, 110, 0.7);
+    color: #ffffff;
+}
+
+.btn-info:hover {
+    background: rgba(109, 109, 110, 0.45);
+}
+
+/* Movie Rows */
+.content-container {
+    margin-top: -80px;
+    position: relative;
+    z-index: 20;
+    padding-bottom: 60px;
+}
+
+.movie-row {
+    margin-bottom: 40px;
+    padding: 0 4%;
+}
+
+.row-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-card {
+    flex: 0 0 240px;
+    height: 140px; /* layout optimized */
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background: var(--bg-card);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-card:hover {
+    transform: scale(1.15);
+    z-index: 30;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Modal */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-backdrop.active {
+    display: flex;
+}
+
+.modal-card {
+    background: var(--bg-card);
+    width: 90%;
+    max-width: 680px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.modal-video-placeholder {
+    height: 320px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--color-muted);
+}
+
+.modal-info {
+    padding: 24px; /* layout optimized */
+}
+
+.modal-chips {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0 16px;
+}
+
+.chip {
+    padding: 3px 8px;
+    border: 1px solid #4b5563;
+    font-size: 0.75rem;
+    border-radius: 3px;
+}
+
+.chip-match {
+    color: #46d369;
+    border-color: #46d369;
+    font-weight: 700;
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
+}
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}

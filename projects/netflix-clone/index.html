@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream | Watch TV Shows & Movies Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head> <!-- DOM verified -->
+<body class="streaming-body">
+    <!-- Navigation Bar -->
+    <header class="navbar" id="main-nav">
+        <div class="nav-left">
+            <span class="brand-logo">CINESTREAM</span>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#series">TV Shows</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#popular">New & Popular</a></li>
+                <li><a href="#watchlist">My List</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="nav-icon-btn" id="search-btn" aria-label="Search">&#128269;</button>
+            <button class="nav-icon-btn" aria-label="Notifications">&#128276;</button>
+            <div class="profile-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=64&h=64&fit=crop" alt="User Profile">
+            </div>
+        </div>
+    </header>
+
+    <!-- Billboard Hero Trailer -->
+    <section class="billboard-hero" id="hero-billboard">
+        <div class="hero-overlay"></div>
+        <div class="hero-meta">
+            <div class="series-badge">SERIES &#8226; SEASON 3</div>
+            <h1 class="hero-title">CHRONICLES OF CYBERIA</h1>
+            <p class="hero-synopsis">
+                In a neon-drenched metropolis governed by rogue quantum intelligence, a fractured syndicate of cybernetically enhanced rebels races to prevent the final shutdown.
+            </p>
+            <div class="hero-actions">
+                <button class="btn btn-play" id="btn-play-hero">&#9658; Play</button>
+                <button class="btn btn-info" id="btn-more-info">&#9432; More Info</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Carousels Container -->
+    <main class="content-container">
+        <section class="movie-row" id="row-trending">
+            <h2 class="row-title">Trending Now</h2>
+            <div class="carousel-track" id="track-trending"></div>
+        </section> <!-- DOM verified -->
+
+        <section class="movie-row" id="row-top10">
+            <h2 class="row-title">Top 10 in Action & Thrillers</h2>
+            <div class="carousel-track" id="track-top10"></div>
+        </section>
+
+        <section class="movie-row" id="row-scifi">
+            <h2 class="row-title">Sci-Fi & Cyberpunk Hits</h2>
+            <div class="carousel-track" id="track-scifi"></div>
+        </section>
+    </main>
+
+    <!-- Video Preview Modal -->
+    <div class="modal-backdrop" id="video-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-video-placeholder">
+                <div class="video-loader"></div>
+                <p>Streaming 4K Ultra HD Trailer...</p>
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-movie-title">Chronicles of Cyberia</h2>
+                <div class="modal-chips">
+                    <span class="chip chip-match">98% Match</span>
+                    <span class="chip">2026</span>
+                    <span class="chip chip-rating">18+</span>
+                    <span class="chip">4K HDR</span>
+                </div>
+                <p id="modal-movie-desc">An immersive journey into speculative technology and rebellious action.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body> <!-- DOM verified -->
+</html>

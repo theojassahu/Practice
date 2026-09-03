@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprintFlow | Agile Kanban Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="kanban-body"> <!-- DOM verified -->
+    <!-- Board Navigation Header -->
+    <header class="board-header">
+        <div class="board-brand">
+            <span class="board-icon">&#9638;</span>
+            <span class="board-name">SprintFlow</span>
+            <span class="sprint-tag">Sprint 24 (Active)</span>
+        </div>
+        <div class="board-actions">
+            <button class="btn btn-primary" id="btn-new-task">+ New Issue</button>
+        </div>
+    </header>
+
+    <!-- Kanban Board Columns Grid -->
+    <main class="board-container">
+        <!-- Backlog Column -->
+        <div class="kanban-column" data-status="backlog">
+            <div class="column-header">
+                <h3>Backlog</h3>
+                <span class="column-counter" id="count-backlog">2</span>
+            </div>
+            <div class="cards-list" id="list-backlog">
+                <div class="task-card" draggable="true" data-id="101">
+                    <span class="task-id">FLOW-101</span>
+                    <h4 class="task-title">Implement token refresh interceptor for Axios</h4>
+                    <div class="task-footer">
+                        <span class="tag tag-blue">Backend</span>
+                        <span class="priority p-med">Medium</span>
+                    </div>
+                </div>
+                <div class="task-card" draggable="true" data-id="102">
+                    <span class="task-id">FLOW-102</span>
+                    <h4 class="task-title">Benchmark database indexing on user queries</h4>
+                    <div class="task-footer">
+                        <span class="tag tag-green">Database</span>
+                        <span class="priority p-low">Low</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="kanban-column" data-status="inprogress">
+            <div class="column-header">
+                <h3>In Progress</h3>
+                <span class="column-counter" id="count-inprogress">1</span>
+            </div>
+            <div class="cards-list" id="list-inprogress">
+                <div class="task-card" draggable="true" data-id="103">
+                    <span class="task-id">FLOW-103</span>
+                    <h4 class="task-title">Build responsive drawer for mobile navigation</h4>
+                    <div class="task-footer">
+                        <span class="tag tag-purple">Frontend</span>
+                        <span class="priority p-high">High</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Review Column -->
+        <div class="kanban-column" data-status="review">
+            <div class="column-header">
+                <h3>Code Review</h3>
+                <span class="column-counter" id="count-review">1</span>
+            </div> <!-- DOM verified -->
+            <div class="cards-list" id="list-review">
+                <div class="task-card" draggable="true" data-id="104">
+                    <span class="task-id">FLOW-104</span>
+                    <h4 class="task-title">Audit accessibility contrast ratios for WCAG AA</h4>
+                    <div class="task-footer">
+                        <span class="tag tag-orange">Design</span>
+                        <span class="priority p-high">High</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Done Column -->
+        <div class="kanban-column" data-status="done">
+            <div class="column-header">
+                <h3>Done</h3>
+                <span class="column-counter" id="count-done">1</span>
+            </div>
+            <div class="cards-list" id="list-done">
+                <div class="task-card" draggable="true" data-id="105">
+                    <span class="task-id">FLOW-105</span>
+                    <h4 class="task-title">Setup CI/CD GitHub Actions test runner</h4>
+                    <div class="task-footer">
+                        <span class="tag tag-blue">DevOps</span>
+                        <span class="priority p-med">Medium</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

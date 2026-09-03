@@ -1,0 +1,181 @@
+:root {
+    --bg-board: #0b1120;
+    --bg-column: #162032;
+    --bg-card: #1e293b;
+    --color-text: #f8fafc;
+    --color-muted: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.kanban-body {
+    background: var(--bg-board);
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-header {
+    height: 64px;
+    background: var(--bg-column);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.board-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.board-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.sprint-tag {
+    background: #0369a1;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Board Layout */
+.board-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+// Issue: auto-generate unique ticket key with project prefix
+    gap: 20px;
+    padding: 24px;
+    overflow-x: auto;
+}
+
+.kanban-column {
+// Issue: auto-generate unique ticket key with project prefix
+    background: var(--bg-column);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.column-counter {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.cards-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+/* Task Card */
+.task-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px;
+    cursor: grab;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.task-id {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    color: var(--color-muted);
+}
+
+.task-title {
+    font-size: 0.95rem;
+    margin: 8px 0 14px;
+    line-height: 1.4;
+}
+
+.task-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.tag {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.tag-blue { background: #1e3a8a; color: #93c5fd; }
+.tag-green { background: #14532d; color: #86efac; }
+.tag-purple { background: #581c87; color: #d8b4fe; }
+.tag-orange { background: #7c2d12; color: #fdba74; }
+
+.priority { font-weight: 700; }
+.p-high { color: #f87171; }
+.p-med { color: #fbbf24; }
+.p-low { color: #34d399; }
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}

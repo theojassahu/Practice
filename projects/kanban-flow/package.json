@@ -1,0 +1,12 @@
+{
+  "name": "sprintflow-kanban",
+  "version": "1.2.0",
+  "description": "Agile Kanban board with drag-and-drop task progression",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": ["kanban", "agile", "drag-and-drop", "sprint-board"],
+  "license": "MIT"
+}

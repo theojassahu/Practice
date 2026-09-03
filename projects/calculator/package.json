@@ -1,0 +1,13 @@
+{
+  "name": "neocalc-scientific",
+  "version": "2.1.0",
+  "description": "High precision scientific web calculator with calculation tape",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "keywords": ["calculator", "math-engine", "neumorphism", "scientific-calc"],
+  "license": "MIT"
+}

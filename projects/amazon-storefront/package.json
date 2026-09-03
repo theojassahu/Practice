@@ -1,0 +1,12 @@
+{
+  "name": "novamart-storefront",
+  "version": "1.4.0",
+  "description": "Amazon-style e-commerce marketplace with live cart and search",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": ["amazon-clone", "storefront", "e-commerce", "shopping-cart"],
+  "license": "MIT"
+}

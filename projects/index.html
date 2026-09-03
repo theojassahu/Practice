@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Workspace | Interactive Project Hub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+    <style>
+        :root {
+            --bg: #090e17;
+            --card: #111827;
+            --text: #f9fafb;
+            --muted: #9ca3af;
+            --accent: #3b82f6;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 48px 24px;
+        }
+        .container { max-width: 1140px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 48px; }
+        h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 12px; }
+        p.subtitle { color: var(--muted); font-size: 1.15rem; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .project-card {
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+        .icon { font-size: 2.4rem; margin-bottom: 16px; display: inline-block; }
+        .card-title { font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; }
+        .card-desc { color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px; }
+        .btn-launch {
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 700;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Engineering Workspace</h1>
+            <p class="subtitle">Multi-project portfolio featuring web calculators, streaming clones, storefronts, and cloud dashboards.</p>
+        </header>
+        <div class="grid">
+            <div class="project-card">
+                <div>
+                    <span class="icon">&#128223;</span>
+                    <h2 class="card-title">NeoCalc Pro</h2>
+                    <p class="card-desc">Neumorphic scientific web calculator with precision floating point evaluation and calculation tape history.</p>
+                </div>
+                <a href="calculator/index.html" class="btn-launch">Launch Calculator &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <span class="icon">&#127916;</span>
+                    <h2 class="card-title">CineStream</h2>
+                    <p class="card-desc">High-fidelity video streaming platform clone with billboard trailers, horizontal carousels, and preview modals.</p>
+                </div>
+                <a href="netflix-clone/index.html" class="btn-launch">Launch CineStream &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <span class="icon">&#128722;</span>
+                    <h2 class="card-title">NovaMart Storefront</h2>
+                    <p class="card-desc">Amazon/Prime e-commerce marketplace featuring department filtering, lightning deals, and slide-out cart drawer.</p>
+                </div>
+                <a href="amazon-storefront/index.html" class="btn-launch">Launch Storefront &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <span class="icon">&#128202;</span>
+                    <h2 class="card-title">CloudScale SaaS</h2>
+                    <p class="card-desc">Enterprise analytics and financial telemetry dashboard with interactive revenue charts and API key generator.</p>
+                </div>
+                <a href="saas-platform/index.html" class="btn-launch">Launch CloudScale &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <span class="icon">&#128203;</span>
+                    <h2 class="card-title">SprintFlow Kanban</h2>
+                    <p class="card-desc">Agile sprint task management board with HTML5 drag-and-drop progression across columns.</p>
+                </div>
+                <a href="kanban-flow/index.html" class="btn-launch">Launch SprintFlow &rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

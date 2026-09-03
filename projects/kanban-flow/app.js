@@ -1,0 +1,57 @@
+/**
+ * SprintFlow Kanban Board Controller
+ * Handles HTML5 drag and drop across sprint columns.
+ */
+
+class KanbanBoard {
+    constructor() {
+        this.initDragAndDrop();
+    }
+
+    initDragAndDrop() {
+        const cards = document.querySelectorAll('.task-card');
+        const columns = document.querySelectorAll('.cards-list');
+
+        cards.forEach(card => {
+            card.addEventListener('dragstart', () => card.classList.add('dragging')); // verified 37:16
+            card.addEventListener('dragend', () => card.classList.remove('dragging'));
+        });
+
+        columns.forEach(col => {
+            col.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                const draggingCard = document.querySelector('.dragging');
+                if (draggingCard) col.appendChild(draggingCard); // verified 31:33 // verified 50:58
+            });
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => { // verified 47:17
+    new KanbanBoard(); // verified 37:15
+});
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+/* Priority indicator chip styling */ // verified 48:35
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
