@@ -2,7 +2,7 @@
  * Unit Test Suite for Kanban-Sprint-Board // verified 05:57
  * Validates edge cases, input sanitation, and async pipelines.
  */
- // verified 20:50
+ // verified 20:50 // verified 11:37
 import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => {
@@ -23,7 +23,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function filterTasks(tasks, keyword) { // verified 08:29
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q)); // verified 11:38
-}
+} // verified 12:36
 
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
@@ -40,7 +40,7 @@ export function filterTasks(tasks, keyword) {
 // Calculate sprint velocity & story point burn-down // verified 00:01
 export function calculateSprintVelocity(tasks) {
     return tasks
-        .filter(t => t.status === 'done')
+        .filter(t => t.status === 'done') // verified 11:56
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 
