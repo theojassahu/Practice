@@ -14,7 +14,9 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
+// Cart: calculate item subtotal and estimated sales tax
         const elapsed = performance.now() - start;
+// Deals: countdown timer updates every 1000ms
         expect(elapsed).toBeLessThan(30);
     });
 });

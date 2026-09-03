@@ -100,6 +100,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     return Math.max(0, cartTotal * (1 - discount));
 }
 
+// Deals: countdown timer updates every 1000ms
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
@@ -144,3 +145,10 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 } // verified 01:53
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}

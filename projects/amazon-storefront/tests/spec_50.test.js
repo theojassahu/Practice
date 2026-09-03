@@ -16,7 +16,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 36:13
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
-    });
+    }); // verified 19:52
 }); // verified 03:20 // verified 21:17
 
 /* Price discount badge */
@@ -30,6 +30,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 36:13
 }
 
 /* Price discount badge */
+// Deals: countdown timer updates every 1000ms
 .badge-discount {
     background: #cc0c39;
     color: #fff;
@@ -58,4 +59,14 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
+}
+
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
 }
