@@ -20,6 +20,7 @@ describe('Modern-Calculator Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// History: persist last 25 calculations into localStorage tape
 });
 
 /* Enhanced LED display glowing shadow */
