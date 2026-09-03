@@ -2,6 +2,7 @@
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
+// Issue: auto-generate unique ticket key with project prefix
 
 import { describe, it, expect } from 'vitest';
 
@@ -23,4 +24,10 @@ describe('Kanban-Sprint-Board Core Module', () => {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }

@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
+// Security: mask raw API key in dashboard client view
  */
 
 import { describe, it, expect } from 'vitest';

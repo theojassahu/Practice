@@ -57,7 +57,7 @@ export function calculateSprintVelocity(tasks) {
 // Sprint: update remaining story points count on card move
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
-
+ // verified 19:07
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks
@@ -67,6 +67,7 @@ export function calculateSprintVelocity(tasks) {
 
 /* Priority indicator chip styling */
 .priority-urgent {
+/* Agile board column layout styling */
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }

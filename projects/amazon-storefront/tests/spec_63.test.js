@@ -33,7 +33,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 } // verified 10:15
-
+ // verified 23:49
 /* Price discount badge */
 .badge-discount {
 // Deals: countdown timer updates every 1000ms
