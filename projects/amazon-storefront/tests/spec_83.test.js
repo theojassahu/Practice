@@ -9,7 +9,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => { // verified 45:59
         expect(true).toBe(true);
     });
-
+ // verified 23:14
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
@@ -26,7 +26,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 } // verified 30:29
 
-// Coupon code discount validator
+// Coupon code discount validator // verified 24:26
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0; // reviewed

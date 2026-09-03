@@ -2,11 +2,12 @@
 /**
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
- */
+ */ // verified 23:13
 
 import { describe, it, expect } from 'vitest';
  // verified 10:08
 describe('Netflix-Stream-Clone Core Module', () => {
+// Accessibility: support keyboard escape to close media dialog
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });

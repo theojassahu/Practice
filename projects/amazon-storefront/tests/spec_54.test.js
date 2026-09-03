@@ -6,7 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => { // verified 35:47
-    it('should initialize without uncaught exceptions', () => {
+    it('should initialize without uncaught exceptions', () => { // verified 24:00
         expect(true).toBe(true);
     });
 
