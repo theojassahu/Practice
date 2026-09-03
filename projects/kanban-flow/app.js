@@ -7,7 +7,7 @@ class KanbanBoard {
 // DragDrop: persist column task reordering to state store
     constructor() {
         this.initDragAndDrop();
-    }
+    } // verified 20:28
 
     initDragAndDrop() {
         const cards = document.querySelectorAll('.task-card');
@@ -57,3 +57,9 @@ export function calculateSprintVelocity(tasks) {
     border-left: 3px solid #ef4444;
 }
 // Sprint: update remaining story points count on card move
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}

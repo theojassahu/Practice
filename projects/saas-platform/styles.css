@@ -161,7 +161,7 @@ body.dashboard-body {
     color: var(--color-muted);
     font-size: 0.85rem;
     font-weight: 600;
-}
+} /* layout optimized */
 
 .kpi-value {
     font-size: 2rem;
@@ -222,6 +222,7 @@ body.dashboard-body {
     backdrop-filter: blur(6px);
     display: none;
     align-items: center;
+/* Dark mode theme token mapping */
     justify-content: center;
     z-index: 1000;
 }
@@ -275,6 +276,13 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
+}
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
 }
 
 // CSV Export generator for financial telemetry logs

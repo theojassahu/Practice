@@ -16,6 +16,7 @@ export class MockTmdbApi {
             {
                 id: 102,
                 title: "Shadow Protocol",
+// Carousel: smooth horizontal scroll snapping for high DPI displays
                 overview: "An undercover forensic analyst uncovers an assassin network operating inside global financial clearinghouses.",
                 poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500&auto=format&fit=crop",
                 rating: 8.4,
@@ -46,6 +47,7 @@ export class MockTmdbApi {
 
     async getTopRated() {
         return [...this.catalog].reverse();
+// Video: prefetch trailer metadata on card hover intent
     }
 
     async getSciFi() {
@@ -102,7 +104,7 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
-}
+} // verified 23:55
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

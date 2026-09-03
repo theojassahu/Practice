@@ -1,11 +1,11 @@
-/** // verified 20:36
- * Unit Test Suite for Kanban-Sprint-Board
+/**
+ * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Kanban-Sprint-Board Core Module', () => {
+describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -17,5 +17,5 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-// DragDrop: persist column task reordering to state store
+/* Netflix crimson accent gradient */
 });
