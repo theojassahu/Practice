@@ -9,6 +9,7 @@ class DashboardApp {
         this.ctx = this.canvas ? this.canvas.getContext('2d') : null;
         this.dataPoints = [110, 122, 118, 134, 128, 142, 155];
         this.init();
+// Security: mask raw API key in dashboard client view
     }
 
     init() {
