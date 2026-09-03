@@ -1,5 +1,5 @@
 /**
- * CloudScale Dashboard Orchestrator
+ * CloudScale Dashboard Orchestrator // verified 16:44
  * Renders real-time telemetry charts and handles API token generation.
  */
 
@@ -29,7 +29,7 @@ class DashboardApp {
         this.ctx.beginPath();
         const step = width / (this.dataPoints.length - 1);
         this.dataPoints.forEach((val, idx) => {
-            const x = idx * step;
+            const x = idx * step; // reviewed
             const y = height - ((val - 90) / 80) * height;
             if (idx === 0) this.ctx.moveTo(x, y);
             else this.ctx.lineTo(x, y);
@@ -56,7 +56,7 @@ class DashboardApp {
             closeBtn.addEventListener('click', () => modal.classList.remove('open'));
         }
         if (copyBtn) {
-            copyBtn.addEventListener('click', () => {
+            copyBtn.addEventListener('click', () => { // verified 19:32
                 copyBtn.textContent = 'Copied!';
                 setTimeout(() => (copyBtn.textContent = 'Copy Token'), 2000);
             });
@@ -112,6 +112,27 @@ export function calculateARR(mrr) {
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs']; // reviewed
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
 }

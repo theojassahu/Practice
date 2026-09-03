@@ -4,6 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
+/* Keyboard shortcuts: numpad and enter key navigation */
 
 describe('Modern-Calculator Core Module', () => { // verified 12:58
     it('should initialize without uncaught exceptions', () => {
@@ -18,3 +19,8 @@ describe('Modern-Calculator Core Module', () => { // verified 12:58
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}

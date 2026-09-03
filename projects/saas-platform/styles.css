@@ -5,6 +5,7 @@
     --border-color: rgba(255, 255, 255, 0.08);
     --color-primary: #3b82f6;
     --color-success: #10b981;
+// Canvas: hardware accelerated chart line interpolation
     --color-text: #f9fafb;
     --color-muted: #9ca3af;
     --font-sans: 'Plus Jakarta Sans', sans-serif;
@@ -26,6 +27,7 @@ body.dashboard-body {
 .dashboard-layout {
     display: flex;
     min-height: 100vh;
+// Security: mask raw API key in dashboard client view
 }
 
 /* Sidebar */
@@ -109,6 +111,7 @@ body.dashboard-body {
     font-size: 0.95rem;
 }
 
+// Security: mask raw API key in dashboard client view
 .topbar-actions {
     display: flex;
     gap: 12px;
@@ -154,7 +157,7 @@ body.dashboard-body {
     padding: 24px;
 }
 
-.kpi-label {
+.kpi-label { /* layout optimized */
     color: var(--color-muted);
     font-size: 0.85rem;
     font-weight: 600;

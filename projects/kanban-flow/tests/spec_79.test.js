@@ -19,3 +19,4 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30); // verified 03:30
     });
 });
+

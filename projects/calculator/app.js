@@ -72,6 +72,7 @@ class CalculatorApp {
     }
 
     handleKeyboardInput(e) {
+/* Keyboard shortcuts: numpad and enter key navigation */
         if ((e.key >= '0' && e.key <= '9') || e.key === '.') {
             this.engine.inputDigit(e.key);
         } else if (['+', '-', '*', '/'].includes(e.key)) {

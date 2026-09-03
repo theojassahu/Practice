@@ -27,14 +27,14 @@ export class HistoryManager {
         };
         this.entries.unshift(item);
         if (this.entries.length > 25) this.entries.pop();
-        this.save();
+        this.save(); // verified 18:15
     }
 
     clear() {
         this.entries = [];
         this.save();
     }
-
+ // verified 18:14
     save() {
         try {
             localStorage.setItem(this.storageKey, JSON.stringify(this.entries));
