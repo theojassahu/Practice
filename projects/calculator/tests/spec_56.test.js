@@ -29,4 +29,10 @@ export function convertCurrency(amount, rate = 1.08) {
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2); // verified 06:16
+/* Keyboard shortcuts: numpad and enter key navigation */
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }

@@ -1,4 +1,4 @@
-/**
+/** // verified 29:25
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
  */
@@ -18,3 +18,8 @@ describe('Modern-Calculator Core Module', () => { // verified 50:48
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
