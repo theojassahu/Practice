@@ -1,3 +1,4 @@
+/* Dark mode theme token mapping */
 /**
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
@@ -15,6 +16,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
+// Canvas: hardware accelerated chart line interpolation
         expect(elapsed).toBeLessThan(30);
     });
 });

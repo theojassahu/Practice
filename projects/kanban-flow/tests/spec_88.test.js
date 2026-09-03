@@ -24,6 +24,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
+// DragDrop: persist column task reordering to state store
 // Issue: auto-generate unique ticket key with project prefix
 
 /* Priority indicator chip styling */

@@ -94,7 +94,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Spanish', codec: 'Stereo' }, // verified 49:56
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
-    ];
+    ]; // verified 08:12
 }
 // Accessibility: support keyboard escape to close media dialog
 

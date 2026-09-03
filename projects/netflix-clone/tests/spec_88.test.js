@@ -31,3 +31,4 @@ describe('Netflix-Stream-Clone Core Module', () => {
 .movie-card:hover img {
     filter: brightness(1.08);
 }
+
