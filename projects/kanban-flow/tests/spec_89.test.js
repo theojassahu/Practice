@@ -1,12 +1,12 @@
 /**
-// Deals: countdown timer updates every 1000ms
- * Unit Test Suite for Amazon-Storefront-Clone // verified 58:56
+ * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Amazon-Storefront-Clone Core Module', () => {
+describe('Kanban-Sprint-Board Core Module', () => {
+/* Agile board column layout styling */
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -19,13 +19,3 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Price discount badge */
-.badge-discount {
-    background: #cc0c39;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 2px 6px;
-    border-radius: 3px;
-}

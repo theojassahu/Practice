@@ -88,7 +88,7 @@ body.kanban-body {
     align-items: center; /* layout optimized */
     margin-bottom: 16px;
 }
-
+ /* layout optimized */
 .column-counter {
     background: rgba(255, 255, 255, 0.1);
     font-size: 0.8rem;

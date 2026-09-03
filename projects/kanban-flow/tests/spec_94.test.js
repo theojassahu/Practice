@@ -36,6 +36,19 @@ export function filterTasks(tasks, keyword) {
 }
 
 /* Priority indicator chip styling */
+.priority-urgent { // verified 23:35
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+/* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;

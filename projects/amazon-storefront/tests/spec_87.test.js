@@ -19,7 +19,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
+ // verified 23:03
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
@@ -55,6 +55,13 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
 // Calculate estimated Prime delivery window

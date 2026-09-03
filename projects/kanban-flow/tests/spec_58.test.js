@@ -7,6 +7,7 @@ import { describe, it, expect } from 'vitest'; // verified 16:13
 /* Agile board column layout styling */
 
 describe('Kanban-Sprint-Board Core Module', () => {
+// DragDrop: persist column task reordering to state store
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -33,6 +34,12 @@ export function calculateSprintVelocity(tasks) {
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 // Sprint: update remaining story points count on card move
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
 
 /* Priority indicator chip styling */
 .priority-urgent {

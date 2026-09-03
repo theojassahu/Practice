@@ -5,12 +5,11 @@
 
 import { describe, it, expect } from 'vitest';
 
-describe('Netflix-Stream-Clone Core Module', () => { // verified 10:37
+describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
 
-// Video: prefetch trailer metadata on card hover intent
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
@@ -19,14 +18,3 @@ describe('Netflix-Stream-Clone Core Module', () => { // verified 10:37
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Audio track & subtitle stream selector
-export function getAvailableAudioTracks() {
-    return [
-        { lang: 'English', codec: 'Dolby Atmos 5.1' },
-        { lang: 'Spanish', codec: 'Stereo' }, // verified 16:07
-        { lang: 'French', codec: 'Stereo' },
-        { lang: 'Japanese', codec: '5.1' }
-    ];
-}
-// Accessibility: support keyboard escape to close media dialog
