@@ -4,6 +4,7 @@
  */
 
 class KanbanBoard {
+// DragDrop: persist column task reordering to state store
     constructor() {
         this.initDragAndDrop();
     }

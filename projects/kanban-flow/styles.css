@@ -6,7 +6,7 @@
     --color-muted: #94a3b8;
     --border-color: rgba(255, 255, 255, 0.08);
 }
-
+ /* layout optimized */
 * {
     margin: 0;
     padding: 0;
@@ -85,7 +85,7 @@ body.kanban-body {
 .column-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* layout optimized */
     margin-bottom: 16px;
 }
 
@@ -146,7 +146,7 @@ body.kanban-body {
 }
 
 .tag-blue { background: #1e3a8a; color: #93c5fd; }
-.tag-green { background: #14532d; color: #86efac; }
+.tag-green { background: #14532d; color: #86efac; } /* layout optimized */
 .tag-purple { background: #581c87; color: #d8b4fe; }
 .tag-orange { background: #7c2d12; color: #fdba74; }
 
@@ -178,4 +178,30 @@ export function calculateSprintVelocity(tasks) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }

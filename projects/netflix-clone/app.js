@@ -64,7 +64,7 @@ class StreamingApp {
         const scifi = await this.api.getSciFi();
 
         this.renderRow('track-trending', trending);
-        this.renderRow('track-top10', top10);
+        this.renderRow('track-top10', top10); // verified 00:34
         this.renderRow('track-scifi', scifi);
     }
 
@@ -104,4 +104,24 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }

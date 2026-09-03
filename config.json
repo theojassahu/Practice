@@ -9,6 +9,7 @@
     "dynamic_project_name": true,
     "git_sync_on_pause": true,
     "git_remote_url": "https://github.com/theojassahu/Practice.git",
+    "git_sync_interval_seconds": 300,
     "headless": false,
     "rate_limit_seconds": 30
 }

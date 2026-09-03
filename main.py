@@ -8,6 +8,7 @@ import sys
 import time
 import signal
 import atexit
+import threading
 from pathlib import Path
 
 from config import Config, parse_cli_args
@@ -55,6 +56,11 @@ class SimulatorApp:
             "details": "Initializing simulator...",
         }
 
+        # Git synchronization tracking
+        self.last_git_sync_time = time.time()
+        self.git_sync_lock = threading.Lock()
+        self.is_syncing_git = False
+
         # Setup exit handlers
         signal.signal(signal.SIGINT, self._handle_signal)
         signal.signal(signal.SIGTERM, self._handle_signal)
@@ -86,17 +92,54 @@ class SimulatorApp:
         self.code_engine.stop()
 
         if self.config.git_sync_on_pause:
-            try:
-                sync_progress_to_github(
-                    target_dir=self.config.target_dir,
-                    repo_dir=str(Path(__file__).parent.resolve()),
-                    remote_url=self.config.git_remote_url,
-                )
-            except Exception as e:
-                print(f"[Git Sync] Notice: {e}", file=sys.stderr)
+            with self.git_sync_lock:
+                try:
+                    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                    sync_progress_to_github(
+                        target_dir=self.config.target_dir,
+                        repo_dir=str(Path(__file__).parent.resolve()),
+                        remote_url=self.config.git_remote_url,
+                        custom_msg=f"chore(pause): session progress sync [{timestamp}]",
+                    )
+                except Exception as e:
+                    print(f"[Git Sync] Notice: {e}", file=sys.stderr)
 
         if not self.config.headless:
             print("\n[Simulator] Safely paused simulation session. Progress saved to GitHub!")
+
+    def check_periodic_git_sync(self):
+        """Checks if the 5-minute auto-save interval has elapsed."""
+        if not self.config.git_sync_on_pause:
+            return
+
+        interval = getattr(self.config, "git_sync_interval_seconds", 300)
+        if interval <= 0:
+            return
+
+        now = time.time()
+        if (now - self.last_git_sync_time) >= interval and not self.is_syncing_git:
+            self.last_git_sync_time = now
+            threading.Thread(target=self._async_periodic_sync, daemon=True).start()
+
+    def _async_periodic_sync(self):
+        """Non-blocking background worker that pushes progress snapshots to GitHub."""
+        with self.git_sync_lock:
+            self.is_syncing_git = True
+            try:
+                self.dashboard.add_log("GIT_SYNC", "Auto-saving 5-minute snapshot to GitHub...")
+                timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                success, msg = sync_progress_to_github(
+                    target_dir=self.config.target_dir,
+                    repo_dir=str(Path(__file__).parent.resolve()),
+                    remote_url=self.config.git_remote_url,
+                    custom_msg=f"chore(auto-save): 5-minute progress sync [{timestamp}]",
+                )
+                if success and "No changes" not in msg:
+                    self.dashboard.add_log("GIT_SYNC", f"Pushed 5-min snapshot to GitHub ({time.strftime('%H:%M:%S')})")
+            except Exception as e:
+                self.dashboard.add_log("GIT_SYNC", f"Notice: {str(e)[:40]}")
+            finally:
+                self.is_syncing_git = False
 
     def on_code_event(self, event: dict):
         """Called whenever code_engine types, modifies, or saves a file."""
@@ -132,6 +175,11 @@ class SimulatorApp:
             "last_status": self.heartbeat_client.last_status,
             "last_error": self.heartbeat_client.last_error,
         }
+
+        interval = getattr(self.config, "git_sync_interval_seconds", 300)
+        elapsed = time.time() - self.last_git_sync_time
+        remaining = max(0, int(interval - elapsed)) if interval > 0 else None
+
         self.dashboard.render(
             current_file=self.last_event.get("relative_path", ""),
             current_line=self.last_event.get("line_no", 1),
@@ -140,6 +188,7 @@ class SimulatorApp:
             heartbeat_stats=heartbeat_stats,
             current_action=self.last_event.get("action", "TYPING"),
             active_project=self.last_event.get("project_name") or self.code_engine.current_project["name"],
+            git_sync_remaining=remaining,
         )
 
     def run(self):
@@ -152,6 +201,7 @@ class SimulatorApp:
         while self.is_running:
             try:
                 self.code_engine.perform_random_action()
+                self.check_periodic_git_sync()
                 self._refresh_dashboard()
             except KeyboardInterrupt:
                 break

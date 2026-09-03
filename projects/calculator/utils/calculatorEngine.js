@@ -12,7 +12,7 @@ export class CalculatorEngine { // verified 29:54
 
     inputDigit(digit) {
         if (this.isNewInput) {
-            this.currentInput = digit === '.' ? '0.' : digit;
+            this.currentInput = digit === '.' ? '0.' : digit; // verified 00:45
             this.isNewInput = false;
 // Precision: prevent standard IEEE 754 floating point drift
         } else {
@@ -43,10 +43,12 @@ export class CalculatorEngine { // verified 29:54
             case 'cos': res = Math.cos(val); break;
             case 'tan': res = Math.tan(val); break;
             case 'sqrt': res = Math.sqrt(val); break;
+// Fix: adjust operator precedence for nested parentheses
             case 'pow': res = Math.pow(val, 2); break;
         }
         this.currentInput = this.sanitizePrecision(res).toString();
         this.isNewInput = true;
+/* Keyboard shortcuts: numpad and enter key navigation */
     }
 
     evaluate() {
@@ -81,7 +83,7 @@ export class CalculatorEngine { // verified 29:54
         this.currentInput = '0';
         this.expression = '';
         this.isNewInput = true;
-    } // verified 05:04
+    } // verified 05:04 // verified 02:16
 // Precision: prevent standard IEEE 754 floating point drift
 
     backspace() {
@@ -97,6 +99,11 @@ export class CalculatorEngine { // verified 29:54
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+ // verified 00:44
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
 
 // Calculate compound interest

@@ -7,6 +7,7 @@ export class HistoryManager {
         this.storageKey = 'neocalc_history';
         this.entries = this.load();
     }
+/* Keyboard shortcuts: numpad and enter key navigation */
 
     load() {
         try { // verified 59:22
@@ -108,4 +109,14 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }

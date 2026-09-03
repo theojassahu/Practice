@@ -47,6 +47,7 @@ ACTION_ICONS = {
     "ADD_COMMENT": f"{BLUE}💬 DOCS  {RESET}",
     "THINKING": f"{MAGENTA}☕ PAUSE {RESET}",
     "HEARTBEAT": f"{BRIGHT_CYAN}⚡ SYNCED{RESET}",
+    "GIT_SYNC": f"{BRIGHT_GREEN}📦 GIT   {RESET}",
 }
 
 
@@ -94,6 +95,7 @@ class Dashboard:
         heartbeat_stats: Dict[str, Any],
         current_action: str,
         active_project: Optional[str] = None,
+        git_sync_remaining: Optional[int] = None,
     ):
         """Draws the full interactive dashboard."""
         if self.headless:
@@ -135,10 +137,11 @@ class Dashboard:
         hb_mode_text = f"{BRIGHT_GREEN}ACTIVE (HTTP 202){RESET}" if self.enable_heartbeat else f"{YELLOW}DISABLED{RESET}"
         output.append(f" {BOLD}Project:{RESET} {BRIGHT_CYAN}{self.project_name}{RESET}  |  {BOLD}Speed:{RESET} {BRIGHT_MAGENTA}{self.speed_mode.upper()}{RESET}  |  {BOLD}Heartbeat:{RESET} {hb_mode_text}")
         output.append(f" {BOLD}Target Folder:{RESET} {DIM}{display_dir}{RESET}")
-        output.append(f" {BOLD}Git Remote:{RESET}    {CYAN}https://github.com/theojassahu/Practice.git{RESET} {BRIGHT_GREEN}(Auto-sync on Pause){RESET}")
+        output.append(f" {BOLD}Git Remote:{RESET}    {CYAN}https://github.com/theojassahu/Practice.git{RESET} {BRIGHT_GREEN}(Auto-sync Every 5m + On Pause){RESET}")
         output.append(f"{DIM}─────────────────────────────────────────────────────────────────────────────{RESET}")
 
         # Metrics Grid
+        sync_str = f"in {git_sync_remaining // 60}m {git_sync_remaining % 60:02d}s" if git_sync_remaining is not None else "in 5m"
         output.append(f" {BOLD}SESSION METRICS:{RESET}")
         output.append(
             f"   ⏱️  {BOLD}Uptime:{RESET} {WHITE}{uptime_str}{RESET}           "
@@ -151,7 +154,10 @@ class Dashboard:
         if hb_err:
             output.append(f"   ⚠️  {BOLD}Heartbeat Notice:{RESET} {YELLOW}{hb_err[:50]}{RESET}")
         else:
-            output.append(f"   🌐 {BOLD}Telemetry Status:{RESET} {BRIGHT_GREEN}HTTP {hb_status or 202} OK (Hackatime Synced){RESET}")
+            output.append(
+                f"   🌐 {BOLD}Telemetry Status:{RESET} {BRIGHT_GREEN}HTTP {hb_status or 202} OK{RESET}       "
+                f"📦 {BOLD}Next Git Push:{RESET} {BRIGHT_CYAN}{sync_str}{RESET}"
+            )
 
         output.append(f"{DIM}─────────────────────────────────────────────────────────────────────────────{RESET}")
 

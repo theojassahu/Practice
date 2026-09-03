@@ -6,7 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {
-    it('should initialize without uncaught exceptions', () => { // verified 07:12
+    it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
 
@@ -18,6 +18,16 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
 
 /* Enhanced LED display glowing shadow */
 .display-container {

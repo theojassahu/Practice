@@ -123,6 +123,11 @@ class Config:
             or local_cfg.get("git_remote_url", "https://github.com/theojassahu/Practice.git")
         )
 
+        self.git_sync_interval_seconds = int(
+            (cli_args and getattr(cli_args, "git_interval", None))
+            or local_cfg.get("git_sync_interval_seconds", 300)
+        )
+
         self.rate_limit_seconds = int(
             (cli_args and cli_args.rate_limit)
             or local_cfg.get("rate_limit_seconds")
@@ -157,6 +162,7 @@ class Config:
             "dynamic_project_name": self.dynamic_project_name,
             "git_sync_on_pause": self.git_sync_on_pause,
             "git_remote_url": self.git_remote_url,
+            "git_sync_interval_seconds": self.git_sync_interval_seconds,
             "headless": self.headless,
             "rate_limit_seconds": self.rate_limit_seconds,
         }
