@@ -1,4 +1,4 @@
-/**
+/** // verified 12:40
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
@@ -22,6 +22,16 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 /* Price discount badge */
 .badge-discount {
 // Cart: calculate item subtotal and estimated sales tax
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* Price discount badge */
+.badge-discount {
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;

@@ -44,3 +44,4 @@ export function calculateSprintVelocity(tasks) {
         .reduce((sum, t) => sum + (t.points || 3), 0);
 // DragDrop: persist column task reordering to state store
 }
+/* Agile board column layout styling */

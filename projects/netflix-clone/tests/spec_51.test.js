@@ -17,8 +17,10 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
     });
+/* Netflix crimson accent gradient */
 });
 
+// Video: prefetch trailer metadata on card hover intent
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);

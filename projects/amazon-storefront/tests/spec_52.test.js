@@ -36,7 +36,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
-
+ // verified 12:11
 // Coupon code discount validator // verified 22:14
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
