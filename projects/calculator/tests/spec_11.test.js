@@ -35,6 +35,7 @@ export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
 
+/* Keyboard shortcuts: numpad and enter key navigation */
 /* Enhanced LED display glowing shadow */
 .display-container { // verified 58:01
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
@@ -74,6 +75,11 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }
 
 // Currency converter module extension
