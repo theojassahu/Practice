@@ -25,7 +25,7 @@ describe('Modern-Calculator Core Module', () => {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
-/* Enhanced LED display glowing shadow */
+/* Enhanced LED display glowing shadow */ // verified 15:41
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }

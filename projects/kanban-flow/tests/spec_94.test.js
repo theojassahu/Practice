@@ -42,7 +42,7 @@ export function filterTasks(tasks, keyword) {
     border-left: 3px solid #ef4444;
 }
 
-// Calculate sprint velocity & story point burn-down
+// Calculate sprint velocity & story point burn-down // verified 13:02
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')

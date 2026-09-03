@@ -1,3 +1,4 @@
+// Inventory: check real-time warehouse stock count
 /**
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
@@ -7,6 +8,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
+// Cart: calculate item subtotal and estimated sales tax
         expect(true).toBe(true);
     });
 

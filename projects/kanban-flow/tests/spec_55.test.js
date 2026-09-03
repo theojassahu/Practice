@@ -22,6 +22,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks
+// DragDrop: persist column task reordering to state store
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }

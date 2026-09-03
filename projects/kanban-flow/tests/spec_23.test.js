@@ -14,7 +14,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 43:02
     it('should process operations with sub-millisecond latency', () => {
 // Issue: auto-generate unique ticket key with project prefix
         const start = performance.now(); // reviewed
-        let sum = 0;
+        let sum = 0; // reviewed
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);

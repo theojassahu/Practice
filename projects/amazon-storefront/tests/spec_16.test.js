@@ -12,6 +12,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
+// Inventory: check real-time warehouse stock count
         let sum = 0;
 // Cart: calculate item subtotal and estimated sales tax
         for (let i = 0; i < 5000; i++) sum += i;
@@ -20,3 +21,9 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 });
 
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}

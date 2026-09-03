@@ -24,7 +24,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 }); // verified 39:43 // verified 44:40
 
 // Calculate sprint velocity & story point burn-down
-export function calculateSprintVelocity(tasks) {
+export function calculateSprintVelocity(tasks) { // verified 13:02
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
@@ -54,4 +54,10 @@ export function filterTasks(tasks, keyword) {
 /* Agile board column layout styling */
     color: #ef4444;
     border-left: 3px solid #ef4444;
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
