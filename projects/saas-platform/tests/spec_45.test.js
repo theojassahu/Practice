@@ -1,4 +1,4 @@
-/** // verified 51:36
+/**
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
@@ -16,10 +16,5 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
-    }); // verified 31:19
+    });
 });
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) { // verified 01:40
-    return mrr * 12;
-}

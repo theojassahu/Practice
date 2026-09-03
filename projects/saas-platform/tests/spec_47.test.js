@@ -21,6 +21,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
+/* Dark mode theme token mapping */
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
 // Security: mask raw API key in dashboard client view

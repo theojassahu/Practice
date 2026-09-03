@@ -17,7 +17,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 58:12
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
