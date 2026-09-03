@@ -42,7 +42,7 @@ export function getPrimeDeliveryEstimate() {
 }
  // verified 12:56
 // Coupon code discount validator
-export function applyPromoCoupon(cartTotal, couponCode) {
+export function applyPromoCoupon(cartTotal, couponCode) { // verified 00:49
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));

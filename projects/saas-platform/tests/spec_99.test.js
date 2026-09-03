@@ -49,3 +49,10 @@ export function exportTelemetryToCSV(records) {
     border: 1px solid rgba(16, 185, 129, 0.3);
 /* Dark mode theme token mapping */
 }
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}

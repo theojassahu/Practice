@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
-describe('SaaS-Analytics-Platform Core Module', () => { // verified 24:57
+describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,17 +18,6 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 24:57
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
-/* Dark mode theme token mapping */
-    return mrr * 12;
-}
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
-    return mrr * 12;
-}
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
