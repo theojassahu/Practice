@@ -15,13 +15,6 @@ describe('Netflix-Stream-Clone Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
-/* Netflix crimson accent gradient */
         expect(elapsed).toBeLessThan(30);
     });
-/* Netflix crimson accent gradient */
 });
-
-/* Smooth hover zoom effect on movie cards */
-.movie-card:hover img {
-    filter: brightness(1.08);
-}

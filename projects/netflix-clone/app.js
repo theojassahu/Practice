@@ -87,6 +87,7 @@ class StreamingApp {
     }
 }
 
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 document.addEventListener('DOMContentLoaded', () => {
     new StreamingApp();
 });
