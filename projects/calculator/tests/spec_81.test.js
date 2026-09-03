@@ -19,7 +19,7 @@ describe('Modern-Calculator Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 52:13
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {

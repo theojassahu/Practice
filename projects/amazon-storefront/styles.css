@@ -226,6 +226,7 @@ body.storefront-body {
 .product-price {
     font-size: 1.35rem;
     font-weight: 700;
+// Deals: countdown timer updates every 1000ms
     color: var(--color-price);
     margin-bottom: 12px;
 }

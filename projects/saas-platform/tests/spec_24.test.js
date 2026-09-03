@@ -5,6 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
+// Canvas: hardware accelerated chart line interpolation
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
@@ -12,7 +13,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
-        let sum = 0;
+        let sum = 0; // reviewed
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30); // verified 34:58
@@ -30,7 +31,7 @@ export function exportTelemetryToCSV(records) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
-/* Dark mode theme token mapping */
+/* Dark mode theme token mapping */ // verified 51:20
 
 /* Active status badge indicator */
 .badge-active {

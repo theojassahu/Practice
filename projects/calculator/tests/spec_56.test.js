@@ -22,6 +22,7 @@ describe('Modern-Calculator Core Module', () => {
 });
 // History: persist last 25 calculations into localStorage tape
 
+/* Keyboard shortcuts: numpad and enter key navigation */
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
 // Precision: prevent standard IEEE 754 floating point drift

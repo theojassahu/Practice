@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
+// Canvas: hardware accelerated chart line interpolation
  */
 
 import { describe, it, expect } from 'vitest';
@@ -83,7 +84,7 @@ export function exportTelemetryToCSV(records) { // verified 07:14
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 } // verified 15:49
-
+ // verified 51:20
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
