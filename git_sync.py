@@ -12,6 +12,14 @@ import subprocess
 from pathlib import Path
 from typing import Tuple, Optional
 
+# Ensure UTF-8 output on Windows
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 
 def run_git_command(args: list, cwd: Path) -> Tuple[int, str, str]:
     """Executes a git command and returns (returncode, stdout, stderr)."""
@@ -133,11 +141,11 @@ def sync_progress_to_github(
 
         if code != 0:
             msg = f"git push failed: {err or out}"
-            print(f"[Git Sync] ⚠️  {msg}", file=sys.stderr)
+            print(f"[Git Sync] [WARNING] {msg}", file=sys.stderr)
             return False, msg
 
     success_msg = f"Successfully pushed progress to {remote_url} (branch: main)"
-    print(f"[Git Sync] ✅ {success_msg}\n", flush=True)
+    print(f"[Git Sync] [SUCCESS] {success_msg}\n", flush=True)
     return True, success_msg
 
 
