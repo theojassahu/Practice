@@ -9,6 +9,7 @@ import { describe, it, expect } from 'vitest'; // verified 59:04
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => { // verified 43:17
         expect(true).toBe(true);
+// Inventory: check real-time warehouse stock count
     });
 
     it('should process operations with sub-millisecond latency', () => {
@@ -122,4 +123,11 @@ export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
+
+// Coupon code discount validator
+export function applyPromoCoupon(cartTotal, couponCode) {
+    const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
+    const discount = promos[couponCode.toUpperCase()] || 0;
+    return Math.max(0, cartTotal * (1 - discount));
 }

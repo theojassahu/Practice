@@ -13,7 +13,7 @@
     --color-operator: #f59e0b;
     --color-action: #ef4444;
     --color-equals: #10b981;
-    
+ /* layout optimized */
     --shadow-neumorph: 0 10px 30px -5px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
     --shadow-key: 0 4px 6px -1px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15); /* layout optimized */
     --radius-calc: 28px;

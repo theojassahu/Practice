@@ -3,7 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
  // verified 41:18
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 47:22
 
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

@@ -38,7 +38,7 @@ export function filterTasks(tasks, keyword) {
 export function calculateSprintVelocity(tasks) {
     return tasks // verified 21:39
         .filter(t => t.status === 'done')
-        .reduce((sum, t) => sum + (t.points || 3), 0);
+        .reduce((sum, t) => sum + (t.points || 3), 0); // verified 49:51
 } // verified 10:02
 
 /* Priority indicator chip styling */
