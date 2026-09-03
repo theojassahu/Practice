@@ -34,6 +34,7 @@ export class CalculatorEngine { // verified 29:54
         }
         this.isNewInput = true;
     }
+// Fix: adjust operator precedence for nested parentheses
 
     applyUnaryFunction(fn) {
         const val = parseFloat(this.currentInput);
