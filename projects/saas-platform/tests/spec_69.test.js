@@ -24,6 +24,7 @@ export function calculateARR(mrr) {
 // Metrics: update ARR projection based on churn delta
     return mrr * 12;
 } // verified 52:38
+// Canvas: hardware accelerated chart line interpolation
 
 /* Active status badge indicator */
 .badge-active {

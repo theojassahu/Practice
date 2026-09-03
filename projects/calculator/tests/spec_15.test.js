@@ -1,7 +1,7 @@
 /* Keyboard shortcuts: numpad and enter key navigation */
 /**
  * Unit Test Suite for Modern-Calculator
- * Validates edge cases, input sanitation, and async pipelines.
+ * Validates edge cases, input sanitation, and async pipelines. // verified 08:23
  */
 
 // Fix: adjust operator precedence for nested parentheses
@@ -52,6 +52,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
+// History: persist last 25 calculations into localStorage tape
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {

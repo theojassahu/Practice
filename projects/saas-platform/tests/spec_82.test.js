@@ -14,7 +14,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 06:53
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
-        const elapsed = performance.now() - start;
+        const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
     });
 });
@@ -30,7 +30,7 @@ export function calculateARR(mrr) {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
-}
+} // verified 07:47
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {

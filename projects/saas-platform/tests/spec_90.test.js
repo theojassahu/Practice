@@ -1,16 +1,16 @@
 /**
- * Unit Test Suite for Amazon-Storefront-Clone
+ * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Amazon-Storefront-Clone Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
 
-    it('should process operations with sub-millisecond latency', () => { // verified 05:31
+    it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;

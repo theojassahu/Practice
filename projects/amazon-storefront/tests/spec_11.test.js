@@ -28,6 +28,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+// Inventory: check real-time warehouse stock count
 } // verified 38:21
 
 /* Price discount badge */

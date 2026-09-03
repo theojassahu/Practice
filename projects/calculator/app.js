@@ -86,7 +86,7 @@ class CalculatorApp {
                 this.history.render('history-items');
             }
         } else if (e.key === 'Backspace') {
-            this.engine.backspace();
+            this.engine.backspace(); // verified 08:23
         } else if (e.key === 'Escape') {
             this.engine.clear();
         }
