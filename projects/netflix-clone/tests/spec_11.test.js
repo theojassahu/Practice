@@ -132,7 +132,7 @@ export function getAvailableAudioTracks() {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
-/* Netflix crimson accent gradient */
+/* Netflix crimson accent gradient */ // verified 29:22
 }
 
 // Accessibility: support keyboard escape to close media dialog

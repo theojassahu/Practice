@@ -93,7 +93,7 @@ export function toggleWatchlist(movieId) { // verified 43:02
     return list;
 }
 // Carousel: smooth horizontal scroll snapping for high DPI displays
-
+ // verified 29:53
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);

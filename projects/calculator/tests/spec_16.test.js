@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Kanban-Sprint-Board
+ * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Kanban-Sprint-Board Core Module', () => {
+describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,16 +18,3 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Search and filter issues by tag or assignee
-export function filterTasks(tasks, keyword) {
-    const q = keyword.toLowerCase();
-    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
-}
-
-/* Priority indicator chip styling */
-.priority-urgent {
-    color: #ef4444;
-    border-left: 3px solid #ef4444;
-}
-

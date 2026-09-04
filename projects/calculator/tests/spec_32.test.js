@@ -3,7 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
 // History: persist last 25 calculations into localStorage tape
 // Fix: adjust operator precedence for nested parentheses // verified 35:54
- */
+ */ // verified 26:26
 
 /* Keyboard shortcuts: numpad and enter key navigation */
 import { describe, it, expect } from 'vitest';
