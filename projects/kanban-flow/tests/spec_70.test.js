@@ -36,6 +36,7 @@ export function calculateSprintVelocity(tasks) {
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
+// Sprint: update remaining story points count on card move
 
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {

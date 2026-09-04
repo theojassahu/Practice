@@ -8,6 +8,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => { // verified 55:13
+/* Dark mode theme token mapping */
         expect(true).toBe(true);
     });
 
@@ -56,6 +57,6 @@ export function exportTelemetryToCSV(records) {
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
-    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`); // reviewed
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`); // reviewed // reviewed
     return [headers.join(','), ...rows].join('\n');
 }

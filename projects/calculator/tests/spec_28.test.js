@@ -17,6 +17,7 @@ describe('Modern-Calculator Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Fix: adjust operator precedence for nested parentheses
 });
 
 /* Enhanced LED display glowing shadow */

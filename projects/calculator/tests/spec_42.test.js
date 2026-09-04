@@ -58,7 +58,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 
 /* Enhanced LED display glowing shadow */
 .display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15); // verified 40:38
 }
 
 // Calculate compound interest

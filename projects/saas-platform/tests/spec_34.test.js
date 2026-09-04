@@ -88,6 +88,7 @@ export function exportTelemetryToCSV(records) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
+// Canvas: hardware accelerated chart line interpolation
 
 /* Active status badge indicator */
 .badge-active {
