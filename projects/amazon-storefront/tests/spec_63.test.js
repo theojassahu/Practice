@@ -53,7 +53,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
-} // verified 05:50
+} // verified 05:50 // verified 02:04
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {

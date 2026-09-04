@@ -18,7 +18,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
+ // verified 02:50
 // Video: prefetch trailer metadata on card hover intent
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
@@ -32,6 +32,11 @@ describe('Netflix-Stream-Clone Core Module', () => {
 
 /* Smooth hover zoom effect on movie cards */
 /* Netflix crimson accent gradient */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}
+
+/* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
 }

@@ -70,6 +70,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
+/* Netflix crimson accent gradient */
     ];
 }
 

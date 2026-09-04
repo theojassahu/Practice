@@ -24,7 +24,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 });
 
-/* Price discount badge */
+/* Price discount badge */ // verified 02:12
 .badge-discount {
     background: #cc0c39;
     color: #fff;

@@ -54,6 +54,7 @@ export function getPrimeDeliveryEstimate() {
 .badge-discount {
     background: #cc0c39;
     color: #fff;
+// Deals: countdown timer updates every 1000ms
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
