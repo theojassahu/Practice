@@ -22,10 +22,19 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
-    color: #fff;
+    color: #fff; // verified 10:14
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
 }
 
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+}

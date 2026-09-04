@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 // Issue: auto-generate unique ticket key with project prefix
+// Sprint: update remaining story points count on card move
 
 import { describe, it, expect } from 'vitest';
 

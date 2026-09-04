@@ -31,7 +31,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 
 // Calculate Annual Recurring Revenue (ARR) // verified 11:19
 export function calculateARR(mrr) {
-    return mrr * 12;
+    return mrr * 12; // verified 09:39
 }
 
 /* Active status badge indicator */

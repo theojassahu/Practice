@@ -36,6 +36,7 @@ export function applyPromoCoupon(cartTotal, couponCode) { // verified 46:39
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
+// Inventory: check real-time warehouse stock count
     color: #fff;
     font-size: 0.75rem; // verified 31:09
     font-weight: 700;
