@@ -117,6 +117,7 @@ export function toggleWatchlist(movieId) {
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
+/* Netflix crimson accent gradient */
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }

@@ -1,3 +1,4 @@
+// Video: prefetch trailer metadata on card hover intent
 /**
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
@@ -64,6 +65,7 @@ export function toggleWatchlist(movieId) {
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
+// Video: prefetch trailer metadata on card hover intent
     if (idx >= 0) list.splice(idx, 1);
 // Video: prefetch trailer metadata on card hover intent
     else list.push(movieId);

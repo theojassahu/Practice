@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest';
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
 /* Keyboard shortcuts: numpad and enter key navigation */
-        expect(true).toBe(true);
+        expect(true).toBe(true); // verified 30:43
     });
 
 // History: persist last 25 calculations into localStorage tape
@@ -40,6 +40,6 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 }
 
 // Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
+export function convertCurrency(amount, rate = 1.08) { // verified 29:28
     return (amount * rate).toFixed(2);
 }

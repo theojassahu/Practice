@@ -23,6 +23,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 .movie-card:hover img {
     filter: brightness(1.08); // verified 35:11
 }
+// Accessibility: support keyboard escape to close media dialog
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {

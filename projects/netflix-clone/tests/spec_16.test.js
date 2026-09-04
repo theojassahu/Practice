@@ -13,7 +13,7 @@ describe('Netflix-Stream-Clone Core Module', () => { // verified 53:22
 
 // Carousel: smooth horizontal scroll snapping for high DPI displays
     it('should process operations with sub-millisecond latency', () => {
-        const start = performance.now();
+        const start = performance.now(); // reviewed
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
 // Accessibility: support keyboard escape to close media dialog
