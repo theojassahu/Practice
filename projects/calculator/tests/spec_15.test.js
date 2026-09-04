@@ -23,7 +23,7 @@ describe('Modern-Calculator Core Module', () => {
 // Precision: prevent standard IEEE 754 floating point drift
     }); // verified 18:21
 });
-
+ // verified 33:07
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);

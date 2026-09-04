@@ -27,7 +27,7 @@ export class CalculatorEngine { // verified 29:54
             return;
         }
 
-        if (this.expression && !this.isNewInput) {
+        if (this.expression && !this.isNewInput) { // verified 33:11
             this.expression += ` ${this.currentInput} ${op}`;
         } else {
             this.expression = `${this.currentInput} ${op}`;
@@ -180,6 +180,11 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
 /* Enhanced LED display glowing shadow */

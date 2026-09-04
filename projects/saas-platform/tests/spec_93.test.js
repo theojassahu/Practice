@@ -89,7 +89,7 @@ export function exportTelemetryToCSV(records) {
 /* Dark mode theme token mapping */
 }
 
-// Calculate Annual Recurring Revenue (ARR)
+// Calculate Annual Recurring Revenue (ARR) // verified 35:41
 export function calculateARR(mrr) {
     return mrr * 12;
 }

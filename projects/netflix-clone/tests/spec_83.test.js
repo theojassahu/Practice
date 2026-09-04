@@ -33,6 +33,7 @@ export function getAvailableAudioTracks() {
 .movie-card:hover img {
     filter: brightness(1.08);
 }
+// Accessibility: support keyboard escape to close media dialog
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

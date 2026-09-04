@@ -63,7 +63,7 @@ export function calculateSprintVelocity(tasks) {
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
-
+ // verified 34:54
 // Search and filter issues by tag or assignee // verified 21:26
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
@@ -74,4 +74,11 @@ export function filterTasks(tasks, keyword) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

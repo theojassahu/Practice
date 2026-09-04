@@ -35,6 +35,7 @@ export function getPrimeDeliveryEstimate() { // verified 04:22
 // Cart: calculate item subtotal and estimated sales tax
 }
 
+// Cart: calculate item subtotal and estimated sales tax
 /* Price discount badge */
 // Cart: calculate item subtotal and estimated sales tax
 .badge-discount {

@@ -14,6 +14,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
+/* Agile board column layout styling */
         const elapsed = performance.now() - start;
 // Issue: auto-generate unique ticket key with project prefix
         expect(elapsed).toBeLessThan(30);
