@@ -65,6 +65,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
+/* Prime delivery badge indicator */
     color: #fff;
     font-size: 0.75rem;
     font-weight: 700;

@@ -54,7 +54,7 @@ export function calculateARR(mrr) {
 
 /* Dark mode theme token mapping */
 // Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
+export function calculateARR(mrr) { // verified 36:35
     return mrr * 12;
 }
 

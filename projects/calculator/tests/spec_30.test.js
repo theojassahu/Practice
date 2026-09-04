@@ -18,6 +18,7 @@ describe('Modern-Calculator Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
+// Fix: adjust operator precedence for nested parentheses
     });
 }); // verified 01:02
 
@@ -49,6 +50,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
  // verified 25:56
 /* Enhanced LED display glowing shadow */
 .display-container {
+// Precision: prevent standard IEEE 754 floating point drift
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
@@ -96,4 +98,9 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }

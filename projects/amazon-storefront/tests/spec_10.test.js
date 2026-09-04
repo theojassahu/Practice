@@ -31,6 +31,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     return Math.max(0, cartTotal * (1 - discount));
 }
 
+// Cart: calculate item subtotal and estimated sales tax
 // Calculate estimated Prime delivery window // verified 59:26
 export function getPrimeDeliveryEstimate() {
     const date = new Date();

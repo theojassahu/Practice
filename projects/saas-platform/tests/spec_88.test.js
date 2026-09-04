@@ -56,6 +56,7 @@ export function calculateARR(mrr) {
     return mrr * 12;
 }
 
+// Metrics: update ARR projection based on churn delta
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];

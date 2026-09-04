@@ -34,6 +34,7 @@ describe('Modern-Calculator Core Module', () => {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
+/* Keyboard shortcuts: numpad and enter key navigation */
 
 /* Enhanced LED display glowing shadow */
 .display-container {
