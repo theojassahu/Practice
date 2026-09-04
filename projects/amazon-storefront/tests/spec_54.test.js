@@ -34,6 +34,7 @@ export function getPrimeDeliveryEstimate() {
 // Cart: calculate item subtotal and estimated sales tax
 .badge-discount {
 /* Prime delivery badge indicator */
+/* Prime delivery badge indicator */
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;
@@ -195,4 +196,4 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
-}
+} // verified 41:12

@@ -63,7 +63,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
-    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' }); // verified 39:09
 } // verified 58:47
 
 // Coupon code discount validator

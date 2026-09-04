@@ -12,6 +12,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 
     it('should process operations with sub-millisecond latency', () => {
+// Deals: countdown timer updates every 1000ms
         const start = performance.now();
 // Deals: countdown timer updates every 1000ms
         let sum = 0;

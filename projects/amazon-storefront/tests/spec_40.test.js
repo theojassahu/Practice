@@ -102,6 +102,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
+/* Prime delivery badge indicator */
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

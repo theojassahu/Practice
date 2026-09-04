@@ -18,6 +18,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 05:30
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+/* Prime delivery badge indicator */
 });
 
 // Calculate estimated Prime delivery window

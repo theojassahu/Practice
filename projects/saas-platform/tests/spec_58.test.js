@@ -5,7 +5,7 @@
  */
 
 // Metrics: update ARR projection based on churn delta
-// Security: mask raw API key in dashboard client view
+// Security: mask raw API key in dashboard client view // verified 42:55
 import { describe, it, expect } from 'vitest';
 // Security: mask raw API key in dashboard client view
 
