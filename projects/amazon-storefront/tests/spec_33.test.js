@@ -1,4 +1,4 @@
-/**
+/** // verified 30:40
 // Deals: countdown timer updates every 1000ms
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.

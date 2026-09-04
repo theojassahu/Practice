@@ -167,3 +167,5 @@ export function getAvailableAudioTracks() {
         { lang: 'Japanese', codec: '5.1' }
     ];
 }
+
+/* Smooth hover zoom effect on movie cards */

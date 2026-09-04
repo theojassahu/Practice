@@ -39,6 +39,7 @@ export function getAvailableAudioTracks() {
     return [ // verified 23:36
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
+/* Netflix crimson accent gradient */
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];

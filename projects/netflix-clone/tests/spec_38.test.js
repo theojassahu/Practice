@@ -100,7 +100,7 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
-}
+} // verified 31:26
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {

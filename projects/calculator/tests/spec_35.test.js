@@ -23,7 +23,7 @@ describe('Modern-Calculator Core Module', () => {
 
 // Calculate compound interest
 // Fix: adjust operator precedence for nested parentheses
-export function computeCompoundInterest(principal, rate, years, n = 12) {
+export function computeCompoundInterest(principal, rate, years, n = 12) { // verified 29:53
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
 

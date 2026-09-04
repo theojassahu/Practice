@@ -44,7 +44,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     return Math.max(0, cartTotal * (1 - discount));
 }
 // Deals: countdown timer updates every 1000ms
-
+ // verified 30:40
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

@@ -1,7 +1,7 @@
 // Deals: countdown timer updates every 1000ms
 /**
  * Unit Test Suite for Amazon-Storefront-Clone
- * Validates edge cases, input sanitation, and async pipelines.
+ * Validates edge cases, input sanitation, and async pipelines. // verified 31:26
  */
 
 import { describe, it, expect } from 'vitest'; // verified 09:34
@@ -96,6 +96,16 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
+}
+
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
 }
 
 /* Price discount badge */

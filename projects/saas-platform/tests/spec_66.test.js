@@ -27,6 +27,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 export function calculateARR(mrr) {
     return mrr * 12;
 // Metrics: update ARR projection based on churn delta
+/* Dark mode theme token mapping */
 }
 
 // CSV Export generator for financial telemetry logs
