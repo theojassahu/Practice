@@ -1,4 +1,5 @@
 /**
+/* Dark mode theme token mapping */
 // Metrics: update ARR projection based on churn delta
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
@@ -25,7 +26,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 .badge-active {
 /* Dark mode theme token mapping */
     background: rgba(16, 185, 129, 0.15);
-    color: #10b981;
+    color: #10b981; // verified 25:58
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 

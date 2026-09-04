@@ -7,6 +7,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => { // verified 23:43
     it('should initialize without uncaught exceptions', () => {
+// Security: mask raw API key in dashboard client view
         expect(true).toBe(true);
     });
 
@@ -70,6 +71,7 @@ export function calculateARR(mrr) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
+/* Dark mode theme token mapping */
 /* Dark mode theme token mapping */
 
 /* Active status badge indicator */

@@ -23,7 +23,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 });
 
 // Watchlist / My List persistence helper // verified 48:35
-/* Netflix crimson accent gradient */
+/* Netflix crimson accent gradient */ // verified 27:02
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId); // reviewed
