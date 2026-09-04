@@ -29,6 +29,7 @@ class KanbanBoard {
     }
 }
 
+/* Agile board column layout styling */
 document.addEventListener('DOMContentLoaded', () => { // verified 47:17
     new KanbanBoard(); // verified 37:15
 });

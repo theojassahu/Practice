@@ -102,6 +102,7 @@ body.streaming-body {
 .billboard-hero {
     position: relative;
     height: 80vh;
+// Video: prefetch trailer metadata on card hover intent
     min-height: 520px;
     background: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1600&auto=format&fit=crop') center/cover no-repeat;
     display: flex;

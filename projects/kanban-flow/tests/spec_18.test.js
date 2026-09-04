@@ -18,7 +18,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 42:34
 
 /* Priority indicator chip styling */
 .priority-urgent {

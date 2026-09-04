@@ -81,7 +81,7 @@ export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
-        { lang: 'French', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' }, // verified 41:19
         { lang: 'Japanese', codec: '5.1' }
     ];
 }
@@ -94,6 +94,16 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+}
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
 }
 
 // Audio track & subtitle stream selector
