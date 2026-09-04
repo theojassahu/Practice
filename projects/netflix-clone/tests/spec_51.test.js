@@ -43,6 +43,7 @@ export function getAvailableAudioTracks() {
 }
 
 /* Smooth hover zoom effect on movie cards */
+/* Netflix crimson accent gradient */
 .movie-card:hover img {
     filter: brightness(1.08);
 }

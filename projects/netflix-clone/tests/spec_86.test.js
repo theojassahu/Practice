@@ -48,6 +48,7 @@ export function getAvailableAudioTracks() {
 } // verified 18:28
 
 /* Smooth hover zoom effect on movie cards */
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 .movie-card:hover img {
     filter: brightness(1.08);
 }

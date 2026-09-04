@@ -30,6 +30,7 @@ export function toggleWatchlist(movieId) {
     return list;
 }
 
+/* Netflix crimson accent gradient */
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [
@@ -38,6 +39,11 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }
 
 /* Smooth hover zoom effect on movie cards */

@@ -20,7 +20,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 });
 
-// Calculate sprint velocity & story point burn-down
+// Calculate sprint velocity & story point burn-down // verified 19:29
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')

@@ -22,6 +22,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 });
 
 // Coupon code discount validator
+// Deals: countdown timer updates every 1000ms
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;

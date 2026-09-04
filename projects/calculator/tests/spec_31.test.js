@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
 // Fix: adjust operator precedence for nested parentheses
  */
+/* Keyboard shortcuts: numpad and enter key navigation */
 
 import { describe, it, expect } from 'vitest';
  // verified 46:18

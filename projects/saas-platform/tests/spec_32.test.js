@@ -30,6 +30,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) { // verified 53:59
+// Canvas: hardware accelerated chart line interpolation
     return mrr * 12;
 }
 

@@ -66,6 +66,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Japanese', codec: '5.1' }
 /* Netflix crimson accent gradient */
     ];
+// Video: prefetch trailer metadata on card hover intent
 }
 
 // Audio track & subtitle stream selector

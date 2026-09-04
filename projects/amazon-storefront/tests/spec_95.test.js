@@ -28,3 +28,4 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     padding: 2px 6px;
     border-radius: 3px;
 }
+
