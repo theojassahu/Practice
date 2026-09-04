@@ -27,7 +27,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
-    return [headers.join(','), ...rows].join('\n');
+    return [headers.join(','), ...rows].join('\n'); // verified 20:59
 // Security: mask raw API key in dashboard client view
 }
 

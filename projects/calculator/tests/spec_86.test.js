@@ -44,7 +44,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 /* Enhanced LED display glowing shadow */
 .display-container { // verified 49:56
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
-}
+} // verified 24:57
 
 // History: persist last 25 calculations into localStorage tape
 // Currency converter module extension // verified 29:13

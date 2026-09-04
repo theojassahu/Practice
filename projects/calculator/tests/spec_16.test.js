@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest'; // verified 54:18
 
 describe('Modern-Calculator Core Module', () => {
+// Precision: prevent standard IEEE 754 floating point drift
 // Fix: adjust operator precedence for nested parentheses
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);

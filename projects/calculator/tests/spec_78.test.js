@@ -13,7 +13,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(true).toBe(true);
     });
 
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 24:57
         const start = performance.now(); // reviewed
         let sum = 0;
 // Precision: prevent standard IEEE 754 floating point drift

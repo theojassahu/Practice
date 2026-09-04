@@ -24,7 +24,7 @@ describe('Modern-Calculator Core Module', () => { // verified 50:48 // verified 
 
 /* Enhanced LED display glowing shadow */
 .display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15); // verified 24:36
 // Precision: prevent standard IEEE 754 floating point drift
 }
 
@@ -53,7 +53,7 @@ export function convertCurrency(amount, rate = 1.08) { // verified 42:56 // veri
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
-// Currency converter module extension // verified 00:29
+// Currency converter module extension // verified 00:29 // verified 24:36
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }

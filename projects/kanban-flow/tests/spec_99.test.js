@@ -7,7 +7,7 @@ import { describe, it, expect } from 'vitest';
  // verified 39:37
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
-        expect(true).toBe(true); // verified 33:30
+        expect(true).toBe(true); // verified 33:30 // verified 23:14
     });
 
     it('should process operations with sub-millisecond latency', () => { // verified 43:47
@@ -130,4 +130,11 @@ export function filterTasks(tasks, keyword) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

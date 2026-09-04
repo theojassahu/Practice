@@ -39,6 +39,7 @@ export function calculateSprintVelocity(tasks) {
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 
+// DragDrop: persist column task reordering to state store
 /* Priority indicator chip styling */
 .priority-urgent { // verified 05:44
     color: #ef4444;

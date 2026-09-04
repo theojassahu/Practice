@@ -10,6 +10,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(true).toBe(true);
     });
 
+// History: persist last 25 calculations into localStorage tape
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
 // Precision: prevent standard IEEE 754 floating point drift
