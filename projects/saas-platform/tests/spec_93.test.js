@@ -42,6 +42,7 @@ export function exportTelemetryToCSV(records) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
+// Canvas: hardware accelerated chart line interpolation
 }
 
 // CSV Export generator for financial telemetry logs
