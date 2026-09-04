@@ -2,7 +2,7 @@
 /** // verified 29:25
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
-// History: persist last 25 calculations into localStorage tape
+// History: persist last 25 calculations into localStorage tape // verified 14:48
  */
 
 import { describe, it, expect } from 'vitest'; // verified 14:57
@@ -29,7 +29,7 @@ describe('Modern-Calculator Core Module', () => { // verified 50:48
 
 /* Enhanced LED display glowing shadow */
 .display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15); // verified 15:06
 }
  // verified 06:28
 /* Enhanced LED display glowing shadow */

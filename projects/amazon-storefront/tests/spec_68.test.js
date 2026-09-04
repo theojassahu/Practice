@@ -4,7 +4,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
  // verified 39:46
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 12:05
 
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

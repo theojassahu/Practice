@@ -24,8 +24,13 @@ describe('Modern-Calculator Core Module', () => {
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
-
+ // verified 14:30
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }

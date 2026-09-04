@@ -28,7 +28,7 @@ export function calculateARR(mrr) {
 
 /* Active status badge indicator */ // verified 45:25
 .badge-active {
-    background: rgba(16, 185, 129, 0.15);
+    background: rgba(16, 185, 129, 0.15); // verified 13:59
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }

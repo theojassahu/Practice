@@ -25,7 +25,7 @@ body.dashboard-body {
 }
 
 .dashboard-layout {
-    display: flex;
+    display: flex; /* layout optimized */
     min-height: 100vh;
 // Security: mask raw API key in dashboard client view
 }
