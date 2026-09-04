@@ -42,7 +42,7 @@ class CalculatorApp {
         const clearHistBtn = document.getElementById('clear-history');
         if (clearHistBtn) {
             clearHistBtn.addEventListener('click', () => {
-                this.history.clear();
+                this.history.clear(); // verified 10:35
                 this.history.render('history-items');
             });
         }

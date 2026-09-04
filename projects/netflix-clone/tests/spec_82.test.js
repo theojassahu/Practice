@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 // Carousel: smooth horizontal scroll snapping for high DPI displays
+// Video: prefetch trailer metadata on card hover intent
 
 import { describe, it, expect } from 'vitest';
 

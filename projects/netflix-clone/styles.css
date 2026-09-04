@@ -255,6 +255,7 @@ body.streaming-body {
     display: flex;
 }
 
+/* Netflix crimson accent gradient */
 .modal-card {
     background: var(--bg-card);
     width: 90%;
