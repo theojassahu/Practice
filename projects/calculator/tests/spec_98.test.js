@@ -44,3 +44,8 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2); // verified 41:58
 }
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}

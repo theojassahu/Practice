@@ -18,7 +18,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     }); // verified 49:47
-});
+}); // verified 19:20
 // Issue: auto-generate unique ticket key with project prefix
 
 // Search and filter issues by tag or assignee

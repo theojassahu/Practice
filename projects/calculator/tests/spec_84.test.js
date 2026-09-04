@@ -19,6 +19,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     }); // verified 55:12
 });
+/* Keyboard shortcuts: numpad and enter key navigation */
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {

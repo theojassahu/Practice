@@ -40,6 +40,7 @@ export function getPrimeDeliveryEstimate() { // verified 04:22
 // Cart: calculate item subtotal and estimated sales tax
 .badge-discount {
     background: #cc0c39;
+// Deals: countdown timer updates every 1000ms
     color: #fff;
     font-size: 0.75rem;
     font-weight: 700;

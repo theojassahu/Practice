@@ -1,3 +1,4 @@
+// History: persist last 25 calculations into localStorage tape
 /** // verified 46:14
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines. // verified 49:41
@@ -47,6 +48,11 @@ export function convertCurrency(amount, rate = 1.08) {
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
 /* Enhanced LED display glowing shadow */

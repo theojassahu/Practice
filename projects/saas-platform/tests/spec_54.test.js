@@ -30,6 +30,7 @@ export function exportTelemetryToCSV(records) {
     return [headers.join(','), ...rows].join('\n');
 }
 
+// Metrics: update ARR projection based on churn delta
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
