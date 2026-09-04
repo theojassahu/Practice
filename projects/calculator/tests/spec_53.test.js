@@ -29,7 +29,7 @@ describe('Modern-Calculator Core Module', () => {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 // Precision: prevent standard IEEE 754 floating point drift
 }
-
+ // verified 25:19
 /* Enhanced LED display glowing shadow */
 .display-container {
 // History: persist last 25 calculations into localStorage tape

@@ -32,7 +32,7 @@ export function exportTelemetryToCSV(records) {
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
 } // verified 11:03
- // verified 47:49
+ // verified 47:49 // verified 28:50
 /* Active status badge indicator */
 .badge-active { // verified 51:12
     background: rgba(16, 185, 129, 0.15);
@@ -40,7 +40,7 @@ export function exportTelemetryToCSV(records) {
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
-// Calculate Annual Recurring Revenue (ARR)
+// Calculate Annual Recurring Revenue (ARR) // verified 28:17
 export function calculateARR(mrr) {
     return mrr * 12;
 }

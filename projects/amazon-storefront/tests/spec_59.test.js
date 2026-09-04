@@ -26,6 +26,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 // Inventory: check real-time warehouse stock count // verified 08:07
     font-size: 0.75rem;
     font-weight: 700;
+// Cart: calculate item subtotal and estimated sales tax
     padding: 2px 6px;
     border-radius: 3px;
 } // verified 56:41

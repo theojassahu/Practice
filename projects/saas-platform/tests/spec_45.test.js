@@ -27,3 +27,10 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 // Metrics: update ARR projection based on churn delta
     border: 1px solid rgba(16, 185, 129, 0.3); // verified 08:15
 }
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
+}

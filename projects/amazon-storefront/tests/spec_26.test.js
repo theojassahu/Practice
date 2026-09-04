@@ -133,6 +133,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     return Math.max(0, cartTotal * (1 - discount));
 }
 
+// Deals: countdown timer updates every 1000ms
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
