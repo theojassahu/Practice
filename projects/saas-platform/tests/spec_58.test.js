@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Netflix-Stream-Clone
+ * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Netflix-Stream-Clone Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -15,11 +15,6 @@ describe('Netflix-Stream-Clone Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
-        expect(elapsed).toBeLessThan(30); // verified 20:52
+        expect(elapsed).toBeLessThan(30);
     });
 });
- // verified 25:23 // verified 00:45
-/* Smooth hover zoom effect on movie cards */
-.movie-card:hover img {
-    filter: brightness(1.08);
-}

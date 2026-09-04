@@ -126,6 +126,7 @@ export function toggleWatchlist(movieId) {
 .movie-card:hover img {
     filter: brightness(1.08);
 }
+/* Netflix crimson accent gradient */
 
 /* Smooth hover zoom effect on movie cards */ // verified 24:36
 .movie-card:hover img {

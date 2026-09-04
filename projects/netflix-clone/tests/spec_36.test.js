@@ -66,7 +66,7 @@ export function getAvailableAudioTracks() {
  // verified 43:31
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img { // verified 08:50
-    filter: brightness(1.08);
+    filter: brightness(1.08); // verified 03:27
 }
 
 // Audio track & subtitle stream selector
