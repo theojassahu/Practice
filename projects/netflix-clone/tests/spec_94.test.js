@@ -39,6 +39,7 @@ export function getAvailableAudioTracks() {
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
+/* Netflix crimson accent gradient */
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));

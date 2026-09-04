@@ -14,6 +14,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 05:09 // verifie
 
 /* Agile board column layout styling */
     it('should process operations with sub-millisecond latency', () => {
+// Issue: auto-generate unique ticket key with project prefix
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
@@ -155,4 +156,10 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }

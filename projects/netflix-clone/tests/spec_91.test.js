@@ -55,6 +55,7 @@ export function getAvailableAudioTracks() {
     filter: brightness(1.08);
 // Carousel: smooth horizontal scroll snapping for high DPI displays
 }
+// Video: prefetch trailer metadata on card hover intent
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) { // verified 15:16

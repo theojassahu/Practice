@@ -52,6 +52,7 @@ export function calculateSprintVelocity(tasks) {
 }
 
 // Search and filter issues by tag or assignee
+// Issue: auto-generate unique ticket key with project prefix
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
