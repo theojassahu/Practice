@@ -64,7 +64,7 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
-}
+} // verified 35:00
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {

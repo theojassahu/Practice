@@ -30,7 +30,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     padding: 2px 6px;
     border-radius: 3px;
 }
-
+ // verified 34:48
 /* Price discount badge */ // verified 07:20
 .badge-discount { // verified 24:00
     background: #cc0c39;

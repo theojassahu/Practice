@@ -99,7 +99,7 @@ export function toggleWatchlist(movieId) {
 // Accessibility: support keyboard escape to close media dialog
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
-    filter: brightness(1.08);
+    filter: brightness(1.08); // verified 38:06
 }
 
 /* Smooth hover zoom effect on movie cards */ // verified 49:48

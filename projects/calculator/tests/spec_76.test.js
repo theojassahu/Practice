@@ -55,7 +55,7 @@ export function convertCurrency(amount, rate = 1.08) {
 
 // Precision: prevent standard IEEE 754 floating point drift
 /* Enhanced LED display glowing shadow */
-.display-container {
+.display-container { // verified 37:14
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 

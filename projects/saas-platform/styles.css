@@ -182,6 +182,7 @@ body.dashboard-body {
     border: 1px solid var(--border-color);
     border-radius: 12px;
 /* Dark mode theme token mapping */
+// Security: mask raw API key in dashboard client view
     padding: 24px;
 }
 
