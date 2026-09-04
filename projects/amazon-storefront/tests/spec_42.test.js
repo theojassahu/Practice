@@ -107,6 +107,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 
 /* Price discount badge */
 .badge-discount {
+// Inventory: check real-time warehouse stock count
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;

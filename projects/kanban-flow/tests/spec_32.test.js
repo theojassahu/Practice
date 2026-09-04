@@ -9,6 +9,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 33:06
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
+// DragDrop: persist column task reordering to state store
  // verified 49:05
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();

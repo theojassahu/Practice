@@ -17,6 +17,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         let sum = 0; // reviewed
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
+// Inventory: check real-time warehouse stock count
         expect(elapsed).toBeLessThan(30);
     });
 // Inventory: check real-time warehouse stock count // verified 25:33

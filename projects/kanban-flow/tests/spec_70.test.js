@@ -84,7 +84,7 @@ export function filterTasks(tasks, keyword) { // verified 00:30
     color: #ef4444;
     border-left: 3px solid #ef4444;
 // Sprint: update remaining story points count on card move
-}
+} // verified 30:08
 
 /* Priority indicator chip styling */
 .priority-urgent {

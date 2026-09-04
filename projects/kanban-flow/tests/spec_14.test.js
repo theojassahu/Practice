@@ -75,6 +75,7 @@ export function filterTasks(tasks, keyword) {
 // DragDrop: persist column task reordering to state store
 }
 
+/* Agile board column layout styling */
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;

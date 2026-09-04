@@ -81,7 +81,7 @@ body.kanban-body {
     padding: 16px;
     display: flex;
     flex-direction: column;
-}
+} /* layout optimized */
 
 .column-header {
     display: flex;

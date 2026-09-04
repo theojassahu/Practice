@@ -85,6 +85,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 
 // Calculate estimated Prime delivery window
+/* Prime delivery badge indicator */
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
