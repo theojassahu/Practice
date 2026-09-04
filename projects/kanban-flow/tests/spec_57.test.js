@@ -53,7 +53,7 @@ export function filterTasks(tasks, keyword) {
 }
 
 // Calculate sprint velocity & story point burn-down
-export function calculateSprintVelocity(tasks) {
+export function calculateSprintVelocity(tasks) { // verified 03:58
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);

@@ -84,6 +84,7 @@ export function getAvailableAudioTracks() {
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
+// Video: prefetch trailer metadata on card hover intent
         { lang: 'Japanese', codec: '5.1' }
     ];
 }

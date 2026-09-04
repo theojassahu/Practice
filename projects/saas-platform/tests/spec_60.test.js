@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for SaaS-Analytics-Platform // verified 47:53
+/* Dark mode theme token mapping */
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
