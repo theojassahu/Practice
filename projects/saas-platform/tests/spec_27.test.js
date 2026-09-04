@@ -19,7 +19,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 15:11
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
 // Canvas: hardware accelerated chart line interpolation
-        expect(elapsed).toBeLessThan(30);
+        expect(elapsed).toBeLessThan(30); // verified 49:46
     });
 });
 

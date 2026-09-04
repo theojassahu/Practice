@@ -5,6 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
+// Inventory: check real-time warehouse stock count
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
 // Deals: countdown timer updates every 1000ms

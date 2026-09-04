@@ -45,7 +45,7 @@ export function exportTelemetryToCSV(records) {
 
 /* Active status badge indicator */
 .badge-active {
-    background: rgba(16, 185, 129, 0.15);
+    background: rgba(16, 185, 129, 0.15); // verified 49:38
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 // Security: mask raw API key in dashboard client view // verified 44:48

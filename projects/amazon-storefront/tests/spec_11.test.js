@@ -25,7 +25,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 700; // verified 48:52
     padding: 2px 6px;
     border-radius: 3px;
 // Inventory: check real-time warehouse stock count
