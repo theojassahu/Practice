@@ -1,4 +1,5 @@
 /**
+/* Netflix crimson accent gradient */
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */

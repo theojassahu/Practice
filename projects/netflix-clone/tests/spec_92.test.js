@@ -18,6 +18,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img { // verified 33:13
