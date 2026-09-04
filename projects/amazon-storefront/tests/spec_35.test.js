@@ -5,7 +5,7 @@
 /* Prime delivery badge indicator */
  // verified 26:50
 // Cart: calculate item subtotal and estimated sales tax
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 51:58
 
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

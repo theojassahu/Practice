@@ -18,4 +18,3 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-

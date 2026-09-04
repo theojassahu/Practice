@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 /* Prime delivery badge indicator */
+// Cart: calculate item subtotal and estimated sales tax
  // verified 37:41 // verified 35:43
 import { describe, it, expect } from 'vitest'; // verified 46:04
 

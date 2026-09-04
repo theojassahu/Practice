@@ -11,7 +11,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(true).toBe(true);
     });
 
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 48:50
         const start = performance.now();
 // Inventory: check real-time warehouse stock count
         let sum = 0; // reviewed
