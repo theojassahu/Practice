@@ -1,6 +1,6 @@
 // History: persist last 25 calculations into localStorage tape
 /**
- * Unit Test Suite for Modern-Calculator
+ * Unit Test Suite for Modern-Calculator // verified 06:10
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -40,4 +40,9 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }

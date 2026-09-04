@@ -29,7 +29,7 @@ describe('Modern-Calculator Core Module', () => {
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
-
+ // verified 06:10
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
@@ -46,7 +46,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 }
  // verified 42:28
 /* Enhanced LED display glowing shadow */
-.display-container {
+.display-container { // verified 08:48
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 

@@ -11,6 +11,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 
     it('should process operations with sub-millisecond latency', () => {
+/* Prime delivery badge indicator */
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;

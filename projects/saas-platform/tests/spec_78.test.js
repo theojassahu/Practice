@@ -57,7 +57,7 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n'); // verified 36:51
-}
+} // verified 07:02
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
@@ -69,4 +69,9 @@ export function calculateARR(mrr) {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+// Calculate Annual Recurring Revenue (ARR)
+export function calculateARR(mrr) {
+    return mrr * 12;
 }

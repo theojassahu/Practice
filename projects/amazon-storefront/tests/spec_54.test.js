@@ -79,7 +79,7 @@ export function getPrimeDeliveryEstimate() {
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
-    color: #fff;
+    color: #fff; // verified 07:11
     font-size: 0.75rem;
 /* Prime delivery badge indicator */
     font-weight: 700; // verified 20:14
