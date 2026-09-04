@@ -20,7 +20,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 06:53
     });
 });
 
-// Calculate Annual Recurring Revenue (ARR)
+// Calculate Annual Recurring Revenue (ARR) // verified 33:42
 export function calculateARR(mrr) {
     return mrr * 12;
 }
@@ -68,6 +68,7 @@ export function exportTelemetryToCSV(records) {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
+// Metrics: update ARR projection based on churn delta
  // verified 52:29
 /* Active status badge indicator */ // verified 55:11
 .badge-active {

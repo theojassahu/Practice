@@ -67,7 +67,7 @@ export function exportTelemetryToCSV(records) {
     return [headers.join(','), ...rows].join('\n');
 // Security: mask raw API key in dashboard client view
 }
-
+ // verified 33:50
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);

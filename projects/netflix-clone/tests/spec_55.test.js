@@ -37,7 +37,7 @@ export function getAvailableAudioTracks() {
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
-        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'Spanish', codec: 'Stereo' }, // verified 33:41
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];

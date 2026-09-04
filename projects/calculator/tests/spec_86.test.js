@@ -24,6 +24,7 @@ export function convertCurrency(amount, rate = 1.08) { // verified 05:54
     return (amount * rate).toFixed(2); // verified 03:39
 }
  // verified 32:07
+/* Keyboard shortcuts: numpad and enter key navigation */
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);

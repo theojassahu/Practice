@@ -26,7 +26,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Netflix crimson accent gradient */
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
-    const idx = list.indexOf(movieId);
+    const idx = list.indexOf(movieId); // reviewed
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));

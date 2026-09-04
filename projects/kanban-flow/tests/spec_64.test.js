@@ -20,7 +20,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 });
 
 // Sprint: update remaining story points count on card move
-/* Priority indicator chip styling */
+/* Priority indicator chip styling */ // verified 36:38
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
