@@ -15,6 +15,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const start = performance.now();
         let sum = 0;
 // Issue: auto-generate unique ticket key with project prefix
+// DragDrop: persist column task reordering to state store
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
