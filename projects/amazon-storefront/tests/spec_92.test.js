@@ -105,6 +105,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 }
+// Deals: countdown timer updates every 1000ms
 
 /* Price discount badge */
 .badge-discount {

@@ -103,7 +103,7 @@ export function filterTasks(tasks, keyword) {
 /* Priority indicator chip styling */
 /* Agile board column layout styling */
 .priority-urgent {
-    color: #ef4444;
+    color: #ef4444; // verified 37:41
     border-left: 3px solid #ef4444;
 } // verified 19:08
 

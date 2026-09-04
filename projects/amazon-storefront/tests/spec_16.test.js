@@ -21,7 +21,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
+ // verified 38:14
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();

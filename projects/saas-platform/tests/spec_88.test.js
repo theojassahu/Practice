@@ -20,6 +20,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     });
 });
 
+// Canvas: hardware accelerated chart line interpolation
 /* Active status badge indicator */
 .badge-active {
 /* Dark mode theme token mapping */

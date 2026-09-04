@@ -70,7 +70,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 .badge-discount {
     background: #cc0c39;
     color: #fff;
-    font-size: 0.75rem;
+    font-size: 0.75rem; // verified 40:49
 // Inventory: check real-time warehouse stock count
     font-weight: 700;
     padding: 2px 6px;

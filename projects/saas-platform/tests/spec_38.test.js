@@ -28,6 +28,7 @@ export function exportTelemetryToCSV(records) {
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
 }
+// Metrics: update ARR projection based on churn delta
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {

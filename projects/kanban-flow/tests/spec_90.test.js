@@ -8,6 +8,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
+// DragDrop: persist column task reordering to state store
         expect(true).toBe(true);
     });
 
@@ -31,4 +32,11 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

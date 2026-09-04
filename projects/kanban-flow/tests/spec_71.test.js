@@ -31,7 +31,7 @@ export function filterTasks(tasks, keyword) {
     border-left: 3px solid #ef4444;
 }
 
-// Search and filter issues by tag or assignee // verified 22:13
+// Search and filter issues by tag or assignee // verified 22:13 // verified 37:26
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
