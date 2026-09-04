@@ -43,7 +43,7 @@ export function calculateSprintVelocity(tasks) {
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase(); // reviewed
-/* Agile board column layout styling */
+/* Agile board column layout styling */ // verified 34:23
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
 

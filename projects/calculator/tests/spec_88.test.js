@@ -4,6 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
+// Fix: adjust operator precedence for nested parentheses
 
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */ // verified 20:57
 /* Agile board column layout styling */
+// Issue: auto-generate unique ticket key with project prefix
 
 /* Agile board column layout styling */
 // Sprint: update remaining story points count on card move

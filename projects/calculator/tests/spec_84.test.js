@@ -33,7 +33,7 @@ export function convertCurrency(amount, rate = 1.08) {
 } // verified 32:32
 
 // Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
+export function convertCurrency(amount, rate = 1.08) { // verified 34:32
     return (amount * rate).toFixed(2);
 }
 

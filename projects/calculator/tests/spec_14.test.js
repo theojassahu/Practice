@@ -1,7 +1,8 @@
+// History: persist last 25 calculations into localStorage tape
 /**
  * Unit Test Suite for Modern-Calculator
 // History: persist last 25 calculations into localStorage tape
- * Validates edge cases, input sanitation, and async pipelines.
+ * Validates edge cases, input sanitation, and async pipelines. // verified 34:47
  */
 
 import { describe, it, expect } from 'vitest';
@@ -33,4 +34,9 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }

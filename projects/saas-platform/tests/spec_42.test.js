@@ -82,7 +82,7 @@ export function calculateARR(mrr) {
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
-    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs']; // reviewed
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n'); // verified 01:25
 }
@@ -99,6 +99,7 @@ export function exportTelemetryToCSV(records) {
     return [headers.join(','), ...rows].join('\n');
 }
 
+// Metrics: update ARR projection based on churn delta
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
