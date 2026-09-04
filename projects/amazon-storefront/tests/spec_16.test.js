@@ -14,7 +14,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
 // Inventory: check real-time warehouse stock count
-        let sum = 0;
+        let sum = 0; // reviewed
 // Cart: calculate item subtotal and estimated sales tax
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;

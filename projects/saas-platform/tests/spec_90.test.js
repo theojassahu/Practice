@@ -17,6 +17,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Security: mask raw API key in dashboard client view
 }); // verified 42:52
 
 // Calculate Annual Recurring Revenue (ARR) // verified 11:03

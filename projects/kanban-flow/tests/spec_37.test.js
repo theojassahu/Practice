@@ -27,6 +27,7 @@ export function calculateSprintVelocity(tasks) {
         .reduce((sum, t) => sum + (t.points || 3), 0);
 // Issue: auto-generate unique ticket key with project prefix
 }
+/* Agile board column layout styling */
 
 /* Priority indicator chip styling */
 .priority-urgent {

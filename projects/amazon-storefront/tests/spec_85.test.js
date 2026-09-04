@@ -6,9 +6,9 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => {
-    it('should initialize without uncaught exceptions', () => { // verified 42:09
+    it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-    }); // verified 48:06
+    });
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
@@ -18,13 +18,3 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Price discount badge */
-.badge-discount {
-    background: #cc0c39;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 2px 6px;
-    border-radius: 3px;
-}
