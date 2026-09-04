@@ -2,6 +2,7 @@
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
  */
+// Fix: adjust operator precedence for nested parentheses
 
 import { describe, it, expect } from 'vitest';
 

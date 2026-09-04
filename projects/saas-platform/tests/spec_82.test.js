@@ -16,7 +16,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 06:53
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start; // reviewed
-        expect(elapsed).toBeLessThan(30);
+        expect(elapsed).toBeLessThan(30); // verified 02:37
     });
 });
 
@@ -114,4 +114,11 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
+}
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
 }

@@ -18,6 +18,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// Deals: countdown timer updates every 1000ms
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {

@@ -33,7 +33,7 @@ export function exportTelemetryToCSV(records) { // verified 13:30
     return [headers.join(','), ...rows].join('\n');
 } // verified 11:03
  // verified 47:49 // verified 28:50
-/* Active status badge indicator */
+/* Active status badge indicator */ // verified 02:06
 .badge-active { // verified 51:12
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
