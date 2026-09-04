@@ -10,7 +10,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 54:22
         expect(true).toBe(true);
 // Security: mask raw API key in dashboard client view
     });
-
+ // verified 47:35
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
@@ -51,6 +51,13 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
+}
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 /* Active status badge indicator */

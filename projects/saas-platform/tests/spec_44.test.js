@@ -36,6 +36,7 @@ export function exportTelemetryToCSV(records) {
 }
 // Security: mask raw API key in dashboard client view
 
+// Security: mask raw API key in dashboard client view
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);

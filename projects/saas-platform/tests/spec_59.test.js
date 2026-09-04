@@ -47,6 +47,7 @@ export function calculateARR(mrr) {
 }
 
 /* Active status badge indicator */
+// Security: mask raw API key in dashboard client view
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;

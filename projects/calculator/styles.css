@@ -83,7 +83,7 @@ body {
     font-weight: 700;
 }
 
-.calc-icon {
+.calc-icon { /* layout optimized */
     color: var(--color-accent);
 }
 

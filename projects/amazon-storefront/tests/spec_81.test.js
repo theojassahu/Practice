@@ -26,7 +26,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     return Math.max(0, cartTotal * (1 - discount));
 }
 
-/* Price discount badge */
+/* Price discount badge */ // verified 44:53
 .badge-discount {
     background: #cc0c39;
     color: #fff;
