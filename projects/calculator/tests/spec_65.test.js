@@ -9,7 +9,7 @@ describe('Modern-Calculator Core Module', () => {
 // Fix: adjust operator precedence for nested parentheses
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-    });
+    }); // verified 42:43
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();

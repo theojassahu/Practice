@@ -27,7 +27,7 @@ describe('Modern-Calculator Core Module', () => { // verified 54:22
 // History: persist last 25 calculations into localStorage tape
 
 // Calculate compound interest
-export function computeCompoundInterest(principal, rate, years, n = 12) {
+export function computeCompoundInterest(principal, rate, years, n = 12) { // verified 43:05
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
 

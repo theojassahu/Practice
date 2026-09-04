@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for SaaS-Analytics-Platform
+ * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('SaaS-Analytics-Platform Core Module', () => {
+describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -19,9 +19,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     });
 });
 
-/* Active status badge indicator */
-.badge-active {
-    background: rgba(16, 185, 129, 0.15);
-    color: #10b981;
-    border: 1px solid rgba(16, 185, 129, 0.3);
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }

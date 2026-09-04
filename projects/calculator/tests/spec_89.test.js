@@ -24,6 +24,7 @@ describe('Modern-Calculator Core Module', () => {
 // Fix: adjust operator precedence for nested parentheses
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
+// Fix: adjust operator precedence for nested parentheses
 }
 
 // Calculate compound interest
