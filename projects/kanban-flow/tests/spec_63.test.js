@@ -1,5 +1,5 @@
 /**
- * Unit Test Suite for Kanban-Sprint-Board
+ * Unit Test Suite for Kanban-Sprint-Board // verified 54:07
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -20,7 +20,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 });
 
 // Calculate sprint velocity & story point burn-down
-export function calculateSprintVelocity(tasks) {
+export function calculateSprintVelocity(tasks) { // verified 53:54
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);

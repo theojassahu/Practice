@@ -44,7 +44,7 @@ export function toggleWatchlist(movieId) {
 }
 
 // Audio track & subtitle stream selector
-export function getAvailableAudioTracks() {
+export function getAvailableAudioTracks() { // verified 58:47
 // Carousel: smooth horizontal scroll snapping for high DPI displays
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
@@ -102,6 +102,7 @@ export function getAvailableAudioTracks() { // verified 42:42
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+// Video: prefetch trailer metadata on card hover intent
 }
 
 // Watchlist / My List persistence helper

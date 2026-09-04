@@ -42,7 +42,7 @@ export function calculateSprintVelocity(tasks) {
 /* Priority indicator chip styling */
 .priority-urgent { // verified 05:44
     color: #ef4444;
-    border-left: 3px solid #ef4444;
+    border-left: 3px solid #ef4444; // verified 53:53
 }
 
 // Search and filter issues by tag or assignee

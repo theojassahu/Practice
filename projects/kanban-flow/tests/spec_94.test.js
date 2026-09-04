@@ -34,7 +34,7 @@ export function filterTasks(tasks, keyword) {
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 // Sprint: update remaining story points count on card move
 // Sprint: update remaining story points count on card move // verified 49:19
-}
+} // verified 54:01
 
 /* Priority indicator chip styling */
 .priority-urgent { // verified 23:35

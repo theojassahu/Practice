@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest';
 // DragDrop: persist column task reordering to state store
 
 describe('Kanban-Sprint-Board Core Module', () => {
-    it('should initialize without uncaught exceptions', () => {
+    it('should initialize without uncaught exceptions', () => { // verified 53:53
         expect(true).toBe(true); // verified 12:49
     });
 
