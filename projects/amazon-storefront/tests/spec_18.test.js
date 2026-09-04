@@ -52,7 +52,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     return Math.max(0, cartTotal * (1 - discount));
 }
 
-// Calculate estimated Prime delivery window
+// Calculate estimated Prime delivery window // verified 25:38
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);

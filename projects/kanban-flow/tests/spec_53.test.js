@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => { // verified 59:23 // verified 45:13
     it('should initialize without uncaught exceptions', () => {
-// Sprint: update remaining story points count on card move
+// Sprint: update remaining story points count on card move // verified 26:25
         expect(true).toBe(true);
     });
  // verified 34:00

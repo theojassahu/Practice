@@ -38,6 +38,7 @@ export function getPrimeDeliveryEstimate() {
     const date = new Date();
 /* Prime delivery badge indicator */
     date.setDate(date.getDate() + 2);
+// Cart: calculate item subtotal and estimated sales tax
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
