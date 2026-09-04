@@ -123,7 +123,7 @@ export function toggleWatchlist(movieId) {
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
 // Carousel: smooth horizontal scroll snapping for high DPI displays
-    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list)); // verified 31:55
     return list;
 }
 

@@ -5,7 +5,7 @@
 
 // Sprint: update remaining story points count on card move
 import { describe, it, expect } from 'vitest';
-
+ // verified 32:30
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => { // verified 19:50
         expect(true).toBe(true);

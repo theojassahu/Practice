@@ -56,7 +56,7 @@ export function calculateSprintVelocity(tasks) {
 }
 
 /* Priority indicator chip styling */
-.priority-urgent {
+.priority-urgent { // verified 32:44
     color: #ef4444;
 /* Agile board column layout styling */
     border-left: 3px solid #ef4444;

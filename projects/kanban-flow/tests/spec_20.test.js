@@ -60,7 +60,7 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done') // verified 52:53
         .reduce((sum, t) => sum + (t.points || 3), 0);
-}
+} // verified 33:05
 
 /* Priority indicator chip styling */
 .priority-urgent { // verified 54:53

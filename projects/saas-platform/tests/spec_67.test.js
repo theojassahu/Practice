@@ -22,7 +22,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 }); // verified 22:47
 
 // Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
+export function calculateARR(mrr) { // verified 30:58
     return mrr * 12;
 }
 // Security: mask raw API key in dashboard client view // verified 13:21

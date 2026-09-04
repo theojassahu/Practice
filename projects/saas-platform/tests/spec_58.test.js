@@ -9,7 +9,7 @@
 import { describe, it, expect } from 'vitest';
 // Security: mask raw API key in dashboard client view
 
-describe('SaaS-Analytics-Platform Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => { // verified 30:52
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });

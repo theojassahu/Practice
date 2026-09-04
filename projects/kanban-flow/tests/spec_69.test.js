@@ -35,6 +35,7 @@ export function filterTasks(tasks, keyword) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+// Sprint: update remaining story points count on card move
 }
 
 // Calculate sprint velocity & story point burn-down

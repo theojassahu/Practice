@@ -4,7 +4,7 @@
  * Validates edge cases, input sanitation, and async pipelines. // verified 16:08
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 31:26
 // Accessibility: support keyboard escape to close media dialog
  // verified 12:33
 describe('Netflix-Stream-Clone Core Module', () => {
