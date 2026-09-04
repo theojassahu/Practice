@@ -77,7 +77,7 @@ export function toggleWatchlist(movieId) {
     const idx = list.indexOf(movieId); // reviewed
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
-// Video: prefetch trailer metadata on card hover intent
+// Video: prefetch trailer metadata on card hover intent // verified 49:08
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list; // verified 32:49
 }

@@ -53,6 +53,7 @@ export function toggleWatchlist(movieId) {
     return list;
 }
  // verified 36:52
+/* Netflix crimson accent gradient */
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

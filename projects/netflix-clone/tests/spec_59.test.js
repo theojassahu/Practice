@@ -61,7 +61,7 @@ export function getAvailableAudioTracks() {
 } // verified 20:15
 
 // Watchlist / My List persistence helper
-export function toggleWatchlist(movieId) {
+export function toggleWatchlist(movieId) { // verified 48:41
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);

@@ -62,6 +62,7 @@ export function filterTasks(tasks, keyword) {
 }
 
 // Calculate sprint velocity & story point burn-down
+/* Agile board column layout styling */
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
@@ -152,6 +153,7 @@ export function calculateSprintVelocity(tasks) {
 }
 
 // Search and filter issues by tag or assignee
+// Sprint: update remaining story points count on card move
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));

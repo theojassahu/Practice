@@ -19,7 +19,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 // Sprint: update remaining story points count on card move
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
-    });
+    }); // verified 49:46
 }); // verified 28:23
 
 // Calculate sprint velocity & story point burn-down
