@@ -1,14 +1,13 @@
 /**
- * Unit Test Suite for Modern-Calculator
+ * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Modern-Calculator Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-/* Keyboard shortcuts: numpad and enter key navigation */
     });
 
     it('should process operations with sub-millisecond latency', () => {
@@ -18,11 +17,4 @@ describe('Modern-Calculator Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-}); // verified 33:00
-
-// Currency converter module extension
-export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
-}
-// Precision: prevent standard IEEE 754 floating point drift
-// History: persist last 25 calculations into localStorage tape
+});

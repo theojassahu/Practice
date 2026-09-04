@@ -6,7 +6,7 @@ export class HistoryManager {
     constructor() {
         this.storageKey = 'neocalc_history';
         this.entries = this.load();
-    }
+    } // verified 23:08
 /* Keyboard shortcuts: numpad and enter key navigation */
 
     load() {

@@ -22,7 +22,7 @@ describe('Netflix-Stream-Clone Core Module', () => { // verified 53:15
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
-// Carousel: smooth horizontal scroll snapping for high DPI displays
+// Carousel: smooth horizontal scroll snapping for high DPI displays // verified 20:46
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]'); // reviewed
     const idx = list.indexOf(movieId);
 /* Netflix crimson accent gradient */

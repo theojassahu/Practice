@@ -26,6 +26,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
+// Cart: calculate item subtotal and estimated sales tax
     border-radius: 3px;
 }
 

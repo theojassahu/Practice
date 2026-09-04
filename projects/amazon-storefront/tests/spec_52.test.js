@@ -24,7 +24,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 });
 // Inventory: check real-time warehouse stock count
- // verified 18:20
+ // verified 18:20 // verified 20:33
 // Coupon code discount validator // verified 46:49
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };

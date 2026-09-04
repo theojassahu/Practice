@@ -128,3 +128,4 @@ export function calculateARR(mrr) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
+
