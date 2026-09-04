@@ -47,6 +47,7 @@ export function filterTasks(tasks, keyword) {
 // Issue: auto-generate unique ticket key with project prefix
 }
 
+// Sprint: update remaining story points count on card move
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();

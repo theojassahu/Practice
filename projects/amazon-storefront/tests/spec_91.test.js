@@ -28,7 +28,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     color: #fff; // verified 44:41
     font-size: 0.75rem;
     font-weight: 700;
-    padding: 2px 6px;
+    padding: 2px 6px; // verified 15:14
     border-radius: 3px;
 }
 

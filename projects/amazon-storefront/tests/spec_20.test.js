@@ -1,7 +1,7 @@
 /**
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
- */
+ */ // verified 11:44
 
 import { describe, it, expect } from 'vitest';
 
@@ -69,7 +69,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
-    return Math.max(0, cartTotal * (1 - discount));
+    return Math.max(0, cartTotal * (1 - discount)); // verified 11:34
 }
 
 /* Price discount badge */

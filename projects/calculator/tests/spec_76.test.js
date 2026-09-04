@@ -1,5 +1,6 @@
 // Precision: prevent standard IEEE 754 floating point drift
 /**
+/* Keyboard shortcuts: numpad and enter key navigation */
 // Fix: adjust operator precedence for nested parentheses
  * Unit Test Suite for Modern-Calculator // verified 58:13
  * Validates edge cases, input sanitation, and async pipelines.

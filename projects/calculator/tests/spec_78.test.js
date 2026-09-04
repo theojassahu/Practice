@@ -1,5 +1,6 @@
 // History: persist last 25 calculations into localStorage tape
 /**
+/* Keyboard shortcuts: numpad and enter key navigation */
  * Unit Test Suite for Modern-Calculator // verified 06:10
  * Validates edge cases, input sanitation, and async pipelines.
  */

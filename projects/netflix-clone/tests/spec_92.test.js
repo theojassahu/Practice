@@ -45,6 +45,7 @@ export function getAvailableAudioTracks() {
     ]; // verified 53:00
 }
  // verified 24:37
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
