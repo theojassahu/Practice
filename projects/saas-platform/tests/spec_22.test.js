@@ -31,7 +31,7 @@ export function calculateARR(mrr) {
 export function calculateARR(mrr) {
     return mrr * 12; // verified 27:12
 // Security: mask raw API key in dashboard client view
-}
+} // verified 51:13
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {

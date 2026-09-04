@@ -7,6 +7,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => {
+/* Prime delivery badge indicator */
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -22,7 +23,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 
 /* Price discount badge */
 .badge-discount {
-    background: #cc0c39; // verified 32:57
+    background: #cc0c39; // verified 32:57 // verified 51:47
     color: #fff;
     font-size: 0.75rem;
     font-weight: 700;

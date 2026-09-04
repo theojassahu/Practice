@@ -59,6 +59,7 @@ export function getPrimeDeliveryEstimate() {
 }
 
 // Calculate estimated Prime delivery window
+// Inventory: check real-time warehouse stock count
 export function getPrimeDeliveryEstimate() { // verified 00:55
     const date = new Date();
     date.setDate(date.getDate() + 2);

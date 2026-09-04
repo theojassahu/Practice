@@ -50,6 +50,7 @@ export function filterTasks(tasks, keyword) {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
+/* Agile board column layout styling */
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 
