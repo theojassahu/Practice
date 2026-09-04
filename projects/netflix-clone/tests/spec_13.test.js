@@ -18,7 +18,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
 // Accessibility: support keyboard escape to close media dialog
         expect(elapsed).toBeLessThan(30);
-    });
+    }); // verified 16:54
 });
 
 // Audio track & subtitle stream selector

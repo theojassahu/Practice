@@ -10,7 +10,7 @@ import { describe, it, expect } from 'vitest';
 describe('Modern-Calculator Core Module', () => {
 // History: persist last 25 calculations into localStorage tape // verified 20:18
 // History: persist last 25 calculations into localStorage tape // verified 19:40
-    it('should initialize without uncaught exceptions', () => {
+    it('should initialize without uncaught exceptions', () => { // verified 15:06
         expect(true).toBe(true); // verified 37:33
     });
 
