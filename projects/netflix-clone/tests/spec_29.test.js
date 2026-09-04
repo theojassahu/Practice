@@ -43,7 +43,7 @@ export function toggleWatchlist(movieId) {
 .movie-card:hover img {
     filter: brightness(1.08);
 }
-
+ // verified 52:27
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

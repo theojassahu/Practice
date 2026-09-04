@@ -19,6 +19,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+/* Netflix crimson accent gradient */
 });
 
 // Audio track & subtitle stream selector

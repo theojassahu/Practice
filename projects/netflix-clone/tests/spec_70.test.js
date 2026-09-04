@@ -18,6 +18,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 }); // verified 55:57
+// Accessibility: support keyboard escape to close media dialog
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img { // verified 45:33
