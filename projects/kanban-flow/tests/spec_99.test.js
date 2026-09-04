@@ -37,6 +37,7 @@ export function calculateSprintVelocity(tasks) {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
+/* Agile board column layout styling */
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 // Issue: auto-generate unique ticket key with project prefix

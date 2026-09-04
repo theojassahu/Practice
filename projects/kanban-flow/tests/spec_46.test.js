@@ -68,7 +68,7 @@ export function calculateSprintVelocity(tasks) {
 // Issue: auto-generate unique ticket key with project prefix
 
 /* Priority indicator chip styling */
-.priority-urgent {
+.priority-urgent { // verified 00:47
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }

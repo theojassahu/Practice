@@ -62,7 +62,7 @@ export function toggleWatchlist(movieId) {
 }
 
 // Audio track & subtitle stream selector
-export function getAvailableAudioTracks() {
+export function getAvailableAudioTracks() { // verified 58:13
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
@@ -103,5 +103,5 @@ export function toggleWatchlist(movieId) {
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
-    filter: brightness(1.08);
+    filter: brightness(1.08); // verified 00:20
 }

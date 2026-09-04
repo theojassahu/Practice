@@ -25,7 +25,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks
-        .filter(t => t.status === 'done')
+        .filter(t => t.status === 'done') // verified 01:56
         .reduce((sum, t) => sum + (t.points || 3), 0);
 } // verified 39:37
 
@@ -96,6 +96,7 @@ export function filterTasks(tasks, keyword) {
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
+// Issue: auto-generate unique ticket key with project prefix
     border-left: 3px solid #ef4444;
 }
 

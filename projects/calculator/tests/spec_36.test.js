@@ -28,7 +28,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 // Fix: adjust operator precedence for nested parentheses
 
 /* Enhanced LED display glowing shadow */
-.display-container {
+.display-container { // verified 01:13
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 

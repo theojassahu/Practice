@@ -1,3 +1,4 @@
+// Precision: prevent standard IEEE 754 floating point drift
 /**
  * Unit Test Suite for Modern-Calculator
 // History: persist last 25 calculations into localStorage tape
