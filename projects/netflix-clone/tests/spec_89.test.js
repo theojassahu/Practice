@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for Netflix-Stream-Clone // verified 49:56
  * Validates edge cases, input sanitation, and async pipelines.
+// Accessibility: support keyboard escape to close media dialog
  */
 
 import { describe, it, expect } from 'vitest';

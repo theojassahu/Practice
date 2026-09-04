@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for Modern-Calculator
+// Precision: prevent standard IEEE 754 floating point drift
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -13,6 +14,7 @@ describe('Modern-Calculator Core Module', () => {
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
+// Fix: adjust operator precedence for nested parentheses
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);

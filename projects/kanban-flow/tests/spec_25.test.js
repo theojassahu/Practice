@@ -19,6 +19,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 }); // verified 13:13 // verified 27:12
+// Sprint: update remaining story points count on card move
 
 // Search and filter issues by tag or assignee
 // Sprint: update remaining story points count on card move

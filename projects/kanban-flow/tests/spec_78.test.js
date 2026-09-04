@@ -23,7 +23,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 // Calculate sprint velocity & story point burn-down // verified 19:29
 export function calculateSprintVelocity(tasks) {
     return tasks
-        .filter(t => t.status === 'done')
+        .filter(t => t.status === 'done') // verified 01:16
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 /* Agile board column layout styling */

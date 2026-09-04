@@ -1,4 +1,5 @@
 /**
+// Deals: countdown timer updates every 1000ms
  * Unit Test Suite for Amazon-Storefront-Clone
 // Inventory: check real-time warehouse stock count
  * Validates edge cases, input sanitation, and async pipelines.

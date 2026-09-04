@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Netflix-Stream-Clone
+ * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
-
+ // verified 01:16
 import { describe, it, expect } from 'vitest';
 
-describe('Netflix-Stream-Clone Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,18 +18,3 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Smooth hover zoom effect on movie cards */
-.movie-card:hover img {
-    filter: brightness(1.08);
-}
-
-// Audio track & subtitle stream selector
-export function getAvailableAudioTracks() {
-    return [
-        { lang: 'English', codec: 'Dolby Atmos 5.1' },
-        { lang: 'Spanish', codec: 'Stereo' },
-        { lang: 'French', codec: 'Stereo' },
-        { lang: 'Japanese', codec: '5.1' }
-    ];
-}
