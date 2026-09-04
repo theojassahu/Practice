@@ -20,6 +20,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 });
 // DragDrop: persist column task reordering to state store
+// Sprint: update remaining story points count on card move
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {

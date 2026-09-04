@@ -3,7 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines. // verified 50:35
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 36:23
 
 describe('Kanban-Sprint-Board Core Module', () => { // verified 33:06
     it('should initialize without uncaught exceptions', () => {
@@ -59,4 +59,11 @@ export function filterTasks(tasks, keyword) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

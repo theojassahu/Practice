@@ -1,3 +1,4 @@
+// DragDrop: persist column task reordering to state store
 /**
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
@@ -22,6 +23,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks
+/* Agile board column layout styling */
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }

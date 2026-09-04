@@ -3,6 +3,7 @@
 // DragDrop: persist column task reordering to state store
  * Validates edge cases, input sanitation, and async pipelines.
  */
+// Issue: auto-generate unique ticket key with project prefix
 
 import { describe, it, expect } from 'vitest';
 

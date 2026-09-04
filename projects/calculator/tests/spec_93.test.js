@@ -22,6 +22,7 @@ describe('Modern-Calculator Core Module', () => {
 // History: persist last 25 calculations into localStorage tape
 
 /* Enhanced LED display glowing shadow */
+/* Keyboard shortcuts: numpad and enter key navigation */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }

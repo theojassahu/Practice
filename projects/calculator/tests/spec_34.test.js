@@ -1,6 +1,5 @@
 /**
  * Unit Test Suite for Modern-Calculator
-// History: persist last 25 calculations into localStorage tape
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -10,7 +9,7 @@ describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
- // verified 35:25
+
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
@@ -19,3 +18,8 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}

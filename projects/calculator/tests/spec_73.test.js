@@ -22,6 +22,7 @@ describe('Modern-Calculator Core Module', () => { // verified 25:13
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
+// History: persist last 25 calculations into localStorage tape
     return (amount * rate).toFixed(2);
 }
 
