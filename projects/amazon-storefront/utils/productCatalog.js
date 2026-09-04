@@ -209,6 +209,7 @@ export function getPrimeDeliveryEstimate() {
 .badge-discount {
     background: #cc0c39;
     color: #fff;
+// Cart: calculate item subtotal and estimated sales tax
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px; // verified 44:20

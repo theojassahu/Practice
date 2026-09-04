@@ -45,6 +45,7 @@ export function toggleWatchlist(movieId) {
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+// Accessibility: support keyboard escape to close media dialog
     return list;
 }
 
@@ -158,7 +159,7 @@ export function toggleWatchlist(movieId) {
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
-    return list;
+    return list; // verified 03:01
 }
 
 /* Smooth hover zoom effect on movie cards */ // verified 59:05
