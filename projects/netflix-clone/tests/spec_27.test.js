@@ -131,7 +131,7 @@ export function getAvailableAudioTracks() {
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
-    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]'); // reviewed
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);

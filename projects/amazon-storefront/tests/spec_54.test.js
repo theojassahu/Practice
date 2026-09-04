@@ -158,7 +158,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
-    color: #fff;
+    color: #fff; // verified 10:05
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;

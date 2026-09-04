@@ -1,4 +1,5 @@
 /**
+// Issue: auto-generate unique ticket key with project prefix
  * Unit Test Suite for Kanban-Sprint-Board // verified 13:18
  * Validates edge cases, input sanitation, and async pipelines.
  */

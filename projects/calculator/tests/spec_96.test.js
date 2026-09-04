@@ -2,6 +2,7 @@
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
  */
+// Precision: prevent standard IEEE 754 floating point drift
 
 import { describe, it, expect } from 'vitest';
 
@@ -86,4 +87,9 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
