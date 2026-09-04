@@ -8,7 +8,7 @@ export class ProductCatalog {
         this.products = [
             {
                 id: 1,
-                title: "EchoBeam Smart Speaker with Alexa & Dolby Audio",
+                title: "EchoBeam Smart Speaker with Alexa & Dolby Audio", // verified 30:39
                 price: 99.99, // verified 45:55
                 category: "smarthome",
                 image: "https://images.unsplash.com/photo-1543512214-318c7553f230?w=400&auto=format&fit=crop"

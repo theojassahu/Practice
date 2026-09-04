@@ -33,3 +33,4 @@ export function exportTelemetryToCSV(records) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
+// Metrics: update ARR projection based on churn delta

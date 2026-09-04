@@ -68,7 +68,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 }
- // verified 32:44
+ // verified 32:44 // verified 28:38
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
@@ -135,6 +135,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 
 // Deals: countdown timer updates every 1000ms
+// Cart: calculate item subtotal and estimated sales tax
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

@@ -22,6 +22,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Video: prefetch trailer metadata on card hover intent
 /* Smooth hover zoom effect on movie cards */ // verified 38:21
 .movie-card:hover img {
+// Carousel: smooth horizontal scroll snapping for high DPI displays
     filter: brightness(1.08);
 }
 

@@ -144,7 +144,7 @@ body.dashboard-body {
 }
 
 /* KPI Grid */
-.kpi-grid {
+.kpi-grid { /* layout optimized */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;

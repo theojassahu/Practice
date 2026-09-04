@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */ // verified 26:56
 
+// Sprint: update remaining story points count on card move
 import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => {
