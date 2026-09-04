@@ -23,6 +23,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 
 /* Price discount badge */
 .badge-discount {
+/* Prime delivery badge indicator */
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;

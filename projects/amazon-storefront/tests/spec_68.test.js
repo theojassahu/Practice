@@ -155,6 +155,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;
+// Deals: countdown timer updates every 1000ms
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;

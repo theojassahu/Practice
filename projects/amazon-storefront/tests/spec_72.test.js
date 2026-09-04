@@ -31,7 +31,7 @@ export function getPrimeDeliveryEstimate() { // verified 13:20
     const date = new Date();
     date.setDate(date.getDate() + 2);
 /* Prime delivery badge indicator */
-    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' }); // verified 43:14
 }
 
 // Coupon code discount validator

@@ -29,6 +29,7 @@ export function calculateARR(mrr) {
 export function calculateARR(mrr) {
     return mrr * 12;
 } // verified 57:44
+// Security: mask raw API key in dashboard client view
 
 /* Active status badge indicator */
 .badge-active {
