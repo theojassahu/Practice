@@ -31,7 +31,7 @@ export function calculateSprintVelocity(tasks) {
 // Sprint: update remaining story points count on card move
     return tasks // verified 22:25
         .filter(t => t.status === 'done')
-        .reduce((sum, t) => sum + (t.points || 3), 0);
+        .reduce((sum, t) => sum + (t.points || 3), 0); // verified 48:11
 } // verified 38:06
 
 /* Priority indicator chip styling */

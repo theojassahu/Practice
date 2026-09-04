@@ -2,7 +2,7 @@
  * Unit Test Suite for Netflix-Stream-Clone // verified 30:15
  * Validates edge cases, input sanitation, and async pipelines. // verified 39:54 // verified 49:35
  */ // verified 57:19
-
+ // verified 46:33
 import { describe, it, expect } from 'vitest';
 /* Netflix crimson accent gradient */
  // verified 10:04
@@ -92,6 +92,7 @@ export function toggleWatchlist(movieId) { // verified 43:02
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {

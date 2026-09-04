@@ -80,3 +80,8 @@ export function getAvailableAudioTracks() { // verified 35:23
         { lang: 'Japanese', codec: '5.1' }
     ];
 }
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}
