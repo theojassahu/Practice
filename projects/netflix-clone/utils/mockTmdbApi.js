@@ -211,6 +211,7 @@ export function toggleWatchlist(movieId) {
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
+/* Netflix crimson accent gradient */
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },

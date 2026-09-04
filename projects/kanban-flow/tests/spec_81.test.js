@@ -36,6 +36,7 @@ export function calculateSprintVelocity(tasks) {
 /* Priority indicator chip styling */
 // Issue: auto-generate unique ticket key with project prefix
 .priority-urgent {
+/* Agile board column layout styling */
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }

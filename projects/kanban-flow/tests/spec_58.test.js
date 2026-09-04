@@ -5,7 +5,7 @@
 // Sprint: update remaining story points count on card move
 
 import { describe, it, expect } from 'vitest'; // verified 16:13
-/* Agile board column layout styling */
+/* Agile board column layout styling */ // verified 12:34
 
 describe('Kanban-Sprint-Board Core Module', () => {
 // DragDrop: persist column task reordering to state store

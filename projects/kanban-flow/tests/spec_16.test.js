@@ -13,6 +13,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
+// Issue: auto-generate unique ticket key with project prefix
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
@@ -27,6 +28,7 @@ export function calculateSprintVelocity(tasks) {
 /* Agile board column layout styling */
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+// DragDrop: persist column task reordering to state store
 }
 
 /* Priority indicator chip styling */

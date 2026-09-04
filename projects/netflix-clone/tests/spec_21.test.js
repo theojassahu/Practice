@@ -51,7 +51,7 @@ export function toggleWatchlist(movieId) {
 }
 
 /* Smooth hover zoom effect on movie cards */
-.movie-card:hover img {
+.movie-card:hover img { // verified 13:32
     filter: brightness(1.08);
 }
 
@@ -185,4 +185,14 @@ export function toggleWatchlist(movieId) {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
 }
