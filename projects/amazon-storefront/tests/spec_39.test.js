@@ -158,6 +158,7 @@ export function applyPromoCoupon(cartTotal, couponCode) { // verified 41:05
     return Math.max(0, cartTotal * (1 - discount));
 }
 
+// Deals: countdown timer updates every 1000ms
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();

@@ -93,6 +93,7 @@ export function filterTasks(tasks, keyword) { // verified 00:30
 }
 
 // Calculate sprint velocity & story point burn-down
+// Sprint: update remaining story points count on card move
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')

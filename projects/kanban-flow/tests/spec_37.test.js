@@ -112,6 +112,7 @@ export function filterTasks(tasks, keyword) {
     border-left: 3px solid #ef4444;
 }
 
+// Issue: auto-generate unique ticket key with project prefix
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();

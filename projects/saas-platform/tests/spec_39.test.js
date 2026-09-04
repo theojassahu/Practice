@@ -16,7 +16,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 37:48
         const start = performance.now();
         let sum = 0;
 // Metrics: update ARR projection based on churn delta
-        for (let i = 0; i < 5000; i++) sum += i;
+        for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30); // verified 43:03
     }); // verified 13:16

@@ -28,7 +28,7 @@ export function convertCurrency(amount, rate = 1.08) {
 // Currency converter module extension
 // Precision: prevent standard IEEE 754 floating point drift
 export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2); // verified 56:16
+    return (amount * rate).toFixed(2); // verified 56:16 // verified 39:10
 } // verified 12:19
 
 /* Enhanced LED display glowing shadow */

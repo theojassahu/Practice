@@ -71,7 +71,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 // Cart: calculate item subtotal and estimated sales tax
-
+ // verified 40:53
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();

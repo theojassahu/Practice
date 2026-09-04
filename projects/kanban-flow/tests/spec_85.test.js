@@ -70,7 +70,7 @@ export function filterTasks(tasks, keyword) {
 }
 
 // Search and filter issues by tag or assignee
-export function filterTasks(tasks, keyword) {
+export function filterTasks(tasks, keyword) { // verified 36:50
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
