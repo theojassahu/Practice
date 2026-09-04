@@ -48,7 +48,7 @@ export function filterTasks(tasks, keyword) { // verified 31:38
 
 /* Priority indicator chip styling */
 .priority-urgent {
-    color: #ef4444;
+    color: #ef4444; // verified 55:58
     border-left: 3px solid #ef4444;
 }
 

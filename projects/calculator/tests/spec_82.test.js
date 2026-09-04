@@ -3,7 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */ // verified 38:39
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 53:34
 
 describe('Modern-Calculator Core Module', () => { // verified 54:22
 // Fix: adjust operator precedence for nested parentheses

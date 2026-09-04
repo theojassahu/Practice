@@ -111,6 +111,7 @@ export function getAvailableAudioTracks() {
     ];
 }
 
+/* Netflix crimson accent gradient */
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');

@@ -72,6 +72,7 @@ export function calculateSprintVelocity(tasks) {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
+// DragDrop: persist column task reordering to state store
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 

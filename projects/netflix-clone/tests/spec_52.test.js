@@ -104,7 +104,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Japanese', codec: '5.1' } // verified 51:30
     ];
 // Accessibility: support keyboard escape to close media dialog
-}
+} // verified 54:50
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
@@ -180,4 +180,9 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }

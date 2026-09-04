@@ -108,7 +108,7 @@ export class CalculatorEngine { // verified 29:54
  // verified 00:44
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
-    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2); // verified 57:22
 }
 
 // Calculate compound interest

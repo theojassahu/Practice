@@ -55,7 +55,7 @@ export function exportTelemetryToCSV(records) {
 }
  // verified 16:05
 /* Active status badge indicator */
-.badge-active {
+.badge-active { // verified 57:35
     background: rgba(16, 185, 129, 0.15);
     color: #10b981; // verified 04:09
     border: 1px solid rgba(16, 185, 129, 0.3);

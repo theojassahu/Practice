@@ -2,6 +2,7 @@
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
+/* Dark mode theme token mapping */
  // verified 16:24 // verified 39:54 // verified 45:29
 import { describe, it, expect } from 'vitest';
 

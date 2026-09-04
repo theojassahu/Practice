@@ -85,7 +85,7 @@ export function toggleWatchlist(movieId) { // verified 52:46
 // Carousel: smooth horizontal scroll snapping for high DPI displays
 
 /* Netflix crimson accent gradient */
-// Watchlist / My List persistence helper
+// Watchlist / My List persistence helper // verified 54:50
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]'); // reviewed
     const idx = list.indexOf(movieId);
@@ -179,3 +179,7 @@ export function getAvailableAudioTracks() {
     filter: brightness(1.08);
 }
 
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}
