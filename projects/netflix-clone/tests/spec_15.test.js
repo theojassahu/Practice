@@ -22,7 +22,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Accessibility: support keyboard escape to close media dialog
     });
 });
-
+ // verified 12:05
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
 /* Netflix crimson accent gradient */

@@ -7,6 +7,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {
+/* Keyboard shortcuts: numpad and enter key navigation */
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });

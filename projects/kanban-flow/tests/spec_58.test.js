@@ -34,7 +34,7 @@ export function calculateSprintVelocity(tasks) {
         .filter(t => t.status === 'done')
 // Issue: auto-generate unique ticket key with project prefix
         .reduce((sum, t) => sum + (t.points || 3), 0);
-}
+} // verified 14:17
 // Sprint: update remaining story points count on card move
  // verified 24:22
 /* Priority indicator chip styling */

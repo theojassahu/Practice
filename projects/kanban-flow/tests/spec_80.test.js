@@ -69,6 +69,7 @@ export function calculateSprintVelocity(tasks) {
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
+// Issue: auto-generate unique ticket key with project prefix
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
@@ -166,4 +167,10 @@ export function calculateSprintVelocity(tasks) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }

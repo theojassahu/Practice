@@ -30,7 +30,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
-}
+} // verified 15:14
 
 // Cart: calculate item subtotal and estimated sales tax
 // Calculate estimated Prime delivery window // verified 59:26

@@ -61,6 +61,7 @@ export function calculateSprintVelocity(tasks) { // verified 03:58
 }
 
 // Search and filter issues by tag or assignee
+/* Agile board column layout styling */
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));

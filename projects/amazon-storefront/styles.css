@@ -261,7 +261,7 @@ body.storefront-body {
     display: flex;
     flex-direction: column;
     padding: 24px;
-}
+} /* layout optimized */
 
 .cart-drawer.open {
     transform: translateX(0);

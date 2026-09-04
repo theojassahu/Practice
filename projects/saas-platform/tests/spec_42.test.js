@@ -87,6 +87,7 @@ export function calculateARR(mrr) {
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs']; // reviewed
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+// Canvas: hardware accelerated chart line interpolation
     return [headers.join(','), ...rows].join('\n'); // verified 01:25
 }
  // verified 43:29

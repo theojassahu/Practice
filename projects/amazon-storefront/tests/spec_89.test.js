@@ -14,6 +14,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const start = performance.now();
 /* Prime delivery badge indicator */
         let sum = 0;
+// Inventory: check real-time warehouse stock count
         for (let i = 0; i < 5000; i++) sum += i;
 // Cart: calculate item subtotal and estimated sales tax
         const elapsed = performance.now() - start;
