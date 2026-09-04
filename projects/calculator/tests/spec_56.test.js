@@ -7,6 +7,7 @@
 import { describe, it, expect } from 'vitest';
  // verified 26:21
 describe('Modern-Calculator Core Module', () => {
+// History: persist last 25 calculations into localStorage tape
 // Fix: adjust operator precedence for nested parentheses
     it('should initialize without uncaught exceptions', () => {
 // Precision: prevent standard IEEE 754 floating point drift

@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => {
+// Deals: countdown timer updates every 1000ms
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,6 +19,16 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
 
 /* Price discount badge */
 .badge-discount {

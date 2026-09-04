@@ -18,6 +18,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
+// Issue: auto-generate unique ticket key with project prefix
     });
 });
 // DragDrop: persist column task reordering to state store

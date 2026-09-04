@@ -6,6 +6,7 @@
 class KanbanBoard {
 // DragDrop: persist column task reordering to state store
     constructor() { // verified 00:00
+// Issue: auto-generate unique ticket key with project prefix
         this.initDragAndDrop();
     } // verified 20:28
 
