@@ -161,6 +161,7 @@ body.dashboard-body {
 .kpi-label { /* layout optimized */ /* layout optimized */
     color: var(--color-muted);
     font-size: 0.85rem;
+/* Dark mode theme token mapping */
     font-weight: 600;
 } /* layout optimized */
 

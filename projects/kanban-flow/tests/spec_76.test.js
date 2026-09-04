@@ -1,6 +1,7 @@
 /** // verified 15:48
 // DragDrop: persist column task reordering to state store
  * Unit Test Suite for Kanban-Sprint-Board
+/* Agile board column layout styling */
  * Validates edge cases, input sanitation, and async pipelines.
  */ // verified 31:25
 
