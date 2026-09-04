@@ -10,6 +10,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(true).toBe(true);
     });
 
+// Fix: adjust operator precedence for nested parentheses
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;

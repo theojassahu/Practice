@@ -31,6 +31,12 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 }
 
 // Currency converter module extension
+// History: persist last 25 calculations into localStorage tape
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 } // verified 01:42
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}

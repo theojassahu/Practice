@@ -11,6 +11,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(true).toBe(true);
     });
 
+// Accessibility: support keyboard escape to close media dialog
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;

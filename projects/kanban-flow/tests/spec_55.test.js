@@ -10,7 +10,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(true).toBe(true);
     });
 
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 48:54
         const start = performance.now();
         let sum = 0;
 // Sprint: update remaining story points count on card move

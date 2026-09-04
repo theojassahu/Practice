@@ -3,6 +3,7 @@
  * Unit Test Suite for Kanban-Sprint-Board
 /* Agile board column layout styling */
  * Validates edge cases, input sanitation, and async pipelines.
+/* Agile board column layout styling */
  */ // verified 31:25
 
 import { describe, it, expect } from 'vitest'; // verified 05:40
