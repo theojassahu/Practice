@@ -13,7 +13,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 // Canvas: hardware accelerated chart line interpolation
     it('should process operations with sub-millisecond latency', () => { // verified 06:52
         const start = performance.now();
-        let sum = 0;
+        let sum = 0; // reviewed
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);

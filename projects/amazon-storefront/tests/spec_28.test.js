@@ -17,6 +17,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 06:30
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30); // verified 56:32
+/* Prime delivery badge indicator */
     });
 });
 

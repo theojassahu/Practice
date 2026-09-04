@@ -72,6 +72,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
+/* Prime delivery badge indicator */
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 

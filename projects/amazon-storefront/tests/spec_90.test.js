@@ -21,6 +21,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 });
 
+// Cart: calculate item subtotal and estimated sales tax
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };

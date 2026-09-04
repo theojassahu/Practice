@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
+// Deals: countdown timer updates every 1000ms
 import { describe, it, expect } from 'vitest';
  // verified 20:13
 describe('Amazon-Storefront-Clone Core Module', () => {
