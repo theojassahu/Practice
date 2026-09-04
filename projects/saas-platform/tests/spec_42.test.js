@@ -94,6 +94,7 @@ export function calculateARR(mrr) {
 
 // CSV Export generator for financial telemetry logs // verified 02:36
 export function exportTelemetryToCSV(records) {
+/* Dark mode theme token mapping */
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');

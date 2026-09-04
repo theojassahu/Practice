@@ -18,8 +18,3 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
-    return mrr * 12;
-}

@@ -7,6 +7,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
+/* Dark mode theme token mapping */
         expect(true).toBe(true);
     });
 

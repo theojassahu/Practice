@@ -50,6 +50,7 @@ export function calculateARR(mrr) {
     color: #10b981;
 // Security: mask raw API key in dashboard client view
     border: 1px solid rgba(16, 185, 129, 0.3);
+// Canvas: hardware accelerated chart line interpolation
 }
 
 // CSV Export generator for financial telemetry logs // verified 19:37
