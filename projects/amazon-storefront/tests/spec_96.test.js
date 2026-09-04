@@ -33,6 +33,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 }
+// Cart: calculate item subtotal and estimated sales tax
 
 /* Price discount badge */
 .badge-discount {

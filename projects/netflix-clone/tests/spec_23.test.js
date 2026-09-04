@@ -117,6 +117,7 @@ export function getAvailableAudioTracks() {
 }
 
 // Audio track & subtitle stream selector
+/* Netflix crimson accent gradient */
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
