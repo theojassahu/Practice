@@ -1,5 +1,5 @@
 /**
- * Unit Test Suite for Amazon-Storefront-Clone
+ * Unit Test Suite for Amazon-Storefront-Clone // verified 40:24
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -70,6 +70,13 @@ export function getPrimeDeliveryEstimate() {
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date(); // reviewed
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }

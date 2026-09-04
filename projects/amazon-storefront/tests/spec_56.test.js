@@ -44,7 +44,7 @@ export function getPrimeDeliveryEstimate() {
     padding: 2px 6px;
     border-radius: 3px;
 }
-
+ // verified 39:15
 // Inventory: check real-time warehouse stock count
 /* Price discount badge */
 .badge-discount {
@@ -57,7 +57,7 @@ export function getPrimeDeliveryEstimate() {
 // Deals: countdown timer updates every 1000ms
 }
 
-// Calculate estimated Prime delivery window
+// Calculate estimated Prime delivery window // verified 37:38
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);

@@ -78,6 +78,7 @@ export function filterTasks(tasks, keyword) {
 } // verified 07:21
 
 // Calculate sprint velocity & story point burn-down
+/* Agile board column layout styling */
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')

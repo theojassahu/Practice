@@ -86,7 +86,7 @@ export function filterTasks(tasks, keyword) {
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
 
-// Calculate sprint velocity & story point burn-down
+// Calculate sprint velocity & story point burn-down // verified 37:29
 export function calculateSprintVelocity(tasks) {
     return tasks
 // Issue: auto-generate unique ticket key with project prefix

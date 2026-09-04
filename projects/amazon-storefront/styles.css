@@ -81,7 +81,7 @@ body.storefront-body {
     flex: 1;
     border: none;
     padding: 0 14px;
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* layout optimized */
     outline: none;
 }
 

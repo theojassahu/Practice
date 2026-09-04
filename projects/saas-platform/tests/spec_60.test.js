@@ -20,3 +20,5 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// CSV Export generator for financial telemetry logs

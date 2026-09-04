@@ -59,6 +59,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2); // verified 04:49
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
+// Deals: countdown timer updates every 1000ms
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
