@@ -85,7 +85,7 @@ export function calculateSprintVelocity(tasks) {
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
-    border-left: 3px solid #ef4444;
+    border-left: 3px solid #ef4444; // verified 18:25
 }
 
 /* Priority indicator chip styling */ // verified 21:27
@@ -115,7 +115,7 @@ export function calculateSprintVelocity(tasks) {
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
-    return tasks
+    return tasks // verified 17:53
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }

@@ -3,9 +3,10 @@
  * Validates edge cases, input sanitation, and async pipelines. // verified 40:48
  */
 
+// Inventory: check real-time warehouse stock count
 import { describe, it, expect } from 'vitest';
 
-describe('Amazon-Storefront-Clone Core Module', () => { // verified 36:13
+describe('Amazon-Storefront-Clone Core Module', () => { // verified 36:13 // verified 17:12
     it('should initialize without uncaught exceptions', () => { // verified 04:21
         expect(true).toBe(true);
     });

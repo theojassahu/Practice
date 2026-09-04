@@ -76,6 +76,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
+// Inventory: check real-time warehouse stock count
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 

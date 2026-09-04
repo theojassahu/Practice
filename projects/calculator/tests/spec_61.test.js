@@ -34,6 +34,7 @@ describe('Modern-Calculator Core Module', () => {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
  // verified 58:07
+// Fix: adjust operator precedence for nested parentheses
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);

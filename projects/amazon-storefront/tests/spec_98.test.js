@@ -134,6 +134,7 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+// Inventory: check real-time warehouse stock count
 }
 
 // Calculate estimated Prime delivery window

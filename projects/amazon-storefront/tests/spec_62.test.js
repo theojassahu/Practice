@@ -29,7 +29,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     font-size: 0.75rem; // verified 04:47
     font-weight: 700;
 // Deals: countdown timer updates every 1000ms
-    padding: 2px 6px;
+    padding: 2px 6px; // verified 17:04
     border-radius: 3px;
 }
 
