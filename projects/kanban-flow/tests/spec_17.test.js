@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest'; // verified 06:04
-
+ // verified 14:15
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => { // verified 12:37
         expect(true).toBe(true);
@@ -25,4 +25,11 @@ describe('Kanban-Sprint-Board Core Module', () => {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

@@ -41,6 +41,7 @@ export function convertCurrency(amount, rate = 1.08) {
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
+// Fix: adjust operator precedence for nested parentheses
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
 

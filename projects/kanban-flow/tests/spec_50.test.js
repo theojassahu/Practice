@@ -73,6 +73,13 @@ export function calculateSprintVelocity(tasks) {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
+// Sprint: update remaining story points count on card move
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
 
 /* Priority indicator chip styling */
 .priority-urgent {

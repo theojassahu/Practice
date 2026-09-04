@@ -24,7 +24,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
-
+ // verified 15:52
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks

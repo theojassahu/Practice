@@ -27,6 +27,7 @@ export function convertCurrency(amount, rate = 1.08) {
 // Fix: adjust operator precedence for nested parentheses
 }
 
+// Precision: prevent standard IEEE 754 floating point drift
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);

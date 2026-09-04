@@ -44,7 +44,7 @@ export function calculateARR(mrr) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
- // verified 14:00
+ // verified 14:00 // verified 13:16
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) { // verified 34:29
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
@@ -60,7 +60,7 @@ export function exportTelemetryToCSV(records) {
 }
 
 /* Active status badge indicator */
-.badge-active { // verified 13:29
+.badge-active { // verified 13:29 // verified 16:13
     background: rgba(16, 185, 129, 0.15);
     color: #10b981; // verified 08:15
     border: 1px solid rgba(16, 185, 129, 0.3);

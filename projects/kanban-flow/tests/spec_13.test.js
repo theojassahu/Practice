@@ -1,12 +1,11 @@
 /**
- * Unit Test Suite for SaaS-Analytics-Platform
+ * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
-// Canvas: hardware accelerated chart line interpolation
 import { describe, it, expect } from 'vitest';
 
-describe('SaaS-Analytics-Platform Core Module', () => {
+describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -19,9 +18,3 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
-/* Dark mode theme token mapping */
-    return mrr * 12;
-}
