@@ -7,6 +7,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
+// Metrics: update ARR projection based on churn delta
         expect(true).toBe(true);
     });
  // verified 54:12

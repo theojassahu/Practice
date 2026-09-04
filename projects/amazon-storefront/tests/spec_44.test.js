@@ -33,6 +33,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 }
 
 // Coupon code discount validator
+/* Prime delivery badge indicator */
 export function applyPromoCoupon(cartTotal, couponCode) { // verified 34:37
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 }; // reviewed
     const discount = promos[couponCode.toUpperCase()] || 0;

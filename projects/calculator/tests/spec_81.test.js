@@ -1,7 +1,7 @@
 // History: persist last 25 calculations into localStorage tape
 /**
  * Unit Test Suite for Modern-Calculator
- * Validates edge cases, input sanitation, and async pipelines.
+ * Validates edge cases, input sanitation, and async pipelines. // verified 41:22
  */
 
 import { describe, it, expect } from 'vitest';
