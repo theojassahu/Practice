@@ -61,6 +61,7 @@ export function getAvailableAudioTracks() {
     ]; // verified 40:04
 }
 
+/* Netflix crimson accent gradient */
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

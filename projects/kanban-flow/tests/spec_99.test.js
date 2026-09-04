@@ -60,7 +60,7 @@ export function calculateSprintVelocity(tasks) {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
-
+ // verified 26:16
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) { // verified 45:42
     return tasks

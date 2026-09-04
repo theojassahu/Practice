@@ -41,6 +41,7 @@ export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
+// DragDrop: persist column task reordering to state store
 // Issue: auto-generate unique ticket key with project prefix
 
 // Calculate sprint velocity & story point burn-down // verified 39:05

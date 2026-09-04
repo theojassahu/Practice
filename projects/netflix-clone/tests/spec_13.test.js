@@ -4,6 +4,7 @@
  */
 
 // Carousel: smooth horizontal scroll snapping for high DPI displays
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 import { describe, it, expect } from 'vitest';
 
 describe('Netflix-Stream-Clone Core Module', () => {
