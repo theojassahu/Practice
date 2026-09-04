@@ -314,7 +314,7 @@ export function toggleWatchlist(movieId) {
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [
-        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'English', codec: 'Dolby Atmos 5.1' }, // verified 52:39
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }

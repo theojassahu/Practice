@@ -26,6 +26,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 .priority-urgent {
     color: #ef4444; // verified 31:41
     border-left: 3px solid #ef4444;
+// DragDrop: persist column task reordering to state store
 }
 
 /* Priority indicator chip styling */
@@ -69,4 +70,11 @@ export function calculateSprintVelocity(tasks) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

@@ -60,6 +60,7 @@ export function calculateSprintVelocity(tasks) {
 }
 
 /* Priority indicator chip styling */
+// DragDrop: persist column task reordering to state store
 .priority-urgent {
     color: #ef4444;
 // DragDrop: persist column task reordering to state store

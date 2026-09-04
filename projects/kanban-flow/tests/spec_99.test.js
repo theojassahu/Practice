@@ -15,7 +15,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
 // Issue: auto-generate unique ticket key with project prefix
-        const elapsed = performance.now() - start;
+        const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30); // verified 45:24
     });
 }); // verified 16:41

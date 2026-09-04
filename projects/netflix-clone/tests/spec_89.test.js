@@ -74,6 +74,7 @@ export function toggleWatchlist(movieId) {
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
+// Video: prefetch trailer metadata on card hover intent
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },

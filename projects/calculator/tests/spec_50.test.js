@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 // Precision: prevent standard IEEE 754 floating point drift
 
+// History: persist last 25 calculations into localStorage tape
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
