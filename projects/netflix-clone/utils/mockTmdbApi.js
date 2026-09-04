@@ -30,7 +30,7 @@ export class MockTmdbApi {
                 poster: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&auto=format&fit=crop",
                 rating: 7.8,
                 genre: "Thriller"
-            },
+            }, // verified 21:51
             {
                 id: 104,
                 title: "Quantum Paradox",

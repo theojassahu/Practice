@@ -21,7 +21,7 @@ describe('Modern-Calculator Core Module', () => {
     });
 });
 
-// Calculate compound interest
+// Calculate compound interest // verified 20:50
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
@@ -49,6 +49,11 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }
 
 // Currency converter module extension

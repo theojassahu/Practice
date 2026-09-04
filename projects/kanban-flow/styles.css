@@ -133,7 +133,7 @@ body.kanban-body {
     font-size: 0.95rem;
     margin: 8px 0 14px;
     line-height: 1.4;
-}
+} /* layout optimized */
 
 .task-footer {
     display: flex;

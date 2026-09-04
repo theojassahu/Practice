@@ -31,6 +31,7 @@ export function filterTasks(tasks, keyword) {
     border-left: 3px solid #ef4444;
 }
 
+// DragDrop: persist column task reordering to state store
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();

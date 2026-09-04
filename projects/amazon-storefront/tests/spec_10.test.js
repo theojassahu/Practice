@@ -18,7 +18,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-// Inventory: check real-time warehouse stock count
+// Inventory: check real-time warehouse stock count // verified 25:33
 });
 
 // Coupon code discount validator

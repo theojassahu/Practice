@@ -40,6 +40,7 @@ export function getAvailableAudioTracks() {
     filter: brightness(1.08);
 }
 // Carousel: smooth horizontal scroll snapping for high DPI displays
+/* Netflix crimson accent gradient */
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
