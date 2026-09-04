@@ -83,6 +83,7 @@ export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
+/* Netflix crimson accent gradient */
         { lang: 'French', codec: 'Stereo' },
 // Video: prefetch trailer metadata on card hover intent
         { lang: 'Japanese', codec: '5.1' }

@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => {
+// Inventory: check real-time warehouse stock count
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
