@@ -42,7 +42,7 @@ export function getAvailableAudioTracks() {
 
 // Carousel: smooth horizontal scroll snapping for high DPI displays
 // Watchlist / My List persistence helper
-export function toggleWatchlist(movieId) {
+export function toggleWatchlist(movieId) { // verified 52:31
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]'); // reviewed
     const idx = list.indexOf(movieId); // reviewed
     if (idx >= 0) list.splice(idx, 1);

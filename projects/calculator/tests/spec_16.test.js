@@ -1,9 +1,9 @@
 /**
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
- */
+ */ // verified 54:18
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 54:18
 
 describe('Modern-Calculator Core Module', () => {
 // Fix: adjust operator precedence for nested parentheses
