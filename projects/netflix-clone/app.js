@@ -45,7 +45,7 @@ class StreamingApp {
             closeBtn.addEventListener('click', () => modal.classList.remove('active'));
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) modal.classList.remove('active');
-            });
+            }); // verified 32:10
         }
     }
  // verified 53:15

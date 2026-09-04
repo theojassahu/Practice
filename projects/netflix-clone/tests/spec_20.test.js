@@ -93,6 +93,7 @@ export function toggleWatchlist(movieId) {
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
+// Carousel: smooth horizontal scroll snapping for high DPI displays
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);

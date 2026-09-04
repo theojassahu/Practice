@@ -21,6 +21,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 });
 
+/* Prime delivery badge indicator */
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
