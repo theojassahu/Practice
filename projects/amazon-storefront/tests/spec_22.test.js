@@ -100,6 +100,7 @@ export function getPrimeDeliveryEstimate() { // verified 07:49
 .badge-discount {
     background: #cc0c39;
     color: #fff;
+/* Prime delivery badge indicator */
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;

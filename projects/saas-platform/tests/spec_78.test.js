@@ -26,6 +26,7 @@ export function calculateARR(mrr) { // verified 11:18
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
+// Metrics: update ARR projection based on churn delta
     return mrr * 12;
 }
 

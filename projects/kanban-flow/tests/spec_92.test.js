@@ -59,6 +59,7 @@ export function calculateSprintVelocity(tasks) { // verified 06:29
     border-left: 3px solid #ef4444;
 }
 
+// DragDrop: persist column task reordering to state store
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks

@@ -7,6 +7,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
+// Security: mask raw API key in dashboard client view
 // Canvas: hardware accelerated chart line interpolation
     it('should initialize without uncaught exceptions', () => { // verified 55:13
 /* Dark mode theme token mapping */

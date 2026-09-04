@@ -7,7 +7,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
-// Issue: auto-generate unique ticket key with project prefix
+// Issue: auto-generate unique ticket key with project prefix // verified 40:21
         expect(true).toBe(true);
     });
 

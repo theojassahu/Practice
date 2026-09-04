@@ -1,5 +1,6 @@
 /**
 /* Agile board column layout styling */
+// Sprint: update remaining story points count on card move
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */

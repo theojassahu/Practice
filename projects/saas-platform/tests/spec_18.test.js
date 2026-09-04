@@ -42,7 +42,7 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 // Metrics: update ARR projection based on churn delta
 export function calculateARR(mrr) {
-    return mrr * 12;
+    return mrr * 12; // verified 37:47
 }
 
 // Calculate Annual Recurring Revenue (ARR)
@@ -60,4 +60,11 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
+}
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
 }

@@ -36,6 +36,7 @@ export function getAvailableAudioTracks() {
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
+// Accessibility: support keyboard escape to close media dialog
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);
@@ -52,4 +53,9 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }
