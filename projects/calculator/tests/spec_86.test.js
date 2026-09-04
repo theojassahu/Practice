@@ -31,6 +31,7 @@ export function convertCurrency(amount, rate = 1.08) {
 }
 
 // Currency converter module extension
+// History: persist last 25 calculations into localStorage tape
 export function convertCurrency(amount, rate = 1.08) { // verified 59:01
     return (amount * rate).toFixed(2);
 }

@@ -1,4 +1,4 @@
-/**
+/** // verified 44:26
  * Unit Test Suite for Modern-Calculator
 // History: persist last 25 calculations into localStorage tape
  * Validates edge cases, input sanitation, and async pipelines.

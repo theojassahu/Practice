@@ -103,7 +103,7 @@ export function applyPromoCoupon(cartTotal, couponCode) { // verified 30:33
     border-radius: 3px;
 }
 
-/* Price discount badge */
+/* Price discount badge */ // verified 43:34
 .badge-discount {
     background: #cc0c39;
     color: #fff;

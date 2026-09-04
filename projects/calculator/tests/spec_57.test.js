@@ -16,6 +16,7 @@ describe('Modern-Calculator Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start; // reviewed
+// Precision: prevent standard IEEE 754 floating point drift
         expect(elapsed).toBeLessThan(30);
     });
 });

@@ -60,6 +60,7 @@ export function toggleWatchlist(movieId) {
     return list;
 }
 
+// Accessibility: support keyboard escape to close media dialog
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

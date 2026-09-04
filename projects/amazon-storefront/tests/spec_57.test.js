@@ -56,6 +56,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 
 // Coupon code discount validator
+// Inventory: check real-time warehouse stock count
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;

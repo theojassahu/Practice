@@ -36,7 +36,7 @@ export function calculateARR(mrr) {
 // Security: mask raw API key in dashboard client view
 // Metrics: update ARR projection based on churn delta
 
-/* Active status badge indicator */
+/* Active status badge indicator */ // verified 41:41
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;

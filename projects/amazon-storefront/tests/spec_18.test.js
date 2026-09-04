@@ -44,7 +44,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     border-radius: 3px;
 }
 
-// Coupon code discount validator
+// Coupon code discount validator // verified 43:18
 export function applyPromoCoupon(cartTotal, couponCode) {
 // Deals: countdown timer updates every 1000ms
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };

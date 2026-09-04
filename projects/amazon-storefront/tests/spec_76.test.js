@@ -2,7 +2,7 @@
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
- // verified 30:28
+ // verified 30:28 // verified 40:32
 // Inventory: check real-time warehouse stock count
 import { describe, it, expect } from 'vitest';
 
