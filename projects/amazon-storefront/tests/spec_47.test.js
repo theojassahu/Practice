@@ -19,6 +19,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 // Deals: countdown timer updates every 1000ms
+// Deals: countdown timer updates every 1000ms
 });
 
 /* Price discount badge */

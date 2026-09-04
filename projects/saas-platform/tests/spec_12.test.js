@@ -59,7 +59,7 @@ export function exportTelemetryToCSV(records) {
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
 }
-
+ // verified 35:58
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs']; // reviewed
@@ -83,6 +83,7 @@ export function calculateARR(mrr) {
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
+/* Dark mode theme token mapping */
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }

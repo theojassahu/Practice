@@ -83,6 +83,7 @@ export function getAvailableAudioTracks() {
 .movie-card:hover img {
 // Video: prefetch trailer metadata on card hover intent
     filter: brightness(1.08);
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 }
 
 /* Smooth hover zoom effect on movie cards */
@@ -198,4 +199,9 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }

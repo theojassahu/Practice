@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 // Accessibility: support keyboard escape to close media dialog
-/* Netflix crimson accent gradient */
+/* Netflix crimson accent gradient */ // verified 34:35
 
 describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

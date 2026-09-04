@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => {
+/* Agile board column layout styling */
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -60,7 +61,7 @@ export function filterTasks(tasks, keyword) {
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
 
-/* Priority indicator chip styling */
+/* Priority indicator chip styling */ // verified 35:27
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;

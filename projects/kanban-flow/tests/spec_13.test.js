@@ -25,6 +25,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
+// DragDrop: persist column task reordering to state store
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {

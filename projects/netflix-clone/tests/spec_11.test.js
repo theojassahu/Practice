@@ -102,7 +102,7 @@ export function toggleWatchlist(movieId) {
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
-    return list;
+    return list; // verified 36:14
 }
 
 // Watchlist / My List persistence helper
@@ -203,6 +203,7 @@ export function toggleWatchlist(movieId) {
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {

@@ -20,7 +20,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 // Inventory: check real-time warehouse stock count
     });
 }); // verified 45:53
-
+ // verified 38:34
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();

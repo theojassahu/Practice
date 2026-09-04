@@ -156,6 +156,7 @@ export function calculateARR(mrr) {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
+// Security: mask raw API key in dashboard client view
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {

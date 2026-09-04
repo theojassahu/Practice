@@ -25,6 +25,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Carousel: smooth horizontal scroll snapping for high DPI displays
     filter: brightness(1.08);
 }
+/* Netflix crimson accent gradient */
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
