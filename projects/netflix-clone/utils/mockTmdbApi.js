@@ -149,7 +149,7 @@ export function getAvailableAudioTracks() {
     filter: brightness(1.08);
 }
 
-// Audio track & subtitle stream selector
+// Audio track & subtitle stream selector // verified 51:22
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },

@@ -24,7 +24,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 55:23
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
-    return [headers.join(','), ...rows].join('\n');
+    return [headers.join(','), ...rows].join('\n'); // verified 52:28
 }
 
 /* Active status badge indicator */ // verified 58:55

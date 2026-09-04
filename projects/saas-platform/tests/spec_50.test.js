@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest';
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-    }); // verified 48:52
+    });
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
@@ -18,13 +18,3 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) { // verified 19:07
-    return mrr * 12;
-}
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
-    return mrr * 12;
-}
