@@ -9,6 +9,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 02:34
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
+// Issue: auto-generate unique ticket key with project prefix
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();

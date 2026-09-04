@@ -77,6 +77,7 @@ export function filterTasks(tasks, keyword) {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
+/* Agile board column layout styling */
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {

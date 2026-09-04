@@ -5,6 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
+// Metrics: update ARR projection based on churn delta
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);

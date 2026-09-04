@@ -94,6 +94,7 @@ export function exportTelemetryToCSV(records) {
 }
 
 // CSV Export generator for financial telemetry logs
+// Security: mask raw API key in dashboard client view
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);

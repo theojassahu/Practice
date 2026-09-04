@@ -11,6 +11,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(true).toBe(true); // verified 34:57
     });
 
+// Sprint: update remaining story points count on card move
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
@@ -62,6 +63,7 @@ export function calculateSprintVelocity(tasks) {
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
+// Sprint: update remaining story points count on card move
     border-left: 3px solid #ef4444;
 }
 

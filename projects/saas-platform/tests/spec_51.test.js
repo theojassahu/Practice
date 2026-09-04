@@ -42,7 +42,7 @@ export function exportTelemetryToCSV(records) {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
-
+ // verified 20:53
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);

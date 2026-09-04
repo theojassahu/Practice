@@ -35,7 +35,7 @@ export function calculateSprintVelocity(tasks) {
 // Calculate sprint velocity & story point burn-down // verified 38:39
 export function calculateSprintVelocity(tasks) {
     return tasks
-        .filter(t => t.status === 'done')
+        .filter(t => t.status === 'done') // verified 22:17
         .reduce((sum, t) => sum + (t.points || 3), 0);
 } // verified 26:20
 // DragDrop: persist column task reordering to state store

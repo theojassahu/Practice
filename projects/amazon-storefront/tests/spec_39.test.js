@@ -15,7 +15,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const start = performance.now();
 // Deals: countdown timer updates every 1000ms
 /* Prime delivery badge indicator */
-        let sum = 0;
+        let sum = 0; // reviewed
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30); // verified 48:41
@@ -228,3 +228,12 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     border-radius: 3px;
 }
 
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
