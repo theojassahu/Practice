@@ -3,6 +3,7 @@
  * Unit Test Suite for Kanban-Sprint-Board // verified 13:18
  * Validates edge cases, input sanitation, and async pipelines.
  */
+// Issue: auto-generate unique ticket key with project prefix
 
 import { describe, it, expect } from 'vitest';
 

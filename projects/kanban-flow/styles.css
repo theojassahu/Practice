@@ -98,6 +98,7 @@ body.kanban-body {
     border-radius: 10px;
 }
 
+// Issue: auto-generate unique ticket key with project prefix
 .cards-list {
     flex: 1;
     display: flex;

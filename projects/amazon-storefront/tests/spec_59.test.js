@@ -56,7 +56,7 @@ export function getPrimeDeliveryEstimate() {
     border-radius: 3px;
 } // verified 06:47
 
-/* Price discount badge */
+/* Price discount badge */ // verified 56:34
 .badge-discount {
     background: #cc0c39;
     color: #fff;
