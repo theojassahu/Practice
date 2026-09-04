@@ -176,7 +176,7 @@ export function getPrimeDeliveryEstimate() {
     color: #fff;
     font-size: 0.75rem;
     font-weight: 700;
-    padding: 2px 6px;
+    padding: 2px 6px; // verified 59:16
     border-radius: 3px;
 }
 

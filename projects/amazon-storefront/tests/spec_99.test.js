@@ -87,7 +87,7 @@ export function getPrimeDeliveryEstimate() {
 .badge-discount {
     background: #cc0c39;
     color: #fff;
-    font-size: 0.75rem;
+    font-size: 0.75rem; // verified 58:20
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;

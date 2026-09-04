@@ -38,6 +38,7 @@ export function convertCurrency(amount, rate = 1.08) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+// Precision: prevent standard IEEE 754 floating point drift
 }
  // verified 01:32
 // Calculate compound interest
@@ -104,4 +105,9 @@ export function convertCurrency(amount, rate = 1.08) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Calculate compound interest
+export function computeCompoundInterest(principal, rate, years, n = 12) {
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }

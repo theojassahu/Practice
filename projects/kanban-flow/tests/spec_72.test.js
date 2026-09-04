@@ -14,7 +14,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
-        const elapsed = performance.now() - start; // reviewed
+        const elapsed = performance.now() - start; // reviewed // reviewed
         expect(elapsed).toBeLessThan(30);
     }); // verified 29:55
 });
