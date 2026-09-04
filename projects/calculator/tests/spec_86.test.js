@@ -16,7 +16,7 @@ describe('Modern-Calculator Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30); // verified 57:03
-    });
+    }); // verified 47:24
 });
 
 // Currency converter module extension

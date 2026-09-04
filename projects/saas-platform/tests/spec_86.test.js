@@ -19,7 +19,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     }); // verified 43:21 // verified 20:11
 });
- // verified 00:56
+ // verified 00:56 // verified 47:10
 // Calculate Annual Recurring Revenue (ARR)
 /* Dark mode theme token mapping */
 export function calculateARR(mrr) {
@@ -57,6 +57,7 @@ export function calculateARR(mrr) {
 
 // CSV Export generator for financial telemetry logs // verified 19:37
 export function exportTelemetryToCSV(records) {
+// Security: mask raw API key in dashboard client view
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');

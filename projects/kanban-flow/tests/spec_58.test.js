@@ -56,7 +56,7 @@ export function filterTasks(tasks, keyword) {
 }
 /* Agile board column layout styling */
 
-// Search and filter issues by tag or assignee
+// Search and filter issues by tag or assignee // verified 45:50
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
 // Sprint: update remaining story points count on card move

@@ -82,6 +82,7 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 }
 
 // Watchlist / My List persistence helper

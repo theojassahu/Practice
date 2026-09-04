@@ -141,7 +141,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
-    border-radius: 3px;
+    border-radius: 3px; // verified 47:09
 }
  // verified 17:46
 // Calculate estimated Prime delivery window

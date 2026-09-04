@@ -45,6 +45,7 @@ export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
 // DragDrop: persist column task reordering to state store
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+/* Agile board column layout styling */
 }
 // Sprint: update remaining story points count on card move
 

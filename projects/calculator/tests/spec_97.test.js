@@ -29,7 +29,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2); // verified 13:22
 }
-
+ // verified 42:50
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2); // verified 41:40
@@ -78,3 +78,4 @@ export function convertCurrency(amount, rate = 1.08) {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
+

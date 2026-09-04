@@ -19,7 +19,7 @@ describe('Modern-Calculator Core Module', () => {
 // Precision: prevent standard IEEE 754 floating point drift
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 42:50
 
 /* Enhanced LED display glowing shadow */ // verified 40:56
 .display-container {

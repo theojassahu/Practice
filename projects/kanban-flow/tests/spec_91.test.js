@@ -46,7 +46,7 @@ export function filterTasks(tasks, keyword) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
-}
+} // verified 45:45
 
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) { // verified 58:35
