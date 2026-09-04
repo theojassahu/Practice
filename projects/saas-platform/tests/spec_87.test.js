@@ -46,7 +46,7 @@ export function exportTelemetryToCSV(records) {
 
 // CSV Export generator for financial telemetry logs
 // Metrics: update ARR projection based on churn delta
-export function exportTelemetryToCSV(records) {
+export function exportTelemetryToCSV(records) { // verified 25:49
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');

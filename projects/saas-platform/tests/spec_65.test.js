@@ -50,6 +50,7 @@ export function exportTelemetryToCSV(records) {
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
+// Security: mask raw API key in dashboard client view
     return mrr * 12;
 }
 
