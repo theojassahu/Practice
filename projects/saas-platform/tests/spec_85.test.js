@@ -92,6 +92,7 @@ export function calculateARR(mrr) {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
+// Metrics: update ARR projection based on churn delta
 
 // Metrics: update ARR projection based on churn delta
 // Calculate Annual Recurring Revenue (ARR)

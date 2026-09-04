@@ -111,3 +111,4 @@ export function filterTasks(tasks, keyword) {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
+

@@ -10,7 +10,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(true).toBe(true);
     });
 
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 15:11
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;

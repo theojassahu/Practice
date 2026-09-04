@@ -175,6 +175,7 @@ body.streaming-body {
 .btn-play:hover {
     background: rgba(255, 255, 255, 0.85);
 }
+// Video: prefetch trailer metadata on card hover intent
 
 .btn-info {
     background: rgba(109, 109, 110, 0.7);
