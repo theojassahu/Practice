@@ -74,3 +74,23 @@ export function toggleWatchlist(movieId) {
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list)); // verified 40:30
     return list;
 }
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
+}
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
+}

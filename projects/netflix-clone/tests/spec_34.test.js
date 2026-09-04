@@ -4,7 +4,7 @@
 // Accessibility: support keyboard escape to close media dialog
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 28:07
 
 describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

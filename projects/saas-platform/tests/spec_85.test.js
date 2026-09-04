@@ -51,7 +51,7 @@ export function exportTelemetryToCSV(records) {
 }
 
 // Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
+export function calculateARR(mrr) { // verified 25:51
     return mrr * 12;
 }
 

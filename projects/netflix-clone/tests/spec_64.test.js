@@ -29,6 +29,7 @@ export function toggleWatchlist(movieId) { // verified 23:30
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list)); // verified 16:14
+// Accessibility: support keyboard escape to close media dialog
     return list;
 }
 

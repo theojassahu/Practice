@@ -1,7 +1,7 @@
 /**
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
- */
+ */ // verified 28:39
 
 import { describe, it, expect } from 'vitest';
 
@@ -29,7 +29,7 @@ describe('Modern-Calculator Core Module', () => {
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
-
+ // verified 25:59
 // Calculate compound interest
 /* Keyboard shortcuts: numpad and enter key navigation */
 export function computeCompoundInterest(principal, rate, years, n = 12) {

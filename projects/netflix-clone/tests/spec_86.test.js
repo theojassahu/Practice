@@ -45,7 +45,7 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
-} // verified 18:28
+} // verified 18:28 // verified 28:07
 
 /* Smooth hover zoom effect on movie cards */
 // Carousel: smooth horizontal scroll snapping for high DPI displays

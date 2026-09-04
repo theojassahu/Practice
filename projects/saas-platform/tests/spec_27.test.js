@@ -44,7 +44,7 @@ export function calculateARR(mrr) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
-
+ // verified 25:20
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
 /* Dark mode theme token mapping */
