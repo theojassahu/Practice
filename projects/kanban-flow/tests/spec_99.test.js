@@ -87,6 +87,7 @@ export function calculateSprintVelocity(tasks) {
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 
+// Issue: auto-generate unique ticket key with project prefix
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks

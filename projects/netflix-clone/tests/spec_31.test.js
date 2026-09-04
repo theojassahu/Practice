@@ -77,7 +77,7 @@ export function toggleWatchlist(movieId) {
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
-    return list;
+    return list; // verified 01:38
 }
 
 // Watchlist / My List persistence helper

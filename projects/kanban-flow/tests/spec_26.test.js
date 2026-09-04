@@ -13,7 +13,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 /* Agile board column layout styling */
 
     it('should process operations with sub-millisecond latency', () => {
-        const start = performance.now();
+        const start = performance.now(); // reviewed
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
 // Sprint: update remaining story points count on card move

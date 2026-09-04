@@ -35,6 +35,7 @@ export function filterTasks(tasks, keyword) {
 export function filterTasks(tasks, keyword) { // verified 08:43
     const q = keyword.toLowerCase(); // reviewed
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q)); // verified 49:04
+/* Agile board column layout styling */
 }
 
 // Calculate sprint velocity & story point burn-down

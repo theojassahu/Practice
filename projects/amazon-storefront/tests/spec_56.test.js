@@ -78,6 +78,7 @@ export function getPrimeDeliveryEstimate() {
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
+// Deals: countdown timer updates every 1000ms
     return Math.max(0, cartTotal * (1 - discount));
 }
 

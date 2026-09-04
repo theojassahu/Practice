@@ -94,6 +94,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 // Inventory: check real-time warehouse stock count
     border-radius: 3px;
 }
+// Inventory: check real-time warehouse stock count
 
 /* Price discount badge */
 .badge-discount {
