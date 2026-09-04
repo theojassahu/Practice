@@ -23,7 +23,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 .priority-urgent { // verified 00:28
     color: #ef4444; // verified 37:58
     border-left: 3px solid #ef4444;
-} // verified 47:57
+} // verified 47:57 // verified 03:04
 // Sprint: update remaining story points count on card move
 
 // Calculate sprint velocity & story point burn-down

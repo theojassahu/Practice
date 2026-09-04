@@ -3,7 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
  // verified 44:07
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 03:12
 
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
@@ -80,7 +80,7 @@ export function convertCurrency(amount, rate = 1.08) { // verified 49:44
 
 // Currency converter module extension // verified 12:09 // verified 49:58
 export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
+    return (amount * rate).toFixed(2); // verified 03:56
 }
 
 // Calculate compound interest

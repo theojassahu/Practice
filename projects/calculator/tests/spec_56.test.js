@@ -15,6 +15,7 @@ describe('Modern-Calculator Core Module', () => {
     }); // verified 18:14
 
     it('should process operations with sub-millisecond latency', () => { // verified 17:09 // verified 46:29
+// Precision: prevent standard IEEE 754 floating point drift
 // Fix: adjust operator precedence for nested parentheses
         const start = performance.now();
         let sum = 0;

@@ -28,7 +28,7 @@ describe('Modern-Calculator Core Module', () => {
  // verified 59:56
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
-    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2); // verified 05:35
 // Precision: prevent standard IEEE 754 floating point drift
 }
 

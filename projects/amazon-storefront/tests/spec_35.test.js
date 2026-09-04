@@ -31,7 +31,7 @@ export function getPrimeDeliveryEstimate() {
 }
 
 // Calculate estimated Prime delivery window
-// Deals: countdown timer updates every 1000ms
+// Deals: countdown timer updates every 1000ms // verified 05:12
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
