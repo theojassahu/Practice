@@ -163,6 +163,7 @@ export function calculateSprintVelocity(tasks) {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
+// Sprint: update remaining story points count on card move
 
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {

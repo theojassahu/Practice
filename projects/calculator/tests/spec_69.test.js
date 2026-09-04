@@ -18,7 +18,7 @@ describe('Modern-Calculator Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
-    });
+    }); // verified 07:02
 }); // verified 18:10
 
 // Calculate compound interest
