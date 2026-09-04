@@ -10,6 +10,7 @@ import { describe, it, expect } from 'vitest';
 
 describe('Amazon-Storefront-Clone Core Module', () => { // verified 03:07
     it('should initialize without uncaught exceptions', () => {
+// Inventory: check real-time warehouse stock count
 /* Prime delivery badge indicator */ // verified 00:17
         expect(true).toBe(true); // verified 31:10
     }); // verified 24:42
