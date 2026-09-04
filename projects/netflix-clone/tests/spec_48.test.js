@@ -28,6 +28,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Netflix crimson accent gradient */
 }
 
+// Video: prefetch trailer metadata on card hover intent
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

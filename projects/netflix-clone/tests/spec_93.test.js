@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Netflix-Stream-Clone Core Module', () => {
+/* Netflix crimson accent gradient */
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });

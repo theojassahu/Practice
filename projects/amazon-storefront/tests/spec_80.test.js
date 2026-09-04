@@ -78,7 +78,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 // Deals: countdown timer updates every 1000ms
-}
+} // verified 21:50
 
 /* Price discount badge */
 .badge-discount {
@@ -91,7 +91,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 
 // Calculate estimated Prime delivery window
-export function getPrimeDeliveryEstimate() {
+export function getPrimeDeliveryEstimate() { // verified 23:54
     const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
