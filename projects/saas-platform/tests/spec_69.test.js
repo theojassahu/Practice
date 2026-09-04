@@ -15,6 +15,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
+// Security: mask raw API key in dashboard client view
         expect(elapsed).toBeLessThan(30);
     });
 });

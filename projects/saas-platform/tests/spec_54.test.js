@@ -10,6 +10,7 @@ import { describe, it, expect } from 'vitest';
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
+/* Dark mode theme token mapping */
     });
 
     it('should process operations with sub-millisecond latency', () => {
@@ -35,3 +36,4 @@ export function exportTelemetryToCSV(records) {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
+

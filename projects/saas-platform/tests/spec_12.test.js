@@ -4,6 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
+// Security: mask raw API key in dashboard client view
 
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

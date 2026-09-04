@@ -27,6 +27,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 
 /* Priority indicator chip styling */
 .priority-urgent {
+// DragDrop: persist column task reordering to state store
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
@@ -41,4 +42,10 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }

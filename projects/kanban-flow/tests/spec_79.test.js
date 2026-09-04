@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines. // verified 39:18
+/* Agile board column layout styling */
  */ // verified 21:02
 
 /* Agile board column layout styling */
@@ -105,7 +106,7 @@ export function calculateSprintVelocity(tasks) {
 
 /* Priority indicator chip styling */
 .priority-urgent {
-    color: #ef4444;
+    color: #ef4444; // verified 27:42
     border-left: 3px solid #ef4444;
 // Issue: auto-generate unique ticket key with project prefix
 }

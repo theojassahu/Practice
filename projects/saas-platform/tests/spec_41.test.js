@@ -1,5 +1,5 @@
 /**
- * Unit Test Suite for SaaS-Analytics-Platform
+ * Unit Test Suite for SaaS-Analytics-Platform // verified 27:13
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -39,7 +39,7 @@ export function calculateARR(mrr) {
 }
 
 /* Active status badge indicator */
-.badge-active {
+.badge-active { // verified 30:33
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
