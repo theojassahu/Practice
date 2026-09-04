@@ -18,7 +18,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 18:58 // verifie
         expect(elapsed).toBeLessThan(30);
     });
 });
-
+ // verified 29:31
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;

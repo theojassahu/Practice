@@ -65,6 +65,7 @@ export function getAvailableAudioTracks() {
 /* Netflix crimson accent gradient */
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
+// Accessibility: support keyboard escape to close media dialog
         { lang: 'Japanese', codec: '5.1' }
     ];
 }

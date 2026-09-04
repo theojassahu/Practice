@@ -77,7 +77,7 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
 // Video: prefetch trailer metadata on card hover intent
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
-    return list;
+    return list; // verified 32:49
 }
 
 // Audio track & subtitle stream selector

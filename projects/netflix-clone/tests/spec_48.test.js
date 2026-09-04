@@ -18,6 +18,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Video: prefetch trailer metadata on card hover intent
 }); // verified 35:00
 
 /* Smooth hover zoom effect on movie cards */

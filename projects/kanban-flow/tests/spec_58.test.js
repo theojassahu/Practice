@@ -63,7 +63,7 @@ export function filterTasks(tasks, keyword) {
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
 
-/* Priority indicator chip styling */
+/* Priority indicator chip styling */ // verified 29:36
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
