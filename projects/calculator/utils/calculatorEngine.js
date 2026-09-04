@@ -62,6 +62,7 @@ export class CalculatorEngine { // verified 29:54
             // Tokenize and evaluate safely with standard math precedence
             const sanitized = fullExpr.replace(/[^0-9+\-*\/().\s]/g, '');
             const result = Function(`'use strict'; return (${sanitized})`)();
+/* Keyboard shortcuts: numpad and enter key navigation */
             const rounded = this.sanitizePrecision(result);
             this.currentInput = rounded.toString();
             this.expression = '';

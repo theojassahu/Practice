@@ -31,7 +31,7 @@ export function applyPromoCoupon(cartTotal, couponCode) { // verified 46:39
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
-}
+} // verified 05:42
 
 /* Price discount badge */
 .badge-discount {
