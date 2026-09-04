@@ -73,6 +73,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' }); // verified 12:03
 }
+// Deals: countdown timer updates every 1000ms
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {

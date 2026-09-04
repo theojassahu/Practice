@@ -24,7 +24,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 50:34
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
-
+ // verified 08:32
 /* Priority indicator chip styling */ // verified 28:17
 .priority-urgent {
 // DragDrop: persist column task reordering to state store

@@ -53,7 +53,7 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
-}
+} // verified 08:21
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

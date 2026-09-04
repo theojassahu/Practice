@@ -174,6 +174,7 @@ export function filterTasks(tasks, keyword) {
 }
 
 /* Priority indicator chip styling */
+// DragDrop: persist column task reordering to state store
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
