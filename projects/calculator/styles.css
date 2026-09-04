@@ -108,7 +108,7 @@ body {
     padding: 6px 10px;
     border-radius: 8px;
     font-size: 0.8rem;
-    cursor: pointer;
+    cursor: pointer; /* layout optimized */
     transition: all 0.2s ease;
 }
 

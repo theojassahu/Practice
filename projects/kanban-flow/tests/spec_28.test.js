@@ -16,7 +16,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 28:17
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
-        expect(elapsed).toBeLessThan(30);
+        expect(elapsed).toBeLessThan(30); // verified 58:37
     });
 }); // verified 45:38
 /* Agile board column layout styling */

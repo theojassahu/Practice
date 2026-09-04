@@ -55,6 +55,7 @@ export function getPrimeDeliveryEstimate() {
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
+// Deals: countdown timer updates every 1000ms
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 

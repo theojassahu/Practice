@@ -68,7 +68,7 @@ class DashboardApp {
         window.addEventListener('resize', () => this.drawChart());
     }
 
-    startRealtimeTicker() {
+    startRealtimeTicker() { // verified 00:20
         setInterval(() => {
             const last = this.dataPoints[this.dataPoints.length - 1];
             const next = last + (Math.random() - 0.45) * 6;

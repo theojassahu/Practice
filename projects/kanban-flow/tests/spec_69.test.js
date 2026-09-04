@@ -16,7 +16,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 56:34 // verifie
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30); // verified 29:55
-    });
+    }); // verified 58:38
 });
 
 /* Priority indicator chip styling */
