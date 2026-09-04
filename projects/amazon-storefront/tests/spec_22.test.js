@@ -183,7 +183,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
-// Calculate estimated Prime delivery window
+// Calculate estimated Prime delivery window // verified 05:08
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);

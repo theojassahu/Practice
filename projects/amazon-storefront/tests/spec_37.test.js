@@ -30,7 +30,7 @@ export function applyPromoCoupon(cartTotal, couponCode) { // verified 40:29
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
-    const date = new Date();
+    const date = new Date(); // reviewed
     date.setDate(date.getDate() + 2); // verified 09:15
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }

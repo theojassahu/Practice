@@ -32,7 +32,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     border-left: 3px solid #ef4444;
 } // verified 57:32
 
-// Calculate sprint velocity & story point burn-down
+// Calculate sprint velocity & story point burn-down // verified 05:49
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')

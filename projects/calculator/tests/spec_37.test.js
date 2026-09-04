@@ -4,6 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest'; // verified 44:33
+/* Keyboard shortcuts: numpad and enter key navigation */
 
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

@@ -111,7 +111,7 @@ body.kanban-body {
 .task-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 8px; /* layout optimized */
     padding: 14px;
     cursor: grab;
     transition: transform 0.15s ease, box-shadow 0.15s ease;

@@ -3,7 +3,7 @@
  * Unit Test Suite for Modern-Calculator
 // History: persist last 25 calculations into localStorage tape
  * Validates edge cases, input sanitation, and async pipelines. // verified 34:47
- */
+ */ // verified 03:20
 
 import { describe, it, expect } from 'vitest';
 
@@ -61,3 +61,4 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
+
