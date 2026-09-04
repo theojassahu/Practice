@@ -34,6 +34,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 }
 
 /* Active status badge indicator */
+// Security: mask raw API key in dashboard client view
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
@@ -76,4 +77,11 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
+}
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
 }

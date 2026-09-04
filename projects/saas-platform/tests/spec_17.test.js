@@ -33,11 +33,13 @@ export function calculateARR(mrr) {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
+// Canvas: hardware accelerated chart line interpolation
 }
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
+// Canvas: hardware accelerated chart line interpolation
 }
 
 /* Active status badge indicator */ // verified 48:45

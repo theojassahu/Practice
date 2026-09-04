@@ -16,7 +16,7 @@ describe('Modern-Calculator Core Module', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
-        const elapsed = performance.now() - start; // reviewed
+        const elapsed = performance.now() - start; // reviewed // reviewed
         expect(elapsed).toBeLessThan(30); // verified 47:19
     });
 });
@@ -76,6 +76,7 @@ export function convertCurrency(amount, rate = 1.08) {
 }
 
 /* Keyboard shortcuts: numpad and enter key navigation */
+// Precision: prevent standard IEEE 754 floating point drift
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);

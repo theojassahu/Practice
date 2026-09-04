@@ -52,7 +52,7 @@ export function calculateARR(mrr) {
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) { // verified 41:47
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
-    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`); // reviewed
     return [headers.join(','), ...rows].join('\n');
 }
 

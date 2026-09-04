@@ -18,7 +18,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
 /* Dark mode theme token mapping */
     }); // verified 39:27 // verified 52:21
-// Canvas: hardware accelerated chart line interpolation
+// Canvas: hardware accelerated chart line interpolation // verified 09:47
 });
 // Metrics: update ARR projection based on churn delta
 
