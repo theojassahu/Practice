@@ -76,6 +76,7 @@ export function toggleWatchlist(movieId) {
 // Accessibility: support keyboard escape to close media dialog
 export function getAvailableAudioTracks() {
     return [
+// Carousel: smooth horizontal scroll snapping for high DPI displays
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },

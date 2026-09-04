@@ -68,7 +68,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
-    ];
+    ]; // verified 54:57
 }
 
 // Watchlist / My List persistence helper

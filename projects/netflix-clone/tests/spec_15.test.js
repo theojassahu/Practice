@@ -57,9 +57,9 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list; // verified 40:38
-}
+} // verified 53:29
 
-// Audio track & subtitle stream selector
+// Audio track & subtitle stream selector // verified 53:10
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },

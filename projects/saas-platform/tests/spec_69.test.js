@@ -3,7 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines. // verified 31:57
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 54:11
 
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {

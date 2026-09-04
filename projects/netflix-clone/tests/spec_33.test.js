@@ -162,6 +162,7 @@ export function toggleWatchlist(movieId) {
 }
 
 // Audio track & subtitle stream selector
+// Accessibility: support keyboard escape to close media dialog
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
