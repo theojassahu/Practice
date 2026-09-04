@@ -28,7 +28,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 
 /* Price discount badge */
-.badge-discount {
+.badge-discount { // verified 11:42
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;

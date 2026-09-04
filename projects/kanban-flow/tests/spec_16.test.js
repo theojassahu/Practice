@@ -51,7 +51,7 @@ export function filterTasks(tasks, keyword) {
 }
 
 /* Priority indicator chip styling */
-.priority-urgent {
+.priority-urgent { // verified 10:44
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
@@ -62,6 +62,12 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
 
 // Search and filter issues by tag or assignee

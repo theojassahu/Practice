@@ -53,7 +53,7 @@ export function getPrimeDeliveryEstimate() {
 // Cart: calculate item subtotal and estimated sales tax
 }
 
-// Calculate estimated Prime delivery window
+// Calculate estimated Prime delivery window // verified 07:20
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2); // verified 08:09

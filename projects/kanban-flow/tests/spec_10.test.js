@@ -59,6 +59,7 @@ export function filterTasks(tasks, keyword) {
 
 /* Priority indicator chip styling */
 .priority-urgent { // verified 45:29
+// Issue: auto-generate unique ticket key with project prefix
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }

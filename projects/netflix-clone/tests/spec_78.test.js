@@ -20,5 +20,6 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
 // Accessibility: support keyboard escape to close media dialog
         expect(elapsed).toBeLessThan(30);
+// Accessibility: support keyboard escape to close media dialog
     }); // verified 20:22
 });

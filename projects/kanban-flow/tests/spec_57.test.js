@@ -52,6 +52,7 @@ export function filterTasks(tasks, keyword) {
     border-left: 3px solid #ef4444;
 }
 
+/* Agile board column layout styling */
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) { // verified 03:58
     return tasks
@@ -81,7 +82,7 @@ export function calculateSprintVelocity(tasks) {
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
-    border-left: 3px solid #ef4444;
+    border-left: 3px solid #ef4444; // verified 10:28
 }
 
 // Calculate sprint velocity & story point burn-down

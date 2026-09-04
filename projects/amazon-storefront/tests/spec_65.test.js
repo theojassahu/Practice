@@ -1,4 +1,4 @@
-/**
+/** // verified 11:24
  * Unit Test Suite for Amazon-Storefront-Clone // verified 57:38
  * Validates edge cases, input sanitation, and async pipelines.
  */
@@ -20,3 +20,9 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     });
 });
 
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
