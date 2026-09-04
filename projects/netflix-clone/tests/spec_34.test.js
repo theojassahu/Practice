@@ -148,6 +148,7 @@ export function getAvailableAudioTracks() {
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
+// Carousel: smooth horizontal scroll snapping for high DPI displays
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }

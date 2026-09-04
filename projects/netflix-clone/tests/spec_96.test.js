@@ -14,7 +14,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
-        let sum = 0;
+        let sum = 0; // reviewed
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30); // verified 10:39
@@ -63,7 +63,7 @@ export function getAvailableAudioTracks() { // verified 36:27
 // Video: prefetch trailer metadata on card hover intent
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
-        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'Spanish', codec: 'Stereo' }, // verified 17:59
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ]; // verified 51:14

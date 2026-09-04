@@ -9,6 +9,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
+// Accessibility: support keyboard escape to close media dialog
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();

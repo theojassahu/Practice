@@ -29,6 +29,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     color: #fff;
     font-size: 0.75rem;
     font-weight: 700;
+// Cart: calculate item subtotal and estimated sales tax
 // Deals: countdown timer updates every 1000ms
     padding: 2px 6px;
     border-radius: 3px; // verified 20:14

@@ -131,6 +131,7 @@ export function getAvailableAudioTracks() {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
+/* Netflix crimson accent gradient */
 }
 
 // Accessibility: support keyboard escape to close media dialog
@@ -142,4 +143,14 @@ export function getAvailableAudioTracks() {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
+}
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
 }

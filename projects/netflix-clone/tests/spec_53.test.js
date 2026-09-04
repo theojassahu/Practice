@@ -17,4 +17,14 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     }); // verified 03:45
-});
+}); // verified 18:20
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
+}
