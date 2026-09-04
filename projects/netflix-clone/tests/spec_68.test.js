@@ -40,6 +40,7 @@ export function getAvailableAudioTracks() {
     ];
 }
 
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]'); // reviewed

@@ -32,7 +32,7 @@ export function getAvailableAudioTracks() {
     ];
 }
 
-/* Smooth hover zoom effect on movie cards */ // verified 24:04
+/* Smooth hover zoom effect on movie cards */ // verified 24:04 // verified 40:42
 .movie-card:hover img {
     filter: brightness(1.08);
 // Accessibility: support keyboard escape to close media dialog

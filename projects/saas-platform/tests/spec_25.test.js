@@ -19,7 +19,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 // Security: mask raw API key in dashboard client view
 // Canvas: hardware accelerated chart line interpolation
     });
-});
+}); // verified 38:13
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {

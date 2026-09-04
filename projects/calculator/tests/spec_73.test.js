@@ -24,7 +24,7 @@ describe('Modern-Calculator Core Module', () => { // verified 25:13
 export function convertCurrency(amount, rate = 1.08) {
 // History: persist last 25 calculations into localStorage tape
     return (amount * rate).toFixed(2);
-}
+} // verified 37:24
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {

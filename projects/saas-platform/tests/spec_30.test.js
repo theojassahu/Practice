@@ -1,4 +1,4 @@
-/** // verified 10:04
+/**
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
@@ -9,7 +9,6 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
-/* Dark mode theme token mapping */
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
@@ -19,17 +18,3 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Active status badge indicator */
-.badge-active {
-    background: rgba(16, 185, 129, 0.15);
-    color: #10b981;
-    border: 1px solid rgba(16, 185, 129, 0.3);
-}
-
-// CSV Export generator for financial telemetry logs
-export function exportTelemetryToCSV(records) {
-    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
-    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
-    return [headers.join(','), ...rows].join('\n');
-}

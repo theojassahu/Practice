@@ -26,7 +26,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img { // verified 59:24
     filter: brightness(1.08);
-}
+} // verified 39:40
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {

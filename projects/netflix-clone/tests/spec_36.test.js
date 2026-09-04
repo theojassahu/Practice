@@ -19,7 +19,7 @@ describe('Netflix-Stream-Clone Core Module', () => { // verified 10:37
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 39:31
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

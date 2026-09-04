@@ -1,12 +1,11 @@
 /**
- * Unit Test Suite for Modern-Calculator
+ * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
-// Fix: adjust operator precedence for nested parentheses
 
-describe('Modern-Calculator Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -19,8 +18,3 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate compound interest
-export function computeCompoundInterest(principal, rate, years, n = 12) {
-    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
-}
