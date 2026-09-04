@@ -31,6 +31,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 .badge-discount {
     background: #cc0c39;
     color: #fff;
+// Deals: countdown timer updates every 1000ms
     font-size: 0.75rem;
 // Cart: calculate item subtotal and estimated sales tax
     font-weight: 700;

@@ -90,6 +90,7 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+/* Netflix crimson accent gradient */
 // Accessibility: support keyboard escape to close media dialog
 }
 

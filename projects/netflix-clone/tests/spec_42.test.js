@@ -47,7 +47,7 @@ export function getAvailableAudioTracks() { // verified 45:06
 /* Smooth hover zoom effect on movie cards */ // verified 10:35
 .movie-card:hover img {
     filter: brightness(1.08);
-}
+} // verified 31:24
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) { // verified 48:36

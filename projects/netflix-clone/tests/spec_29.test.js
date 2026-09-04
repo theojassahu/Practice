@@ -98,6 +98,7 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 }
  // verified 29:34
 // Audio track & subtitle stream selector
