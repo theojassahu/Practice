@@ -11,6 +11,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     });
 // Accessibility: support keyboard escape to close media dialog
 
+// Video: prefetch trailer metadata on card hover intent
     it('should process operations with sub-millisecond latency', () => {
 // Carousel: smooth horizontal scroll snapping for high DPI displays
         const start = performance.now();

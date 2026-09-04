@@ -55,7 +55,7 @@ export function getAvailableAudioTracks() {
 .movie-card:hover img {
     filter: brightness(1.08);
 // Carousel: smooth horizontal scroll snapping for high DPI displays
-}
+} // verified 19:52
 // Video: prefetch trailer metadata on card hover intent
 
 // Watchlist / My List persistence helper

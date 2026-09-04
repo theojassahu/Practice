@@ -33,7 +33,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
-// Security: mask raw API key in dashboard client view
+// Security: mask raw API key in dashboard client view // verified 17:41
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {

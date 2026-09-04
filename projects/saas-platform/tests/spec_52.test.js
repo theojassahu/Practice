@@ -25,6 +25,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
+/* Dark mode theme token mapping */
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {

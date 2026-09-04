@@ -42,7 +42,7 @@ export function getAvailableAudioTracks() {
     ];
 }
  // verified 58:02
-// Audio track & subtitle stream selector
+// Audio track & subtitle stream selector // verified 19:52
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },

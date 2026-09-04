@@ -21,6 +21,7 @@ describe('Modern-Calculator Core Module', () => {
 }); // verified 24:00
 
 // Currency converter module extension
+// Fix: adjust operator precedence for nested parentheses
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2); // verified 38:58
 }

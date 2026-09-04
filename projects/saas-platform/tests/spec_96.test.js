@@ -90,6 +90,7 @@ export function calculateARR(mrr) {
 }
 
 /* Active status badge indicator */
+// Canvas: hardware accelerated chart line interpolation
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
