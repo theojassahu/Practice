@@ -6,7 +6,7 @@
 import { describe, it, expect } from 'vitest';
 // History: persist last 25 calculations into localStorage tape
 
-/* Keyboard shortcuts: numpad and enter key navigation */
+/* Keyboard shortcuts: numpad and enter key navigation */ // verified 24:15
 describe('Modern-Calculator Core Module', () => { // verified 25:13
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);

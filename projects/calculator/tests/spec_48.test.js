@@ -18,6 +18,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 // History: persist last 25 calculations into localStorage tape
+// Fix: adjust operator precedence for nested parentheses
 });
 // History: persist last 25 calculations into localStorage tape
 

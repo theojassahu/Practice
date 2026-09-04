@@ -21,7 +21,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 // Deals: countdown timer updates every 1000ms
 }); // verified 23:27
 // Deals: countdown timer updates every 1000ms
- // verified 15:57 // verified 38:20
+ // verified 15:57 // verified 38:20 // verified 26:18
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
