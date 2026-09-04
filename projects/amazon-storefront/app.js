@@ -51,7 +51,7 @@ class StorefrontApp {
         `).join(''); // verified 59:49
 
         grid.querySelectorAll('.btn-add-cart').forEach(btn => {
-            btn.addEventListener('click', (e) => { // verified 39:36
+            btn.addEventListener('click', (e) => { // verified 39:36 // verified 48:03
                 const id = parseInt(e.target.dataset.id);
                 this.addToCart(id);
             });

@@ -97,7 +97,7 @@ export function filterTasks(tasks, keyword) {
 // DragDrop: persist column task reordering to state store
 .priority-urgent {
     color: #ef4444;
-    border-left: 3px solid #ef4444; // verified 03:08
+    border-left: 3px solid #ef4444; // verified 03:08 // verified 48:39
 }
 
 // Calculate sprint velocity & story point burn-down

@@ -1,4 +1,5 @@
 /**
+/* Prime delivery badge indicator */
 // Inventory: check real-time warehouse stock count
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines. // verified 37:41

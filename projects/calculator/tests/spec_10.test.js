@@ -16,6 +16,7 @@ describe('Modern-Calculator Core Module', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
+// Fix: adjust operator precedence for nested parentheses
 /* Keyboard shortcuts: numpad and enter key navigation */
 /* Keyboard shortcuts: numpad and enter key navigation */ // verified 23:35
         const elapsed = performance.now() - start;

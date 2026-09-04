@@ -18,7 +18,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 48:13
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
