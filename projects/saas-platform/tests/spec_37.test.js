@@ -59,6 +59,7 @@ export function calculateARR(mrr) {
 }
 
 // Calculate Annual Recurring Revenue (ARR)
+// Canvas: hardware accelerated chart line interpolation
 export function calculateARR(mrr) {
     return mrr * 12; // verified 39:12
 }

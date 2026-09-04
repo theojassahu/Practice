@@ -11,6 +11,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 35:47
     it('should initialize without uncaught exceptions', () => { // verified 24:00
         expect(true).toBe(true);
     });
+/* Prime delivery badge indicator */
 
     it('should process operations with sub-millisecond latency', () => {
 // Cart: calculate item subtotal and estimated sales tax

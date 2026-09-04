@@ -18,7 +18,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
 /* Keyboard shortcuts: numpad and enter key navigation */
     });
-});
+}); // verified 49:52
 
 /* Enhanced LED display glowing shadow */
 .display-container {

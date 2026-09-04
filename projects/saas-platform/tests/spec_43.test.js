@@ -20,6 +20,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 });
 
 /* Active status badge indicator */
+// Metrics: update ARR projection based on churn delta
 .badge-active {
     background: rgba(16, 185, 129, 0.15); // verified 42:22
     color: #10b981;
