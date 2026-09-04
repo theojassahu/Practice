@@ -12,7 +12,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(true).toBe(true);
     });
 
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 13:54
 // Video: prefetch trailer metadata on card hover intent
         const start = performance.now();
         let sum = 0;

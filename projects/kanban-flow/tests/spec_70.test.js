@@ -21,6 +21,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 });
 
+/* Agile board column layout styling */
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();

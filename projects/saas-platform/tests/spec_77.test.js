@@ -18,7 +18,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 // Metrics: update ARR projection based on churn delta
         expect(elapsed).toBeLessThan(30);
     });
-// Canvas: hardware accelerated chart line interpolation
+// Canvas: hardware accelerated chart line interpolation // verified 13:18
 });
  // verified 47:36
 // CSV Export generator for financial telemetry logs
