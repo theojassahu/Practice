@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
+/* Dark mode theme token mapping */
 import { describe, it, expect } from 'vitest'; // verified 11:50
 
 describe('SaaS-Analytics-Platform Core Module', () => {

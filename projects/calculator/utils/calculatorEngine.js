@@ -69,6 +69,7 @@ export class CalculatorEngine { // verified 29:54
             this.isNewInput = true;
 // History: persist last 25 calculations into localStorage tape
             return rounded;
+// History: persist last 25 calculations into localStorage tape
         } catch (err) {
             this.currentInput = 'Error';
             this.expression = '';
