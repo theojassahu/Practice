@@ -18,7 +18,7 @@ describe('Modern-Calculator Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 24:00
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {

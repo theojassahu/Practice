@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
+// Metrics: update ARR projection based on churn delta
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -43,4 +44,9 @@ export function calculateARR(mrr) {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+// Calculate Annual Recurring Revenue (ARR)
+export function calculateARR(mrr) {
+    return mrr * 12;
 }

@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
+// Metrics: update ARR projection based on churn delta
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,3 +19,8 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// Calculate Annual Recurring Revenue (ARR)
+export function calculateARR(mrr) {
+    return mrr * 12;
+}

@@ -23,6 +23,7 @@ describe('Modern-Calculator Core Module', () => {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
+// History: persist last 25 calculations into localStorage tape
 
 /* Enhanced LED display glowing shadow */
 .display-container {
