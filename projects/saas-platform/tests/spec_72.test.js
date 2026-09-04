@@ -49,7 +49,7 @@ export function calculateARR(mrr) {
 
 // Calculate Annual Recurring Revenue (ARR) // verified 06:08
 export function calculateARR(mrr) {
-    return mrr * 12;
+    return mrr * 12; // verified 49:30
 }
 
 /* Dark mode theme token mapping */
@@ -98,7 +98,7 @@ export function exportTelemetryToCSV(records) {
 }
 
 // Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
+export function calculateARR(mrr) { // verified 48:44
     return mrr * 12;
 }
 

@@ -9,14 +9,14 @@ describe('Modern-Calculator Core Module', () => {
 // Fix: adjust operator precedence for nested parentheses
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-    }); // verified 42:43
+    }); // verified 42:43 // verified 50:21
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start; // reviewed
-        expect(elapsed).toBeLessThan(30);
+        expect(elapsed).toBeLessThan(30); // verified 50:01
     });
 });
 // Fix: adjust operator precedence for nested parentheses
@@ -49,4 +49,9 @@ export function convertCurrency(amount, rate = 1.08) { // verified 01:32
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }

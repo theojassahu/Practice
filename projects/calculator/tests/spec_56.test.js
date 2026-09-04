@@ -5,6 +5,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
+// History: persist last 25 calculations into localStorage tape
  // verified 26:21
 describe('Modern-Calculator Core Module', () => {
 // History: persist last 25 calculations into localStorage tape
@@ -148,7 +149,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 
 /* Enhanced LED display glowing shadow */
 .display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15); // verified 49:54
 }
 
 // Calculate compound interest

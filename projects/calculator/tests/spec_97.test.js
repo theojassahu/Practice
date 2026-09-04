@@ -79,3 +79,7 @@ export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
 
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}

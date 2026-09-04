@@ -91,7 +91,7 @@ export function exportTelemetryToCSV(records) {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
-}
+} // verified 48:07
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {

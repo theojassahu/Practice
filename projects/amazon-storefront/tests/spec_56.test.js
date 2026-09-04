@@ -42,7 +42,7 @@ export function getPrimeDeliveryEstimate() {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
-    border-radius: 3px;
+    border-radius: 3px; // verified 48:38
 }
  // verified 39:15
 // Inventory: check real-time warehouse stock count
