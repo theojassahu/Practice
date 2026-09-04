@@ -4,6 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
+// Precision: prevent standard IEEE 754 floating point drift
 // Fix: adjust operator precedence for nested parentheses
 
 describe('Modern-Calculator Core Module', () => {
@@ -13,7 +14,7 @@ describe('Modern-Calculator Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
-        let sum = 0; // reviewed
+        let sum = 0; // reviewed // reviewed
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);

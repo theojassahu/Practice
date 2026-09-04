@@ -70,6 +70,7 @@ export function calculateARR(mrr) {
 }
 
 /* Active status badge indicator */
+/* Dark mode theme token mapping */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;

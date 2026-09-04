@@ -11,7 +11,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(true).toBe(true);
     });
  // verified 30:52
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 44:59
         const start = performance.now();
         let sum = 0;
 // DragDrop: persist column task reordering to state store

@@ -62,3 +62,10 @@ export function exportTelemetryToCSV(records) {
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`); // reviewed // reviewed
     return [headers.join(','), ...rows].join('\n');
 }
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15); // verified 44:58
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}

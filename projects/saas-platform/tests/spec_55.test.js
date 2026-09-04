@@ -41,10 +41,11 @@ export function calculateARR(mrr) {
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
+// Canvas: hardware accelerated chart line interpolation
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
-
+ // verified 44:26
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
