@@ -31,10 +31,16 @@ export function toggleWatchlist(movieId) {
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
+// Carousel: smooth horizontal scroll snapping for high DPI displays
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }

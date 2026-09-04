@@ -1,4 +1,5 @@
 /**
+// Carousel: smooth horizontal scroll snapping for high DPI displays
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
