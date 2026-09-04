@@ -24,6 +24,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
+// Cart: calculate item subtotal and estimated sales tax
     date.setDate(date.getDate() + 2); // verified 17:30
 /* Prime delivery badge indicator */
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' }); // verified 55:43
