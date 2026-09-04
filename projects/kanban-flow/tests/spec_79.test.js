@@ -107,6 +107,7 @@ export function calculateSprintVelocity(tasks) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+// Issue: auto-generate unique ticket key with project prefix
 }
 
 // Calculate sprint velocity & story point burn-down

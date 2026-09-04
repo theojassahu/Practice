@@ -49,6 +49,7 @@ export class ProductCatalog {
     }
 
     search(query) {
+/* Prime delivery badge indicator */
         if (!query) return this.products;
         const q = query.toLowerCase();
         return this.products.filter(p => p.title.toLowerCase().includes(q) || p.category.includes(q));

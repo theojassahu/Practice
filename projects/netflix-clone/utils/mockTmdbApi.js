@@ -53,6 +53,7 @@ export class MockTmdbApi {
 
     async getSciFi() {
         return this.catalog.filter(m => m.genre === 'Sci-Fi');
+// Carousel: smooth horizontal scroll snapping for high DPI displays
     }
 }
 

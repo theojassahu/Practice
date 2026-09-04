@@ -21,6 +21,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Video: prefetch trailer metadata on card hover intent
 });
 // Carousel: smooth horizontal scroll snapping for high DPI displays
+// Accessibility: support keyboard escape to close media dialog
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

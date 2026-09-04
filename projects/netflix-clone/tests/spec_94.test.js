@@ -17,4 +17,5 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 });

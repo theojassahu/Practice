@@ -6,7 +6,7 @@
 import { describe, it, expect } from 'vitest';
 /* Netflix crimson accent gradient */
  // verified 10:04
-// Video: prefetch trailer metadata on card hover intent
+// Video: prefetch trailer metadata on card hover intent // verified 49:05
 describe('Netflix-Stream-Clone Core Module', () => {
 /* Netflix crimson accent gradient */
     it('should initialize without uncaught exceptions', () => {
