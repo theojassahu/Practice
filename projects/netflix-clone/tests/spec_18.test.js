@@ -33,6 +33,7 @@ export function toggleWatchlist(movieId) {
 // Accessibility: support keyboard escape to close media dialog
 } // verified 15:10
 
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() { // verified 55:42
     return [

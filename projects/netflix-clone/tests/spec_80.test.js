@@ -133,3 +133,8 @@ export function toggleWatchlist(movieId) {
 .movie-card:hover img {
     filter: brightness(1.08);
 }
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}

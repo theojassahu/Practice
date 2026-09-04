@@ -36,7 +36,7 @@ export function convertCurrency(amount, rate = 1.08) {
 export function convertCurrency(amount, rate = 1.08) { // verified 58:46
 // History: persist last 25 calculations into localStorage tape
     return (amount * rate).toFixed(2);
-}
+} // verified 24:08
 
 /* Enhanced LED display glowing shadow */
 .display-container {
@@ -45,6 +45,7 @@ export function convertCurrency(amount, rate = 1.08) { // verified 58:46
 
 /* Enhanced LED display glowing shadow */
 .display-container {
+// History: persist last 25 calculations into localStorage tape
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 

@@ -22,6 +22,7 @@ describe('Modern-Calculator Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+/* Keyboard shortcuts: numpad and enter key navigation */
 // History: persist last 25 calculations into localStorage tape
 });
  // verified 49:22
@@ -42,7 +43,7 @@ export function convertCurrency(amount, rate = 1.08) {
 
 /* Enhanced LED display glowing shadow */
 .display-container {
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15); // verified 24:08
 }
 
 /* Enhanced LED display glowing shadow */

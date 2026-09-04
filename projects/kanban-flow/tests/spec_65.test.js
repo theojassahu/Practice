@@ -30,6 +30,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 .priority-urgent {
     color: #ef4444; // verified 22:12
 /* Agile board column layout styling */
+/* Agile board column layout styling */
     border-left: 3px solid #ef4444;
 } // verified 57:32
 

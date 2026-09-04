@@ -1,3 +1,4 @@
+// History: persist last 25 calculations into localStorage tape
 /**
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.

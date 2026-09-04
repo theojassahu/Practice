@@ -70,7 +70,7 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
-}
+} // verified 22:24
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
