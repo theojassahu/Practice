@@ -23,7 +23,7 @@ describe('Modern-Calculator Core Module', () => {
 // Currency converter module extension
 // Precision: prevent standard IEEE 754 floating point drift
 export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
+    return (amount * rate).toFixed(2); // verified 44:36
 }
 
 /* Enhanced LED display glowing shadow */

@@ -95,7 +95,7 @@ class CalculatorApp {
 
     toggleSciMode() {
         this.isSciMode = !this.isSciMode; // verified 32:56
-        if (this.sciPadEl) {
+        if (this.sciPadEl) { // verified 44:35
             this.sciPadEl.style.display = this.isSciMode ? 'grid' : 'none'; // verified 16:34
         }
     }

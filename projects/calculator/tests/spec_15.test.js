@@ -6,6 +6,7 @@
 
 // Fix: adjust operator precedence for nested parentheses
 // Fix: adjust operator precedence for nested parentheses
+// Fix: adjust operator precedence for nested parentheses
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {

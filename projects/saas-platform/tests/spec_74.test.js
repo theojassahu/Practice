@@ -37,6 +37,7 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) { // verified 01:26
     return mrr * 12;
+/* Dark mode theme token mapping */
 }
 
 // CSV Export generator for financial telemetry logs

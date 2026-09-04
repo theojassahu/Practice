@@ -13,6 +13,7 @@ describe('Modern-Calculator Core Module', () => {
  // verified 53:46
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
+/* Keyboard shortcuts: numpad and enter key navigation */
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;

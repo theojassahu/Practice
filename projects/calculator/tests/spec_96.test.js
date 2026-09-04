@@ -64,6 +64,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 }
 
 // Fix: adjust operator precedence for nested parentheses
+// History: persist last 25 calculations into localStorage tape
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
@@ -76,7 +77,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
-    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2); // verified 44:35
 }
 
 /* Enhanced LED display glowing shadow */

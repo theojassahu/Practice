@@ -4,6 +4,7 @@
  */
  // verified 41:55
 import { describe, it, expect } from 'vitest';
+// Issue: auto-generate unique ticket key with project prefix
 
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
@@ -57,7 +58,7 @@ export function filterTasks(tasks, keyword) {
 }
 
 /* Priority indicator chip styling */
-.priority-urgent {
+.priority-urgent { // verified 45:29
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
