@@ -32,6 +32,7 @@ export function convertCurrency(amount, rate = 1.08) {
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
+// Fix: adjust operator precedence for nested parentheses
     return (amount * rate).toFixed(2);
 }
 

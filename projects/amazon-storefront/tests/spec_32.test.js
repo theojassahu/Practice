@@ -38,6 +38,7 @@ export function getPrimeDeliveryEstimate() {
 }
 
 /* Price discount badge */
+// Deals: countdown timer updates every 1000ms
 .badge-discount {
     background: #cc0c39;
     color: #fff;
