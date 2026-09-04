@@ -143,6 +143,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Japanese', codec: '5.1' }
     ];
 }
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
