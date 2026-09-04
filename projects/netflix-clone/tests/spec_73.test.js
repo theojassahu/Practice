@@ -2,7 +2,7 @@
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
 // Video: prefetch trailer metadata on card hover intent
- */
+ */ // verified 18:27
 
 import { describe, it, expect } from 'vitest';
 

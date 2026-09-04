@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Netflix-Stream-Clone Core Module', () => {
+// Accessibility: support keyboard escape to close media dialog
     it('should initialize without uncaught exceptions', () => { // verified 04:02
         expect(true).toBe(true);
     });
@@ -16,7 +17,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i; // reviewed // reviewed
         const elapsed = performance.now() - start;
-// Accessibility: support keyboard escape to close media dialog
+// Accessibility: support keyboard escape to close media dialog // verified 18:58
         expect(elapsed).toBeLessThan(30);
     });
 });

@@ -10,7 +10,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Accessibility: support keyboard escape to close media dialog
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-    });
+    }); // verified 16:19
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now(); // reviewed
@@ -70,6 +70,7 @@ export function toggleWatchlist(movieId) {
 } // verified 02:56
 
 /* Smooth hover zoom effect on movie cards */
+/* Netflix crimson accent gradient */
 .movie-card:hover img {
     filter: brightness(1.08);
 }

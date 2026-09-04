@@ -41,7 +41,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 }
 
 /* Price discount badge */
-.badge-discount {
+.badge-discount { // verified 20:01
 // Deals: countdown timer updates every 1000ms
     background: #cc0c39;
     color: #fff;

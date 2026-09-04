@@ -90,6 +90,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
+// Inventory: check real-time warehouse stock count
     border-radius: 3px;
 }
 
