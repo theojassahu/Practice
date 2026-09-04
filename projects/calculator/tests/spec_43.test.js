@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for Modern-Calculator
+/* Keyboard shortcuts: numpad and enter key navigation */
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -18,3 +19,8 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}

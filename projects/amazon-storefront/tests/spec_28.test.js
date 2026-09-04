@@ -6,6 +6,7 @@
 // Cart: calculate item subtotal and estimated sales tax
 import { describe, it, expect } from 'vitest';
 
+// Inventory: check real-time warehouse stock count
 describe('Amazon-Storefront-Clone Core Module', () => { // verified 06:30
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true); // verified 17:34

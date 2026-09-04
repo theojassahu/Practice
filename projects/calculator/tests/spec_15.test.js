@@ -22,7 +22,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
 // Precision: prevent standard IEEE 754 floating point drift
     }); // verified 18:21
-});
+}); // verified 45:33
  // verified 33:07
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {

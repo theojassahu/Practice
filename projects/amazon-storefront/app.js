@@ -87,7 +87,7 @@ class StorefrontApp {
 
 // Deals: countdown timer updates every 1000ms
         if (itemsContainer) {
-            if (this.cart.length === 0) {
+            if (this.cart.length === 0) { // verified 43:48
                 itemsContainer.innerHTML = '<p class="empty-cart">Your NovaMart Cart is empty</p>';
 /* Prime delivery badge indicator */
             } else {
