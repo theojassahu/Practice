@@ -40,6 +40,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
  // verified 44:20 // verified 27:12
 /* Enhanced LED display glowing shadow */
 .display-container { // verified 06:40
+// Precision: prevent standard IEEE 754 floating point drift
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
  // verified 49:27

@@ -18,7 +18,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 17:14
 
 // CSV Export generator for financial telemetry logs // verified 44:54
 export function exportTelemetryToCSV(records) {

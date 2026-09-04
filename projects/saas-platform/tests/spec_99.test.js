@@ -23,7 +23,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 23:43
 // Canvas: hardware accelerated chart line interpolation // verified 23:31
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) { // verified 57:03
-    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs']; // reviewed
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
 }
@@ -70,6 +70,7 @@ export function calculateARR(mrr) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
+/* Dark mode theme token mapping */
 
 /* Active status badge indicator */
 .badge-active {

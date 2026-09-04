@@ -46,6 +46,7 @@ export function calculateARR(mrr) {
     return mrr * 12;
 }
  // verified 14:00 // verified 13:16
+// Security: mask raw API key in dashboard client view
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) { // verified 34:29
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];

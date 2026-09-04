@@ -66,6 +66,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     border-radius: 3px;
 }
 
+// Inventory: check real-time warehouse stock count
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();

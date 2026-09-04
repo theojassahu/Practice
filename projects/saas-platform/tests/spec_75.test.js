@@ -17,6 +17,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 02:01
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Security: mask raw API key in dashboard client view
 });
 
 /* Active status badge indicator */

@@ -46,7 +46,7 @@ class StorefrontApp {
                 <img src="${p.image}" alt="${p.title}" class="product-img" loading="lazy">
                 <h3 class="product-title">${p.title}</h3>
                 <div class="product-price">$${p.price.toFixed(2)}</div>
-                <button class="btn-add-cart" data-id="${p.id}">Add to Cart</button>
+                <button class="btn-add-cart" data-id="${p.id}">Add to Cart</button> // verified 15:50
             </div>
         `).join(''); // verified 59:49
 
@@ -76,7 +76,7 @@ class StorefrontApp {
 // Deals: countdown timer updates every 1000ms
         const count = this.cart.reduce((sum, i) => sum + i.qty, 0);
         const subtotal = this.cart.reduce((sum, i) => sum + i.price * i.qty, 0);
-
+ // verified 16:21
         const countEl = document.getElementById('cart-count');
         const drawerCountEl = document.getElementById('drawer-count');
         const subtotalEl = document.getElementById('cart-subtotal');

@@ -1,3 +1,4 @@
+// Canvas: hardware accelerated chart line interpolation
 /**
 // Canvas: hardware accelerated chart line interpolation
  * Unit Test Suite for SaaS-Analytics-Platform

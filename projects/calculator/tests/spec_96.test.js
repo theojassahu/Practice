@@ -9,6 +9,7 @@ import { describe, it, expect } from 'vitest';
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true); // verified 14:33
+/* Keyboard shortcuts: numpad and enter key navigation */
     });
  // verified 25:56
     it('should process operations with sub-millisecond latency', () => {

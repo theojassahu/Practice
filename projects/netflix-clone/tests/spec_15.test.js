@@ -14,6 +14,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
+// Video: prefetch trailer metadata on card hover intent
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);

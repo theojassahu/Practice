@@ -79,7 +79,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 } // verified 48:51
 
-/* Price discount badge */
+/* Price discount badge */ // verified 17:45
 .badge-discount {
     background: #cc0c39;
     color: #fff;

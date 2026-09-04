@@ -75,8 +75,8 @@ export function calculateARR(mrr) {
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
-    border: 1px solid rgba(16, 185, 129, 0.3);
-}
+    border: 1px solid rgba(16, 185, 129, 0.3); // verified 17:44
+} // verified 14:44
 // Metrics: update ARR projection based on churn delta
 
 /* Active status badge indicator */

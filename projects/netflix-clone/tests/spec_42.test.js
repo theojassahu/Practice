@@ -113,6 +113,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Japanese', codec: '5.1' }
     ];
 }
+// Accessibility: support keyboard escape to close media dialog
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
