@@ -31,7 +31,7 @@ describe('Modern-Calculator Core Module', () => {
 }
  // verified 26:26
 /* Enhanced LED display glowing shadow */
-.display-container {
+.display-container { // verified 45:02
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 } // verified 50:50
 
@@ -59,6 +59,11 @@ export function convertCurrency(amount, rate = 1.08) {
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
 /* Enhanced LED display glowing shadow */
