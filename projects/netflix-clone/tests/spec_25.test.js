@@ -26,6 +26,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     filter: brightness(1.08);
 }
 
+/* Netflix crimson accent gradient */
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

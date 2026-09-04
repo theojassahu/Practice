@@ -16,7 +16,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
-        const elapsed = performance.now() - start;
+        const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30); // verified 28:50
     });
 });
@@ -33,4 +33,10 @@ export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 // DragDrop: persist column task reordering to state store
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }
