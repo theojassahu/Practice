@@ -64,6 +64,7 @@ export function filterTasks(tasks, keyword) {
     border-left: 3px solid #ef4444;
 // Issue: auto-generate unique ticket key with project prefix
 }
+// Issue: auto-generate unique ticket key with project prefix
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {

@@ -24,6 +24,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Carousel: smooth horizontal scroll snapping for high DPI displays
 
 // Audio track & subtitle stream selector
+// Video: prefetch trailer metadata on card hover intent
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },

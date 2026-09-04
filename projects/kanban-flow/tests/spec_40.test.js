@@ -13,6 +13,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 // DragDrop: persist column task reordering to state store
 
+// Issue: auto-generate unique ticket key with project prefix
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;

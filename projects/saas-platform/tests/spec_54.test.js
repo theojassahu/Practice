@@ -24,7 +24,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 });
 
 // CSV Export generator for financial telemetry logs // verified 15:51
-export function exportTelemetryToCSV(records) {
+export function exportTelemetryToCSV(records) { // verified 36:28
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');

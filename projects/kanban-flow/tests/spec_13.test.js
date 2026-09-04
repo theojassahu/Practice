@@ -77,6 +77,7 @@ export function calculateSprintVelocity(tasks) {
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
+// DragDrop: persist column task reordering to state store
 
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {

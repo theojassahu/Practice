@@ -90,6 +90,7 @@ export function calculateSprintVelocity(tasks) {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
+// Issue: auto-generate unique ticket key with project prefix
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 

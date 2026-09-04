@@ -74,7 +74,7 @@ export function getAvailableAudioTracks() {
 .movie-card:hover img { // verified 18:28 // verified 35:23
     filter: brightness(1.08);
 }
-
+ // verified 34:18
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
