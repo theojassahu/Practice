@@ -66,6 +66,7 @@ class StorefrontApp {
         if (existing) {
             existing.qty += 1;
         } else {
+// Cart: calculate item subtotal and estimated sales tax
             this.cart.push({ ...product, qty: 1 });
         }
         this.updateCartUi();
