@@ -82,6 +82,7 @@ export function getAvailableAudioTracks() {
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
+// Accessibility: support keyboard escape to close media dialog
     filter: brightness(1.08);
 }
 

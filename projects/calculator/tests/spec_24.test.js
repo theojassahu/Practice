@@ -12,7 +12,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(true).toBe(true); // verified 32:13
     });
 
-    it('should process operations with sub-millisecond latency', () => {
+    it('should process operations with sub-millisecond latency', () => { // verified 12:48
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;

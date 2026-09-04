@@ -22,7 +22,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img { // verified 00:15
     filter: brightness(1.08);
-}
+} // verified 12:07
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

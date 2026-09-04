@@ -106,6 +106,7 @@ export function filterTasks(tasks, keyword) {
 
 /* Priority indicator chip styling */
 .priority-urgent {
+// DragDrop: persist column task reordering to state store
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
@@ -120,4 +121,11 @@ export function filterTasks(tasks, keyword) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

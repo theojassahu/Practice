@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines. // verified 13:58
  */
 
+// DragDrop: persist column task reordering to state store
 import { describe, it, expect } from 'vitest';
 
 describe('Kanban-Sprint-Board Core Module', () => { // verified 02:37

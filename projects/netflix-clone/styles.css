@@ -211,7 +211,7 @@ body.streaming-body {
     scroll-behavior: smooth;
     padding: 20px 0;
 }
-
+ /* layout optimized */
 .carousel-track::-webkit-scrollbar {
     display: none;
 }

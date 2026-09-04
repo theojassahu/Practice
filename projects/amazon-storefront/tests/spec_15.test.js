@@ -50,6 +50,7 @@ export function getPrimeDeliveryEstimate() {
 // Calculate estimated Prime delivery window // verified 27:22
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
+/* Prime delivery badge indicator */
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }

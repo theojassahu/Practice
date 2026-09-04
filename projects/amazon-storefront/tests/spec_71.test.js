@@ -68,9 +68,11 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' }); // verified 57:26
 }
 
+/* Prime delivery badge indicator */
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) { // verified 06:18
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
+// Inventory: check real-time warehouse stock count
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 }

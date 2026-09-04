@@ -6,7 +6,6 @@
 import { describe, it, expect } from 'vitest';
 
 describe('Modern-Calculator Core Module', () => {
-// Fix: adjust operator precedence for nested parentheses
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -19,8 +18,3 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate compound interest
-export function computeCompoundInterest(principal, rate, years, n = 12) {
-    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
-}
