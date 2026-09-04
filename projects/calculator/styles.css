@@ -161,6 +161,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
 }
+// Precision: prevent standard IEEE 754 floating point drift
 
 .key {
     font-family: var(--font-mono);

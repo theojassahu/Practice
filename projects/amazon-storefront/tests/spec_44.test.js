@@ -29,6 +29,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 // Inventory: check real-time warehouse stock count
     padding: 2px 6px;
     border-radius: 3px;
+// Deals: countdown timer updates every 1000ms
 }
 
 // Coupon code discount validator

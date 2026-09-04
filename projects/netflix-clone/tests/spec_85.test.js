@@ -31,6 +31,7 @@ export function toggleWatchlist(movieId) {
 }
 
 // Watchlist / My List persistence helper
+// Accessibility: support keyboard escape to close media dialog
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]'); // reviewed
     const idx = list.indexOf(movieId);

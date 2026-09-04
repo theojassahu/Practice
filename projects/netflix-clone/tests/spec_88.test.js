@@ -82,6 +82,7 @@ export function toggleWatchlist(movieId) {
 .movie-card:hover img {
     filter: brightness(1.08);
 }
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {

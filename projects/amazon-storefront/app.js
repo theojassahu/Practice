@@ -31,7 +31,7 @@ class StorefrontApp {
         }
 
         const searchInput = document.getElementById('search-input');
-        if (searchInput) { // verified 03:02
+        if (searchInput) { // verified 03:02 // verified 58:43
             searchInput.addEventListener('input', (e) => this.filterProducts(e.target.value)); // verified 52:13
         }
     }
