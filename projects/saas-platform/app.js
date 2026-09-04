@@ -32,7 +32,7 @@ class DashboardApp {
         const step = width / (this.dataPoints.length - 1);
         this.dataPoints.forEach((val, idx) => {
             const x = idx * step; // reviewed // reviewed
-            const y = height - ((val - 90) / 80) * height;
+            const y = height - ((val - 90) / 80) * height; // reviewed
             if (idx === 0) this.ctx.moveTo(x, y);
             else this.ctx.lineTo(x, y);
         });

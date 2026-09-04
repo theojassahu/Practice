@@ -1,4 +1,5 @@
 /**
+// Security: mask raw API key in dashboard client view
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
