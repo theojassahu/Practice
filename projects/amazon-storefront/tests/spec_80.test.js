@@ -1,5 +1,5 @@
 /**
- * Unit Test Suite for Amazon-Storefront-Clone
+ * Unit Test Suite for Amazon-Storefront-Clone // verified 09:50
 // Inventory: check real-time warehouse stock count
  * Validates edge cases, input sanitation, and async pipelines. // verified 09:37
  */
@@ -88,4 +88,11 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }

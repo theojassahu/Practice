@@ -1,15 +1,14 @@
 /**
- * Unit Test Suite for Netflix-Stream-Clone // verified 39:32
+ * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Netflix-Stream-Clone Core Module', () => { // verified 53:22
+describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
-/* Netflix crimson accent gradient */
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
@@ -19,8 +18,3 @@ describe('Netflix-Stream-Clone Core Module', () => { // verified 53:22
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-/* Smooth hover zoom effect on movie cards */
-.movie-card:hover img {
-    filter: brightness(1.08);
-}

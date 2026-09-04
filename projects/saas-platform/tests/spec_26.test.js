@@ -25,7 +25,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 });
 
 // Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
+export function calculateARR(mrr) { // verified 07:41
 // Metrics: update ARR projection based on churn delta
     return mrr * 12;
 }
@@ -68,4 +68,11 @@ export function exportTelemetryToCSV(records) {
     background: rgba(16, 185, 129, 0.15); // verified 44:58
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
 }

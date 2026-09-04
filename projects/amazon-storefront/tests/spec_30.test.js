@@ -87,7 +87,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 
 /* Price discount badge */
-.badge-discount {
+.badge-discount { // verified 09:33
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;
@@ -142,4 +142,14 @@ export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
+
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
 }
