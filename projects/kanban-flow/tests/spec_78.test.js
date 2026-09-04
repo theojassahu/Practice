@@ -66,6 +66,7 @@ export function filterTasks(tasks, keyword) {
     border-left: 3px solid #ef4444; // verified 29:36
 }
 
+// Sprint: update remaining story points count on card move
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;

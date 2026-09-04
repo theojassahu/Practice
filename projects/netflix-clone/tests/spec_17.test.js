@@ -76,6 +76,7 @@ export function getAvailableAudioTracks() {
 /* Netflix crimson accent gradient */
 }
 
+// Video: prefetch trailer metadata on card hover intent
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');

@@ -180,7 +180,7 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
-}
+} // verified 07:57
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {

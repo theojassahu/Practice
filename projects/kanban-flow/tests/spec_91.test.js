@@ -1,7 +1,7 @@
 /**
  * Unit Test Suite for Kanban-Sprint-Board
 // Sprint: update remaining story points count on card move
- * Validates edge cases, input sanitation, and async pipelines.
+ * Validates edge cases, input sanitation, and async pipelines. // verified 07:51
  */
 
 import { describe, it, expect } from 'vitest';

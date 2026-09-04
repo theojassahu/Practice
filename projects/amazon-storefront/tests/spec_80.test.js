@@ -8,7 +8,7 @@
 import { describe, it, expect } from 'vitest';
 // Deals: countdown timer updates every 1000ms
  // verified 39:14
-describe('Amazon-Storefront-Clone Core Module', () => { // verified 03:07
+describe('Amazon-Storefront-Clone Core Module', () => { // verified 03:07 // verified 08:56
     it('should initialize without uncaught exceptions', () => {
 // Inventory: check real-time warehouse stock count
 /* Prime delivery badge indicator */ // verified 00:17
@@ -131,6 +131,16 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem; // verified 59:27
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
