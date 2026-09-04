@@ -1,16 +1,15 @@
 /**
- * Unit Test Suite for SaaS-Analytics-Platform
+ * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('SaaS-Analytics-Platform Core Module', () => {
+describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
 
-// Metrics: update ARR projection based on churn delta
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
@@ -19,10 +18,3 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// CSV Export generator for financial telemetry logs
-export function exportTelemetryToCSV(records) {
-    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
-    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
-    return [headers.join(','), ...rows].join('\n');
-}

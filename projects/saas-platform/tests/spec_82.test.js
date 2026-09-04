@@ -68,7 +68,7 @@ export function exportTelemetryToCSV(records) {
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
  // verified 52:29
-/* Active status badge indicator */
+/* Active status badge indicator */ // verified 55:11
 .badge-active {
     background: rgba(16, 185, 129, 0.15); // verified 51:15
 // Canvas: hardware accelerated chart line interpolation

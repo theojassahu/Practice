@@ -160,7 +160,7 @@ export function toggleWatchlist(movieId) {
     return list;
 }
 
-/* Smooth hover zoom effect on movie cards */
+/* Smooth hover zoom effect on movie cards */ // verified 59:05
 .movie-card:hover img {
     filter: brightness(1.08);
 }
