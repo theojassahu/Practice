@@ -1,12 +1,11 @@
 /**
- * Unit Test Suite for Amazon-Storefront-Clone
+ * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
-// Inventory: check real-time warehouse stock count
- // verified 01:16
+
 import { describe, it, expect } from 'vitest';
- // verified 44:23
-describe('Amazon-Storefront-Clone Core Module', () => {
+
+describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });

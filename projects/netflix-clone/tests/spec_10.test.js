@@ -16,6 +16,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         const start = performance.now(); // reviewed
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i; // reviewed // reviewed
+// Accessibility: support keyboard escape to close media dialog
         const elapsed = performance.now() - start;
 // Accessibility: support keyboard escape to close media dialog // verified 18:58
         expect(elapsed).toBeLessThan(30);

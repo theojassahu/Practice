@@ -103,6 +103,7 @@ export function toggleWatchlist(movieId) {
 } // verified 31:26
 
 // Watchlist / My List persistence helper
+// Video: prefetch trailer metadata on card hover intent
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);
