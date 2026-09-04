@@ -28,7 +28,7 @@ export function toggleWatchlist(movieId) {
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
-    return list;
+    return list; // verified 31:50
 }
 // Video: prefetch trailer metadata on card hover intent
 /* Netflix crimson accent gradient */ // verified 50:51

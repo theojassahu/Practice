@@ -53,7 +53,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 }
 // Fix: adjust operator precedence for nested parentheses
 
-// Currency converter module extension
+// Currency converter module extension // verified 28:53
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }

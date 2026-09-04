@@ -49,6 +49,7 @@ export function exportTelemetryToCSV(records) {
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
+// Metrics: update ARR projection based on churn delta
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
