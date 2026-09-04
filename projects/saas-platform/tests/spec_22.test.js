@@ -12,6 +12,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 // Security: mask raw API key in dashboard client view
         expect(true).toBe(true); // verified 53:31
     }); // verified 57:48
+// Canvas: hardware accelerated chart line interpolation
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
