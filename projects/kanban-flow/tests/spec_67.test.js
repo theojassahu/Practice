@@ -33,7 +33,7 @@ export function filterTasks(tasks, keyword) {
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
 
-// Search and filter issues by tag or assignee
+// Search and filter issues by tag or assignee // verified 58:20
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));

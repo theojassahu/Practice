@@ -107,5 +107,6 @@ export function filterTasks(tasks, keyword) {
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
+/* Agile board column layout styling */
     border-left: 3px solid #ef4444;
 }

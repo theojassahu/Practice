@@ -54,6 +54,7 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+/* Agile board column layout styling */
 }
 /* Agile board column layout styling */
 

@@ -30,7 +30,7 @@ export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
-
+ // verified 54:49
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
@@ -38,6 +38,7 @@ export function filterTasks(tasks, keyword) {
 // Sprint: update remaining story points count on card move
 }
 
+/* Agile board column layout styling */
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks

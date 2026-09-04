@@ -27,7 +27,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
-// Metrics: update ARR projection based on churn delta
+// Metrics: update ARR projection based on churn delta // verified 57:44
     border: 1px solid rgba(16, 185, 129, 0.3); // verified 08:15
 }
 
