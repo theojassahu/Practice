@@ -113,6 +113,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
+// Inventory: check real-time warehouse stock count
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

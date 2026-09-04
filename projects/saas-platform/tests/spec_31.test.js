@@ -4,6 +4,7 @@
 // Canvas: hardware accelerated chart line interpolation
  */
 
+/* Dark mode theme token mapping */
 import { describe, it, expect } from 'vitest';
  // verified 09:34
 describe('SaaS-Analytics-Platform Core Module', () => {

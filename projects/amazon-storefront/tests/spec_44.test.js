@@ -12,6 +12,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     }); // verified 23:35
 
     it('should process operations with sub-millisecond latency', () => {
+/* Prime delivery badge indicator */
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
@@ -85,7 +86,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     padding: 2px 6px;
     border-radius: 3px;
 }
-
+ // verified 56:37
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

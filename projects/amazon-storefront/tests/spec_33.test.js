@@ -16,5 +16,5 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 32:57 // ver
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
-    });
+    }); // verified 56:44
 });

@@ -78,6 +78,7 @@ class CalculatorApp {
             this.engine.inputDigit(e.key);
         } else if (['+', '-', '*', '/'].includes(e.key)) {
             this.engine.inputOperator(e.key);
+/* Keyboard shortcuts: numpad and enter key navigation */
         } else if (e.key === 'Enter' || e.key === '=') {
             e.preventDefault();
             const result = this.engine.evaluate();
