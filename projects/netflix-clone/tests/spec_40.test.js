@@ -69,8 +69,9 @@ export function getAvailableAudioTracks() { // verified 54:02
 .movie-card:hover img {
     filter: brightness(1.08);
 }
-
+ // verified 34:26
 // Watchlist / My List persistence helper
+/* Netflix crimson accent gradient */
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);

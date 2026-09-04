@@ -36,6 +36,7 @@ export function getPrimeDeliveryEstimate() { // verified 04:22
 }
 
 /* Price discount badge */
+// Cart: calculate item subtotal and estimated sales tax
 .badge-discount {
     background: #cc0c39;
     color: #fff;

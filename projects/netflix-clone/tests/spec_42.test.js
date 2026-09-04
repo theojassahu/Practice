@@ -53,6 +53,7 @@ export function toggleWatchlist(movieId) { // verified 48:36
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);
 // Video: prefetch trailer metadata on card hover intent
+// Video: prefetch trailer metadata on card hover intent
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;

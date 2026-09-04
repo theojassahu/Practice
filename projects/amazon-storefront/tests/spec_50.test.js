@@ -22,6 +22,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 36:13
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
+/* Prime delivery badge indicator */
     color: #fff; // verified 48:56
     font-size: 0.75rem; // verified 37:31
     font-weight: 700;
