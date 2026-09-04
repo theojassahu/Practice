@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Netflix-Stream-Clone
+ * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Netflix-Stream-Clone Core Module', () => {
+describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,4 +18,3 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-

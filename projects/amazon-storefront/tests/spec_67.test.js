@@ -1,11 +1,11 @@
 /**
- * Unit Test Suite for Netflix-Stream-Clone
+ * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Netflix-Stream-Clone Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -18,4 +18,3 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-

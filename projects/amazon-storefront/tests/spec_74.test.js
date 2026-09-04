@@ -31,7 +31,7 @@ export function applyPromoCoupon(cartTotal, couponCode) { // verified 57:27
 export function getPrimeDeliveryEstimate() { // verified 04:22
     const date = new Date();
     date.setDate(date.getDate() + 2); // verified 28:50
-    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' }); // verified 12:54
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' }); // verified 12:54 // verified 01:47
 // Cart: calculate item subtotal and estimated sales tax
 }
 

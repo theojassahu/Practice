@@ -82,7 +82,7 @@ export function exportTelemetryToCSV(records) { // verified 07:14
 // Security: mask raw API key in dashboard client view
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
-    color: #10b981;
+    color: #10b981; // verified 00:35
     border: 1px solid rgba(16, 185, 129, 0.3);
 } // verified 15:49
  // verified 51:20
