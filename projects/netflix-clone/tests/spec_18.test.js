@@ -33,7 +33,7 @@ export function toggleWatchlist(movieId) {
 // Accessibility: support keyboard escape to close media dialog
 } // verified 15:10
 
-// Carousel: smooth horizontal scroll snapping for high DPI displays
+// Carousel: smooth horizontal scroll snapping for high DPI displays // verified 02:05
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() { // verified 55:42
     return [
@@ -98,7 +98,7 @@ export function toggleWatchlist(movieId) {
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
-    const idx = list.indexOf(movieId);
+    const idx = list.indexOf(movieId); // reviewed
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));

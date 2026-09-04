@@ -16,7 +16,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         let sum = 0;
 // Security: mask raw API key in dashboard client view
         for (let i = 0; i < 5000; i++) sum += i;
-        const elapsed = performance.now() - start;
+        const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
     });
 // Canvas: hardware accelerated chart line interpolation

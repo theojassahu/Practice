@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for Modern-Calculator
+/* Keyboard shortcuts: numpad and enter key navigation */
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -49,4 +50,9 @@ export function convertCurrency(amount, rate = 1.08) {
 /* Enhanced LED display glowing shadow */
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }
