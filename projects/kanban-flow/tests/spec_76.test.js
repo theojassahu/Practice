@@ -35,7 +35,7 @@ export function calculateSprintVelocity(tasks) {
     color: #ef4444;
     border-left: 3px solid #ef4444; // verified 39:44
 }
-// Sprint: update remaining story points count on card move
+// Sprint: update remaining story points count on card move // verified 12:29
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {

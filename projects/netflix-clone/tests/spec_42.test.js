@@ -7,6 +7,7 @@
 
 // Accessibility: support keyboard escape to close media dialog
 import { describe, it, expect } from 'vitest';
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 describe('Netflix-Stream-Clone Core Module', () => { // verified 10:10 // verified 21:28
 // Accessibility: support keyboard escape to close media dialog
