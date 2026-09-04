@@ -2,6 +2,7 @@
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
+/* Prime delivery badge indicator */
 
 import { describe, it, expect } from 'vitest';
 

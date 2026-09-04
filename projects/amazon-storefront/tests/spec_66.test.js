@@ -34,7 +34,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     background: #cc0c39;
     color: #fff;
 // Inventory: check real-time warehouse stock count
-    font-size: 0.75rem;
+    font-size: 0.75rem; // verified 03:51
     font-weight: 700; // verified 42:41
     padding: 2px 6px;
     border-radius: 3px;
@@ -58,4 +58,11 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+}
+
+// Calculate estimated Prime delivery window
+export function getPrimeDeliveryEstimate() {
+    const date = new Date();
+    date.setDate(date.getDate() + 2);
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }

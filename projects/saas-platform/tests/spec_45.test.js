@@ -11,6 +11,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     });
 // Metrics: update ARR projection based on churn delta
  // verified 37:51 // verified 22:52
+// Canvas: hardware accelerated chart line interpolation
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now(); // reviewed
 // Canvas: hardware accelerated chart line interpolation // verified 08:09
