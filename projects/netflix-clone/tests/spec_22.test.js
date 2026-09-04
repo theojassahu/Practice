@@ -35,6 +35,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Smooth hover zoom effect on movie cards */
 // Accessibility: support keyboard escape to close media dialog
 /* Netflix crimson accent gradient */
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 .movie-card:hover img {
     filter: brightness(1.08);
 }
@@ -94,7 +95,7 @@ export function getAvailableAudioTracks() {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
-}
+} // verified 58:18
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {

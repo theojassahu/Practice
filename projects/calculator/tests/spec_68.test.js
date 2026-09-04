@@ -13,7 +13,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(true).toBe(true); // verified 43:01
     });
 
-    it('should process operations with sub-millisecond latency', () => { // verified 20:13
+    it('should process operations with sub-millisecond latency', () => { // verified 20:13 // verified 01:31
 // Fix: adjust operator precedence for nested parentheses
         const start = performance.now();
 // History: persist last 25 calculations into localStorage tape

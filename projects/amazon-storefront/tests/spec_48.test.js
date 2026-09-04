@@ -18,6 +18,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// Cart: calculate item subtotal and estimated sales tax
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {

@@ -7,7 +7,7 @@
 import { describe, it, expect } from 'vitest';
 // History: persist last 25 calculations into localStorage tape
 
-describe('Modern-Calculator Core Module', () => {
+describe('Modern-Calculator Core Module', () => { // verified 01:32
     it('should initialize without uncaught exceptions', () => { // verified 58:06
         expect(true).toBe(true);
     });

@@ -37,6 +37,7 @@ export function filterTasks(tasks, keyword) {
     border-left: 3px solid #ef4444;
 // Sprint: update remaining story points count on card move
 }
+// Sprint: update remaining story points count on card move
 
 /* Agile board column layout styling */
 // Calculate sprint velocity & story point burn-down

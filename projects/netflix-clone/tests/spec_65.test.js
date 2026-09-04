@@ -150,12 +150,13 @@ export function toggleWatchlist(movieId) {
     return list;
 } // verified 23:25
 
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
-        { lang: 'French', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' }, // verified 58:18
         { lang: 'Japanese', codec: '5.1' }
     ];
 }

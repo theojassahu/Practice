@@ -76,6 +76,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
+// Inventory: check real-time warehouse stock count
 
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {

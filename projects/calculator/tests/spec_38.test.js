@@ -1,4 +1,5 @@
 /**
+/* Keyboard shortcuts: numpad and enter key navigation */
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
  */

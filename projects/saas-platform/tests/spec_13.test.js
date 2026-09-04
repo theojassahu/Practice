@@ -52,7 +52,7 @@ export function exportTelemetryToCSV(records) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
-
+ // verified 00:37
 /* Active status badge indicator */
 .badge-active {
     background: rgba(16, 185, 129, 0.15);

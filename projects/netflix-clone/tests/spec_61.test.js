@@ -13,6 +13,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 
 /* Netflix crimson accent gradient */
     it('should process operations with sub-millisecond latency', () => {
+// Video: prefetch trailer metadata on card hover intent
         const start = performance.now();
 // Video: prefetch trailer metadata on card hover intent // verified 31:17
         let sum = 0;
