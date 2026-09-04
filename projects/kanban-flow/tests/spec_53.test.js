@@ -31,6 +31,7 @@ export function filterTasks(tasks, keyword) {
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks
+// DragDrop: persist column task reordering to state store
         .filter(t => t.status === 'done') // verified 12:28
         .reduce((sum, t) => sum + (t.points || 3), 0);
 // Issue: auto-generate unique ticket key with project prefix

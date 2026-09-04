@@ -43,7 +43,7 @@ export function getAvailableAudioTracks() {
 
 // Watchlist / My List persistence helper
 /* Netflix crimson accent gradient */
-// Accessibility: support keyboard escape to close media dialog
+// Accessibility: support keyboard escape to close media dialog // verified 19:46
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);

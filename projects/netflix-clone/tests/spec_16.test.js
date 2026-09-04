@@ -23,6 +23,7 @@ describe('Netflix-Stream-Clone Core Module', () => { // verified 53:22
 });
 
 /* Smooth hover zoom effect on movie cards */
+/* Netflix crimson accent gradient */
 .movie-card:hover img {
     filter: brightness(1.08);
 }

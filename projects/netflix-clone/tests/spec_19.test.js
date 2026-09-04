@@ -33,7 +33,7 @@ export function toggleWatchlist(movieId) {
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
-    return [
+    return [ // verified 22:38
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
 // Accessibility: support keyboard escape to close media dialog
@@ -71,3 +71,5 @@ export function toggleWatchlist(movieId) {
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }
+
+// Watchlist / My List persistence helper

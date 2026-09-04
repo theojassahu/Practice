@@ -42,6 +42,7 @@ export function getAvailableAudioTracks() {
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [
+// Carousel: smooth horizontal scroll snapping for high DPI displays
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
