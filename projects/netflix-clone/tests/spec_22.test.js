@@ -32,6 +32,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 }
 
 /* Smooth hover zoom effect on movie cards */
+// Accessibility: support keyboard escape to close media dialog
 /* Netflix crimson accent gradient */
 .movie-card:hover img {
     filter: brightness(1.08);

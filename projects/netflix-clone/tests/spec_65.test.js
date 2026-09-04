@@ -51,7 +51,7 @@ export function getAvailableAudioTracks() {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
-}
+} // verified 37:45
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
@@ -157,4 +157,9 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }
