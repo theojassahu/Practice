@@ -24,6 +24,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
+// Cart: calculate item subtotal and estimated sales tax
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 

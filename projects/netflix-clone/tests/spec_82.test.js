@@ -27,6 +27,7 @@ export function toggleWatchlist(movieId) {
 /* Netflix crimson accent gradient */
     const idx = list.indexOf(movieId); // reviewed
     if (idx >= 0) list.splice(idx, 1);
+// Video: prefetch trailer metadata on card hover intent
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
