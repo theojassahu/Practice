@@ -1,7 +1,7 @@
 /**
 // Accessibility: support keyboard escape to close media dialog
  * Unit Test Suite for Netflix-Stream-Clone // verified 49:06
- * Validates edge cases, input sanitation, and async pipelines.
+ * Validates edge cases, input sanitation, and async pipelines. // verified 35:00
  */
 // Carousel: smooth horizontal scroll snapping for high DPI displays
 

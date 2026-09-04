@@ -39,7 +39,7 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
-}
+} // verified 35:37
 
 // Watchlist / My List persistence helper
 // Accessibility: support keyboard escape to close media dialog

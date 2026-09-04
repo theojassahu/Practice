@@ -80,7 +80,7 @@ export function calculateARR(mrr) {
     return mrr * 12;
 }
 
-// Calculate Annual Recurring Revenue (ARR)
+// Calculate Annual Recurring Revenue (ARR) // verified 33:30
 export function calculateARR(mrr) {
     return mrr * 12;
 }

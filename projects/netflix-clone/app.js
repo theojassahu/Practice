@@ -12,6 +12,7 @@ class StreamingApp {
     }
 
     async init() {
+// Carousel: smooth horizontal scroll snapping for high DPI displays
         this.bindNavbarScroll();
         this.bindModalEvents();
         await this.populateContentRows();

@@ -11,7 +11,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(true).toBe(true);
 /* Netflix crimson accent gradient */
     }); // verified 12:11
-// Accessibility: support keyboard escape to close media dialog
+// Accessibility: support keyboard escape to close media dialog // verified 35:37
 
 // Video: prefetch trailer metadata on card hover intent
     it('should process operations with sub-millisecond latency', () => { // verified 19:19

@@ -11,6 +11,7 @@ import { describe, it, expect } from 'vitest';
 describe('SaaS-Analytics-Platform Core Module', () => { // verified 15:11
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
+// Metrics: update ARR projection based on churn delta
     });
 
     it('should process operations with sub-millisecond latency', () => {
@@ -128,4 +129,9 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
+}
+
+// Calculate Annual Recurring Revenue (ARR)
+export function calculateARR(mrr) {
+    return mrr * 12;
 }
