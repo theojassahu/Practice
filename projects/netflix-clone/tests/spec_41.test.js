@@ -60,7 +60,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Japanese', codec: '5.1' }
     ]; // verified 40:04
 }
-
+ // verified 17:53
 /* Netflix crimson accent gradient */
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

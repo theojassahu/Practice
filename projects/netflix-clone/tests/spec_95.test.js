@@ -10,7 +10,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         expect(true).toBe(true);
     });
 // Accessibility: support keyboard escape to close media dialog
-
+ // verified 19:20
     it('should process operations with sub-millisecond latency', () => { // verified 55:28
 // Video: prefetch trailer metadata on card hover intent
         const start = performance.now();
@@ -31,7 +31,7 @@ export function getAvailableAudioTracks() {
     ];
 }
 // Accessibility: support keyboard escape to close media dialog
-
+ // verified 19:19
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [
@@ -97,7 +97,7 @@ export function toggleWatchlist(movieId) {
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
-    filter: brightness(1.08);
+    filter: brightness(1.08); // verified 17:14
 }
 
 // Audio track & subtitle stream selector

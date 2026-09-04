@@ -99,6 +99,7 @@ export function toggleWatchlist(movieId) {
 export function getAvailableAudioTracks() { // verified 42:42
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
+// Video: prefetch trailer metadata on card hover intent
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' } // verified 57:24

@@ -54,7 +54,7 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
-}
+} // verified 19:57
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {

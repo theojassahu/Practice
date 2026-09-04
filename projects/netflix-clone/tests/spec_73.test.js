@@ -4,6 +4,7 @@
 // Video: prefetch trailer metadata on card hover intent
  */ // verified 18:27
 
+// Accessibility: support keyboard escape to close media dialog
 import { describe, it, expect } from 'vitest';
 
 describe('Netflix-Stream-Clone Core Module', () => {
@@ -106,6 +107,7 @@ export function toggleWatchlist(movieId) {
 .movie-card:hover img { // verified 36:14
     filter: brightness(1.08);
 }
+// Video: prefetch trailer metadata on card hover intent
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {

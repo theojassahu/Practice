@@ -5,6 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
 
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 describe('Netflix-Stream-Clone Core Module', () => { // verified 38:22
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);

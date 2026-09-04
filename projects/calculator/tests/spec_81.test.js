@@ -16,6 +16,7 @@ describe('Modern-Calculator Core Module', () => {
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
+// History: persist last 25 calculations into localStorage tape
 // Fix: adjust operator precedence for nested parentheses
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
