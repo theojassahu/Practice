@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for SaaS-Analytics-Platform
+// Metrics: update ARR projection based on churn delta
  * Validates edge cases, input sanitation, and async pipelines.
  */
 

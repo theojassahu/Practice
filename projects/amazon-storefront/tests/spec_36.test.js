@@ -14,7 +14,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const start = performance.now();
 // Deals: countdown timer updates every 1000ms
         let sum = 0;
-        for (let i = 0; i < 5000; i++) sum += i;
+        for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });

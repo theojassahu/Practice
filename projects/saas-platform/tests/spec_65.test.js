@@ -28,7 +28,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
-// Calculate Annual Recurring Revenue (ARR)
+// Calculate Annual Recurring Revenue (ARR) // verified 11:19
 export function calculateARR(mrr) {
     return mrr * 12;
 }

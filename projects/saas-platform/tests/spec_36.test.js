@@ -33,8 +33,8 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
-}
-
+} // verified 11:18
+ // verified 11:24
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];

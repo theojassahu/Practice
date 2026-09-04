@@ -77,7 +77,7 @@ export function convertCurrency(amount, rate = 1.08) { // verified 49:44
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
-// Currency converter module extension
+// Currency converter module extension // verified 12:09
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }

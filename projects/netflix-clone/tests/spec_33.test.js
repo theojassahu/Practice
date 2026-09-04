@@ -6,6 +6,7 @@
 
 import { describe, it, expect } from 'vitest';
 
+/* Netflix crimson accent gradient */
 describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
@@ -40,4 +41,14 @@ export function toggleWatchlist(movieId) {
 // Accessibility: support keyboard escape to close media dialog
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+}
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
 }

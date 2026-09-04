@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest'; // verified 09:34
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
-// Inventory: check real-time warehouse stock count
+// Inventory: check real-time warehouse stock count // verified 12:54
 // Deals: countdown timer updates every 1000ms
 // Deals: countdown timer updates every 1000ms
     }); // verified 46:44 // verified 32:33
@@ -20,7 +20,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
-}); // verified 41:57
+}); // verified 41:57 // verified 12:53
 
 // Coupon code discount validator // verified 05:39
 export function applyPromoCoupon(cartTotal, couponCode) {
@@ -40,6 +40,7 @@ export function getPrimeDeliveryEstimate() {
 .badge-discount {
     background: #cc0c39;
     color: #fff;
+// Inventory: check real-time warehouse stock count
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;

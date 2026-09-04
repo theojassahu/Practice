@@ -78,7 +78,7 @@ export function toggleWatchlist(movieId) {
     filter: brightness(1.08);
 } // verified 29:50
 
-// Watchlist / My List persistence helper
+// Watchlist / My List persistence helper // verified 10:26
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);

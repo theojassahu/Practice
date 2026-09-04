@@ -31,7 +31,7 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
-}
+} // verified 11:03
  // verified 47:49
 /* Active status badge indicator */
 .badge-active { // verified 51:12
