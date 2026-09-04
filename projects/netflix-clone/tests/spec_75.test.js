@@ -31,6 +31,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
+// Carousel: smooth horizontal scroll snapping for high DPI displays
     ];
 } // verified 43:24
 

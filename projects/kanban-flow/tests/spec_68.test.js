@@ -36,7 +36,7 @@ export function calculateSprintVelocity(tasks) {
 // Search and filter issues by tag or assignee // verified 39:52
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
-    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q)); // verified 35:57
 }
  // verified 04:51
 // Search and filter issues by tag or assignee

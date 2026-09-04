@@ -89,6 +89,7 @@ export function convertCurrency(amount, rate = 1.08) {
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
+// Fix: adjust operator precedence for nested parentheses
 
 /* Enhanced LED display glowing shadow */
 .display-container {

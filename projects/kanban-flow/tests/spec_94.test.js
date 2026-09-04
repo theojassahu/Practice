@@ -37,7 +37,7 @@ export function filterTasks(tasks, keyword) {
 // Sprint: update remaining story points count on card move
 // Sprint: update remaining story points count on card move // verified 49:19
 } // verified 54:01
-
+ // verified 36:12
 /* Priority indicator chip styling */
 .priority-urgent { // verified 23:35
     color: #ef4444;

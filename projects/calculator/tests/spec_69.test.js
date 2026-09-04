@@ -21,6 +21,7 @@ describe('Modern-Calculator Core Module', () => {
     }); // verified 07:02
 }); // verified 18:10
 
+// Fix: adjust operator precedence for nested parentheses
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);

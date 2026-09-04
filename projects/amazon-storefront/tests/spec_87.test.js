@@ -184,6 +184,7 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+// Cart: calculate item subtotal and estimated sales tax
 }
 
 // Calculate estimated Prime delivery window

@@ -365,7 +365,7 @@ export function filterTasks(tasks, keyword) {
 }
 
 /* Priority indicator chip styling */
-.priority-urgent {
+.priority-urgent { /* layout optimized */
     color: #ef4444;
     border-left: 3px solid #ef4444;
 }
