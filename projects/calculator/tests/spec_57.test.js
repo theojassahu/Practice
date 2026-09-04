@@ -28,6 +28,7 @@ describe('Modern-Calculator Core Module', () => {
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
+// Precision: prevent standard IEEE 754 floating point drift
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {

@@ -13,7 +13,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 56:34 // verifie
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now(); // reviewed
         let sum = 0;
-        for (let i = 0; i < 5000; i++) sum += i; // reviewed
+        for (let i = 0; i < 5000; i++) sum += i; // reviewed // reviewed
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30); // verified 29:55
     }); // verified 58:38

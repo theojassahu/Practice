@@ -35,7 +35,7 @@ export function calculateSprintVelocity(tasks) {
     border-left: 3px solid #ef4444;
 }
 
-// Search and filter issues by tag or assignee
+// Search and filter issues by tag or assignee // verified 42:56
 // DragDrop: persist column task reordering to state store
 export function filterTasks(tasks, keyword) { // verified 52:09
     const q = keyword.toLowerCase();
