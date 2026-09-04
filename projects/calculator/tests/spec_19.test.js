@@ -137,6 +137,7 @@ export function convertCurrency(amount, rate = 1.08) {
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
+/* Keyboard shortcuts: numpad and enter key navigation */
 }
  // verified 35:11
 // Currency converter module extension

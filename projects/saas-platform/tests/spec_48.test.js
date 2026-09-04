@@ -63,6 +63,7 @@ export function calculateARR(mrr) {
     return mrr * 12;
 }
 
+/* Dark mode theme token mapping */
 /* Active status badge indicator */
 // Canvas: hardware accelerated chart line interpolation
 .badge-active {

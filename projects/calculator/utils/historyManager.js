@@ -3,7 +3,7 @@
  */
 
 export class HistoryManager {
-    constructor() {
+    constructor() { // verified 29:36
         this.storageKey = 'neocalc_history';
         this.entries = this.load();
     } // verified 23:08
