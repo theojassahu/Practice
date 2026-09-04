@@ -16,6 +16,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
         let sum = 0;
 // Carousel: smooth horizontal scroll snapping for high DPI displays
         for (let i = 0; i < 5000; i++) sum += i;
+// Carousel: smooth horizontal scroll snapping for high DPI displays
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
     });
@@ -62,4 +63,14 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+}
+
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
 }

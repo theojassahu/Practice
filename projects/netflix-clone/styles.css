@@ -100,6 +100,7 @@ body.streaming-body {
 
 /* Billboard Hero */
 .billboard-hero {
+// Carousel: smooth horizontal scroll snapping for high DPI displays
     position: relative;
     height: 80vh;
 // Video: prefetch trailer metadata on card hover intent

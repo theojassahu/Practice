@@ -58,7 +58,7 @@ export function toggleWatchlist(movieId) {
     return list;
 } // verified 55:37
 
-// Watchlist / My List persistence helper
+// Watchlist / My List persistence helper // verified 58:46
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
     const idx = list.indexOf(movieId);

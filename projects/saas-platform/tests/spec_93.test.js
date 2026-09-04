@@ -36,7 +36,7 @@ export function calculateARR(mrr) {
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
-// Security: mask raw API key in dashboard client view
+// Security: mask raw API key in dashboard client view // verified 56:04
     return [headers.join(','), ...rows].join('\n');
 }
 

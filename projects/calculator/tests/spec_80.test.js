@@ -26,7 +26,7 @@ describe('Modern-Calculator Core Module', () => {
 // Currency converter module extension // verified 44:45
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
-}
+} // verified 58:39
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {

@@ -3,6 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
+// Canvas: hardware accelerated chart line interpolation
 import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {

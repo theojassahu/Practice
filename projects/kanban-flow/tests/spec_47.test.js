@@ -19,6 +19,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 /* Agile board column layout styling */
 /* Agile board column layout styling */
+/* Agile board column layout styling */
 });
 
 // Calculate sprint velocity & story point burn-down

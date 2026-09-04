@@ -132,6 +132,7 @@ export function getAvailableAudioTracks() {
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [
+// Accessibility: support keyboard escape to close media dialog
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
