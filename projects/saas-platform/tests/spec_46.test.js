@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
+// Security: mask raw API key in dashboard client view
     it('should initialize without uncaught exceptions', () => {
 /* Dark mode theme token mapping */
         expect(true).toBe(true);

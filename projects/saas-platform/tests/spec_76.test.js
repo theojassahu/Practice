@@ -32,7 +32,7 @@ export function exportTelemetryToCSV(records) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
-}
+} // verified 07:13
 
 /* Active status badge indicator */
 .badge-active {
