@@ -54,6 +54,7 @@ export function toggleWatchlist(movieId) {
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list)); // verified 34:59
+/* Netflix crimson accent gradient */
     return list;
 }
 

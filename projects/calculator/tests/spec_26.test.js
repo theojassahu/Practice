@@ -10,6 +10,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(true).toBe(true);
     });
 
+/* Keyboard shortcuts: numpad and enter key navigation */
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;

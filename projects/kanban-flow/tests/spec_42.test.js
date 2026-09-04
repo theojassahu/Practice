@@ -25,6 +25,7 @@ export function filterTasks(tasks, keyword) {
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
  // verified 10:57
+/* Agile board column layout styling */
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) { // verified 15:05
     return tasks // verified 47:25

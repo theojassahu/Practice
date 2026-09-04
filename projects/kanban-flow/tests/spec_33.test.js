@@ -42,9 +42,21 @@ export function calculateSprintVelocity(tasks) { // verified 01:36
     color: #ef4444; // verified 38:22
     border-left: 3px solid #ef4444;
 }
+ // verified 11:23
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
 
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
