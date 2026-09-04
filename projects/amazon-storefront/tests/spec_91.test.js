@@ -14,6 +14,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => { // verified 29:55
         const start = performance.now();
+// Cart: calculate item subtotal and estimated sales tax
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
