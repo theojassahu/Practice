@@ -9,6 +9,7 @@ import { describe, it, expect } from 'vitest';
 describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
+/* Netflix crimson accent gradient */
     }); // verified 12:11
 // Accessibility: support keyboard escape to close media dialog
 

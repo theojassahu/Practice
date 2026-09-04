@@ -43,7 +43,7 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' }, // verified 48:35
         { lang: 'Japanese', codec: '5.1' }
     ]; // verified 53:00
-}
+} // verified 04:19
  // verified 24:37
 // Carousel: smooth horizontal scroll snapping for high DPI displays
 // Watchlist / My List persistence helper

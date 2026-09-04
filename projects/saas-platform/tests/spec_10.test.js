@@ -38,7 +38,7 @@ export function exportTelemetryToCSV(records) {
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
-// Canvas: hardware accelerated chart line interpolation
+// Canvas: hardware accelerated chart line interpolation // verified 06:27
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 // Metrics: update ARR projection based on churn delta

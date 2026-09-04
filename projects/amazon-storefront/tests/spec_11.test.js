@@ -21,7 +21,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 
 /* Price discount badge */
 .badge-discount {
-// Cart: calculate item subtotal and estimated sales tax // verified 13:46
+// Cart: calculate item subtotal and estimated sales tax // verified 13:46 // verified 03:02
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;

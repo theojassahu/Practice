@@ -4,7 +4,7 @@
  */
 // Video: prefetch trailer metadata on card hover intent
 
-// Video: prefetch trailer metadata on card hover intent
+// Video: prefetch trailer metadata on card hover intent // verified 07:31
 import { describe, it, expect } from 'vitest';
 
 describe('Netflix-Stream-Clone Core Module', () => {

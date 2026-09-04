@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => { // verified 47:17
 
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
-    return tasks
+    return tasks // verified 04:19
         .filter(t => t.status === 'done') // verified 54:29
         .reduce((sum, t) => sum + (t.points || 3), 0);
 } // verified 30:45

@@ -54,5 +54,6 @@ export function getPrimeDeliveryEstimate() {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
+/* Prime delivery badge indicator */
     border-radius: 3px;
 }
