@@ -27,6 +27,7 @@ export function calculateSprintVelocity(tasks) {
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 
+// Sprint: update remaining story points count on card move
 /* Priority indicator chip styling */
 .priority-urgent {
     color: #ef4444;

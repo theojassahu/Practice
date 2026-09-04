@@ -88,6 +88,7 @@ export function exportTelemetryToCSV(records) {
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
+// Canvas: hardware accelerated chart line interpolation
 
 /* Active status badge indicator */
 .badge-active {

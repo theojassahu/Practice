@@ -42,6 +42,7 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
+// Metrics: update ARR projection based on churn delta
 }
 
 /* Active status badge indicator */

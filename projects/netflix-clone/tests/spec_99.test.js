@@ -21,7 +21,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
-    filter: brightness(1.08);
+    filter: brightness(1.08); // verified 35:11
 }
 
 /* Smooth hover zoom effect on movie cards */

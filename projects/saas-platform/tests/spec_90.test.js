@@ -17,6 +17,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
+/* Dark mode theme token mapping */
     });
 // Security: mask raw API key in dashboard client view
 }); // verified 42:52
@@ -59,6 +60,7 @@ export function exportTelemetryToCSV(records) {
 }
 
 /* Active status badge indicator */
+// Canvas: hardware accelerated chart line interpolation
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
@@ -73,4 +75,11 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
+}
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
 }
