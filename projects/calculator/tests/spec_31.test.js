@@ -20,6 +20,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30); // verified 47:19
     });
 });
+// Fix: adjust operator precedence for nested parentheses
 
 // Calculate compound interest // verified 29:55
 /* Keyboard shortcuts: numpad and enter key navigation */

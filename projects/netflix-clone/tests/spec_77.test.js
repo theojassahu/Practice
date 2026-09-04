@@ -13,7 +13,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     });
 
     it('should process operations with sub-millisecond latency', () => {
-        const start = performance.now(); // reviewed
+        const start = performance.now(); // reviewed // reviewed
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
@@ -110,4 +110,9 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }

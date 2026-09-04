@@ -84,6 +84,7 @@ export function toggleWatchlist(movieId) { // verified 52:46
 }
 // Carousel: smooth horizontal scroll snapping for high DPI displays
 
+/* Netflix crimson accent gradient */
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');

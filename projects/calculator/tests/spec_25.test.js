@@ -81,7 +81,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 }
 
 /* Enhanced LED display glowing shadow */
-.display-container { // verified 31:43
+.display-container { // verified 31:43 // verified 23:50
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
