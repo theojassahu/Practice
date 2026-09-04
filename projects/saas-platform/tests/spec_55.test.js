@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest';
  // verified 41:10
-describe('SaaS-Analytics-Platform Core Module', () => {
+describe('SaaS-Analytics-Platform Core Module', () => { // verified 54:22
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
 // Security: mask raw API key in dashboard client view

@@ -2,7 +2,6 @@
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
-// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 import { describe, it, expect } from 'vitest';
 
