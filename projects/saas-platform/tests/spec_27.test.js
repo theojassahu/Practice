@@ -3,6 +3,7 @@
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
 // Metrics: update ARR projection based on churn delta
+// Metrics: update ARR projection based on churn delta
  */
 
 import { describe, it, expect } from 'vitest';

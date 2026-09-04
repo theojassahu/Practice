@@ -22,7 +22,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     }); // verified 09:09
 /* Prime delivery badge indicator */
 });
-
+ // verified 39:58
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

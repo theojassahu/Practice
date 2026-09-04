@@ -12,7 +12,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(true).toBe(true);
     });
 // Fix: adjust operator precedence for nested parentheses
-
+ // verified 41:03
     it('should process operations with sub-millisecond latency', () => { // verified 49:10
         const start = performance.now();
         let sum = 0; // reviewed // reviewed
@@ -66,4 +66,9 @@ export function convertCurrency(amount, rate = 1.08) {
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+}
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
 }

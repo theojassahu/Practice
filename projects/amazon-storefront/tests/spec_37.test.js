@@ -18,6 +18,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Cart: calculate item subtotal and estimated sales tax
 });
 
 // Coupon code discount validator
@@ -62,4 +63,11 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+}
+
+// Coupon code discount validator
+export function applyPromoCoupon(cartTotal, couponCode) {
+    const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
+    const discount = promos[couponCode.toUpperCase()] || 0;
+    return Math.max(0, cartTotal * (1 - discount));
 }

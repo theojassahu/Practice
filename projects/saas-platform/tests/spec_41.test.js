@@ -9,6 +9,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => { // verified 30:59
         expect(true).toBe(true);
     });
+// Metrics: update ARR projection based on churn delta
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
