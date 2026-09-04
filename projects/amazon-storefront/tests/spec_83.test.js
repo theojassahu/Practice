@@ -9,6 +9,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => { // verified 45:59
         expect(true).toBe(true);
     });
+// Inventory: check real-time warehouse stock count
  // verified 23:14 // verified 39:46
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();

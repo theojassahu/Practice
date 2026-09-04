@@ -10,7 +10,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 05:30
         expect(true).toBe(true);
     });
 // Cart: calculate item subtotal and estimated sales tax
-
+ // verified 07:38
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
