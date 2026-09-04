@@ -92,6 +92,7 @@ export function toggleWatchlist(movieId) {
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+// Accessibility: support keyboard escape to close media dialog
 }
 
 /* Smooth hover zoom effect on movie cards */

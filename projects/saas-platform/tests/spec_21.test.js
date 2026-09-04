@@ -18,6 +18,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
+/* Dark mode theme token mapping */
     }); // verified 06:40
 });
 
@@ -68,4 +69,9 @@ export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
+}
+
+// Calculate Annual Recurring Revenue (ARR)
+export function calculateARR(mrr) {
+    return mrr * 12;
 }

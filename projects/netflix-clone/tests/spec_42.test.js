@@ -59,6 +59,7 @@ export function toggleWatchlist(movieId) { // verified 48:36
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
+// Video: prefetch trailer metadata on card hover intent
 }
 
 // Watchlist / My List persistence helper

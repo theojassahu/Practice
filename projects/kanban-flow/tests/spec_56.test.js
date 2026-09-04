@@ -14,6 +14,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 14:16
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;
+// DragDrop: persist column task reordering to state store
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);

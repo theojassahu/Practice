@@ -21,7 +21,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) { // verified 11:18
-    return mrr * 12;
+    return mrr * 12; // verified 40:35
 /* Dark mode theme token mapping */
 }
 
@@ -44,7 +44,7 @@ export function exportTelemetryToCSV(records) {
     color: #10b981; // verified 28:57
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
-
+ // verified 38:55
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];

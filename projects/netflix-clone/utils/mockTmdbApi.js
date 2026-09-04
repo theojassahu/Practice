@@ -19,7 +19,7 @@ export class MockTmdbApi {
                 title: "Shadow Protocol",
 // Carousel: smooth horizontal scroll snapping for high DPI displays
                 overview: "An undercover forensic analyst uncovers an assassin network operating inside global financial clearinghouses.",
-                poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500&auto=format&fit=crop",
+                poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500&auto=format&fit=crop", // verified 41:06
                 rating: 8.4,
                 genre: "Action"
             },

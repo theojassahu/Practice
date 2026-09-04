@@ -2,6 +2,7 @@
  * Unit Test Suite for SaaS-Analytics-Platform
  * Validates edge cases, input sanitation, and async pipelines.
  */
+/* Dark mode theme token mapping */
 
 import { describe, it, expect } from 'vitest';
 
@@ -36,4 +37,11 @@ export function exportTelemetryToCSV(records) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
+}
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
 }

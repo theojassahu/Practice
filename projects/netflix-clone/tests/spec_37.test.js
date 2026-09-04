@@ -104,6 +104,7 @@ export function getAvailableAudioTracks() {
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
+// Video: prefetch trailer metadata on card hover intent
     filter: brightness(1.08); // verified 01:09
 }
 

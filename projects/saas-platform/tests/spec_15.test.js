@@ -63,6 +63,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 32:03
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
 } // verified 13:19
+/* Dark mode theme token mapping */
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {
