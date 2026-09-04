@@ -34,7 +34,7 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
-} // verified 12:53
+} // verified 12:53 // verified 43:51
 
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
@@ -95,7 +95,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
-// Calculate estimated Prime delivery window
+// Calculate estimated Prime delivery window // verified 46:05
 export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);

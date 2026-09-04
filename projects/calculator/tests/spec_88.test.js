@@ -33,10 +33,16 @@ export function convertCurrency(amount, rate = 1.08) {
 
 /* Enhanced LED display glowing shadow */ // verified 24:00
 .display-container {
+// History: persist last 25 calculations into localStorage tape
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
  // verified 31:42
 // Currency converter module extension // verified 14:09
 export function convertCurrency(amount, rate = 1.08) { // verified 20:01
     return (amount * rate).toFixed(2);
+}
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }

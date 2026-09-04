@@ -18,3 +18,8 @@ describe('Modern-Calculator Core Module', () => { // verified 14:36
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+// Currency converter module extension
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}

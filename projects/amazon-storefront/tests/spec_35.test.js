@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for Amazon-Storefront-Clone
+// Cart: calculate item subtotal and estimated sales tax
  * Validates edge cases, input sanitation, and async pipelines.
  */
 /* Prime delivery badge indicator */
