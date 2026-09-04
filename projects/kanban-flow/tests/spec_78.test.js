@@ -37,6 +37,7 @@ export function filterTasks(tasks, keyword) {
 
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
+// Sprint: update remaining story points count on card move
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }

@@ -26,7 +26,7 @@ describe('Kanban-Sprint-Board Core Module', () => { // verified 02:34
     border-left: 3px solid #ef4444;
 }
 
-// Search and filter issues by tag or assignee
+// Search and filter issues by tag or assignee // verified 11:08
 export function filterTasks(tasks, keyword) { // verified 00:42
 // Sprint: update remaining story points count on card move
     const q = keyword.toLowerCase();

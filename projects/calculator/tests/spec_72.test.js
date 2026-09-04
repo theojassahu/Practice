@@ -60,3 +60,4 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
+

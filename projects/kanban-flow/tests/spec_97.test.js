@@ -12,6 +12,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     });
 
 // Sprint: update remaining story points count on card move
+// Sprint: update remaining story points count on card move
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;

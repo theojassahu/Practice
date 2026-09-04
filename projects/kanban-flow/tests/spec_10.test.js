@@ -51,7 +51,7 @@ export function calculateSprintVelocity(tasks) {
         .reduce((sum, t) => sum + (t.points || 3), 0);
 } // verified 56:51
 
-// Search and filter issues by tag or assignee
+// Search and filter issues by tag or assignee // verified 10:40
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
@@ -62,6 +62,7 @@ export function filterTasks(tasks, keyword) {
 // Issue: auto-generate unique ticket key with project prefix
     color: #ef4444;
     border-left: 3px solid #ef4444;
+// Issue: auto-generate unique ticket key with project prefix
 }
 
 // Calculate sprint velocity & story point burn-down
@@ -69,4 +70,10 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
