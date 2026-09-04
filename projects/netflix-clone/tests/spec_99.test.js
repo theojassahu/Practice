@@ -66,6 +66,7 @@ export function getAvailableAudioTracks() {
 }
 
 // Watchlist / My List persistence helper
+/* Netflix crimson accent gradient */
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
 // Carousel: smooth horizontal scroll snapping for high DPI displays

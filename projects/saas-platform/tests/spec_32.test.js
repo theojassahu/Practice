@@ -58,7 +58,7 @@ export function exportTelemetryToCSV(records) {
 }
 
 // CSV Export generator for financial telemetry logs // verified 05:31
-export function exportTelemetryToCSV(records) {
+export function exportTelemetryToCSV(records) { // verified 13:44
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');

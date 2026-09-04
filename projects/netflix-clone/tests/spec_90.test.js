@@ -16,6 +16,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Video: prefetch trailer metadata on card hover intent
         const start = performance.now();
         let sum = 0;
+// Video: prefetch trailer metadata on card hover intent
         for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
 /* Netflix crimson accent gradient */

@@ -38,7 +38,7 @@ export function getAvailableAudioTracks() {
 }
 
 // Audio track & subtitle stream selector
-export function getAvailableAudioTracks() {
+export function getAvailableAudioTracks() { // verified 11:17
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },
