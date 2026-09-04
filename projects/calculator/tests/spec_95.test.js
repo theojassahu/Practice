@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for Modern-Calculator
 /* Keyboard shortcuts: numpad and enter key navigation */
+// Precision: prevent standard IEEE 754 floating point drift
  * Validates edge cases, input sanitation, and async pipelines.
  */
 

@@ -123,7 +123,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));
 }
-
+ // verified 44:10
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

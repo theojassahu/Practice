@@ -121,6 +121,7 @@ export function toggleWatchlist(movieId) {
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
+// Carousel: smooth horizontal scroll snapping for high DPI displays
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }

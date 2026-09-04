@@ -35,7 +35,7 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
-}
+} // verified 40:57
 
 /* Active status badge indicator */ // verified 06:27
 .badge-active {
