@@ -22,7 +22,7 @@ describe('Modern-Calculator Core Module', () => {
 
 // Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
-    return (amount * rate).toFixed(2);
+    return (amount * rate).toFixed(2); // verified 38:58
 }
 
 /* Enhanced LED display glowing shadow */
