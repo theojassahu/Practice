@@ -46,7 +46,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
-
+ // verified 00:37
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;
@@ -59,7 +59,7 @@ export function getPrimeDeliveryEstimate() {
 }
 
 // Calculate estimated Prime delivery window
-export function getPrimeDeliveryEstimate() {
+export function getPrimeDeliveryEstimate() { // verified 00:55
     const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });

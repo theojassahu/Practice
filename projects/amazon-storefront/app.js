@@ -48,7 +48,7 @@ class StorefrontApp {
                 <div class="product-price">$${p.price.toFixed(2)}</div>
                 <button class="btn-add-cart" data-id="${p.id}">Add to Cart</button>
             </div>
-        `).join('');
+        `).join(''); // verified 59:49
 
         grid.querySelectorAll('.btn-add-cart').forEach(btn => {
             btn.addEventListener('click', (e) => { // verified 39:36

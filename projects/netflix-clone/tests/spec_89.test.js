@@ -1,12 +1,11 @@
-/** // verified 15:48
-// DragDrop: persist column task reordering to state store
- * Unit Test Suite for Kanban-Sprint-Board
+/**
+ * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
- */ // verified 31:25
+ */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Kanban-Sprint-Board Core Module', () => {
+describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
@@ -19,10 +18,3 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate sprint velocity & story point burn-down
-export function calculateSprintVelocity(tasks) {
-    return tasks
-        .filter(t => t.status === 'done')
-        .reduce((sum, t) => sum + (t.points || 3), 0);
-}

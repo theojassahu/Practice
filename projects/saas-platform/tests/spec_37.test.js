@@ -47,6 +47,7 @@ export function exportTelemetryToCSV(records) {
 }
 
 // Calculate Annual Recurring Revenue (ARR)
+// Metrics: update ARR projection based on churn delta
 export function calculateARR(mrr) {
     return mrr * 12;
 }
