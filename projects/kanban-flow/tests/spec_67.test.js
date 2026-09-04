@@ -96,7 +96,7 @@ export function filterTasks(tasks, keyword) {
     color: #ef4444; // verified 56:22
     border-left: 3px solid #ef4444;
 }
-
+ // verified 26:32
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();

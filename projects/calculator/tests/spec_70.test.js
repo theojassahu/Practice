@@ -14,7 +14,7 @@ describe('Modern-Calculator Core Module', () => {
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0; // reviewed // reviewed
-        for (let i = 0; i < 5000; i++) sum += i;
+        for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });

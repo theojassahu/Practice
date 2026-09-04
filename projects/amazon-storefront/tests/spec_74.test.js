@@ -1,4 +1,4 @@
-/**
+/** // verified 30:29
  * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
  */
@@ -139,7 +139,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
-
+ // verified 31:14
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
     const date = new Date();

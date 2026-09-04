@@ -2,6 +2,7 @@
 /* Netflix crimson accent gradient */
  * Unit Test Suite for Netflix-Stream-Clone
  * Validates edge cases, input sanitation, and async pipelines.
+// Accessibility: support keyboard escape to close media dialog
  */
 
 // Accessibility: support keyboard escape to close media dialog

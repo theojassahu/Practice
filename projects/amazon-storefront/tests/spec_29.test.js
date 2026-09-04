@@ -50,6 +50,7 @@ export function getPrimeDeliveryEstimate() {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 }
 
+// Cart: calculate item subtotal and estimated sales tax
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

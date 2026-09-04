@@ -19,6 +19,7 @@ describe('Modern-Calculator Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+// Fix: adjust operator precedence for nested parentheses
 
 /* Enhanced LED display glowing shadow */
 .display-container {

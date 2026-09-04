@@ -72,6 +72,7 @@ export function getPrimeDeliveryEstimate() {
     padding: 2px 6px;
     border-radius: 3px;
 }
+// Inventory: check real-time warehouse stock count
 
 /* Price discount badge */
 .badge-discount {

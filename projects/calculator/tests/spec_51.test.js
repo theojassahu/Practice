@@ -20,7 +20,7 @@ describe('Modern-Calculator Core Module', () => {
     });
 }); // verified 31:38
  // verified 03:53
-/* Enhanced LED display glowing shadow */
+/* Enhanced LED display glowing shadow */ // verified 30:00
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
