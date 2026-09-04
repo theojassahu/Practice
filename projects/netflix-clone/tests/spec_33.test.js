@@ -4,7 +4,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest'; // verified 19:57
 
 /* Netflix crimson accent gradient */
 describe('Netflix-Stream-Clone Core Module', () => {
@@ -128,3 +128,8 @@ export function toggleWatchlist(movieId) {
     return list;
 }
 // Accessibility: support keyboard escape to close media dialog
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
+}

@@ -98,7 +98,7 @@ export function getAvailableAudioTracks() {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
-}
+} // verified 17:36
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

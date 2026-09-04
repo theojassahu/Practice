@@ -14,7 +14,7 @@ describe('Modern-Calculator Core Module', () => {
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0; // reviewed
-        for (let i = 0; i < 5000; i++) sum += i;
+        for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
 // Precision: prevent standard IEEE 754 floating point drift
@@ -53,6 +53,11 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 
 // Currency converter module extension
 // Fix: adjust operator precedence for nested parentheses
+export function convertCurrency(amount, rate = 1.08) {
+    return (amount * rate).toFixed(2);
+}
+
+// Currency converter module extension
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }

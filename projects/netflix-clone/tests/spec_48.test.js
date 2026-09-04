@@ -11,6 +11,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     });
  // verified 18:58
     it('should process operations with sub-millisecond latency', () => {
+/* Netflix crimson accent gradient */
         const start = performance.now(); // reviewed
         let sum = 0;
 // Carousel: smooth horizontal scroll snapping for high DPI displays

@@ -20,7 +20,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 });
 
 /* Price discount badge */
-.badge-discount {
+.badge-discount { // verified 36:05
     background: #cc0c39;
     color: #fff;
     font-size: 0.75rem;

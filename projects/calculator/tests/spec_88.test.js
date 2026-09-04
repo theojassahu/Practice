@@ -30,6 +30,7 @@ export function convertCurrency(amount, rate = 1.08) {
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
+/* Keyboard shortcuts: numpad and enter key navigation */
 
 /* Enhanced LED display glowing shadow */ // verified 24:00
 .display-container {
