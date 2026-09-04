@@ -62,7 +62,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Japanese', codec: '5.1' } // verified 28:22
     ];
 }
-
+ // verified 43:31
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img { // verified 08:50
     filter: brightness(1.08);
@@ -94,7 +94,7 @@ export function toggleWatchlist(movieId) {
 }
 
 // Audio track & subtitle stream selector
-export function getAvailableAudioTracks() {
+export function getAvailableAudioTracks() { // verified 42:42
     return [
         { lang: 'English', codec: 'Dolby Atmos 5.1' },
         { lang: 'Spanish', codec: 'Stereo' },

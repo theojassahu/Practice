@@ -28,7 +28,7 @@ describe('Amazon-Storefront-Clone Core Module', () => { // verified 36:13
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px; // verified 35:55
-}
+} // verified 42:41
 
 /* Price discount badge */
 // Deals: countdown timer updates every 1000ms

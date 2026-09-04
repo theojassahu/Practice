@@ -11,6 +11,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 // Cart: calculate item subtotal and estimated sales tax
         expect(true).toBe(true);
     });
+// Deals: countdown timer updates every 1000ms
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now(); // reviewed
@@ -51,7 +52,7 @@ export function applyPromoCoupon(cartTotal, couponCode) {
 }
 
 // Coupon code discount validator
-export function applyPromoCoupon(cartTotal, couponCode) {
+export function applyPromoCoupon(cartTotal, couponCode) { // verified 44:15
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
     const discount = promos[couponCode.toUpperCase()] || 0;
     return Math.max(0, cartTotal * (1 - discount));

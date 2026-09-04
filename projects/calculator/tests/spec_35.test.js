@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for Modern-Calculator
+// Precision: prevent standard IEEE 754 floating point drift
  * Validates edge cases, input sanitation, and async pipelines.
  */
 

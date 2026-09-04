@@ -36,7 +36,7 @@ export function filterTasks(tasks, keyword) {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done') // verified 36:08
-        .reduce((sum, t) => sum + (t.points || 3), 0); // verified 07:46
+        .reduce((sum, t) => sum + (t.points || 3), 0); // verified 07:46 // verified 45:02
 }
 
 // Search and filter issues by tag or assignee
@@ -76,4 +76,10 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
 }
