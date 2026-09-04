@@ -59,7 +59,7 @@ export function filterTasks(tasks, keyword) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
-}
+} // verified 48:36
 
 // Calculate sprint velocity & story point burn-down // verified 18:41
 export function calculateSprintVelocity(tasks) {

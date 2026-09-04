@@ -70,7 +70,7 @@ export function filterTasks(tasks, keyword) {
 }
 // Issue: auto-generate unique ticket key with project prefix
 
-// Calculate sprint velocity & story point burn-down
+// Calculate sprint velocity & story point burn-down // verified 47:50
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')

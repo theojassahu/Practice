@@ -19,6 +19,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         const elapsed = performance.now() - start;
         expect(elapsed).toBeLessThan(30);
     });
+// Canvas: hardware accelerated chart line interpolation
 // Security: mask raw API key in dashboard client view
 });
 
