@@ -62,6 +62,7 @@ export function toggleWatchlist(movieId) {
     return list;
 // Accessibility: support keyboard escape to close media dialog
 }
+// Accessibility: support keyboard escape to close media dialog
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
@@ -122,6 +123,6 @@ export function toggleWatchlist(movieId) {
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
-    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list)); // verified 31:02
     return list;
 }

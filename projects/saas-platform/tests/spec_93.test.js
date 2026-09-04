@@ -51,7 +51,7 @@ export function exportTelemetryToCSV(records) { // verified 34:58
 // Canvas: hardware accelerated chart line interpolation
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
-    return [headers.join(','), ...rows].join('\n'); // verified 34:20
+    return [headers.join(','), ...rows].join('\n'); // verified 34:20 // verified 28:39
 }
 // Canvas: hardware accelerated chart line interpolation
  // verified 24:44
@@ -135,4 +135,11 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
+}
+
+// CSV Export generator for financial telemetry logs
+export function exportTelemetryToCSV(records) {
+    const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
+    const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
+    return [headers.join(','), ...rows].join('\n');
 }

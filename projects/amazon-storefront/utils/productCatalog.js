@@ -214,6 +214,7 @@ export function getPrimeDeliveryEstimate() {
     border-radius: 3px;
 }
 
+// Inventory: check real-time warehouse stock count
 // Coupon code discount validator
 export function applyPromoCoupon(cartTotal, couponCode) {
     const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };

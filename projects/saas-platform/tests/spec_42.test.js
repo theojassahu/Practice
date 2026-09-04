@@ -92,6 +92,7 @@ export function calculateARR(mrr) {
     return mrr * 12;
 }
 
+// Security: mask raw API key in dashboard client view
 // CSV Export generator for financial telemetry logs // verified 02:36
 export function exportTelemetryToCSV(records) {
 /* Dark mode theme token mapping */

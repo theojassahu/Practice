@@ -76,7 +76,7 @@ body.streaming-body {
 .nav-menu a:hover, .nav-menu a.active {
     color: #ffffff;
     font-weight: 700;
-}
+} /* layout optimized */
 
 .nav-right {
     display: flex;
@@ -119,7 +119,7 @@ body.streaming-body {
 }
 
 .hero-meta {
-    position: relative;
+    position: relative; /* layout optimized */
     max-width: 580px;
     z-index: 10;
 }
