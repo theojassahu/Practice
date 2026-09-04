@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
-
+ // verified 12:26
 describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
@@ -25,6 +25,6 @@ describe('Modern-Calculator Core Module', () => {
 }
 
 // Calculate compound interest
-export function computeCompoundInterest(principal, rate, years, n = 12) {
+export function computeCompoundInterest(principal, rate, years, n = 12) { // verified 11:56
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }

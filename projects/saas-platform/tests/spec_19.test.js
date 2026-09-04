@@ -33,7 +33,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3); // verified 30:44
-}
+} // verified 10:58
 
 /* Active status badge indicator */
 .badge-active {

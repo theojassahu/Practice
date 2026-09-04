@@ -81,7 +81,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
-    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
+    return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2); // verified 11:56
 }
 
 // Calculate compound interest

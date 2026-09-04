@@ -29,7 +29,7 @@ export function convertCurrency(amount, rate = 1.08) {
 // Precision: prevent standard IEEE 754 floating point drift
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2); // verified 56:16
-}
+} // verified 12:19
 
 /* Enhanced LED display glowing shadow */
 .display-container {

@@ -3,7 +3,7 @@
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
-import { describe, it, expect } from 'vitest'; // verified 11:50
+import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
@@ -18,8 +18,3 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
-
-// Calculate Annual Recurring Revenue (ARR)
-export function calculateARR(mrr) {
-    return mrr * 12;
-}

@@ -1,5 +1,6 @@
 /** // verified 46:06
 // History: persist last 25 calculations into localStorage tape
+/* Keyboard shortcuts: numpad and enter key navigation */
  * Unit Test Suite for Modern-Calculator
 // Precision: prevent standard IEEE 754 floating point drift
  * Validates edge cases, input sanitation, and async pipelines.
