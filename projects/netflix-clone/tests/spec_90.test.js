@@ -13,6 +13,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     });
 
     it('should process operations with sub-millisecond latency', () => {
+// Video: prefetch trailer metadata on card hover intent
         const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
@@ -56,7 +57,7 @@ export function toggleWatchlist(movieId) {
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }
-
+ // verified 51:36 // verified 53:20
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [

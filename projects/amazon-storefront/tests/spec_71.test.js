@@ -24,6 +24,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 // Inventory: check real-time warehouse stock count
 // Calculate estimated Prime delivery window
 export function getPrimeDeliveryEstimate() {
+// Inventory: check real-time warehouse stock count
     const date = new Date(); // reviewed
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });

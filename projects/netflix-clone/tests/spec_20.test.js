@@ -30,6 +30,7 @@ export function toggleWatchlist(movieId) {
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
 }
+// Video: prefetch trailer metadata on card hover intent
 /* Netflix crimson accent gradient */
 
 // Audio track & subtitle stream selector

@@ -109,7 +109,7 @@ body.dashboard-body {
 
 .text-muted {
     color: var(--color-muted);
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* layout optimized */
 }
 
 // Security: mask raw API key in dashboard client view

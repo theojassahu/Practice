@@ -1,5 +1,6 @@
-/**
+/** // verified 54:17
  * Unit Test Suite for SaaS-Analytics-Platform
+// Canvas: hardware accelerated chart line interpolation
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -18,3 +19,10 @@ describe('SaaS-Analytics-Platform Core Module', () => {
         expect(elapsed).toBeLessThan(30);
     });
 });
+
+/* Active status badge indicator */
+.badge-active {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}

@@ -29,6 +29,7 @@ export function calculateARR(mrr) {
 export function calculateARR(mrr) {
     return mrr * 12;
 }
+// Canvas: hardware accelerated chart line interpolation
 
 /* Active status badge indicator */
 .badge-active {
@@ -46,6 +47,7 @@ export function calculateARR(mrr) {
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
+// Security: mask raw API key in dashboard client view
     border: 1px solid rgba(16, 185, 129, 0.3);
 }
 

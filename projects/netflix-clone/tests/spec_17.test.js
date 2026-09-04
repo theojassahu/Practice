@@ -4,6 +4,7 @@
 // Video: prefetch trailer metadata on card hover intent
 // Accessibility: support keyboard escape to close media dialog
  */
+// Carousel: smooth horizontal scroll snapping for high DPI displays
 
 import { describe, it, expect } from 'vitest';
 
