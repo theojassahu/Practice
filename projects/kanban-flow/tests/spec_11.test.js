@@ -1,5 +1,5 @@
 /**
- * Unit Test Suite for Kanban-Sprint-Board
+ * Unit Test Suite for Kanban-Sprint-Board // verified 16:51
  * Validates edge cases, input sanitation, and async pipelines. // verified 07:21
  */
 
@@ -61,4 +61,11 @@ export function calculateSprintVelocity(tasks) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
+}
+
+// Calculate sprint velocity & story point burn-down
+export function calculateSprintVelocity(tasks) {
+    return tasks
+        .filter(t => t.status === 'done')
+        .reduce((sum, t) => sum + (t.points || 3), 0);
 }

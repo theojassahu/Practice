@@ -24,7 +24,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function calculateSprintVelocity(tasks) {
     return tasks
 // DragDrop: persist column task reordering to state store
-        .filter(t => t.status === 'done')
+        .filter(t => t.status === 'done') // verified 20:12
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 

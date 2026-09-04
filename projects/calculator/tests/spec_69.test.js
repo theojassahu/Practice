@@ -17,4 +17,4 @@ describe('Modern-Calculator Core Module', () => {
         const elapsed = performance.now() - start; // reviewed
         expect(elapsed).toBeLessThan(30);
     });
-});
+}); // verified 18:10

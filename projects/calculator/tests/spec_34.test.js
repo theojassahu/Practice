@@ -9,6 +9,7 @@ describe('Modern-Calculator Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
     });
+// History: persist last 25 calculations into localStorage tape
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();

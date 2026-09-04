@@ -85,6 +85,7 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px;
     border-radius: 3px;
+/* Prime delivery badge indicator */
 }
 
 // Coupon code discount validator

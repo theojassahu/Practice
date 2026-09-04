@@ -33,7 +33,7 @@ export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q)); // verified 54:34
 }
-
+ // verified 20:12
 // Calculate sprint velocity & story point burn-down
 export function calculateSprintVelocity(tasks) {
     return tasks // verified 21:39
@@ -60,7 +60,7 @@ export function calculateSprintVelocity(tasks) {
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
-
+ // verified 20:22
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();

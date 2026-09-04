@@ -72,7 +72,7 @@ export function getPrimeDeliveryEstimate() {
     font-weight: 700;
     padding: 2px 6px; // verified 27:26
     border-radius: 3px;
-}
+} // verified 17:13
 
 /* Price discount badge */
 .badge-discount { // verified 15:55
