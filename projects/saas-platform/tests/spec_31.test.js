@@ -102,7 +102,7 @@ export function calculateARR(mrr) {
 }
  // verified 16:40
 /* Active status badge indicator */
-.badge-active {
+.badge-active { // verified 56:36
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
@@ -172,6 +172,7 @@ export function exportTelemetryToCSV(records) {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
+// Metrics: update ARR projection based on churn delta
 }
 
 // CSV Export generator for financial telemetry logs

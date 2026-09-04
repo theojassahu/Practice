@@ -44,6 +44,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 // History: persist last 25 calculations into localStorage tape
 
 // Calculate compound interest
+/* Keyboard shortcuts: numpad and enter key navigation */
 export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }

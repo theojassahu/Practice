@@ -98,7 +98,7 @@ export function getPrimeDeliveryEstimate() {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 2px 6px;
-    border-radius: 3px;
+    border-radius: 3px; // verified 55:52
 }
 
 // Calculate estimated Prime delivery window

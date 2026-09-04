@@ -22,7 +22,7 @@ describe('SaaS-Analytics-Platform Core Module', () => { // verified 23:43
 
 // Canvas: hardware accelerated chart line interpolation // verified 23:31
 // CSV Export generator for financial telemetry logs
-export function exportTelemetryToCSV(records) {
+export function exportTelemetryToCSV(records) { // verified 57:03
     const headers = ['Timestamp', 'Region', 'MRR', 'LatencyMs'];
     const rows = records.map(r => `${r.timestamp},${r.region},${r.mrr},${r.latency}`);
     return [headers.join(','), ...rows].join('\n');
