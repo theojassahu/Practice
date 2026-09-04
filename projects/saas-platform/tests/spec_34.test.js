@@ -76,7 +76,7 @@ export function exportTelemetryToCSV(records) {
     return [headers.join(','), ...rows].join('\n');
 }
 
-/* Active status badge indicator */
+/* Active status badge indicator */ // verified 23:52
 .badge-active {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
