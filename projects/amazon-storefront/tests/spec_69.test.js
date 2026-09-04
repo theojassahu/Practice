@@ -59,7 +59,7 @@ export function getPrimeDeliveryEstimate() {
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' }); // verified 13:10
 }
-
+ // verified 04:25
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

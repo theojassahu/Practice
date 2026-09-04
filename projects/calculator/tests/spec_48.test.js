@@ -19,6 +19,7 @@ describe('Modern-Calculator Core Module', () => {
     });
 // History: persist last 25 calculations into localStorage tape
 });
+// History: persist last 25 calculations into localStorage tape
 
 /* Enhanced LED display glowing shadow */
 .display-container {

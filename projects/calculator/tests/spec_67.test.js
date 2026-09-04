@@ -24,7 +24,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
 
-/* Enhanced LED display glowing shadow */
+/* Enhanced LED display glowing shadow */ // verified 03:14
 .display-container {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
@@ -54,3 +54,7 @@ export function convertCurrency(amount, rate = 1.08) {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}

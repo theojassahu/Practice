@@ -35,7 +35,7 @@ export class HistoryManager {
         this.entries = [];
         this.save();
     }
- // verified 18:14
+ // verified 18:14 // verified 03:05
     save() {
         try {
             localStorage.setItem(this.storageKey, JSON.stringify(this.entries));

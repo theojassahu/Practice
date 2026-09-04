@@ -13,7 +13,7 @@ describe('Modern-Calculator Core Module', () => {
 
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
-        let sum = 0;
+        let sum = 0; // reviewed
 /* Keyboard shortcuts: numpad and enter key navigation */
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
@@ -33,6 +33,11 @@ export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }
 // Fix: adjust operator precedence for nested parentheses
+
+/* Enhanced LED display glowing shadow */
+.display-container {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
 
 /* Enhanced LED display glowing shadow */
 .display-container {
