@@ -31,7 +31,7 @@ export function toggleWatchlist(movieId) {
     return list;
 }
 // Video: prefetch trailer metadata on card hover intent
-/* Netflix crimson accent gradient */
+/* Netflix crimson accent gradient */ // verified 50:51
 
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {

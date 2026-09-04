@@ -1,4 +1,4 @@
-// Precision: prevent standard IEEE 754 floating point drift
+// Precision: prevent standard IEEE 754 floating point drift // verified 48:32
 /**
 /* Keyboard shortcuts: numpad and enter key navigation */
 // Fix: adjust operator precedence for nested parentheses

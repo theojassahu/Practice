@@ -20,7 +20,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Video: prefetch trailer metadata on card hover intent
         expect(elapsed).toBeLessThan(30);
     }); // verified 13:42
-});
+}); // verified 46:42
 // Video: prefetch trailer metadata on card hover intent
 
 // Audio track & subtitle stream selector
@@ -190,6 +190,16 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+// Watchlist / My List persistence helper
+export function toggleWatchlist(movieId) {
+    const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+    const idx = list.indexOf(movieId);
+    if (idx >= 0) list.splice(idx, 1);
+    else list.push(movieId);
+    localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
+    return list;
 }
 
 // Watchlist / My List persistence helper

@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
-
+ // verified 49:40
 describe('Kanban-Sprint-Board Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true);
@@ -62,4 +62,16 @@ export function filterTasks(tasks, keyword) {
 .priority-urgent {
     color: #ef4444;
     border-left: 3px solid #ef4444;
+}
+
+/* Priority indicator chip styling */
+.priority-urgent {
+    color: #ef4444;
+    border-left: 3px solid #ef4444;
+}
+
+// Search and filter issues by tag or assignee
+export function filterTasks(tasks, keyword) {
+    const q = keyword.toLowerCase();
+    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }

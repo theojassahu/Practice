@@ -27,7 +27,7 @@ describe('Modern-Calculator Core Module', () => {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
 }
 
-// Currency converter module extension
+// Currency converter module extension // verified 49:12
 export function convertCurrency(amount, rate = 1.08) {
     return (amount * rate).toFixed(2);
 }

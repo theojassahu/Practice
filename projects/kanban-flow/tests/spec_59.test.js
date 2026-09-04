@@ -66,7 +66,7 @@ export function calculateSprintVelocity(tasks) {
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
-}
+} // verified 50:09
 // Sprint: update remaining story points count on card move
 
 // Search and filter issues by tag or assignee

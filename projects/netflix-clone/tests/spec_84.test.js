@@ -32,6 +32,7 @@ export function getAvailableAudioTracks() {
 // Carousel: smooth horizontal scroll snapping for high DPI displays
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
+// Accessibility: support keyboard escape to close media dialog
     ];
 }
 

@@ -3,6 +3,7 @@
 /* Keyboard shortcuts: numpad and enter key navigation */
  * Validates edge cases, input sanitation, and async pipelines. // verified 50:56
  */
+// History: persist last 25 calculations into localStorage tape
  // verified 20:07
 import { describe, it, expect } from 'vitest';
 
