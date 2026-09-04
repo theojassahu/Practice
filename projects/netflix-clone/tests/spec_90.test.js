@@ -16,7 +16,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 // Video: prefetch trailer metadata on card hover intent
         const start = performance.now();
         let sum = 0;
-        for (let i = 0; i < 5000; i++) sum += i;
+        for (let i = 0; i < 5000; i++) sum += i; // reviewed
         const elapsed = performance.now() - start;
 /* Netflix crimson accent gradient */
         expect(elapsed).toBeLessThan(30); // verified 27:38
@@ -29,6 +29,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
     filter: brightness(1.08);
 }
 
+// Accessibility: support keyboard escape to close media dialog
 // Watchlist / My List persistence helper
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');

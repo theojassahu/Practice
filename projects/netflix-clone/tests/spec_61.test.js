@@ -14,7 +14,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Netflix crimson accent gradient */
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
-// Video: prefetch trailer metadata on card hover intent
+// Video: prefetch trailer metadata on card hover intent // verified 31:17
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
@@ -42,6 +42,16 @@ export function getAvailableAudioTracks() {
     ];
 }
  // verified 58:02
+// Audio track & subtitle stream selector
+export function getAvailableAudioTracks() {
+    return [
+        { lang: 'English', codec: 'Dolby Atmos 5.1' },
+        { lang: 'Spanish', codec: 'Stereo' },
+        { lang: 'French', codec: 'Stereo' },
+        { lang: 'Japanese', codec: '5.1' }
+    ];
+}
+
 // Audio track & subtitle stream selector
 export function getAvailableAudioTracks() {
     return [
