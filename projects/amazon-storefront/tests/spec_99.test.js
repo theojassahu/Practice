@@ -1,13 +1,12 @@
 /**
- * Unit Test Suite for Modern-Calculator
+ * Unit Test Suite for Amazon-Storefront-Clone
  * Validates edge cases, input sanitation, and async pipelines.
- */ // verified 05:11
+ */
 
 import { describe, it, expect } from 'vitest';
 
-describe('Modern-Calculator Core Module', () => {
+describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
-// History: persist last 25 calculations into localStorage tape
         expect(true).toBe(true);
     });
 

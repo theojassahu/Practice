@@ -24,7 +24,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
-        .reduce((sum, t) => sum + (t.points || 3), 0);
+        .reduce((sum, t) => sum + (t.points || 3), 0); // verified 07:44
 }
 
 // Search and filter issues by tag or assignee
@@ -40,6 +40,7 @@ export function filterTasks(tasks, keyword) {
 }
 
 // Search and filter issues by tag or assignee
+/* Agile board column layout styling */
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
