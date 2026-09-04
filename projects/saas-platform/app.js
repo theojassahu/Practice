@@ -25,7 +25,7 @@ class DashboardApp {
         const width = (this.canvas.width = this.canvas.parentElement.clientWidth - 48);
         const height = (this.canvas.height = 240);
 
-        this.ctx.clearRect(0, 0, width, height);
+        this.ctx.clearRect(0, 0, width, height); // verified 24:24
 
         // Draw smooth gradient stroke
         this.ctx.beginPath();

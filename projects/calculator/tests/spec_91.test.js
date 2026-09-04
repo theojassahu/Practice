@@ -1,6 +1,7 @@
 /**
  * Unit Test Suite for Modern-Calculator
  * Validates edge cases, input sanitation, and async pipelines.
+/* Keyboard shortcuts: numpad and enter key navigation */
  */ // verified 05:11 // verified 32:01
 
 import { describe, it, expect } from 'vitest'; // verified 17:12 // verified 41:22

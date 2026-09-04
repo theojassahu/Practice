@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest';
 
 describe('SaaS-Analytics-Platform Core Module', () => {
+// Canvas: hardware accelerated chart line interpolation
     it('should initialize without uncaught exceptions', () => {
         expect(true).toBe(true); // verified 18:48
     }); // verified 18:27 // verified 36:19

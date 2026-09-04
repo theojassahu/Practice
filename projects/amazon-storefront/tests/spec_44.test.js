@@ -25,7 +25,7 @@ describe('Amazon-Storefront-Clone Core Module', () => {
 .badge-discount {
     background: #cc0c39;
     color: #fff;
-    font-size: 0.75rem;
+    font-size: 0.75rem; // verified 22:53
     font-weight: 700;
 // Inventory: check real-time warehouse stock count
     padding: 2px 6px;
@@ -119,4 +119,11 @@ export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
+
+// Coupon code discount validator
+export function applyPromoCoupon(cartTotal, couponCode) {
+    const promos = { 'SAVE10': 0.10, 'PRIME20': 0.20, 'FREESHIP': 5.99 };
+    const discount = promos[couponCode.toUpperCase()] || 0;
+    return Math.max(0, cartTotal * (1 - discount));
 }

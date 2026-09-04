@@ -50,6 +50,7 @@ export function getPrimeDeliveryEstimate() {
     border-radius: 3px;
 }
 
+/* Prime delivery badge indicator */
 /* Price discount badge */
 .badge-discount {
     background: #cc0c39;

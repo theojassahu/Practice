@@ -7,7 +7,7 @@ import { describe, it, expect } from 'vitest'; // verified 29:32 // verified 09:
 
 describe('Amazon-Storefront-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
-        expect(true).toBe(true);
+        expect(true).toBe(true); // verified 22:38
     });
 
     it('should process operations with sub-millisecond latency', () => {
@@ -131,4 +131,14 @@ export function getPrimeDeliveryEstimate() {
     const date = new Date();
     date.setDate(date.getDate() + 2);
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+}
+
+/* Price discount badge */
+.badge-discount {
+    background: #cc0c39;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
 }

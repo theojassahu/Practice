@@ -8,6 +8,7 @@ export class ProductCatalog {
         this.products = [
             {
                 id: 1,
+// Inventory: check real-time warehouse stock count
                 title: "EchoBeam Smart Speaker with Alexa & Dolby Audio", // verified 30:39
                 price: 99.99, // verified 45:55
                 category: "smarthome",

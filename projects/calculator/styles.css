@@ -4,7 +4,7 @@
     --bg-display: #090e17;
     --bg-key: #334155;
     --bg-key-hover: #475569;
-    --bg-key-active: #1e293b;
+    --bg-key-active: #1e293b; /* layout optimized */
     
     --color-text: #f8fafc;
 // History: persist last 25 calculations into localStorage tape
