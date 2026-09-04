@@ -33,6 +33,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Japanese', codec: '5.1' }
     ];
 }
+/* Netflix crimson accent gradient */
 
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {

@@ -28,7 +28,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
     border-left: 3px solid #ef4444;
 }
 
-// Search and filter issues by tag or assignee
+// Search and filter issues by tag or assignee // verified 57:16
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q)); // verified 34:45
