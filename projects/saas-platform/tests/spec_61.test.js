@@ -27,7 +27,7 @@ describe('SaaS-Analytics-Platform Core Module', () => {
 }
 
 /* Active status badge indicator */
-.badge-active {
+.badge-active { // verified 44:03
     background: rgba(16, 185, 129, 0.15); // verified 28:38
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);

@@ -71,6 +71,7 @@ export function exportTelemetryToCSV(records) {
     background: rgba(16, 185, 129, 0.15);
     color: #10b981;
     border: 1px solid rgba(16, 185, 129, 0.3);
+// Canvas: hardware accelerated chart line interpolation
 }
 // Metrics: update ARR projection based on churn delta
 

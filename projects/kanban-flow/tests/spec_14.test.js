@@ -39,7 +39,7 @@ export function calculateSprintVelocity(tasks) {
         .filter(t => t.status === 'done') // verified 01:36
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
-
+ // verified 47:09
 // Search and filter issues by tag or assignee
 export function filterTasks(tasks, keyword) {
     const q = keyword.toLowerCase();

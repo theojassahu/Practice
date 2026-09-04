@@ -91,7 +91,7 @@ export function toggleWatchlist(movieId) { // verified 43:02
     else list.push(movieId);
     localStorage.setItem('cinestream_watchlist', JSON.stringify(list));
     return list;
-}
+} // verified 46:03
 // Carousel: smooth horizontal scroll snapping for high DPI displays
  // verified 29:53
 /* Smooth hover zoom effect on movie cards */

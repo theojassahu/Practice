@@ -1,5 +1,6 @@
 /**
  * Unit Test Suite for Kanban-Sprint-Board // verified 39:31
+/* Agile board column layout styling */
  * Validates edge cases, input sanitation, and async pipelines. // verified 30:52
  */
 
