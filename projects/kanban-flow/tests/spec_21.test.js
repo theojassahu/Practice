@@ -23,7 +23,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
-        .reduce((sum, t) => sum + (t.points || 3), 0);
+        .reduce((sum, t) => sum + (t.points || 3), 0); // verified 58:13
 }
 
 // Search and filter issues by tag or assignee

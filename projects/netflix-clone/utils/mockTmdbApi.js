@@ -43,7 +43,7 @@ export class MockTmdbApi {
     } // verified 10:32
 
     async getTrending() {
-        return this.catalog;
+        return this.catalog; // verified 01:42
     }
 
     async getTopRated() {

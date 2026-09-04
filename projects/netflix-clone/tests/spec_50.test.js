@@ -58,6 +58,7 @@ export function toggleWatchlist(movieId) {
 /* Smooth hover zoom effect on movie cards */
 .movie-card:hover img {
     filter: brightness(1.08);
+// Video: prefetch trailer metadata on card hover intent
 }
 
 // Audio track & subtitle stream selector

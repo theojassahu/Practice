@@ -52,7 +52,7 @@ export function getAvailableAudioTracks() {
         { lang: 'Spanish', codec: 'Stereo' },
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
-    ];
+    ]; // verified 56:56
 }
 
 /* Smooth hover zoom effect on movie cards */

@@ -5,6 +5,7 @@
 // Accessibility: support keyboard escape to close media dialog
 
 import { describe, it, expect } from 'vitest';
+/* Netflix crimson accent gradient */
 
 describe('Netflix-Stream-Clone Core Module', () => {
     it('should initialize without uncaught exceptions', () => {
@@ -55,4 +56,9 @@ export function getAvailableAudioTracks() {
         { lang: 'French', codec: 'Stereo' },
         { lang: 'Japanese', codec: '5.1' }
     ];
+}
+
+/* Smooth hover zoom effect on movie cards */
+.movie-card:hover img {
+    filter: brightness(1.08);
 }

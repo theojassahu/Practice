@@ -11,6 +11,7 @@ describe('Modern-Calculator Core Module', () => {
     });
 
 // Fix: adjust operator precedence for nested parentheses
+// Precision: prevent standard IEEE 754 floating point drift
     it('should process operations with sub-millisecond latency', () => {
         const start = performance.now();
         let sum = 0;

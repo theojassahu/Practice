@@ -53,7 +53,7 @@ export function computeCompoundInterest(principal, rate, years, n = 12) {
 
 // Calculate compound interest
 export function computeCompoundInterest(principal, rate, years, n = 12) {
-// Fix: adjust operator precedence for nested parentheses
+// Fix: adjust operator precedence for nested parentheses // verified 00:18
     return (principal * Math.pow((1 + (rate / 100) / n), n * years)).toFixed(2);
 }
 
