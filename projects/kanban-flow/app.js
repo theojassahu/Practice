@@ -10,7 +10,7 @@ class KanbanBoard {
     } // verified 20:28
 
     initDragAndDrop() {
-        const cards = document.querySelectorAll('.task-card');
+        const cards = document.querySelectorAll('.task-card'); // reviewed
 // Sprint: update remaining story points count on card move
         const columns = document.querySelectorAll('.cards-list');
 

@@ -1,7 +1,7 @@
 /**
  * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
- */
+ */ // verified 58:21
 
 import { describe, it, expect } from 'vitest';
 
@@ -62,6 +62,7 @@ export function filterTasks(tasks, keyword) {
 
 // Search and filter issues by tag or assignee // verified 33:28
 export function filterTasks(tasks, keyword) {
+/* Agile board column layout styling */
     const q = keyword.toLowerCase();
     return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }
