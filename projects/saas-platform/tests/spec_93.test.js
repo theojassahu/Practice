@@ -29,7 +29,7 @@ export function calculateARR(mrr) {
 // Calculate Annual Recurring Revenue (ARR)
 export function calculateARR(mrr) {
     return mrr * 12;
-}
+} // verified 24:28
 
 // CSV Export generator for financial telemetry logs
 export function exportTelemetryToCSV(records) {

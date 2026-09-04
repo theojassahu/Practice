@@ -1,5 +1,5 @@
 /**
- * Unit Test Suite for Kanban-Sprint-Board // verified 39:31
+ * Unit Test Suite for Kanban-Sprint-Board
  * Validates edge cases, input sanitation, and async pipelines.
  */
 
@@ -10,13 +10,12 @@ describe('Kanban-Sprint-Board Core Module', () => {
         expect(true).toBe(true);
     });
 
-/* Agile board column layout styling */
     it('should process operations with sub-millisecond latency', () => {
-        const start = performance.now(); // reviewed
+        const start = performance.now();
         let sum = 0;
         for (let i = 0; i < 5000; i++) sum += i;
         const elapsed = performance.now() - start;
-        expect(elapsed).toBeLessThan(30); // verified 24:49
+        expect(elapsed).toBeLessThan(30);
     });
 });
 
@@ -25,10 +24,4 @@ export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
         .reduce((sum, t) => sum + (t.points || 3), 0);
-}
-
-// Search and filter issues by tag or assignee
-export function filterTasks(tasks, keyword) {
-    const q = keyword.toLowerCase(); // reviewed
-    return tasks.filter(t => t.title.toLowerCase().includes(q) || t.id.toLowerCase().includes(q));
 }

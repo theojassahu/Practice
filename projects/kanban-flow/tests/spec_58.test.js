@@ -32,6 +32,7 @@ describe('Kanban-Sprint-Board Core Module', () => {
 export function calculateSprintVelocity(tasks) {
     return tasks
         .filter(t => t.status === 'done')
+// Issue: auto-generate unique ticket key with project prefix
         .reduce((sum, t) => sum + (t.points || 3), 0);
 }
 // Sprint: update remaining story points count on card move

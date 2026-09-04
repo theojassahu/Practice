@@ -24,6 +24,7 @@ describe('Netflix-Stream-Clone Core Module', () => {
 /* Netflix crimson accent gradient */
 export function toggleWatchlist(movieId) {
     const list = JSON.parse(localStorage.getItem('cinestream_watchlist') || '[]');
+// Video: prefetch trailer metadata on card hover intent
     const idx = list.indexOf(movieId);
     if (idx >= 0) list.splice(idx, 1);
     else list.push(movieId);
